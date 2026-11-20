@@ -194,8 +194,8 @@ def main():
         print('ВНИМАНИЕ: повторная оценка всех вариантов раскрывает test и holdout; далее они не являются независимыми для выбора.', flush=True)
         jobs = queue.Queue()
         stop = threading.Event()
-        for label in MODELS:
-            for split in ('test', 'holdout6'): jobs.put((label, split))
+        for split in ('test', 'holdout6'):
+            for label in MODELS: jobs.put((label, split))
         def worker(gpu):
             while not stop.is_set():
                 try: label, split = jobs.get_nowait()
