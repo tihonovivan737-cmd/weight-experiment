@@ -26,6 +26,13 @@ VARIANTS = ROOT / 'runs/variants'
 STAGING = ROOT / 'runs/report_validation/models'
 OUT = ROOT / 'runs/report_validation/results'
 SPLIT = ROOT / 'runs/splits/holdout6.json'
+REUSE = {
+    'orig': {'test': 'runs/baseline_test', 'holdout6': 'runs/holdout6/orig'},
+    'w8': {'test': 'runs/variants/w8_z_gate_mild_format/test', 'holdout6': 'runs/holdout6/w8'},
+    'w50': {'test': 'runs/variants/w50_finalrow_rotation15_smallmargin/test', 'holdout6': 'runs/holdout6/w50_finalrow_rotation15_smallmargin'},
+}
+NEW_VARIANTS = ('w36', 'w30', 'w83', 'w87', 'w12')
+PROMPT_SUFFIX = '\n\nSolve the problem step by step. Finish with a final line exactly in this format: FINAL: <number>'
 MODELS = {
     'orig': ('', '04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696', None),
     'w8': ('w8_z_gate_mild_format', '296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55', 'orig'),
@@ -137,6 +144,42 @@ def run_job(label, split, gpu, model, spec, run_dir, threads):
         raise RuntimeError(f'{label}/{split}: неполный прогон {data}')
     print(f'GPU {gpu}: {label}/{split} готово: {data["correct"]}/{expected}', flush=True)
 
+def reuse_results(run_dir):
+    holdout = json.loads(SPLIT.read_text(encoding='utf8'))
+    for label, splits in REUSE.items():
+        for split, relative in splits.items():
+            source = ROOT / relative
+            results = source / 'results.jsonl'
+            summary = json.loads((source / 'summary.json').read_text(encoding='utf8'))
+            conf = summary['config']
+            expected_ids = list(range(1319)) if split == 'test' else sorted(holdout['holdout_indices'])
+            expected_hash = hashlib.sha256(','.join(map(str, expected_ids)).encode()).hexdigest()
+            weight_info = conf.get('model_info', {}).get('weights', {})
+            weight_hashes = [value.get('sha256') for value in weight_info.values()]
+            if (weight_hashes != [MODELS[label][1]] or conf.get('indices_sha256') != expected_hash
+                or conf.get('batch_size') != 1 or conf.get('max_new_tokens') != 1024
+                or conf.get('dtype') != 'bfloat16' or conf.get('do_sample') is not False
+                or conf.get('prompt_suffix') != PROMPT_SUFFIX):
+                raise RuntimeError(f'Настройки или хеши сохранённого прогона не совпали: {source}')
+            data = [json.loads(line) for line in results.read_text(encoding='utf8').splitlines() if line.strip()]
+            actual_ids = [row['index'] for row in data]
+            if (len(data) != len(expected_ids) or len(set(actual_ids)) != len(data)
+                or sorted(actual_ids) != expected_ids
+                or sum(row['correct'] for row in data) != summary['summary']['correct']):
+                raise RuntimeError(f'Сохранённый прогон неполный или повреждён: {results}')
+            dest = run_dir / label / split
+            dest.mkdir(parents=True, exist_ok=True)
+            for name in ('results.jsonl', 'summary.json'):
+                src = source / name
+                target = dest / name
+                if target.exists():
+                    if sha(target) != sha(src):
+                        raise RuntimeError(f'Не перезаписываю существующий файл: {target}. Выберите новый --run-id.')
+                else:
+                    shutil.copy2(src, target)
+            (dest / 'provenance.json').write_text(json.dumps({'source': str(source), 'results_sha256': sha(results), 'reused': True}, indent=2), encoding='utf8')
+            print(f'Используется сохранённый прогон: {label}/{split}, {len(data)} задач', flush=True)
+
 def write_comparison(run_dir):
     rows = []
     for split in ('test', 'holdout6'):
@@ -167,7 +210,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--build-missing', action='store_true', help='восстановить недостающие варианты в отдельной папке, сверить SHA-256')
     ap.add_argument('--prepare-only', action='store_true', help='проверить или восстановить модели без оценки')
-    ap.add_argument('--run-id', default='report-v1', help='отдельный каталог результатов; повторный запуск продолжает прерванный')
+    ap.add_argument('--run-id', default='report-v2', help='отдельный каталог результатов; повторный запуск продолжает прерванный')
     ap.add_argument('--gpus', default='0,1', help='физические индексы GPU, по одному процессу на GPU')
     ap.add_argument('--threads', type=int, default=8, help='CPU потоки на процесс')
     ap.add_argument('--min-ram-mib', type=int, default=10950)
@@ -191,11 +234,12 @@ def main():
         except BlockingIOError: raise RuntimeError(f'Этот run-id уже запущен: {args.run_id}')
         models = prepare_models(args.build_missing)
         if args.prepare_only: return
+        reuse_results(run_dir)
         print('ВНИМАНИЕ: повторная оценка всех вариантов раскрывает test и holdout; далее они не являются независимыми для выбора.', flush=True)
         jobs = queue.Queue()
         stop = threading.Event()
         for split in ('test', 'holdout6'):
-            for label in MODELS: jobs.put((label, split))
+            for label in NEW_VARIANTS: jobs.put((label, split))
         def worker(gpu):
             while not stop.is_set():
                 try: label, split = jobs.get_nowait()
