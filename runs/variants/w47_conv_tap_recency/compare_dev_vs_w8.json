@@ -1,0 +1,46 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w47_conv_tap_recency/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w47_conv_tap_recency",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 56,
+  "accuracy": 0.56,
+  "extracted": 97,
+  "truncated": 2,
+  "mean_out_tokens": 311.5,
+  "mean_seconds": 3.59
+ },
+ "delta_correct": -8,
+ "fixed": [
+  157,
+  7325
+ ],
+ "broken": [
+  29,
+  354,
+  640,
+  720,
+  2328,
+  3799,
+  4138,
+  4843,
+  6097,
+  7254
+ ],
+ "same_correct": 54,
+ "same_wrong": 34,
+ "answers_differ": 87,
+ "mcnemar_p": 0.03857421875
+}

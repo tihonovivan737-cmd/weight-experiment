@@ -1,0 +1,59 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w45_z_headsel_flatten/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w45_z_headsel_flatten",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 66,
+  "accuracy": 0.66,
+  "extracted": 95,
+  "truncated": 3,
+  "mean_out_tokens": 333.8,
+  "mean_seconds": 3.97
+ },
+ "delta_correct": 7,
+ "fixed": [
+  951,
+  1075,
+  1125,
+  2069,
+  2328,
+  3321,
+  3459,
+  3482,
+  4138,
+  4531,
+  5169,
+  5785,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  781,
+  2177,
+  3104,
+  3142,
+  3766,
+  4150,
+  4728,
+  4843
+ ],
+ "same_correct": 50,
+ "same_wrong": 25,
+ "answers_differ": 100,
+ "mcnemar_p": 0.2295229434967041
+}

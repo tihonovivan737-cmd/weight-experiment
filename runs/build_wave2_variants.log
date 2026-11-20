@@ -1,0 +1,54 @@
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w1_final_token_amp  ===
+Вариант: w1_final_token_amp
+Модель: /home/mpiscil/weight-experiment/runs/variants/w1_final_token_amp/model
+SHA256 весов: было 04b1c301231dd422… стало a7d5f647658be1b8…
+Тензоров изменено: 1; значений изменено: 2,048 (затронуто 2,048)
+Среднее |Δ|: 0.00466841  Макс |Δ|: 0.02441406
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w1_final_token_amp/manifest.json
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w2_bold_damp  ===
+Вариант: w2_bold_damp
+Модель: /home/mpiscil/weight-experiment/runs/variants/w2_bold_damp/model
+SHA256 весов: было 04b1c301231dd422… стало 3c807ec8c24e8c60…
+Тензоров изменено: 1; значений изменено: 2,048 (затронуто 2,048)
+Среднее |Δ|: 0.00621044  Макс |Δ|: 0.02734375
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w2_bold_damp/manifest.json
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w3_final_amp_bold_damp  ===
+Вариант: w3_final_amp_bold_damp
+Модель: /home/mpiscil/weight-experiment/runs/variants/w3_final_amp_bold_damp/model
+SHA256 весов: было 04b1c301231dd422… стало 07b53e759efb349d…
+Тензоров изменено: 1; значений изменено: 4,096 (затронуто 4,096)
+Среднее |Δ|: 0.00543943  Макс |Δ|: 0.02734375
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w3_final_amp_bold_damp/manifest.json
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w4_branch_damp  ===
+Вариант: w4_branch_damp
+Модель: /home/mpiscil/weight-experiment/runs/variants/w4_branch_damp/model
+SHA256 весов: было 04b1c301231dd422… стало 901913daabc1db2e…
+Тензоров изменено: 24; значений изменено: 50,331,648 (затронуто 50,331,648)
+Среднее |Δ|: 0.00089969  Макс |Δ|: 0.03320312
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w4_branch_damp/manifest.json
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w5_z_gate_damp  ===
+Вариант: w5_z_gate_damp
+Модель: /home/mpiscil/weight-experiment/runs/variants/w5_z_gate_damp/model
+SHA256 весов: было 04b1c301231dd422… стало bb38034a47bee19b…
+Тензоров изменено: 18; значений изменено: 37,748,736 (затронуто 37,748,736)
+Среднее |Δ|: 0.00185037  Макс |Δ|: 0.06835938
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w5_z_gate_damp/manifest.json
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w6_dt_bias_up  ===
+Вариант: w6_dt_bias_up
+Модель: /home/mpiscil/weight-experiment/runs/variants/w6_dt_bias_up/model
+SHA256 весов: было 04b1c301231dd422… стало 46c2d476a4411736…
+Тензоров изменено: 18; значений изменено: 288 (затронуто 288)
+Среднее |Δ|: 1.98177338  Макс |Δ|: 2.375
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w6_dt_bias_up/manifest.json

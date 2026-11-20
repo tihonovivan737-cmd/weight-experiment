@@ -1,0 +1,55 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w48_conv_tap_context/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w48_conv_tap_context",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 58,
+  "accuracy": 0.58,
+  "extracted": 94,
+  "truncated": 5,
+  "mean_out_tokens": 347.9,
+  "mean_seconds": 4.0
+ },
+ "delta_correct": -1,
+ "fixed": [
+  1480,
+  2069,
+  2328,
+  3321,
+  3459,
+  5785,
+  6295,
+  6604,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  2250,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150,
+  4728,
+  6228,
+  7228,
+  7325
+ ],
+ "same_correct": 48,
+ "same_wrong": 31,
+ "answers_differ": 100,
+ "mcnemar_p": 1.0
+}

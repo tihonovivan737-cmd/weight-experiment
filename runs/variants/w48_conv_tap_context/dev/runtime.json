@@ -1,0 +1,27 @@
+{
+  "device": "cuda:0",
+  "load_seconds": 1.0,
+  "after_model_load": {
+    "device_index": 0,
+    "device_name": "NVIDIA GeForce RTX 3090",
+    "gpu_total_mib": 24124,
+    "gpu_free_mib": 22208,
+    "gpu_used_by_others_mib": 1915,
+    "torch_allocated_mib": 1627,
+    "torch_reserved_mib": 1636,
+    "torch_peak_allocated_mib": 1627,
+    "torch_peak_reserved_mib": 1636
+  },
+  "peak": {
+    "device_index": 0,
+    "device_name": "NVIDIA GeForce RTX 3090",
+    "gpu_total_mib": 24124,
+    "gpu_free_mib": 22082,
+    "gpu_used_by_others_mib": 2041,
+    "torch_allocated_mib": 1627,
+    "torch_reserved_mib": 1700,
+    "torch_peak_allocated_mib": 1678,
+    "torch_peak_reserved_mib": 1700
+  },
+  "env_CUDA_VISIBLE_DEVICES": "1"
+}

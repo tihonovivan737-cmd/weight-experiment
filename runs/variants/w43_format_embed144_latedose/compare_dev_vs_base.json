@@ -1,0 +1,44 @@
+{
+ "base": "runs/variants/w36_z_late_extra094/model/../dev/results.jsonl",
+ "variant": "runs/variants/w43_format_embed144_latedose/dev/results.jsonl",
+ "base_name": "variants",
+ "variant_name": "w43_format_embed144_latedose",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 66,
+  "accuracy": 0.66,
+  "extracted": 96,
+  "truncated": 4,
+  "mean_out_tokens": 330.5,
+  "mean_seconds": 4.56
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 90,
+  "truncated": 4,
+  "mean_out_tokens": 323.2,
+  "mean_seconds": 4.0
+ },
+ "delta_correct": -2,
+ "fixed": [
+  1075,
+  4330,
+  5169,
+  6097
+ ],
+ "broken": [
+  348,
+  688,
+  1185,
+  2328,
+  3762,
+  4449
+ ],
+ "same_correct": 60,
+ "same_wrong": 30,
+ "answers_differ": 76,
+ "mcnemar_p": 0.75390625
+}

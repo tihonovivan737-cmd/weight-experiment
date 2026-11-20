@@ -1,0 +1,18 @@
+Вариант: w52_frozen10_dose003_negsign
+Модель: runs/variants/w52_frozen10_dose003_negsign/model
+SHA256 весов: было 296b2cd888606d54… стало 49030e323abef199…
+Тензоров изменено: 1; значений изменено: 9,578 (затронуто 10,240)
+Среднее |Δ|: 0.00050554  Макс |Δ|: 0.00238037
+Манифест: runs/variants/w52_frozen10_dose003_negsign/manifest.json
+Вариант: w53_frozen10_dose003_mirrorpos
+Модель: runs/variants/w53_frozen10_dose003_mirrorpos/model
+SHA256 весов: было 296b2cd888606d54… стало cdca20526bea592a…
+Тензоров изменено: 1; значений изменено: 9,624 (затронуто 10,240)
+Среднее |Δ|: 0.00054039  Макс |Δ|: 0.00256348
+Манифест: runs/variants/w53_frozen10_dose003_mirrorpos/manifest.json
+Вариант: w54_vhead_late19_head1_amp105
+Модель: runs/variants/w54_vhead_late19_head1_amp105/model
+SHA256 весов: было 296b2cd888606d54… стало c6b68be7c27b2c55…
+Тензоров изменено: 1; значений изменено: 262,144 (затронуто 262,144)
+Среднее |Δ|: 0.00065848  Макс |Δ|: 0.01953125
+Манифест: runs/variants/w54_vhead_late19_head1_amp105/manifest.json

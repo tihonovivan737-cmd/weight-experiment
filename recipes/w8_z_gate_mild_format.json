@@ -1,0 +1,25 @@
+{
+ "name": "w8_z_gate_mild_format",
+ "hypothesis": "H3 (обрывы + формат). Измерено: ослабление вентиля Gated DeltaNet in_proj_z ×0.85 (w5) сократило средний ответ на dev100 с 387 до 298 токенов, обрывы 7→4, извлекаемость 90→96 (лучший результат из всех 17 вариантов), accuracy 59→58 (в пределах измеренного шума ±2). На test1319 115 ответов (8,7 %) упёрлись в лимит 1024 токенов. Доза ×0.93 (мягче) плюс усиление строк FINAL/ FINAL ×1.2: более короткие ответы успевают дописать строку FINAL, а усиленные токены делают её именно нужной формы.",
+ "expected_effect": "Меньше обрывов и выше извлекаемость; accuracy не ниже baseline на search250.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.linear_attn.in_proj_z.weight"
+   ],
+   "op": "scale",
+   "lam": 0.93
+  },
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.2,
+   "rows": [
+    95429,
+    64697
+   ]
+  }
+ ]
+}

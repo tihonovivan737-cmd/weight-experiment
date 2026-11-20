@@ -1,0 +1,45 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w52_frozen10_dose003_negsign/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w52_frozen10_dose003_negsign",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 93,
+  "truncated": 7,
+  "mean_out_tokens": 337.4,
+  "mean_seconds": 5.74
+ },
+ "delta_correct": -3,
+ "fixed": [
+  1125,
+  4150,
+  6604,
+  7325
+ ],
+ "broken": [
+  29,
+  1739,
+  3624,
+  3799,
+  6097,
+  6228,
+  7254
+ ],
+ "same_correct": 57,
+ "same_wrong": 32,
+ "answers_differ": 75,
+ "mcnemar_p": 0.548828125
+}

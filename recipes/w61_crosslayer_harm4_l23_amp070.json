@@ -1,0 +1,271 @@
+{
+ "name": "w61_crosslayer_harm4_l23_amp070",
+ "hypothesis": "Ослабление наиболее вредных строк (отрицательный flip-потенциал) во всех шести FULL слоях, по четыре строки на слой. L23 дает -24.7974 суммарного flip-потенциала, остальные пять слоев на порядок меньше, поэтому проверка состоит в том, добавляет ли вклад других слоев что-то к нейтральному результату w56.",
+ "expected_effect": "По П56.1: dev 64-66, combined math 212-218, формат combined 328-336, обрывы combined 14-20. Улучшением засчитывается только dev не ниже 66 или combined не ниже 216 при формате не ниже 336 и обрывах не выше 14.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.3.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    142
+   ],
+   "note": "L3 row 142 flip_potential -0.1412 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.3.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    81
+   ],
+   "note": "L3 row 81 flip_potential -0.0749 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.3.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    3340
+   ],
+   "note": "L3 row 3340 flip_potential -0.0578 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.3.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    1646
+   ],
+   "note": "L3 row 1646 flip_potential -0.0508 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.7.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    322
+   ],
+   "note": "L7 row 322 flip_potential -0.0673 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.7.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    4
+   ],
+   "note": "L7 row 4 flip_potential -0.0636 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.7.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    868
+   ],
+   "note": "L7 row 868 flip_potential -0.0615 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.7.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    186
+   ],
+   "note": "L7 row 186 flip_potential -0.0597 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.11.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    1607
+   ],
+   "note": "L11 row 1607 flip_potential -0.0797 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.11.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    1618
+   ],
+   "note": "L11 row 1618 flip_potential -0.0736 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.11.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    209
+   ],
+   "note": "L11 row 209 flip_potential -0.0684 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.11.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    837
+   ],
+   "note": "L11 row 837 flip_potential -0.0675 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.15.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    112
+   ],
+   "note": "L15 row 112 flip_potential -0.4484 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.15.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    72
+   ],
+   "note": "L15 row 72 flip_potential -0.1955 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.15.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    506
+   ],
+   "note": "L15 row 506 flip_potential -0.1834 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.15.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    206
+   ],
+   "note": "L15 row 206 flip_potential -0.1742 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.19.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    0
+   ],
+   "note": "L19 row 0 flip_potential -0.8006 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.19.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    11
+   ],
+   "note": "L19 row 11 flip_potential -0.415 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.19.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    499
+   ],
+   "note": "L19 row 499 flip_potential -0.3435 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.19.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    18
+   ],
+   "note": "L19 row 18 flip_potential -0.3129 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    214
+   ],
+   "note": "L23 row 214 flip_potential -10.3041 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    285
+   ],
+   "note": "L23 row 285 flip_potential -4.3654 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    9
+   ],
+   "note": "L23 row 9 flip_potential -3.3495 (наиболее вредная строка слоя)"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    12
+   ],
+   "note": "L23 row 12 flip_potential -1.3052 (наиболее вредная строка слоя)"
+  }
+ ]
+}

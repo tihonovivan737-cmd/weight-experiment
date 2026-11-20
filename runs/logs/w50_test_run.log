@@ -1,0 +1,91 @@
+[2026-11-17 15:04:54] проверка опор до прогона
+[2026-11-17 15:04:57] исходная модель: 04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696
+[2026-11-17 15:04:59] w8: 296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55
+[2026-11-17 15:05:00] w50 (совпадает с manifest): 544d4eea6ab1d1532e28c134366f29720f084c94281b7b04d0c2a4c219881e70
+[2026-11-17 15:05:00] свободное место: 571628 КБ, нужно 150000 КБ (только запись результатов)
+[2026-11-17 15:05:00] доступно оперативной памяти: 10950 МБ
+[2026-11-17 15:05:00] свободно памяти видеокарты на видеокарте №1: 6943 МиБ
+[2026-11-17 15:05:00] ПРОГОН официального набора из 1319 задач для w50
+[2026-11-17 16:46:41] код eval: 0
+[2026-11-17 16:46:41] строк результатов: 1319
+[2026-11-17 16:46:41] сравнение с исходной моделью
+Сравнение: orig -> w50_finalrow_rotation15_smallmargin (общих задач: 1319)
+  orig                   acc=680/1319 (51.55%) извлечено=1141 обрывов=115 токенов=415.1 сек/задача=4.99
+  w50_finalrow_rotation15_smallmargin acc=709/1319 (53.75%) извлечено=1243 обрывов=66 токенов=360.3 сек/задача=4.62
+  Дельта: +29 задач (+2.20 п.п.)
+  Исправлено: 167  Сломано: 138  Верно в обоих: 542  Неверно в обоих: 472
+  Точный тест Макнемара: p = 0.1087 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 1317/1319
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 6: exp=260.0 pred_был=None pred_стал=260.0 trunc_стал=False err_стал=None tok=264->245 | Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Se
+    idx 14: exp=60.0 pred_был=165.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=514->334 | In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining 
+    idx 31: exp=80.0 pred_был=-37.0 pred_стал=80.0 trunc_стал=False err_стал=None tok=380->328 | Gunter is trying to count the jelly beans in a jar. He asks his friends how many they thin
+    idx 35: exp=9.0 pred_был=None pred_стал=9.0 trunc_стал=False err_стал=None tok=272->241 | Mike plays ping pong for 40 minutes.  In the first 20 minutes, he scores 4 points.  In the
+    idx 36: exp=75.0 pred_был=150.0 pred_стал=75.0 trunc_стал=False err_стал=None tok=255->238 | Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much 
+    idx 45: exp=104.0 pred_был=20.0 pred_стал=104.0 trunc_стал=False err_стал=None tok=445->425 | Meredith is a freelance blogger who writes about health topics and submits to clients each
+    idx 52: exp=15.0 pred_был=45.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=589->331 | Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His c
+    idx 57: exp=83.0 pred_был=333.0 pred_стал=83.0 trunc_стал=False err_стал=None tok=561->520 | A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical
+    idx 66: exp=48.0 pred_был=None pred_стал=48.0 trunc_стал=False err_стал=None tok=1024->378 | There are four schools competing at a basketball tournament. Each school has sent a girls’
+    idx 73: exp=255.0 pred_был=None pred_стал=255.0 trunc_стал=False err_стал=None tok=369->305 | Shiela bought five cell phones for $150 each for a 3-month installment. A 2% interest will
+    idx 84: exp=15.0 pred_был=None pred_стал=15.0 trunc_стал=False err_стал=None tok=379->275 | A football team played 22 games. They won 8 more than they lost. How many did they win?
+    idx 90: exp=225.0 pred_был=202.5 pred_стал=225.0 trunc_стал=False err_стал=None tok=407->313 | Ted the T-Rex was planning to bring potato salad to the dinosaur picnic.  He knows that an
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 1: exp=3.0 pred_был=3.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=221->1024 | A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in tota
+    idx 3: exp=540.0 pred_был=540.0 pred_стал=180.0 trunc_стал=False err_стал=None tok=269->184 | James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many t
+    idx 24: exp=26.0 pred_был=26.0 pred_стал=78.0 trunc_стал=False err_стал=None tok=291->302 | Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the
+    idx 28: exp=25.0 pred_был=25.0 pred_стал=20.0 trunc_стал=False err_стал=None tok=608->252 | Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His se
+    idx 65: exp=36.0 pred_был=36.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=282->297 | Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long.  
+    idx 103: exp=140.0 pred_был=140.0 pred_стал=150.0 trunc_стал=False err_стал=None tok=330->348 | A fog bank rolls in from the ocean to cover a city. It takes 10 minutes to cover every 3 m
+    idx 112: exp=24.0 pred_был=24.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=269->396 | A classroom has a whiteboard which is shared between the 4 teachers who take turns using t
+    idx 117: exp=360.0 pred_был=360.0 pred_стал=120.0 trunc_стал=False err_стал=None tok=264->158 | John buys 2 pairs of shoes for each of his 3 children.  They cost $60 each.  How much did 
+    idx 130: exp=30.0 pred_был=30.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=255->217 | Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A t
+    idx 136: exp=6.0 pred_был=6.0 pred_стал=18.0 trunc_стал=False err_стал=None tok=298->332 | There are 27 unicorns left in the world.  One third of them are in the Scottish Highlands.
+    idx 161: exp=32.0 pred_был=32.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=546->531 | Anakin and Locsin went to the beach today. Anakin caught 10 starfish, 6 sea horses, and 3 
+    idx 162: exp=92.0 pred_был=92.0 pred_стал=23.6 trunc_стал=False err_стал=None tok=326->348 | If a bag of marbles costs $20 and the price increases by 20% of the original price every t
+
+Отчёт: runs/analysis/w50_test_vs_orig.txt
+[2026-11-17 16:46:41] сравнение с w8
+Сравнение: w8 -> w50_finalrow_rotation15_smallmargin (общих задач: 1319)
+  w8                     acc=724/1319 (54.89%) извлечено=1239 обрывов=76 токенов=364.6 сек/задача=4.93
+  w50_finalrow_rotation15_smallmargin acc=709/1319 (53.75%) извлечено=1243 обрывов=66 токенов=360.3 сек/задача=4.62
+  Дельта: -15 задач (-1.14 п.п.)
+  Исправлено: 61  Сломано: 76  Верно в обоих: 648  Неверно в обоих: 534
+  Точный тест Макнемара: p = 0.2315 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 917/1319
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 14: exp=60.0 pred_был=75.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=412->334 | In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining 
+    idx 17: exp=57500.0 pred_был=59800.0 pred_стал=57500.0 trunc_стал=False err_стал=None tok=260->268 | Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 w
+    idx 45: exp=104.0 pred_был=44.0 pred_стал=104.0 trunc_стал=False err_стал=None tok=311->425 | Meredith is a freelance blogger who writes about health topics and submits to clients each
+    idx 53: exp=40.0 pred_был=440.0 pred_стал=40.0 trunc_стал=False err_стал=None tok=331->320 | A mechanic charges different rates to repair the tires of trucks and cars.  For each truck
+    idx 68: exp=36.0 pred_был=24.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=211->302 | There are twice as many boys as girls at Dr. Wertz's school. If there are 60 girls and 5 s
+    idx 94: exp=348.0 pred_был=168.0 pred_стал=348.0 trunc_стал=False err_стал=None tok=340->402 | In a neighborhood, the number of rabbits pets is twelve less than the combined number of p
+    idx 95: exp=40.0 pred_был=53.0 pred_стал=40.0 trunc_стал=False err_стал=None tok=712->370 | Out of the 200 Grade 5 students, 2/5 are boys and 2/3 of the girls are in the girl scout. 
+    idx 97: exp=12.0 pred_был=3.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=250->282 | When Freda cooks canned tomatoes into sauce, they lose half their volume. Each 16 ounce ca
+    idx 116: exp=42.0 pred_был=65.0 pred_стал=42.0 trunc_стал=False err_стал=None tok=939->674 | Katy makes coffee using teaspoons of sugar and cups of water in the ratio of 7:13. If she 
+    idx 127: exp=120.0 pred_был=80.0 pred_стал=120.0 trunc_стал=False err_стал=None tok=281->245 | After transferring to a new school, Amy made 20 more friends than Lily. If Lily made 50 fr
+    idx 203: exp=31.0 pred_был=79.0 pred_стал=31.0 trunc_стал=False err_стал=None tok=430->405 | Carl’s favorite food is cheese. He ate a sandwich every day this week for lunch and used 2
+    idx 253: exp=18.0 pred_был=21.0 pred_стал=18.0 trunc_стал=False err_стал=None tok=287->676 | Bill starts on the 3rd floor. He rides the elevator up to the floor that's equal to 4 time
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 1: exp=3.0 pred_был=3.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=222->1024 | A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in tota
+    idx 44: exp=20.0 pred_был=20.0 pred_стал=30.0 trunc_стал=False err_стал=None tok=357->284 | Charlie wants to sell beeswax candles.  For every pound of beeswax, he can make 10 tapered
+    idx 85: exp=44.0 pred_был=44.0 pred_стал=1936.0 trunc_стал=False err_стал=None tok=220->344 | Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation h
+    idx 103: exp=140.0 pred_был=140.0 pred_стал=150.0 trunc_стал=False err_стал=None tok=303->348 | A fog bank rolls in from the ocean to cover a city. It takes 10 minutes to cover every 3 m
+    idx 139: exp=70.0 pred_был=70.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=913->1024 | In a candy machine, there are 22 more than four times the number of pink gumballs as there
+    idx 159: exp=15.0 pred_был=15.0 pred_стал=4.0 trunc_стал=False err_стал=None tok=1024->296 | Finn watches 11 tadpoles swimming in the pond.  Suddenly he sees 6 of them come out of hid
+    idx 169: exp=120.0 pred_был=120.0 pred_стал=190.0 trunc_стал=False err_стал=None tok=280->261 | Pancho walks 20 miles a day. Except on weekends when he walks 10 miles. How many miles doe
+    idx 183: exp=2.0 pred_был=2.0 pred_стал=38.0 trunc_стал=False err_стал=None tok=522->480 | Two track teams are competing against each other in a 4 by 400 meter relay; a race where e
+    idx 204: exp=98.0 pred_был=98.0 pred_стал=130.0 trunc_стал=False err_стал=None tok=324->340 | Janet had 22 green pens and 10 yellow pens. Then she bought 6 bags of blue pens and 2 bags
+    idx 221: exp=90.0 pred_был=90.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=275->277 | A water tank is filled with 120 liters of water. Celine used 90 liters of water from the t
+    idx 227: exp=9.0 pred_был=9.0 pred_стал=14.0 trunc_стал=False err_стал=None tok=386->451 | Chad ordered a build-your-own burrito for lunch.  The base burrito is $6.50.  He adds extr
+    idx 240: exp=21.0 pred_был=21.0 pred_стал=6.0 trunc_стал=False err_стал=None tok=274->328 | James has 6 more candies than Robert. John has twice as many candies as Robert. If John ha
+
+Отчёт: runs/analysis/w50_test_vs_w8.txt
+[2026-11-17 16:46:41] контроль после прогона
+[2026-11-17 16:46:42] исходная модель после: 04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696
+[2026-11-17 16:46:43] w8 после: 296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55
+[2026-11-17 16:46:46] w50 после: 544d4eea6ab1d1532e28c134366f29720f084c94281b7b04d0c2a4c219881e70
+[2026-11-17 16:46:46] ПРОГОН ЗАВЕРШЁН — см. журнал §75

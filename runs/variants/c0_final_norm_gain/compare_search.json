@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_search/results.jsonl",
+ "variant": "runs/variants/c0_final_norm_gain/search/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "c0_final_norm_gain",
+ "n_common": 250,
+ "base_stats": {
+  "n": 250,
+  "correct": 143,
+  "accuracy": 0.572,
+  "extracted": 220,
+  "truncated": 17,
+  "mean_out_tokens": 398.0,
+  "mean_seconds": 4.8
+ },
+ "variant_stats": {
+  "n": 250,
+  "correct": 138,
+  "accuracy": 0.552,
+  "extracted": 221,
+  "truncated": 15,
+  "mean_out_tokens": 387.8,
+  "mean_seconds": 5.34
+ },
+ "delta_correct": -5,
+ "fixed": [
+  193,
+  1580,
+  1929,
+  2723,
+  2878,
+  3805,
+  4519,
+  4945,
+  7198
+ ],
+ "broken": [
+  893,
+  947,
+  2136,
+  2926,
+  3086,
+  3252,
+  3256,
+  3854,
+  3950,
+  4520,
+  4902,
+  5138,
+  5663,
+  7134
+ ],
+ "same_correct": 129,
+ "same_wrong": 98,
+ "answers_differ": 128,
+ "mcnemar_p": 0.4048728942871094
+}

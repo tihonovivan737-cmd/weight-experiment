@@ -1,0 +1,52 @@
+{
+ "base": "runs/variants/w55_gold16_l23_amp130/dev/results.jsonl",
+ "variant": "runs/variants/w56_gold16_l23_amp070/dev/results.jsonl",
+ "base_name": "w55 lam 1.30",
+ "variant_name": "w56 lam 0.70",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 58,
+  "accuracy": 0.58,
+  "extracted": 86,
+  "truncated": 12,
+  "mean_out_tokens": 316.2,
+  "mean_seconds": 3.97
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 62,
+  "accuracy": 0.62,
+  "extracted": 90,
+  "truncated": 10,
+  "mean_out_tokens": 309.4,
+  "mean_seconds": 4.03
+ },
+ "delta_correct": 4,
+ "fixed": [
+  157,
+  348,
+  2328,
+  3482,
+  4330,
+  4843,
+  6097,
+  6163,
+  6228,
+  6927,
+  7325
+ ],
+ "broken": [
+  640,
+  720,
+  1739,
+  2069,
+  3624,
+  6604,
+  6909
+ ],
+ "same_correct": 51,
+ "same_wrong": 31,
+ "answers_differ": 97,
+ "mcnemar_p": 0.480682373046875
+}

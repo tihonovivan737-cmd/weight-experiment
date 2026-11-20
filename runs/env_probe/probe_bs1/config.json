@@ -1,0 +1,43 @@
+{
+  "model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+  "model_info": {
+    "model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+    "config_sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+    "weights": {
+      "model.safetensors-00001-of-00001.safetensors": {
+        "sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+        "bytes": 1746942600
+      }
+    }
+  },
+  "dataset_dir": "/home/mpiscil/weight-experiment/datasets/gsm8k/main",
+  "split": "smoke",
+  "n_indices": 4,
+  "indices_sha256": "0ff5eefc9605a81053e49b97bae8fce3fcad214e6ea897bb4cad757b439f747e",
+  "device": "cpu",
+  "dtype": "bfloat16",
+  "batch_size": 1,
+  "max_new_tokens": 512,
+  "do_sample": false,
+  "num_threads": 32,
+  "prompt_suffix": "\n\nSolve the problem step by step. Finish with a final line exactly in this format: FINAL: <number>",
+  "note": "probe bs=1",
+  "env": {
+    "python": "3.13.9",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "torch": "2.15.0+cu132",
+    "torch_cuda_build": "13.2",
+    "transformers": "5.22.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0",
+    "omp_num_threads": 32,
+    "cpu_count": 32,
+    "torch_cuda_available": true,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ]
+  }
+}

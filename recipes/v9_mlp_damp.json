@@ -1,0 +1,14 @@
+{
+ "name": "v9_mlp_damp",
+ "hypothesis": "H4b (противоположное). down_proj *= 0.87: более слабый вклад MLP, residual stream дольше сохраняет входные числа. Гипотеза: уменьшает «галлюцинации вычислений», когда MLP перезаписывает корректное число неверным.",
+ "expected_effect": "Более инерционное, менее «перечёркивающее» поведение.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.mlp.down_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 0.87
+  }
+ ]
+}

@@ -1,0 +1,727 @@
+{
+ "name": "v2_Alog_decay_double",
+ "hypothesis": "H1b (противоположное направление H1a). exp(A_log) *= 2 -> состояние обновляется агрессивнее, модель сильнее опирается на недавние токены. Если модель 'перегружена' старыми токенами и путает числа из начала и конца условия задачи, это может помочь.",
+ "expected_effect": "Рост влияния недавнего контекста; риск потери ранних условий.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/v2_Alog_decay_double/model",
+ "new_safetensors_sha256": "20cbc5a5d1bbb3fc71c68a811b4f3835a9284e47761dd7298e5167db4456114d",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.linear_attn.A_log"
+   ],
+   "op": "logscale",
+   "lam": 2.0,
+   "note": "exp(A_log) *= 2"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.0.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    59848,
+    59912
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "ad78e0805c16a73f70c722e837d1d342df3d9714bea32d353d976e155dd73494",
+   "sha256_after": "94c80f4745b93e62e268b9a9b9f8f6604ee435c7c4df955a7311fd2ff11e49b4",
+   "tensor_sha256_full_after": "94c80f4745b93e62e268b9a9b9f8f6604ee435c7c4df955a7311fd2ff11e49b4",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.1.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    60424,
+    60488
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "6b98f67f72af6b686d48e04ae972dc7196de67a56acb1656adedf85ad6a9a445",
+   "sha256_after": "d481ef290f22b8a6cb539041efa0352cc3e11907ac5419c8c0e476a1582c7638",
+   "tensor_sha256_full_after": "d481ef290f22b8a6cb539041efa0352cc3e11907ac5419c8c0e476a1582c7638",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.10.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    61000,
+    61064
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "9a3d672593b3f5754a75efb8c9b477e09ffe485e068ce126193dfde35c28f8f7",
+   "sha256_after": "b367e6ae2ed70780b2e93becba2b6e0f8d005b41dfabee1f20a90a7890a8f299",
+   "tensor_sha256_full_after": "b367e6ae2ed70780b2e93becba2b6e0f8d005b41dfabee1f20a90a7890a8f299",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.12.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    61576,
+    61640
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "9d4defc1eb81850001cd0c92c99caa7155e39c763a50a84d71b80d634a6da021",
+   "sha256_after": "32a1cc871a30f1b368432150792baf193f7a8dfbba6bb72920d77b9828e33a01",
+   "tensor_sha256_full_after": "32a1cc871a30f1b368432150792baf193f7a8dfbba6bb72920d77b9828e33a01",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.13.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    62152,
+    62216
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "13f858129e2070b8205419299d39591a2148f2d573f6664ea8e9b19086b26b13",
+   "sha256_after": "3b69af7edf04d2c7d1fdb7fbbdc3956292b91ffc66926198cb9842d78d179259",
+   "tensor_sha256_full_after": "3b69af7edf04d2c7d1fdb7fbbdc3956292b91ffc66926198cb9842d78d179259",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.14.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    62728,
+    62792
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "f7e51e8a5df7606167533f0fa946478a8920499de060b56b85d9f0bf7f4bcc20",
+   "sha256_after": "1acafe872bbb6a3f37d9a6973ad243caaba056868367ca1bf7b26ef925d1aa4b",
+   "tensor_sha256_full_after": "1acafe872bbb6a3f37d9a6973ad243caaba056868367ca1bf7b26ef925d1aa4b",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.16.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    63304,
+    63368
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "ef6347f3b8c4383000fad94f82754c9d0389744bf28e2262c8c17a2d7b1b7edb",
+   "sha256_after": "340ce48733cddaa2c4dcef23f1495b9f65128e2d0952f9f43a4948d9f24db18f",
+   "tensor_sha256_full_after": "340ce48733cddaa2c4dcef23f1495b9f65128e2d0952f9f43a4948d9f24db18f",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.17.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    63880,
+    63944
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "b63f4fd41f33846b5f16079772a649a6b7c3b8f16540f5b7478c4b1ea38281fb",
+   "sha256_after": "264005fb1e5384ffaab31ea76caca87676e1aa8f321ecd01c15777599fa6f33e",
+   "tensor_sha256_full_after": "264005fb1e5384ffaab31ea76caca87676e1aa8f321ecd01c15777599fa6f33e",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.18.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    64456,
+    64520
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "1c0e0c201309df081cbfe9a37018164714a96bc7cdf09473ed0fcfd1f515a555",
+   "sha256_after": "f72fbc5876fd119926f771707831a7b373220f12259e2c8e81ae814e914685ae",
+   "tensor_sha256_full_after": "f72fbc5876fd119926f771707831a7b373220f12259e2c8e81ae814e914685ae",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.2.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    65032,
+    65096
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "a99ca626fc00b801b40180b3bec9f94375aa0cd7adc6f5945ea6bd62b4457735",
+   "sha256_after": "8434c2426489ed8c65569f014e2e02574b8227e3ca67bf6c2b7f28296ca1cb65",
+   "tensor_sha256_full_after": "8434c2426489ed8c65569f014e2e02574b8227e3ca67bf6c2b7f28296ca1cb65",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.20.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    65608,
+    65672
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "363f6671046f1606cb2c34d2d8cfb0a33f5f74608545c41294064d2af227d898",
+   "sha256_after": "7ca8e8a815bfb5cce1750cf606bf8dd721cd479f47078217580fb012e997f1b3",
+   "tensor_sha256_full_after": "7ca8e8a815bfb5cce1750cf606bf8dd721cd479f47078217580fb012e997f1b3",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.21.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    66184,
+    66248
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "bfa39c8f7e8186c359a2d4ddd6acc2f39f903ea4d8ab0067f7496ea904e9513a",
+   "sha256_after": "e91cf7eb11b51cbc3dc2d76ad00bdcf68b8fc82080fc49d306d61f2d055d432a",
+   "tensor_sha256_full_after": "e91cf7eb11b51cbc3dc2d76ad00bdcf68b8fc82080fc49d306d61f2d055d432a",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.22.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    66760,
+    66824
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "2dec02d96b4a2c31333cffa07c93daadbda2d24fc441dd370c2d199fcf01985e",
+   "sha256_after": "63d7601c079fc8dfab95efc2fa2fcfdfaa230fe74316f51c90e039934fea23a1",
+   "tensor_sha256_full_after": "63d7601c079fc8dfab95efc2fa2fcfdfaa230fe74316f51c90e039934fea23a1",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.4.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    67336,
+    67400
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "280e3591b7b6b7fe0692fbbf60d636f2265384fe84952ddc1cc4c3d8985223b9",
+   "sha256_after": "339544dbcfac2007e5a981c70db604adb5f326c7f3cf3309742b5c8bb110861b",
+   "tensor_sha256_full_after": "339544dbcfac2007e5a981c70db604adb5f326c7f3cf3309742b5c8bb110861b",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.5.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    67912,
+    67976
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "11652a04f265548e03cb0b510d3dddc7fe31ceb45f8b6634684d7b87e377b9a4",
+   "sha256_after": "b1b16c4653c6fc1a75545d32470e33003a69143227bf78ea775f3fa1e6cb0303",
+   "tensor_sha256_full_after": "b1b16c4653c6fc1a75545d32470e33003a69143227bf78ea775f3fa1e6cb0303",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.6.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    68488,
+    68552
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "e09b1aab34e374be90dc3f843caf1106b65b3f17353c36aa2535f9defd7d4441",
+   "sha256_after": "ea93ce90d54f85c4ea18d7a2150ebcd21e33a350b1bec6bccf91673065ad63d5",
+   "tensor_sha256_full_after": "ea93ce90d54f85c4ea18d7a2150ebcd21e33a350b1bec6bccf91673065ad63d5",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.8.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    69064,
+    69128
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "13876faa9c6085de480e5f45506475ca258ac9d1fa6b3fff04f1d2ecf22b3f66",
+   "sha256_after": "0fcbd6330a960314c02e23c77a60a7a97c8af76d5a42ca93b09e8214b6679bb1",
+   "tensor_sha256_full_after": "0fcbd6330a960314c02e23c77a60a7a97c8af76d5a42ca93b09e8214b6679bb1",
+   "note": "exp(A_log) *= 2"
+  },
+  {
+   "op_index": 0,
+   "op": "logscale",
+   "params": {
+    "op": "logscale",
+    "lam": 2.0,
+    "note": "exp(A_log) *= 2"
+   },
+   "tensor": "model.language_model.layers.9.linear_attn.A_log",
+   "shape": [
+    16
+   ],
+   "dtype": "F32",
+   "byte_offsets": [
+    69640,
+    69704
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 0.69314718,
+   "max_abs_delta": 0.69314718,
+   "sha256_before": "25567d3d581e54f94e55bc4a93b889559d9c57ace05d777af1e5fd45acf94295",
+   "sha256_after": "b0b685c2b5bc0e8b86f224c76a93dfdc9728fe6337cd7f7ed1a314953952c89c",
+   "tensor_sha256_full_after": "b0b685c2b5bc0e8b86f224c76a93dfdc9728fe6337cd7f7ed1a314953952c89c",
+   "note": "exp(A_log) *= 2"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 18,
+  "touched_tensor_ops": 18,
+  "values_actually_changed": 288,
+  "numel_touched": 288,
+  "mean_abs_delta": 0.69314718,
+  "max_abs_delta": 0.69314718
+ },
+ "inverse_ops": [
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.0.linear_attn.A_log",
+   "byte_offsets": [
+    59848,
+    59912
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.1.linear_attn.A_log",
+   "byte_offsets": [
+    60424,
+    60488
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.10.linear_attn.A_log",
+   "byte_offsets": [
+    61000,
+    61064
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.12.linear_attn.A_log",
+   "byte_offsets": [
+    61576,
+    61640
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.13.linear_attn.A_log",
+   "byte_offsets": [
+    62152,
+    62216
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.14.linear_attn.A_log",
+   "byte_offsets": [
+    62728,
+    62792
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.16.linear_attn.A_log",
+   "byte_offsets": [
+    63304,
+    63368
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.17.linear_attn.A_log",
+   "byte_offsets": [
+    63880,
+    63944
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.18.linear_attn.A_log",
+   "byte_offsets": [
+    64456,
+    64520
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.2.linear_attn.A_log",
+   "byte_offsets": [
+    65032,
+    65096
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.20.linear_attn.A_log",
+   "byte_offsets": [
+    65608,
+    65672
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.21.linear_attn.A_log",
+   "byte_offsets": [
+    66184,
+    66248
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.22.linear_attn.A_log",
+   "byte_offsets": [
+    66760,
+    66824
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.4.linear_attn.A_log",
+   "byte_offsets": [
+    67336,
+    67400
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.5.linear_attn.A_log",
+   "byte_offsets": [
+    67912,
+    67976
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.6.linear_attn.A_log",
+   "byte_offsets": [
+    68488,
+    68552
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.8.linear_attn.A_log",
+   "byte_offsets": [
+    69064,
+    69128
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "logscale",
+   "lam": 0.5,
+   "tensor": "model.language_model.layers.9.linear_attn.A_log",
+   "byte_offsets": [
+    69640,
+    69704
+   ],
+   "shape": [
+    16
+   ]
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/v2_Alog_decay_double/manifest.json",
+  "размер_оригинала_байт": 28259,
+  "sha256_оригинала": "50c9c1643a64429c3b5cfc8fdcdffa941881a1f563f509bd96c9358d75dddae5",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 36",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

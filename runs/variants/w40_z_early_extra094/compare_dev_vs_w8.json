@@ -1,0 +1,56 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w40_z_early_extra094/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w40_z_early_extra094",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 56,
+  "accuracy": 0.56,
+  "extracted": 95,
+  "truncated": 5,
+  "mean_out_tokens": 318.0,
+  "mean_seconds": 4.47
+ },
+ "delta_correct": -8,
+ "fixed": [
+  157,
+  1480,
+  1962,
+  3482,
+  3939,
+  4150,
+  6927
+ ],
+ "broken": [
+  354,
+  720,
+  951,
+  1185,
+  1693,
+  1739,
+  3459,
+  3624,
+  4138,
+  4531,
+  4628,
+  4843,
+  6097,
+  6228,
+  6295
+ ],
+ "same_correct": 49,
+ "same_wrong": 29,
+ "answers_differ": 100,
+ "mcnemar_p": 0.13380050659179688
+}

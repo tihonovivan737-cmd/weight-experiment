@@ -1,0 +1,13 @@
+Задач в срезе: 400; уже сделано: 0; осталось: 400
+Загружаю модель (bfloat16) на cuda:0 ...
+Traceback (most recent call last):
+  File "/home/mpiscil/weight-experiment/scripts/eval_gsm8k.py", line 513, in <module>
+    main()
+    ~~~~^^
+  File "/home/mpiscil/weight-experiment/scripts/eval_gsm8k.py", line 393, in main
+    processor = AutoProcessor.from_pretrained(model_dir, local_files_only=True)
+  File "/home/mpiscil/weight-experiment/.venv/lib/python3.13/site-packages/transformers/models/auto/processing_auto.py", line 367, in from_pretrained
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Unrecognized processing class in runs/variants/w8_z_gate_mild_format. Can't instantiate a processor, a tokenizer, an image processor, a video processor or a feature extractor for this model. Make sure the repository contains the files of at least one of those processing classes.

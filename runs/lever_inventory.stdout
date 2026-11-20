@@ -1,0 +1,35 @@
+=== покрытие по типам тензоров (рецепты, ключ ops) ===
+layers.*.linear_attn.A_log                                   2 рецепта: v1_Alog_decay_half, v2_Alog_decay_double
+layers.*.linear_attn.dt_bias                                 3 рецепта: v3_dt_bias_shift_down, w10_dt_bias_up_mild, w6_dt_bias_up
+layers.*.linear_attn.in_proj_b.weight                        3 рецепта: v4_beta_amplify, v5_beta_soften, w27_beta_sharpen_late130
+layers.*.linear_attn.in_proj_z.weight                       14 рецепта: w12_z_gate_strong, w14_z93_final13, w17_z93_only, w25_z_headsel_damp088, w29_z_total087, w31_z_dominant_restore106, w34_restore_plus_qknorm104, w36_z_late_extra094, w37_z_early_release1075, w38_z_corner_early10008_late08742, w39_z_late_release1075, w40_z_early_extra094, w5_z_gate_damp, w8_z_gate_mild_format
+layers.*.linear_attn.norm.weight                             1 рецепта: w26_norm_amp093
+layers.*.linear_attn.out_proj.weight                         2 рецепта: v10_attn_branch_amp, w4_branch_damp
+layers.*.mlp.down_proj.weight                                3 рецепта: v8_mlp_amp, v9_mlp_damp, w9_mlp_damp_gentle
+layers.*.post_attention_layernorm.weight                     1 рецепта: w44_mlp_branch_late105
+layers.*.self_attn.k_norm.weight                             5 рецепта: v6_attn_sharpen, v7_attn_smooth, w30_qknorm_sharp108, w32_qknorm104_on_w8, w34_restore_plus_qknorm104
+layers.*.self_attn.o_proj.weight                             2 рецепта: v10_attn_branch_amp, w4_branch_damp
+layers.*.self_attn.q_norm.weight                             5 рецепта: v6_attn_sharpen, v7_attn_smooth, w30_qknorm_sharp108, w32_qknorm104_on_w8, w34_restore_plus_qknorm104
+layers.*.self_attn.q_proj.weight                             3 рецепта: w24_fullgate_open085, w28_fullgate_close115, w33_fullgate_open_closed_heads
+model.language_model.embed_tokens.weight                    12 рецепта: w11_final_token_amp_15, w14_z93_final13, w15_final_case_suppress, w16_final_rows12_only, w1_final_token_amp, w2_bold_damp, w3_final_amp_bold_damp, w41_format_embed132, w42_format_embed144, w43_format_embed144_latedose, w7_format_boost_mild, w8_z_gate_mild_format
+model.language_model.layers.10.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.12.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.13.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.14.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.16.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.2.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.20.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.21.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.22.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.4.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.5.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.6.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.layers.8.linear_attn.in_proj_z.weight   1 рецепта: w35_z_dominant_damp078
+model.language_model.norm.weight                             1 рецепта: c0_final_norm_gain
+model.visual.pos_embed.weight                                1 рецепта: c1_visual_noop
+
+=== используемые операции ===
+add              3 рецепта
+logscale         2 рецепта
+scale           39 рецепта
+scale_offset     6 рецепта

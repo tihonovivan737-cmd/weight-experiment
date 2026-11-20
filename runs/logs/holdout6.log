@@ -1,0 +1,161 @@
+[2026-11-19 15:42:04] ОШИБКА: файла runs/GATE_FINAL2 нет — победитель не опубликован, прогон на удержанном наборе запрещён
+[2026-11-19 15:42:17] ОШИБКА: файла runs/GATE_FINAL2 нет — победитель не опубликован, прогон на удержанном наборе запрещён
+[2026-11-19 16:07:48] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 16:07:48] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 16:07:48] ОШИБКА: нет файлов runs/holdout6/orig/results.jsonl — сравнение невозможно
+[2026-11-19 16:08:14] === этап winner начинается
+[2026-11-19 16:08:14] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 16:08:14] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 16:08:15] вариант сверен по хешу: 544d4eea6ab1d1532e28c134366f29720f084c94281b7b04d0c2a4c219881e70
+[2026-11-19 16:08:15] пороги: память 52448 МБ (нужно 10950), карта 1 свободно 24560 МиБ (нужно 6943), рабочий том 71607540 КБ (нужно 1780000)
+[2026-11-19 16:08:15] ПРОГОН удержанного набора: w50_finalrow_rotation15_smallmargin (runs/variants/w50_finalrow_rotation15_smallmargin/model)
+[2026-11-19 16:37:43] w50_finalrow_rotation15_smallmargin готово: строк 400
+[2026-11-19 16:37:44] исходная модель после: 04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696
+[2026-11-19 16:37:45] w8 после: 296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55
+[2026-11-19 16:37:45] проверка w50_finalrow_rotation15_smallmargin завершена; сводку делать режимом compare после трёх прогонов
+[2026-11-19 16:37:45] === этап winner завершён
+[2026-11-19 16:37:45] === этап orig начинается
+[2026-11-19 16:37:45] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 16:37:45] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 16:37:46] пороги: память 52503 МБ (нужно 10950), карта 1 свободно 24560 МиБ (нужно 6943), рабочий том 71603840 КБ (нужно 1780000)
+[2026-11-19 16:37:46] ПРОГОН удержанного набора: orig (models/qwen3.5-0.8b)
+[2026-11-19 17:12:41] orig готово: строк 400
+[2026-11-19 17:12:42] исходная модель после: 04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696
+[2026-11-19 17:12:43] w8 после: 296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55
+[2026-11-19 17:12:43] проверка orig завершена; сводку делать режимом compare после трёх прогонов
+[2026-11-19 17:12:43] === этап orig завершён
+[2026-11-19 17:12:43] === этап w8 начинается
+[2026-11-19 17:12:43] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 17:12:43] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 17:12:44] пороги: память 52518 МБ (нужно 10950), карта 1 свободно 24558 МиБ (нужно 6943), рабочий том 71601316 КБ (нужно 1780000)
+[2026-11-19 17:12:44] ПРОГОН удержанного набора: w8 (runs/variants/w8_z_gate_mild_format)
+[2026-11-19 17:12:46] ОШИБКА: прогон w8 код 1
+[2026-11-19 17:12:46] === ОШИБКА: этап w8 завершился с кодом 0 — дальнейшие этапы не запускаются
+[2026-11-19 17:15:39] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 17:15:39] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 17:15:40] пороги: память 52212 МБ (нужно 10950), карта 1 свободно 24558 МиБ (нужно 6943), рабочий том 71601412 КБ (нужно 1780000)
+[2026-11-19 17:15:40] ПРОГОН удержанного набора: w8 (runs/variants/w8_z_gate_mild_format/model)
+[2026-11-19 17:46:33] w8 готово: строк 400
+[2026-11-19 17:46:34] исходная модель после: 04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696
+[2026-11-19 17:46:35] w8 после: 296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55
+[2026-11-19 17:46:35] проверка w8 завершена; сводку делать режимом compare после трёх прогонов
+[2026-11-19 17:47:07] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 17:47:07] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 17:47:07] orig строк: 400
+[2026-11-19 17:47:07] w8 строк: 400
+[2026-11-19 17:47:07] w50_finalrow_rotation15_smallmargin строк: 400
+Сравнение: исходная модель -> w50_finalrow_rotation15_smallmargin (общих задач: 400)
+  исходная модель        acc=199/400 (49.75%) извлечено=339 обрывов=39 токенов=429.8 сек/задача=5.22
+  w50_finalrow_rotation15_smallmargin acc=211/400 (52.75%) извлечено=369 обрывов=25 токенов=375.0 сек/задача=4.41
+  Дельта: +12 задач (+3.00 п.п.)
+  Исправлено: 52  Сломано: 40  Верно в обоих: 159  Неверно в обоих: 149
+  Точный тест Макнемара: p = 0.2513 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 400/400
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 82: exp=700.0 pred_был=20200.0 pred_стал=700.0 trunc_стал=False err_стал=None tok=238->225 | Irene earns $500 if she works for 40 hours a week and gets an extra $20 for every hour of 
+    idx 499: exp=2934.0 pred_был=None pred_стал=2934.0 trunc_стал=False err_стал=None tok=270->282 | Salvadore earned $1956. Santo earned half of what Salvadore earned. How much money did the
+    idx 772: exp=220.0 pred_был=None pred_стал=220.0 trunc_стал=False err_стал=None tok=256->316 | Kylie picks apples for 3 hours. The first hour she picks 66 apples. The second hour she do
+    idx 813: exp=80.0 pred_был=120.0 pred_стал=80.0 trunc_стал=False err_стал=None tok=432->339 | Tom cannot afford a normal doctor, so he goes to a discount clinic that is 70% cheaper.   
+    idx 1021: exp=30.0 pred_был=-10.0 pred_стал=30.0 trunc_стал=False err_стал=None tok=310->300 | Porche has 3 hours to get all her homework done. Her math homework takes her 45 minutes. H
+    idx 1055: exp=3500000.0 pred_был=4900000.0 pred_стал=3500000.0 trunc_стал=False err_стал=None tok=449->483 | New York is two-thirds as populated as all of New England. If New England has 2100000 peop
+    idx 1365: exp=12.0 pred_был=15.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=423->430 | A portable computer drive has enough kilobytes of storage space to store 2000 photos. Each
+    idx 1532: exp=84.0 pred_был=0.0 pred_стал=84.0 trunc_стал=False err_стал=None tok=387->285 | A fixer uses 30% of the nails in a container to repair the kitchen. He also used 70% of th
+    idx 1803: exp=67.0 pred_был=54.0 pred_стал=67.0 trunc_стал=False err_стал=None tok=458->729 | There are 90 students who have lunch during period 5. Today, two-thirds of the students sa
+    idx 2338: exp=30.0 pred_был=22.5 pred_стал=30.0 trunc_стал=False err_стал=None tok=361->300 | A bottle can hold 2 cups of water. How many cups of water are needed to fill up 10 whole b
+    idx 2428: exp=14.0 pred_был=12.0 pred_стал=14.0 trunc_стал=False err_стал=None tok=288->276 | Wilson decides to go sledding on some nearby hills. On the 2 tall hills, he sleds down the
+    idx 2435: exp=36.0 pred_был=None pred_стал=36.0 trunc_стал=False err_стал=None tok=605->365 | In 5 years, Frank will be three times as old as Ty is now. Ty is currently 4 years more th
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 406: exp=4.0 pred_был=4.0 pred_стал=2.5 trunc_стал=False err_стал=None tok=405->650 | Joseph and his friends watched two movies in his house. The first movie is 1 hour and 30 m
+    idx 554: exp=50.0 pred_был=50.0 pred_стал=0.2 trunc_стал=False err_стал=None tok=525->351 | If 24 out of every 60 individuals like football and out of those that like it, 50% play it
+    idx 847: exp=11.0 pred_был=11.0 pred_стал=1.0 trunc_стал=False err_стал=None tok=260->286 | While cultivating a small farm, a farmer spent $50 on corn seeds, $35 on fertilizers and p
+    idx 888: exp=54.0 pred_был=54.0 pred_стал=75.0 trunc_стал=False err_стал=None tok=375->434 | Teddy has 7 dogs and 8 cats. Ben has 9 more dogs than Teddy, and Dave has 13 more cats and
+    idx 1051: exp=7.0 pred_был=7.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=427->338 | The Reptile House at the zoo has 5 fewer animals than 3 times the number of animals housed
+    idx 1059: exp=375.0 pred_был=375.0 pred_стал=105.0 trunc_стал=False err_стал=None tok=311->372 | Peyton has 3 children and they each get a juice box in their lunch, 5 days a week.  The sc
+    idx 1085: exp=14.0 pred_был=14.0 pred_стал=8.0 trunc_стал=False err_стал=None tok=335->227 | Lily is going abroad on vacation with her family. Each of her 4 siblings is bringing 2 sui
+    idx 1148: exp=10.0 pred_был=10.0 pred_стал=480.0 trunc_стал=False err_стал=None tok=297->507 | There are 480 grains of rice in one cup. If half a cup is 8 tablespoons and one tablespoon
+    idx 1261: exp=3.0 pred_был=3.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=402->310 | Chastity made 12 angel food cakes to give to friends.  She placed the cakes in boxes, and 
+    idx 1417: exp=4.0 pred_был=4.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=309->1024 | The sum of Mario and Maria's ages now is 7. Mario is 1 year older than Maria. How old is M
+    idx 1600: exp=15.0 pred_был=15.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=502->1024 | Mary is counting the number of minnows in the pond. 40% of the minnows have red bellies, 3
+    idx 1630: exp=105.0 pred_был=105.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=469->1024 | A cobbler can mend 3 pairs of shoes in an hour. From Monday to Thursday, the cobbler works
+
+Отчёт: runs/analysis/holdout6_winner_vs_orig.txt
+Сравнение: w8 -> w50_finalrow_rotation15_smallmargin (общих задач: 400)
+  w8                     acc=218/400 (54.50%) извлечено=375 обрывов=22 токенов=370.0 сек/задача=4.62
+  w50_finalrow_rotation15_smallmargin acc=211/400 (52.75%) извлечено=369 обрывов=25 токенов=375.0 сек/задача=4.41
+  Дельта: -7 задач (-1.75 п.п.)
+  Исправлено: 17  Сломано: 24  Верно в обоих: 194  Неверно в обоих: 165
+  Точный тест Макнемара: p = 0.3489 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 262/400
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 1232: exp=2400.0 pred_был=3600.0 pred_стал=2400.0 trunc_стал=False err_стал=None tok=240->232 | Megan works eight hours a day and earns $7.50 per hour.  If she works 20 days a month, how
+    idx 1522: exp=9.0 pred_был=6.0 pred_стал=9.0 trunc_стал=False err_стал=None tok=300->283 | A baker is making bread according to a recipe that requires him to use 3 eggs for every 2 
+    idx 1556: exp=6.0 pred_был=8.0 pred_стал=6.0 trunc_стал=False err_стал=None tok=250->1004 | Alyana has a pizza that is cut into 16 slices. After she and her friends finish eating, th
+    idx 2140: exp=3000.0 pred_был=750.0 pred_стал=3000.0 trunc_стал=False err_стал=None tok=218->234 | James takes 2 Tylenol tablets that are 375 mg each, every 6 hours.  How many mg does he ta
+    idx 2524: exp=22.0 pred_был=36.0 pred_стал=22.0 trunc_стал=False err_стал=None tok=341->351 | While preparing balloons for Eva's birthday party, her mom bought 50 balloons and 1800cm³ 
+    idx 2690: exp=10.0 pred_был=12.0 pred_стал=10.0 trunc_стал=False err_стал=None tok=379->249 | Bonnie and Samuel went to the market together. Bonnie bought 8 apples. Samuel bought 20 mo
+    idx 3442: exp=30.0 pred_был=6.0 pred_стал=30.0 trunc_стал=False err_стал=None tok=343->344 | Gary has 6 pounds of flour. He will use 4 pounds of flour to make cakes which require 0.5 
+    idx 3610: exp=1.0 pred_был=-21.0 pred_стал=1.0 trunc_стал=False err_стал=None tok=351->292 | Four people in a law firm are planning a party. Mary will buy a platter of pasta for $20 a
+    idx 3690: exp=340.0 pred_был=34.0 pred_стал=340.0 trunc_стал=False err_стал=None tok=250->300 | Sandy's monthly phone bill expense is equal to ten times her age now. In two years, Sandy 
+    idx 3743: exp=20.0 pred_был=82.5 pred_стал=20.0 trunc_стал=False err_стал=None tok=388->288 | Calum runs a nightclub and decides to run a disco night to attract different customers. He
+    idx 4256: exp=720.0 pred_был=840.0 pred_стал=720.0 trunc_стал=False err_стал=None tok=191->152 | Tim does 100 tasks a day.  They each pay $1.2.  If he works 6 days a week how much does he
+    idx 4392: exp=20000.0 pred_был=10000.0 pred_стал=20000.0 trunc_стал=False err_стал=None tok=251->317 | A town has ten neighborhoods, each having four roads passing through them. Each of the roa
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 445: exp=3.0 pred_был=3.0 pred_стал=9.0 trunc_стал=False err_стал=None tok=264->302 | Carla bought 2 bags of mini peanut butter cups on clearance.  Each bag was $6.00 but was 7
+    idx 763: exp=6.0 pred_был=6.0 pred_стал=0.0 trunc_стал=False err_стал=None tok=196->272 | Josh has 18 yards of ribbon that is to be used equally to 6 gifts. If each gift will use 2
+    idx 888: exp=54.0 pred_был=54.0 pred_стал=75.0 trunc_стал=False err_стал=None tok=396->434 | Teddy has 7 dogs and 8 cats. Ben has 9 more dogs than Teddy, and Dave has 13 more cats and
+    idx 1051: exp=7.0 pred_был=7.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=365->338 | The Reptile House at the zoo has 5 fewer animals than 3 times the number of animals housed
+    idx 1148: exp=10.0 pred_был=10.0 pred_стал=480.0 trunc_стал=False err_стал=None tok=373->507 | There are 480 grains of rice in one cup. If half a cup is 8 tablespoons and one tablespoon
+    idx 1290: exp=24.0 pred_был=24.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=318->1024 | Andy is mixing blue, green and white paint in a 1 : 2 : 5 ratio. If he uses 6 gallons of g
+    idx 1880: exp=6.0 pred_был=6.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=498->579 | Milo can roll downhill on his skateboard at twice the speed that he can run.  And Milo's b
+    idx 1953: exp=570.0 pred_был=570.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=280->1024 | The Science museum sells dinosaur models for $100 each. A certain school bought 2 models f
+    idx 2528: exp=7.0 pred_был=7.0 pred_стал=-7.0 trunc_стал=False err_стал=None tok=437->306 | A rectangle has a length of 3 inches and a width of 6 inches. A square has a width of 5 in
+    idx 2725: exp=50.0 pred_был=50.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=299->326 | Tenisha had 40 dogs that she kept at home as pets. If 60% of them are female, and 3/4 of t
+    idx 2759: exp=160.0 pred_был=160.0 pred_стал=70.0 trunc_стал=False err_стал=None tok=448->453 | To get to work, Ryan bikes one day a week takes the bus three times a week and gets a ride
+    idx 2927: exp=1000.0 pred_был=1000.0 pred_стал=56000.0 trunc_стал=False err_стал=None tok=266->265 | A shoe company sells $4000 worth of shoes every month. If they want to make $60000 in an e
+
+Отчёт: runs/analysis/holdout6_winner_vs_w8.txt
+Сравнение: исходная модель -> w8 (общих задач: 400)
+  исходная модель        acc=199/400 (49.75%) извлечено=339 обрывов=39 токенов=429.8 сек/задача=5.22
+  w8                     acc=218/400 (54.50%) извлечено=375 обрывов=22 токенов=370.0 сек/задача=4.62
+  Дельта: +19 задач (+4.75 п.п.)
+  Исправлено: 57  Сломано: 38  Верно в обоих: 161  Неверно в обоих: 144
+  Точный тест Макнемара: p = 0.06421 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 400/400
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 82: exp=700.0 pred_был=20200.0 pred_стал=700.0 trunc_стал=False err_стал=None tok=238->225 | Irene earns $500 if she works for 40 hours a week and gets an extra $20 for every hour of 
+    idx 445: exp=3.0 pred_был=None pred_стал=3.0 trunc_стал=False err_стал=None tok=322->264 | Carla bought 2 bags of mini peanut butter cups on clearance.  Each bag was $6.00 but was 7
+    idx 499: exp=2934.0 pred_был=None pred_стал=2934.0 trunc_стал=False err_стал=None tok=270->282 | Salvadore earned $1956. Santo earned half of what Salvadore earned. How much money did the
+    idx 763: exp=6.0 pred_был=0.0 pred_стал=6.0 trunc_стал=False err_стал=None tok=310->196 | Josh has 18 yards of ribbon that is to be used equally to 6 gifts. If each gift will use 2
+    idx 772: exp=220.0 pred_был=None pred_стал=220.0 trunc_стал=False err_стал=None tok=256->316 | Kylie picks apples for 3 hours. The first hour she picks 66 apples. The second hour she do
+    idx 813: exp=80.0 pred_был=120.0 pred_стал=80.0 trunc_стал=False err_стал=None tok=432->339 | Tom cannot afford a normal doctor, so he goes to a discount clinic that is 70% cheaper.   
+    idx 1021: exp=30.0 pred_был=-10.0 pred_стал=30.0 trunc_стал=False err_стал=None tok=310->289 | Porche has 3 hours to get all her homework done. Her math homework takes her 45 minutes. H
+    idx 1055: exp=3500000.0 pred_был=4900000.0 pred_стал=3500000.0 trunc_стал=False err_стал=None tok=449->310 | New York is two-thirds as populated as all of New England. If New England has 2100000 peop
+    idx 1290: exp=24.0 pred_был=None pred_стал=24.0 trunc_стал=False err_стал=None tok=1024->318 | Andy is mixing blue, green and white paint in a 1 : 2 : 5 ratio. If he uses 6 gallons of g
+    idx 1365: exp=12.0 pred_был=15.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=423->428 | A portable computer drive has enough kilobytes of storage space to store 2000 photos. Each
+    idx 1532: exp=84.0 pred_был=0.0 pred_стал=84.0 trunc_стал=False err_стал=None tok=387->285 | A fixer uses 30% of the nails in a container to repair the kitchen. He also used 70% of th
+    idx 1803: exp=67.0 pred_был=54.0 pred_стал=67.0 trunc_стал=False err_стал=None tok=458->611 | There are 90 students who have lunch during period 5. Today, two-thirds of the students sa
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 406: exp=4.0 pred_был=4.0 pred_стал=2.5 trunc_стал=False err_стал=None tok=405->565 | Joseph and his friends watched two movies in his house. The first movie is 1 hour and 30 m
+    idx 554: exp=50.0 pred_был=50.0 pred_стал=2.5 trunc_стал=False err_стал=None tok=525->386 | If 24 out of every 60 individuals like football and out of those that like it, 50% play it
+    idx 847: exp=11.0 pred_был=11.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=260->1024 | While cultivating a small farm, a farmer spent $50 on corn seeds, $35 on fertilizers and p
+    idx 1059: exp=375.0 pred_был=375.0 pred_стал=105.0 trunc_стал=False err_стал=None tok=311->321 | Peyton has 3 children and they each get a juice box in their lunch, 5 days a week.  The sc
+    idx 1085: exp=14.0 pred_был=14.0 pred_стал=8.0 trunc_стал=False err_стал=None tok=335->227 | Lily is going abroad on vacation with her family. Each of her 4 siblings is bringing 2 sui
+    idx 1232: exp=2400.0 pred_был=2400.0 pred_стал=3600.0 trunc_стал=False err_стал=None tok=221->240 | Megan works eight hours a day and earns $7.50 per hour.  If she works 20 days a month, how
+    idx 1261: exp=3.0 pred_был=3.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=402->312 | Chastity made 12 angel food cakes to give to friends.  She placed the cakes in boxes, and 
+    idx 1417: exp=4.0 pred_был=4.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=309->1024 | The sum of Mario and Maria's ages now is 7. Mario is 1 year older than Maria. How old is M
+    idx 1522: exp=9.0 pred_был=9.0 pred_стал=6.0 trunc_стал=False err_стал=None tok=329->300 | A baker is making bread according to a recipe that requires him to use 3 eggs for every 2 
+    idx 1556: exp=6.0 pred_был=6.0 pred_стал=8.0 trunc_стал=False err_стал=None tok=233->250 | Alyana has a pizza that is cut into 16 slices. After she and her friends finish eating, th
+    idx 1600: exp=15.0 pred_был=15.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=502->1024 | Mary is counting the number of minnows in the pond. 40% of the minnows have red bellies, 3
+    idx 1630: exp=105.0 pred_был=105.0 pred_стал=120.0 trunc_стал=False err_стал=None tok=469->877 | A cobbler can mend 3 pairs of shoes in an hour. From Monday to Thursday, the cobbler works
+
+Отчёт: runs/analysis/holdout6_w8_vs_orig.txt
+[2026-11-19 17:47:07] сравнения записаны в runs/analysis/holdout6_*.txt
+[2026-11-19 17:57:32] победитель из runs/GATE_FINAL2: w50_finalrow_rotation15_smallmargin (хеш 544d4eea6ab1d153…)
+[2026-11-19 17:57:32] набор прошёл проверку целостности, индексов: 400
+[2026-11-19 17:57:33] результаты orig уже есть (400 строк) — повторный прогон на удержанном наборе не делается

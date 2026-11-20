@@ -1,0 +1,36 @@
+{
+ "base": "runs/env_probe/smoke1024/results.jsonl",
+ "variant": "runs/variants/c0_final_norm_gain/smoke/results.jsonl",
+ "base_name": "baseline_smoke",
+ "variant_name": "c0_control",
+ "n_common": 24,
+ "base_stats": {
+  "n": 24,
+  "correct": 13,
+  "accuracy": 0.5417,
+  "extracted": 18,
+  "truncated": 3,
+  "mean_out_tokens": 429.2,
+  "mean_seconds": 5.82
+ },
+ "variant_stats": {
+  "n": 24,
+  "correct": 13,
+  "accuracy": 0.5417,
+  "extracted": 20,
+  "truncated": 2,
+  "mean_out_tokens": 426.5,
+  "mean_seconds": 5.96
+ },
+ "delta_correct": 0,
+ "fixed": [
+  7053
+ ],
+ "broken": [
+  7351
+ ],
+ "same_correct": 12,
+ "same_wrong": 10,
+ "answers_differ": 14,
+ "mcnemar_p": 1.0
+}

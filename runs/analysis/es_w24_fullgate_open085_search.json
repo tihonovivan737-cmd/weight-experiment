@@ -1,0 +1,16 @@
+{
+ "results": "runs/variants/w24_fullgate_open085/search/results.jsonl",
+ "label": "w24_fullgate_open085_search",
+ "split": "train",
+ "n": 250,
+ "correct": 145,
+ "final_extracted": 236,
+ "no_final": 14,
+ "truncated": 14,
+ "gold_hidden_in_truncated_text": 6,
+ "wrong_with_final": 91,
+ "wrong_without_final": 14,
+ "near_miss_within_1pct": 4,
+ "mean_len_correct": 926.5,
+ "mean_len_wrong_with_final": 1165.1
+}

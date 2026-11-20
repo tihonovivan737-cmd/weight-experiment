@@ -1,0 +1,253 @@
+{
+ "name": "w7_format_boost_mild",
+ "hypothesis": "H2 (формат, доза ниже измеренной). На test1319 у baseline 63 ответа (4,8 %) были численно верны, но не извлекались: модель писала '**Final Answer:**' (30) и '**Final: ' (28) вместо требуемой строки 'FINAL: <число>'. Успешные строки: 'FINAL' (id 95429) в 920 случаях, 'Final' (id 18770) в 143. Правка: строки эмбеддингов 95429/64697/18770 ×1.2 (мягче измеренного ×1.3 у w1), строки markdown-жирного 332/2972 ×0.85 (мягче измеренного ×0.7 у w2, который дал −2 на dev100). Гипотеза: умеренное усиление нужных токенов + слабое подавление '**' переводит часть из 63 форматных потерь в зачтённые ответы, не ломая рассуждение.",
+ "expected_effect": "Рост извлекаемости (baseline dev100: 90/100) без ухудшения accuracy; проверка дозы.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "runs/variants/w7_format_boost_mild/model",
+ "new_safetensors_sha256": "bb04ec0ec6a1cc872417d9b0197bf369b131ac9b85474f5b372affe2e7ba9192",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.2,
+   "rows": [
+    95429,
+    64697,
+    18770
+   ]
+  },
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 0.85,
+   "rows": [
+    332,
+    2972
+   ]
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00317139,
+   "max_abs_delta": 0.01611328,
+   "sha256_before": "0cc43b44b54acb1223f7ec44309750790f479b0f40261ca11195c3054de5dd79",
+   "sha256_after": "5eb93e2d6e884f97b6a9f32c2dd1dbf9134d0fde6646bc4bec620f70f38bd861",
+   "note": "",
+   "row": 95429,
+   "row_token": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00305405,
+   "max_abs_delta": 0.01367188,
+   "sha256_before": "2b719664a8339a16b5926779a0001d418a292fe6f221b621b149dd0b1790463d",
+   "sha256_after": "bb8ce18211bde19dead92e36d7f334802c0f05a57619e769ebe8916527c906cb",
+   "note": "",
+   "row": 64697,
+   "row_token": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    38511176,
+    38513224
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00311087,
+   "max_abs_delta": 0.01196289,
+   "sha256_before": "8b4dc02f19b165af8a5ff9628ef3ee1e87ba97df20fac1ef9255c5a0a84a4f7e",
+   "sha256_after": "7c38a048579e8fcc58a9007d5077ad79369d042ac9d0dc4dd254fdb2ffe70c81",
+   "note": "",
+   "row": 18770,
+   "row_token": ""
+  },
+  {
+   "op_index": 1,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 0.85
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    750152,
+    752200
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00311414,
+   "max_abs_delta": 0.01123047,
+   "sha256_before": "17cdb1de9b8b54693122b54d4f5622d57f745cffe2c41a2a9d69a50c5c73592d",
+   "sha256_after": "d3151e7056a2c63b695b2767b9489e0b009bf455e1df8ccf8892e927829f7377",
+   "note": "",
+   "row": 332,
+   "row_token": ""
+  },
+  {
+   "op_index": 1,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 0.85
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    6156872,
+    6158920
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00309593,
+   "max_abs_delta": 0.01367188,
+   "sha256_before": "913756293c42dfbccfcf417c4dc3d2b8889151e196d035f6df20f05b19842839",
+   "sha256_after": "298061a748702ca96e0fb808ca83e719f9871a3566332b6ab5a603c40ce02621",
+   "note": "",
+   "row": 2972,
+   "row_token": ""
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 5,
+  "values_actually_changed": 5120,
+  "numel_touched": 5120,
+  "mean_abs_delta": 0.00310928,
+  "max_abs_delta": 0.01611328
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 95429
+  },
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64697
+  },
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    38511176,
+    38513224
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 18770
+  },
+  {
+   "op": "scale",
+   "lam": 1.1764705882352942,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    750152,
+    752200
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 332
+  },
+  {
+   "op": "scale",
+   "lam": 1.1764705882352942,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    6156872,
+    6158920
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 2972
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w7_format_boost_mild/manifest.json",
+  "размер_оригинала_байт": 174662,
+  "sha256_оригинала": "bdf1f2802005d184d50ea6c1e4bf0474d142386857c2dfea8bfba71c0869c5d8",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 10",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

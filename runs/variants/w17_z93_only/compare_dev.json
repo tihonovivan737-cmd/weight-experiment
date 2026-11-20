@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w17_z93_only/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w17_z93_only",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 58,
+  "accuracy": 0.58,
+  "extracted": 90,
+  "truncated": 5,
+  "mean_out_tokens": 340.7,
+  "mean_seconds": 4.93
+ },
+ "delta_correct": -1,
+ "fixed": [
+  29,
+  951,
+  3321,
+  4138,
+  4531,
+  5781,
+  5785,
+  6295,
+  6909,
+  7254,
+  7345
+ ],
+ "broken": [
+  354,
+  1070,
+  1275,
+  1739,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150,
+  7228,
+  7325
+ ],
+ "same_correct": 47,
+ "same_wrong": 30,
+ "answers_differ": 100,
+ "mcnemar_p": 1.0
+}

@@ -1,0 +1,58 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w49_z_late094_qknorm108/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w49_z_late094_qknorm108",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 96,
+  "truncated": 4,
+  "mean_out_tokens": 329.2,
+  "mean_seconds": 4.59
+ },
+ "delta_correct": 2,
+ "fixed": [
+  29,
+  951,
+  1060,
+  1480,
+  2328,
+  3321,
+  3459,
+  3482,
+  3762,
+  4531,
+  5169,
+  6295,
+  7345
+ ],
+ "broken": [
+  56,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150,
+  4828,
+  5072,
+  6812,
+  7228
+ ],
+ "same_correct": 48,
+ "same_wrong": 28,
+ "answers_differ": 100,
+ "mcnemar_p": 0.8388197422027588
+}

@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w81_finalrow_four_small_rows_step15_on_w8/dev/results.jsonl",
+ "base_name": "исходная модель",
+ "variant_name": "w81_finalrow_four_small_rows_step15_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 96,
+  "truncated": 3,
+  "mean_out_tokens": 326.9,
+  "mean_seconds": 3.94
+ },
+ "delta_correct": 5,
+ "fixed": [
+  29,
+  157,
+  951,
+  1060,
+  3321,
+  3459,
+  4138,
+  4531,
+  5785,
+  6097,
+  6295,
+  6909,
+  7254,
+  7345
+ ],
+ "broken": [
+  354,
+  640,
+  1739,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150
+ ],
+ "same_correct": 50,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.4048728942871094
+}

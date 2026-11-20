@@ -1,0 +1,15 @@
+{
+ "name": "v10_attn_branch_amp",
+ "hypothesis": "H5. o_proj (6 full-attention слоёв) и out_proj (18 linear-attention слоёв) — единственные матрицы, через которые внимание попадает в residual stream. Усиление обеих ветвей на 1.15 повышает вклад внимания (механизма переноса чисел по контексту) относительно чистой передачи токена.",
+ "expected_effect": "Больше «копирования» чисел из условия в текущий токен.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.self_attn.o_proj.weight",
+    "model.language_model.layers.*.linear_attn.out_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.15
+  }
+ ]
+}

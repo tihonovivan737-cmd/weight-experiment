@@ -1,0 +1,52 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w41_format_embed132/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w41_format_embed132",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 95,
+  "truncated": 5,
+  "mean_out_tokens": 327.5,
+  "mean_seconds": 4.52
+ },
+ "delta_correct": 2,
+ "fixed": [
+  29,
+  951,
+  3321,
+  3459,
+  4138,
+  4531,
+  5785,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  1739,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150,
+  7228
+ ],
+ "same_correct": 51,
+ "same_wrong": 31,
+ "answers_differ": 100,
+ "mcnemar_p": 0.8145294189453125
+}

@@ -1,0 +1,14 @@
+{
+ "name": "w5_z_gate_damp",
+ "hypothesis": "H7b. В Gated DeltaNet выход головы умножается на silu(z), где z — строка in_proj_z. Понижение in_proj_z в 0,85 раза ослабляет гейт (silu(z) при z>0 уменьшается, при z<0 усиливается отрицательный вклад), т.е. уменьшает вклад linear-attention ветви в средний токен. Гипотеза: меньше «ассоциативного разрастания» текста и меньше обрывов на лимите.",
+ "expected_effect": "Более короткий и более «остойный» вывод.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.linear_attn.in_proj_z.weight"
+   ],
+   "op": "scale",
+   "lam": 0.85
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+Сравнение: baseline -> c0_final_norm_gain (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  c0_final_norm_gain     acc=138/250 (55.20%) извлечено=221 обрывов=15 токенов=387.8 сек/задача=5.34
+  Дельта: -5 задач (-2.00 п.п.)
+  Исправлено: 9  Сломано: 14  Верно в обоих: 129  Неверно в обоих: 98
+  Точный тест Макнемара: p = 0.4049 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 128/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 193: exp=160.0 pred_был=16.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=418->904 | Melody planted sunflowers from two different seed packets. She found that the sunflowers f
+    idx 1580: exp=42.0 pred_был=60.0 pred_стал=42.0 trunc_стал=False err_стал=None tok=393->366 | Wilma has a garden with 3 types of flowers. The garden has 6 rows, with 13 flowers in each
+    idx 1929: exp=320.0 pred_был=None pred_стал=320.0 trunc_стал=False err_стал=None tok=312->331 | Lori owns 15 times as many beanie babies as Sydney. If Lori has 300 beanie babies, how man
+    idx 2723: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->466 | The length of the straight part of a river is three times shorter than the crooked part. I
+    idx 2878: exp=96.0 pred_был=48.0 pred_стал=96.0 trunc_стал=False err_стал=None tok=572->481 | Noah’s bedroom light uses 6 watts per hour. His office light is much brighter so he can se
+    idx 3805: exp=1640.0 pred_был=20.0 pred_стал=1640.0 trunc_стал=False err_стал=None tok=447->351 | Janet works as an exterminator and she also sells molten metal casts of fire ant nests on 
+    idx 4519: exp=64.0 pred_был=19.0 pred_стал=64.0 trunc_стал=False err_стал=None tok=267->379 | Mari made 4 more than five times as many decorated buttons as Kendra. Sue made half as man
+    idx 4945: exp=50.0 pred_был=None pred_стал=50.0 trunc_стал=False err_стал=None tok=1024->611 | 300 cows in a field are made up of male and female cows. There are twice as many females a
+    idx 7198: exp=56.0 pred_был=60.0 pred_стал=56.0 trunc_стал=False err_стал=None tok=350->330 | After Betty gave Stuart 40% of her marble collection, the number of marbles in Stuart's co
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 893: exp=325.0 pred_был=325.0 pred_стал=205.0 trunc_стал=False err_стал=None tok=437->341 | Kylie makes 10 beaded necklaces on Monday and 2 beaded necklaces on Tuesday. Then Kylie ma
+    idx 947: exp=80.0 pred_был=80.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=972->1024 | Johnny has been playing guitar for a while now.  He practices the same amount each day. As
+    idx 2136: exp=75.0 pred_был=75.0 pred_стал=1.0 trunc_стал=False err_стал=None tok=296->334 | Jessica just got her driving permit. She must complete 50 hours of driving with a parent t
+    idx 2926: exp=120.0 pred_был=120.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=481->499 | Apple can run at a rate of 3 miles per hour. Mac can run at a rate of 4 miles per hour. In
+    idx 3086: exp=28000.0 pred_был=28000.0 pred_стал=560.0 trunc_стал=False err_стал=None tok=423->281 | A retail store wants to hire 50 new phone reps to assist with the increased call volume th
+    idx 3252: exp=98.0 pred_был=98.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=367->369 | There are 11 males & 12 females in the orchestra and twice that number in the band. There 
+    idx 3256: exp=2.0 pred_был=2.0 pred_стал=8.0 trunc_стал=False err_стал=None tok=248->244 | Bert made 12 sandwiches for his trip. On the first day, he ate half of the sandwiches he m
+    idx 3854: exp=8.0 pred_был=8.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=166->140 | Sara's sister has 4 small notebooks in her closet. Last summer she ordered 6 more notebook
+    idx 3950: exp=17.0 pred_был=17.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=483->1024 | A rival football team has won twice as many matches as the home team they will be playing 
+    idx 4520: exp=231.0 pred_был=231.0 pred_стал=187.0 trunc_стал=False err_стал=None tok=548->501 | Cheryl has thrice as many colored pencils as Cyrus. Madeline has 63 colored pencils and on
+    idx 4902: exp=17.0 pred_был=17.0 pred_стал=291.0 trunc_стал=False err_стал=None tok=327->506 | Sally took 342 pens to her class of 44 students. If she gave 7 pens to each student, left 
+    idx 5138: exp=60.0 pred_был=60.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=567->230 | A hotel has 10 rooms and is currently full. Each room holds a family of 3. If each person 
+
+Отчёт: runs/variants/c0_final_norm_gain/compare_search.json

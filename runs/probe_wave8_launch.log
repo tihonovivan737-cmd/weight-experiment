@@ -1,0 +1,7 @@
+=== 2026-11-12T04:25:22+07:00 PROBE w36_z_late_extra094 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w36_z_late_extra094 -> runs/analysis/probe6_w36_z_late_extra094.json
+=== 2026-11-12T04:34:02+07:00 PROBE w37_z_early_release1075 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w37_z_early_release1075 -> runs/analysis/probe6_w37_z_early_release1075.json
+=== 2026-11-12T04:42:43+07:00 PROBE w35_z_dominant_damp078 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w35_z_dominant_damp078 -> runs/analysis/probe6_w35_z_dominant_damp078.json
+DONE 2026-11-12T04:51:32+07:00

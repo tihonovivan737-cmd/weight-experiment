@@ -1,0 +1,60 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w75_z_flatten_l202122_on_w8/dev/results.jsonl",
+ "base_name": "orig",
+ "variant_name": "w75_z_flatten_l202122_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 63,
+  "accuracy": 0.63,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 329.8,
+  "mean_seconds": 5.07
+ },
+ "delta_correct": 4,
+ "fixed": [
+  29,
+  157,
+  951,
+  2328,
+  3321,
+  3459,
+  4138,
+  4531,
+  5781,
+  5785,
+  6295,
+  6909,
+  6927,
+  7254,
+  7345
+ ],
+ "broken": [
+  640,
+  781,
+  2177,
+  3104,
+  3142,
+  3766,
+  4150,
+  4728,
+  5072,
+  7228,
+  7325
+ ],
+ "same_correct": 48,
+ "same_wrong": 26,
+ "answers_differ": 100,
+ "mcnemar_p": 0.557197093963623
+}

@@ -1,0 +1,6 @@
+Вариант: w74_finalrow_plus_two_rows198_248046_on_w8
+Модель: /home/mpiscil/weight-experiment/runs/variants/w74_finalrow_plus_two_rows198_248046_on_w8/model
+SHA256 весов: было 296b2cd888606d54… стало 8c2b5a57c7acb794…
+Тензоров изменено: 1; значений изменено: 10,812 (затронуто 12,288)
+Среднее |Δ|: 0.00026685  Макс |Δ|: 0.00146484
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w74_finalrow_plus_two_rows198_248046_on_w8/manifest.json

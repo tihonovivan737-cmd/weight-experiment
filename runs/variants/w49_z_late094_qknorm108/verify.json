@@ -1,0 +1,39 @@
+{
+ "variant": "w49_z_late094_qknorm108",
+ "checks": {
+  "базовый_файл_по_хешу": "OK",
+  "базовый_файл_по_хешу_detail": "04b1c301231dd422",
+  "файл_варианта_по_хешу": "OK",
+  "файл_варианта_по_хешу_detail": "da35c6a822782a8b",
+  "размер_файла": "OK",
+  "размер_файла_detail": 1746942600,
+  "заголовок_safetensors": "OK",
+  "заголовок_safetensors_detail": "59840 байт",
+  "диапазоны_манифеста": "FAIL",
+  "диапазоны_манифеста_detail": "39 диапазонов, 104,867,840 байт",
+  "вне_диапазонов_идентично": "OK",
+  "вне_диапазонов_идентично_detail": "различающихся байт: 0 из 1,671,434,888"
+ },
+ "problems": [
+  "диапазон model.language_model.layers.14.linear_attn.in_proj_z.weight: base 3439f3c617ea (ожидалось 3439f3c617ea), variant 285590707842 (ожидалось a6ea9b796937)",
+  "диапазон model.language_model.layers.16.linear_attn.in_proj_z.weight: base 9b9c714ac98e (ожидалось 9b9c714ac98e), variant b65b31039455 (ожидалось b6749625b7d5)",
+  "диапазон model.language_model.layers.17.linear_attn.in_proj_z.weight: base 246f4df3c2c4 (ожидалось 246f4df3c2c4), variant 7fada79d833d (ожидалось 2e4483a632d7)",
+  "диапазон model.language_model.layers.18.linear_attn.in_proj_z.weight: base 1933b7c60b8e (ожидалось 1933b7c60b8e), variant a22bc9365cde (ожидалось 981e07cba478)",
+  "диапазон model.language_model.layers.20.linear_attn.in_proj_z.weight: base 405fe0e3f54a (ожидалось 405fe0e3f54a), variant b5205f9b730e (ожидалось fdd516442c92)",
+  "диапазон model.language_model.layers.21.linear_attn.in_proj_z.weight: base 358e7fa34c30 (ожидалось 358e7fa34c30), variant 287c4ee40347 (ожидалось 3a3b60d90074)",
+  "диапазон model.language_model.layers.22.linear_attn.in_proj_z.weight: base 061e6773ca97 (ожидалось 061e6773ca97), variant 391a4c6ae525 (ожидалось a4a7833f3a8e)",
+  "диапазон model.language_model.layers.14.linear_attn.in_proj_z.weight: base 3439f3c617ea (ожидалось a6ea9b796937), variant 285590707842 (ожидалось 285590707842)",
+  "диапазон model.language_model.layers.16.linear_attn.in_proj_z.weight: base 9b9c714ac98e (ожидалось b6749625b7d5), variant b65b31039455 (ожидалось b65b31039455)",
+  "диапазон model.language_model.layers.17.linear_attn.in_proj_z.weight: base 246f4df3c2c4 (ожидалось 2e4483a632d7), variant 7fada79d833d (ожидалось 7fada79d833d)",
+  "диапазон model.language_model.layers.18.linear_attn.in_proj_z.weight: base 1933b7c60b8e (ожидалось 981e07cba478), variant a22bc9365cde (ожидалось a22bc9365cde)",
+  "диапазон model.language_model.layers.20.linear_attn.in_proj_z.weight: base 405fe0e3f54a (ожидалось fdd516442c92), variant b5205f9b730e (ожидалось b5205f9b730e)",
+  "диапазон model.language_model.layers.21.linear_attn.in_proj_z.weight: base 358e7fa34c30 (ожидалось 3a3b60d90074), variant 287c4ee40347 (ожидалось 287c4ee40347)",
+  "диапазон model.language_model.layers.22.linear_attn.in_proj_z.weight: base 061e6773ca97 (ожидалось a4a7833f3a8e), variant 391a4c6ae525 (ожидалось 391a4c6ae525)",
+  "диапазоны_манифеста: 39 диапазонов, 104,867,840 байт"
+ ],
+ "sizes": {
+  "file_bytes": 1746942600,
+  "header_bytes": 59848,
+  "changed_ranges_bytes": 104867840
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "model": "/home/mpiscil/models/qwen3.5-0.8b",
+  "dataset": "/home/mpiscil/weight-experiment/datasets/gsm8k/main/test-00000-of-00001.parquet",
+  "device": "cpu",
+  "max_new_tokens": 512,
+  "do_sample": false,
+  "prompt_suffix": "\n\nSolve the problem step by step. Finish with a final line exactly in this format: FINAL: <number>",
+  "torch_version": "2.15.0+cu132",
+  "transformers_version": "5.22.2",
+  "total_questions": 1319
+}

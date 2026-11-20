@@ -1,0 +1,62 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/v4_beta_amplify/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "v4_beta_amplify",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 92,
+  "truncated": 8,
+  "mean_out_tokens": 376.0,
+  "mean_seconds": 4.41
+ },
+ "delta_correct": 0,
+ "fixed": [
+  951,
+  1075,
+  1480,
+  1962,
+  2069,
+  2328,
+  3321,
+  3459,
+  3482,
+  4138,
+  4531,
+  5785,
+  7254,
+  7345
+ ],
+ "broken": [
+  348,
+  354,
+  640,
+  720,
+  2177,
+  2841,
+  3104,
+  3142,
+  4150,
+  4330,
+  4398,
+  5088,
+  6228,
+  7228
+ ],
+ "same_correct": 45,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 1.0
+}

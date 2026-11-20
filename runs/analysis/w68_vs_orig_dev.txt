@@ -1,0 +1,54 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w68_inproj_a_damp090_on_w8/dev/results.jsonl",
+ "base_name": "orig",
+ "variant_name": "w68_inproj_a_damp090_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 57,
+  "accuracy": 0.57,
+  "extracted": 94,
+  "truncated": 5,
+  "mean_out_tokens": 339.6,
+  "mean_seconds": 4.99
+ },
+ "delta_correct": -2,
+ "fixed": [
+  951,
+  3321,
+  3459,
+  4138,
+  4531,
+  5785,
+  6097,
+  6295,
+  7345
+ ],
+ "broken": [
+  354,
+  640,
+  720,
+  2177,
+  2436,
+  3104,
+  3142,
+  3766,
+  4150,
+  6163,
+  7228
+ ],
+ "same_correct": 48,
+ "same_wrong": 32,
+ "answers_differ": 100,
+ "mcnemar_p": 0.8238029479980469
+}

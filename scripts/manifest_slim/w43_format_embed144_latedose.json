@@ -1,0 +1,139 @@
+{
+ "name": "w43_format_embed144_latedose",
+ "hypothesis": "Форматная ветка, волна 10, клетка 'починить единственный дефект w36'. Основа — runs/variants/w36_z_late_extra094 (219 верных / FINAL 329 / обрывов 21; выполнены условия 1, 2 и 4 правила 24.7, нарушено только условие 3: обрывов 21 > 18). Тот же форматный рычаг (строки 95429, 64697, scale 1.20, накопленная доза 1,4403) должен сократить обрывы до <= 18, сохранив 219+ верных. Ожидание (H33b): верных >= 219, обрывов <= 18, FINAL >= 330.",
+ "expected_effect": "если обрывы останутся >= 20 при усилении формата в 1,2 раза, компромисс 'математика LATE <-> обрывы' признаётся неустранимым форматным приоритетом.",
+ "base_model_dir": "runs/variants/w36_z_late_extra094/model",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "943a08f0e95cb019e361ef805461faaf15f5321f4d7d94fff676d69b99650335",
+ "new_model_dir": "runs/variants/w43_format_embed144_latedose/model",
+ "new_safetensors_sha256": "413e29a55e7c613a273d2a85c0b14429bf15db4df8eab189bc20ba8f3b59f088",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.2,
+   "rows": [
+    95429,
+    64697
+   ],
+   "row_tokens": {
+    "95429": "FINAL",
+    "64697": " FINAL"
+   },
+   "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.20 = 1,4403 (основа w36 уже содержит 1,2002)"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.20 = 1,4403 (основа w36 уже содержит 1,2002)"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00380645,
+   "max_abs_delta": 0.01953125,
+   "sha256_before": "5eb93e2d6e884f97b6a9f32c2dd1dbf9134d0fde6646bc4bec620f70f38bd861",
+   "sha256_after": "b84652f604f6c9d2a50a0e015052d5a034bff917c66e1b500fad66a1952fb920",
+   "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.20 = 1,4403 (основа w36 уже содержит 1,2002)",
+   "row": 95429,
+   "row_token": "FINAL"
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.20 = 1,4403 (основа w36 уже содержит 1,2002)"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00366484,
+   "max_abs_delta": 0.01611328,
+   "sha256_before": "bb8ce18211bde19dead92e36d7f334802c0f05a57619e769ebe8916527c906cb",
+   "sha256_after": "652df3a5a9b32a7242679c563c694f8ecdd8494536d963ece9930ed243c9c34e",
+   "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.20 = 1,4403 (основа w36 уже содержит 1,2002)",
+   "row": 64697,
+   "row_token": " FINAL"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 2,
+  "values_actually_changed": 2048,
+  "numel_touched": 2048,
+  "mean_abs_delta": 0.00373565,
+  "max_abs_delta": 0.01953125
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 95429
+  },
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64697
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w43_format_embed144_latedose/manifest.json",
+  "размер_оригинала_байт": 72113,
+  "sha256_оригинала": "9ba712e2862829a4654ab0ecd4ed122b3219f878ed43aff43db3b16794ace088",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 4",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

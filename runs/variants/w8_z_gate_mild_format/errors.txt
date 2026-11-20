@@ -1,0 +1,40 @@
+Проверено записей: 1319
+  correct                        724  (54.9%)
+  extracted_wrong                515  (39.0%)
+  no_final_line                   80  (6.1%)
+    (из них truncated)            76  (5.8%)
+Признаки:
+  different_digit_length               233
+  pred_is_intermediate_in_reference    102
+  truncated                             76
+  pred=expected+num_from_question       35
+  pred=expected*2                       18
+  pred=expected*0.5                     17
+  pred=expected*3                       14
+  pred=expected*0.25                    12
+  repetition_loop                        7
+  pred=expected*5                        6
+  pred=expected*4                        4
+  pred=expected*100                      2
+  pred=expected*0.1                      1
+  pred=expected*6                        1
+  pred=expected*10                       1
+
+Примеры extracted_wrong:
+  idx 2: expected=70000.0 pred=120000.0 trunc=False pred_in_ref=True | Josh decides to try flipping a house.  He buys a house for $80,000 and then puts
+  idx 3: expected=540.0 pred=180.0 trunc=False pred_in_ref=False | James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  
+  idx 4: expected=20.0 pred=40.0 trunc=False pred_in_ref=False | Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, co
+  idx 7: expected=160.0 pred=60.0 trunc=False pred_in_ref=False | Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 4
+  idx 8: expected=45.0 pred=295.0 trunc=False pred_in_ref=False | John drives for 3 hours at a speed of 60 mph and then turns around because he re
+  idx 9: expected=460.0 pred=46.0 trunc=False pred_in_ref=False | Eliza's rate per hour for the first 40 hours she works each week is $10. She als
+  idx 12: expected=13.0 pred=9.0 trunc=False pred_in_ref=False | Carlos is planting a lemon tree. The tree will cost $90 to plant. Each year it w
+  idx 13: expected=18.0 pred=12.0 trunc=False pred_in_ref=True | Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at
+  idx 14: expected=60.0 pred=75.0 trunc=False pred_in_ref=False | In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the 
+  idx 17: expected=57500.0 pred=59800.0 trunc=False pred_in_ref=False | Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she 
+  idx 18: expected=7.0 pred=4.0 trunc=False pred_in_ref=True | Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of egg
+  idx 19: expected=6.0 pred=3.0 trunc=False pred_in_ref=True | Marissa is hiking a 12-mile trail. She took 1 hour to walk the first 4 miles, th
+  idx 20: expected=15.0 pred=41.0 trunc=False pred_in_ref=False | I have 10 liters of orange drink that are two-thirds water and I wish to add it 
+  idx 24: expected=26.0 pred=78.0 trunc=False pred_in_ref=False | Kyle bought last year's best-selling book for $19.50. This is with a 25% discoun
+  idx 28: expected=25.0 pred=20.0 trunc=False pred_in_ref=True | Henry made two stops during his 60-mile bike trip. He first stopped after 20 mil
+
+output_tokens: mean=364.6 max=1024 на_limit=76

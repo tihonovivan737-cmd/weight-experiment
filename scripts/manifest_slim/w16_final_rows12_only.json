@@ -1,0 +1,139 @@
+{
+ "name": "w16_final_rows12_only",
+ "hypothesis": "H9a (абляция A квадрата 2x2): только эмбеддинг-усиление канонических строк 'FINAL' (95429) и ' FINAL' (64697) в 1,2 раза — ровно та часть w8, которая отвечает за формат, без z-гейта. Нужно отделить вклад формата от вклада z-гейта: w8 = z0.93 + embed1.2 дал Δ+14 на 350 задачах, w1 = embed1.3 дал Δ+9. Если w16 (embed1.2) даст примерно столько же, сколько w1, а w17 (z0.93 без эмбеддинга) даст прирост сам по себе, то прирост w8 складывается из двух независимых механизмов.",
+ "expected_effect": "извлекаемость на search250 выше 220 (ожидаемо 225-235), 'Final:'-строк около 0-5, accuracy не ниже baseline",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/w16_final_rows12_only/model",
+ "new_safetensors_sha256": "c38468e4727a004fe5593eb346a3652c693761f8317d00db228494afdff98dcd",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.2,
+   "rows": [
+    95429,
+    64697
+   ],
+   "row_tokens": {
+    "95429": "FINAL",
+    "64697": " FINAL"
+   },
+   "note": "row-limited scale: только 2 строки эмбеддинга (та же доза, что у формата w8)"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "row-limited scale: только 2 строки эмбеддинга (та же доза, что у формата w8)"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00317139,
+   "max_abs_delta": 0.01611328,
+   "sha256_before": "0cc43b44b54acb1223f7ec44309750790f479b0f40261ca11195c3054de5dd79",
+   "sha256_after": "5eb93e2d6e884f97b6a9f32c2dd1dbf9134d0fde6646bc4bec620f70f38bd861",
+   "note": "row-limited scale: только 2 строки эмбеддинга (та же доза, что у формата w8)",
+   "row": 95429,
+   "row_token": "FINAL"
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "row-limited scale: только 2 строки эмбеддинга (та же доза, что у формата w8)"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00305405,
+   "max_abs_delta": 0.01367188,
+   "sha256_before": "2b719664a8339a16b5926779a0001d418a292fe6f221b621b149dd0b1790463d",
+   "sha256_after": "bb8ce18211bde19dead92e36d7f334802c0f05a57619e769ebe8916527c906cb",
+   "note": "row-limited scale: только 2 строки эмбеддинга (та же доза, что у формата w8)",
+   "row": 64697,
+   "row_token": " FINAL"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 2,
+  "values_actually_changed": 2048,
+  "numel_touched": 2048,
+  "mean_abs_delta": 0.00311272,
+  "max_abs_delta": 0.01611328
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 95429
+  },
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64697
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w16_final_rows12_only/manifest.json",
+  "размер_оригинала_байт": 71933,
+  "sha256_оригинала": "bd4e1e9ead83a01a157a8256a5e545e24fe57c744943c0915af0c5f2490f5a50",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 4",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

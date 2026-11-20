@@ -1,0 +1,33 @@
+[2026-11-15 21:40:58] ресурсы: GPU 1 свободно 6943 MiB; диск 40G; RAM 12Gi
+[2026-11-15 21:40:59] SHA исходной модели подтверждён (04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696)
+[2026-11-15 21:40:59] ОСТАНОВКА: SHA w8  (ожидалось 296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55)
+[2026-11-15 21:50:55] ресурсы: GPU 1 свободно 6943 MiB; диск 40G; RAM 11Gi
+[2026-11-15 21:50:56] SHA исходной модели подтверждён (04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696)
+[2026-11-15 21:50:57] SHA контрольной точки w8 подтверждён (296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55)
+[2026-11-15 21:50:57] BUILD w51_finalrow_rotation15_smallmargin_negsign (основа: runs/variants/w8_z_gate_mild_format)
+[2026-11-15 21:50:58] ОСТАНОВКА: build w51_finalrow_rotation15_smallmargin_negsign код 1 (runs/build_wave13.log)
+[2026-11-15 22:02:53] ресурсы: GPU 1 свободно 6943 MiB; диск 40G; RAM 11Gi
+[2026-11-15 22:02:54] SHA исходной модели подтверждён (04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696)
+[2026-11-15 22:02:55] SHA контрольной точки w8 подтверждён (296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55)
+[2026-11-15 22:02:55] BUILD w51_finalrow_rotation15_smallmargin_negsign (основа: runs/variants/w8_z_gate_mild_format/model)
+[2026-11-15 22:02:56] ОСТАНОВКА: build w51_finalrow_rotation15_smallmargin_negsign код 1 (runs/build_wave13.log)
+[2026-11-15 22:13:17] ресурсы: GPU 1 свободно 6943 MiB; диск 40G; RAM 12Gi
+[2026-11-15 22:13:18] SHA исходной модели подтверждён (04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696)
+[2026-11-15 22:13:18] SHA контрольной точки w8 подтверждён (296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55)
+[2026-11-15 22:13:18] BUILD w51_finalrow_rotation15_smallmargin_negsign (основа: runs/variants/w8_z_gate_mild_format/model)
+[2026-11-15 22:13:23] собран w51_finalrow_rotation15_smallmargin_negsign
+[2026-11-15 22:13:23] BUILD w50_finalrow_rotation15_smallmargin (основа: runs/variants/w8_z_gate_mild_format/model)
+[2026-11-15 22:13:28] собран w50_finalrow_rotation15_smallmargin
+[2026-11-15 22:13:30] VERIFY w51_finalrow_rotation15_smallmargin_negsign: ИТОГ: OK
+[2026-11-15 22:13:32] VERIFY w50_finalrow_rotation15_smallmargin: ИТОГ: OK
+[2026-11-15 22:13:32] EVAL dev w51_finalrow_rotation15_smallmargin_negsign ; VRAM GPU 1: 6943 MiB ; диск 37G
+[2026-11-15 22:23:10] экран dev100 w51_finalrow_rotation15_smallmargin_negsign: Δверных против w8 = -3
+[2026-11-15 22:23:10] EVAL search w51_finalrow_rotation15_smallmargin_negsign ; VRAM GPU 1: 6943 MiB ; диск 37G
+[2026-11-15 22:48:20] вариант w51_finalrow_rotation15_smallmargin_negsign оценён
+[2026-11-15 22:48:20] EVAL dev w50_finalrow_rotation15_smallmargin ; VRAM GPU 1: 6943 MiB ; диск 37G
+[2026-11-15 22:55:56] экран dev100 w50_finalrow_rotation15_smallmargin: Δверных против w8 = -2
+[2026-11-15 22:55:56] EVAL search w50_finalrow_rotation15_smallmargin ; VRAM GPU 1: 6943 MiB ; диск 37G
+[2026-11-15 23:17:36] вариант w50_finalrow_rotation15_smallmargin оценён
+[2026-11-15 23:17:36] сводная таблица: runs/wave13_table.txt и runs/analysis/wave13_table.json
+[2026-11-15 23:17:36] коридоры §43.3: runs/wave13_bands.txt
+[2026-11-15 23:17:36] ВОЛНА 13 ЗАВЕРШЕНА

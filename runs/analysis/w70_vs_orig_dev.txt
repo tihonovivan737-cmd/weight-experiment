@@ -1,0 +1,53 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w70_qknorm110_on_w8/dev/results.jsonl",
+ "base_name": "orig",
+ "variant_name": "w70_qknorm110_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 5,
+  "mean_out_tokens": 331.8,
+  "mean_seconds": 5.44
+ },
+ "delta_correct": 5,
+ "fixed": [
+  1480,
+  2328,
+  3321,
+  3459,
+  4138,
+  4531,
+  5169,
+  5785,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  640,
+  2177,
+  3142,
+  3766,
+  4150,
+  5180,
+  7228
+ ],
+ "same_correct": 52,
+ "same_wrong": 29,
+ "answers_differ": 100,
+ "mcnemar_p": 0.359283447265625
+}

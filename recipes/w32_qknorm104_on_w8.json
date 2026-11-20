@@ -1,0 +1,41 @@
+{
+  "name": "w32_qknorm104_on_w8",
+  "hypothesis": "H24 (уменьшенная доза qk-рычага). w30 (q_norm/k_norm (1+w)*1.08-1) дал лучший формат за всю историю (FINAL 337/350, обрывов 9) и ухудшил только-математику на 2. Доза 1.04 (вдвое меньше по логиту) должна оставить большую часть выигрыша формата, убрав математическую цену.",
+  "expected_effect": "FINAL >= 334, обрывов <= 14, Δ только-математика к w8 >= -1",
+  "base_model_dir": "runs/variants/w8_z_gate_mild_format/model",
+  "ops": [
+    {
+      "tensors": [
+        "model.language_model.layers.*.self_attn.q_norm.weight"
+      ],
+      "op": "scale_offset",
+      "lam": 1.04,
+      "layers": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ],
+      "note": "RMSNorm-вес хранит смещённую норму: (1+w)*lam-1"
+    },
+    {
+      "tensors": [
+        "model.language_model.layers.*.self_attn.k_norm.weight"
+      ],
+      "op": "scale_offset",
+      "lam": 1.04,
+      "layers": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ],
+      "note": "то же для ключей"
+    }
+  ],
+  "selection_note": "выбрано по замерам 350 отборочных задач и послойным зондам; official test (1319) для выбора не использовался"
+}

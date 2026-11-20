@@ -1,0 +1,3 @@
+=== probe probe_base (models/qwen3.5-0.8b) ===
+=== probe probe_w8 (runs/variants/w8_z_gate_mild_format/model) ===
+DONE

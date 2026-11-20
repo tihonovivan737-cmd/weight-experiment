@@ -1,0 +1,41 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w65_qknorm108_late2_on_w8/dev/results.jsonl",
+ "base_name": "w8 при 1024",
+ "variant_name": "w65 при 1024",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 67,
+  "accuracy": 0.67,
+  "extracted": 96,
+  "truncated": 4,
+  "mean_out_tokens": 340.2,
+  "mean_seconds": 4.28
+ },
+ "delta_correct": 3,
+ "fixed": [
+  157,
+  1060,
+  2069,
+  5034,
+  7228
+ ],
+ "broken": [
+  354,
+  7432
+ ],
+ "same_correct": 62,
+ "same_wrong": 31,
+ "answers_differ": 90,
+ "mcnemar_p": 0.453125
+}

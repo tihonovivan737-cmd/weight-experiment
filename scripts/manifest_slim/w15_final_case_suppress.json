@@ -1,0 +1,196 @@
+{
+ "name": "w15_final_case_suppress",
+ "hypothesis": "H8 (супрессия смешанного регистра). Измеренный дискриминант по уже сделанным прогонам: варианты, которые усиливали строку смешанного регистра 'Final' (id 18770) вместе с каноническими (w11: x1.5 -> 196 строк 'Final:', 101 двоения 'Final: FINAL:', 63/250; w7: x1.2 -> 121 строк 'Final:', 107/250), провалились; варианты, которые усиливали только 'FINAL' (95429) и ' FINAL' (64697) без 18770, дали 230 и 237 канонических строк и +7/+9. Значит дело не в величине усиления, а в том, в чью пользу смещается выбор между конкурирующими маркерами. Проверяем обратное направление правки: канонические строки x1.2 (безопасная измеренная доза) и подавление конкурирующего 'Final' (18770) x0.7. Ожидаем перетекание вероятности из смешанной формы в каноническую без перехода через порог самоповторов.",
+ "expected_effect": "'Final:'-строк меньше 30 (baseline 30), 'FINAL:'-строк больше 191, извлекаемость выше 220, accuracy не ниже baseline.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/w15_final_case_suppress/model",
+ "new_safetensors_sha256": "16b93507902eef6d39f2a8229ecb01ff9df20b7429ddbdd9a09366d482f7ab7f",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.2,
+   "rows": [
+    95429,
+    64697
+   ],
+   "row_tokens": {
+    "95429": "FINAL",
+    "64697": " FINAL"
+   },
+   "note": "усиление канонических маркеров на измеренной безопасной дозе"
+  },
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    18770
+   ],
+   "row_tokens": {
+    "18770": "Final"
+   },
+   "note": "подавление конкурирующего маркера смешанного регистра"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "усиление канонических маркеров на измеренной безопасной дозе"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00317139,
+   "max_abs_delta": 0.01611328,
+   "sha256_before": "0cc43b44b54acb1223f7ec44309750790f479b0f40261ca11195c3054de5dd79",
+   "sha256_after": "5eb93e2d6e884f97b6a9f32c2dd1dbf9134d0fde6646bc4bec620f70f38bd861",
+   "note": "усиление канонических маркеров на измеренной безопасной дозе",
+   "row": 95429,
+   "row_token": "FINAL"
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.2,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "усиление канонических маркеров на измеренной безопасной дозе"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00305405,
+   "max_abs_delta": 0.01367188,
+   "sha256_before": "2b719664a8339a16b5926779a0001d418a292fe6f221b621b149dd0b1790463d",
+   "sha256_after": "bb8ce18211bde19dead92e36d7f334802c0f05a57619e769ebe8916527c906cb",
+   "note": "усиление канонических маркеров на измеренной безопасной дозе",
+   "row": 64697,
+   "row_token": " FINAL"
+  },
+  {
+   "op_index": 1,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 0.7,
+    "row_tokens": {
+     "18770": "Final"
+    },
+    "note": "подавление конкурирующего маркера смешанного регистра"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    38511176,
+    38513224
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00466598,
+   "max_abs_delta": 0.01782227,
+   "sha256_before": "8b4dc02f19b165af8a5ff9628ef3ee1e87ba97df20fac1ef9255c5a0a84a4f7e",
+   "sha256_after": "91ced4672a5185c29997d047cb9e1a023b805474f5597da6001ebbe52a5d3edd",
+   "note": "подавление конкурирующего маркера смешанного регистра",
+   "row": 18770,
+   "row_token": "Final"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 3,
+  "values_actually_changed": 3072,
+  "numel_touched": 3072,
+  "mean_abs_delta": 0.00363047,
+  "max_abs_delta": 0.01782227
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 95429
+  },
+  {
+   "op": "scale",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64697
+  },
+  {
+   "op": "scale",
+   "lam": 1.4285714285714286,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    38511176,
+    38513224
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 18770
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w15_final_case_suppress/manifest.json",
+  "размер_оригинала_байт": 107473,
+  "sha256_оригинала": "c445087084c863bc8a0cde40a556c992e52588732d2c9cc43d51f1affa12d4ca",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 6",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

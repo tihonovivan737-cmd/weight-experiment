@@ -1,0 +1,2464 @@
+{
+ "reference_w8": {
+  "dev": {
+   "n": 100,
+   "correct": 64,
+   "truncated": 4,
+   "extracted": 95
+  },
+  "search": {
+   "n": 250,
+   "correct": 152,
+   "truncated": 14,
+   "extracted": 237
+  },
+  "test": {
+   "n": 1319,
+   "correct": 724,
+   "truncated": 76,
+   "extracted": 1239
+  },
+  "combined": {
+   "correct": 216,
+   "truncated": 18,
+   "extracted": 332,
+   "n": 350
+  }
+ },
+ "variants": [
+  {
+   "variant": "c0_final_norm_gain",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/c0_final_norm_gain.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json",
+    "compare_smoke.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 1,
+    "values_actually_changed": 1024,
+    "numel_touched": 1024,
+    "mean_abs_delta": 0.86165905,
+    "max_abs_delta": 1.25
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 9,
+     "extracted": 89
+    },
+    "search": {
+     "n": 250,
+     "correct": 138,
+     "truncated": 15,
+     "extracted": 221
+    },
+    "smoke": {
+     "n": 24,
+     "correct": 13,
+     "truncated": 2,
+     "extracted": 20
+    },
+    "combined": {
+     "correct": 199,
+     "truncated": 24,
+     "extracted": 310,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/c0_final_norm_gain/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588679
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "c1_visual_noop",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/c1_visual_noop.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_smoke.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 1,
+    "values_actually_changed": 1769472,
+    "numel_touched": 1769472,
+    "mean_abs_delta": 0.03953692,
+    "max_abs_delta": 2.375
+   },
+   "results": {
+    "smoke": {
+     "n": 24,
+     "correct": 13,
+     "truncated": 3,
+     "extracted": 18
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/c1_visual_noop/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588957
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v10_attn_branch_amp",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v10_attn_branch_amp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 24,
+    "touched_tensor_ops": 24,
+    "values_actually_changed": 50331648,
+    "numel_touched": 50331648,
+    "mean_abs_delta": 0.00134987,
+    "max_abs_delta": 0.04882812
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 5,
+     "extracted": 92
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v10_attn_branch_amp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588694
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v1_Alog_decay_half",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v1_Alog_decay_half.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 288,
+    "numel_touched": 288,
+    "mean_abs_delta": 0.69314718,
+    "max_abs_delta": 0.69314718
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 54,
+     "truncated": 7,
+     "extracted": 87
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v1_Alog_decay_half/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588708
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v2_Alog_decay_double",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/v2_Alog_decay_double.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 288,
+    "numel_touched": 288,
+    "mean_abs_delta": 0.69314718,
+    "max_abs_delta": 0.69314718
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 62,
+     "truncated": 6,
+     "extracted": 92
+    },
+    "search": {
+     "n": 250,
+     "correct": 132,
+     "truncated": 14,
+     "extracted": 225
+    },
+    "combined": {
+     "correct": 194,
+     "truncated": 20,
+     "extracted": 317,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v2_Alog_decay_double/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588723
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v3_dt_bias_shift_down",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v3_dt_bias_shift_down.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 286,
+    "numel_touched": 288,
+    "mean_abs_delta": 1.76206885,
+    "max_abs_delta": 7.0625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 21,
+     "truncated": 41,
+     "extracted": 55
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v3_dt_bias_shift_down/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588739
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v4_beta_amplify",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v4_beta_amplify.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 294912,
+    "numel_touched": 294912,
+    "mean_abs_delta": 0.00628247,
+    "max_abs_delta": 0.10742188
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 59,
+     "truncated": 8,
+     "extracted": 92
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v4_beta_amplify/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588754
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v5_beta_soften",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v5_beta_soften.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 294912,
+    "numel_touched": 294912,
+    "mean_abs_delta": 0.00502605,
+    "max_abs_delta": 0.08496094
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 60,
+     "truncated": 5,
+     "extracted": 91
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v5_beta_soften/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588769
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v6_attn_sharpen",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v6_attn_sharpen.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 12,
+    "touched_tensor_ops": 12,
+    "values_actually_changed": 3068,
+    "numel_touched": 3072,
+    "mean_abs_delta": 0.45153216,
+    "max_abs_delta": 0.7890625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 53,
+     "truncated": 7,
+     "extracted": 93
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v6_attn_sharpen/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588784
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v7_attn_smooth",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v7_attn_smooth.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 12,
+    "touched_tensor_ops": 12,
+    "values_actually_changed": 3066,
+    "numel_touched": 3072,
+    "mean_abs_delta": 0.3763856,
+    "max_abs_delta": 0.65625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 22,
+     "truncated": 19,
+     "extracted": 53
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v7_attn_smooth/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588799
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v8_mlp_amp",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/v8_mlp_amp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 24,
+    "touched_tensor_ops": 24,
+    "values_actually_changed": 88080384,
+    "numel_touched": 88080384,
+    "mean_abs_delta": 0.0009732,
+    "max_abs_delta": 0.05078125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 59,
+     "truncated": 5,
+     "extracted": 91
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v8_mlp_amp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588814
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "v9_mlp_damp",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/v9_mlp_damp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 24,
+    "touched_tensor_ops": 24,
+    "values_actually_changed": 88080384,
+    "numel_touched": 88080384,
+    "mean_abs_delta": 0.00084341,
+    "max_abs_delta": 0.04296875
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 62,
+     "truncated": 7,
+     "extracted": 86
+    },
+    "search": {
+     "n": 250,
+     "correct": 122,
+     "truncated": 21,
+     "extracted": 210
+    },
+    "combined": {
+     "correct": 184,
+     "truncated": 28,
+     "extracted": 296,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/v9_mlp_damp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588829
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w11_final_token_amp_15",
+   "class": "KEEP_BETTER",
+   "why": "dev: обрывов 3 < 4; search: обрывов 9 < 14; combined: обрывов 12 < 18",
+   "base": "orig",
+   "recipe": "recipes/w11_final_token_amp_15.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 3,
+    "values_actually_changed": 3072,
+    "numel_touched": 3072,
+    "mean_abs_delta": 0.00777902,
+    "max_abs_delta": 0.04052734
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 20,
+     "truncated": 3,
+     "extracted": 41
+    },
+    "search": {
+     "n": 250,
+     "correct": 63,
+     "truncated": 9,
+     "extracted": 118
+    },
+    "combined": {
+     "correct": 83,
+     "truncated": 12,
+     "extracted": 159,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w11_final_token_amp_15/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589177
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w12_z_gate_strong",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/w12_z_gate_strong.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.00308332,
+    "max_abs_delta": 0.11523438
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 31,
+     "truncated": 18,
+     "extracted": 80
+    },
+    "search": {
+     "n": 250,
+     "correct": 72,
+     "truncated": 35,
+     "extracted": 210
+    },
+    "combined": {
+     "correct": 103,
+     "truncated": 53,
+     "extracted": 290,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w12_z_gate_strong/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589191
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w14_z93_final13",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 66 > 64; search: обрывов 13 < 14",
+   "base": "orig",
+   "recipe": "recipes/w14_z93_final13.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 19,
+    "touched_tensor_ops": 20,
+    "values_actually_changed": 37750784,
+    "numel_touched": 37750784,
+    "mean_abs_delta": 0.00086348,
+    "max_abs_delta": 0.03320312
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 66,
+     "truncated": 5,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 145,
+     "truncated": 13,
+     "extracted": 234
+    },
+    "combined": {
+     "correct": 211,
+     "truncated": 18,
+     "extracted": 329,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w14_z93_final13/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589284
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w15_final_case_suppress",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/w15_final_case_suppress.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 3,
+    "values_actually_changed": 3072,
+    "numel_touched": 3072,
+    "mean_abs_delta": 0.00363047,
+    "max_abs_delta": 0.01782227
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 7,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 145,
+     "truncated": 19,
+     "extracted": 231
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 26,
+     "extracted": 325,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w15_final_case_suppress/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589299
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w16_final_rows12_only",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/w16_final_rows12_only.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 2,
+    "values_actually_changed": 2048,
+    "numel_touched": 2048,
+    "mean_abs_delta": 0.00311272,
+    "max_abs_delta": 0.01611328
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 7,
+     "extracted": 93
+    },
+    "search": {
+     "n": 250,
+     "correct": 145,
+     "truncated": 19,
+     "extracted": 231
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 26,
+     "extracted": 324,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w16_final_rows12_only/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589332
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w17_z93_only",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/w17_z93_only.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.00086327,
+    "max_abs_delta": 0.03320312
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 58,
+     "truncated": 5,
+     "extracted": 90
+    },
+    "search": {
+     "n": 250,
+     "correct": 151,
+     "truncated": 20,
+     "extracted": 228
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 25,
+     "extracted": 318,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w17_z93_only/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589348
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w1_final_token_amp",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/w1_final_token_amp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 2,
+    "values_actually_changed": 2048,
+    "numel_touched": 2048,
+    "mean_abs_delta": 0.00466841,
+    "max_abs_delta": 0.02441406
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 6,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 150,
+     "truncated": 19,
+     "extracted": 230
+    },
+    "combined": {
+     "correct": 211,
+     "truncated": 25,
+     "extracted": 324,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w1_final_token_amp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588867
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w24_fullgate_open085",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 65 > 64; dev: FINAL 96 > 95",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w24_fullgate_open085.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 6,
+    "touched_tensor_ops": 12288,
+    "values_actually_changed": 12582912,
+    "numel_touched": 12582912,
+    "mean_abs_delta": 0.00221419,
+    "max_abs_delta": 0.06054688
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 65,
+     "truncated": 4,
+     "extracted": 96
+    },
+    "search": {
+     "n": 250,
+     "correct": 145,
+     "truncated": 14,
+     "extracted": 236
+    },
+    "combined": {
+     "correct": 210,
+     "truncated": 18,
+     "extracted": 332,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w24_fullgate_open085/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589433
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w25_z_headsel_damp088",
+   "class": "KEEP_UNKNOWN",
+   "why": "не сохранено/не подтверждено: verify OK",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w25_z_headsel_damp088.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 13,
+    "touched_tensor_ops": 3712,
+    "values_actually_changed": 3801088,
+    "numel_touched": 3801088,
+    "mean_abs_delta": 0.00129194,
+    "max_abs_delta": 0.04296875
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 5,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 149,
+     "truncated": 22,
+     "extracted": 226
+    },
+    "combined": {
+     "correct": 213,
+     "truncated": 27,
+     "extracted": 320,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w25_z_headsel_damp088/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589448
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w26_norm_amp093",
+   "class": "KEEP_UNKNOWN",
+   "why": "не сохранено/не подтверждено: verify OK",
+   "base": "orig",
+   "recipe": "recipes/w26_norm_amp093.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 2304,
+    "numel_touched": 2304,
+    "mean_abs_delta": 0.06589536,
+    "max_abs_delta": 0.0836035
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 60,
+     "truncated": 8,
+     "extracted": 90
+    },
+    "search": {
+     "n": 250,
+     "correct": 140,
+     "truncated": 20,
+     "extracted": 224
+    },
+    "combined": {
+     "correct": 200,
+     "truncated": 28,
+     "extracted": 314,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w26_norm_amp093/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589463
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w27_beta_sharpen_late130",
+   "class": "KEEP_UNKNOWN",
+   "why": "не сохранено/не подтверждено: verify OK",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w27_beta_sharpen_late130.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 9,
+    "touched_tensor_ops": 9,
+    "values_actually_changed": 147456,
+    "numel_touched": 147456,
+    "mean_abs_delta": 0.00376474,
+    "max_abs_delta": 0.06054688
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 6,
+     "extracted": 93
+    },
+    "search": {
+     "n": 250,
+     "correct": 148,
+     "truncated": 17,
+     "extracted": 233
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 23,
+     "extracted": 326,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w27_beta_sharpen_late130/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589478
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w28_fullgate_close115",
+   "class": "KEEP_BETTER",
+   "why": "search: обрывов 12 < 14; combined: обрывов 16 < 18",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w28_fullgate_close115.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 6,
+    "touched_tensor_ops": 12288,
+    "values_actually_changed": 12582912,
+    "numel_touched": 12582912,
+    "mean_abs_delta": 0.00221393,
+    "max_abs_delta": 0.06054688
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 60,
+     "truncated": 4,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 144,
+     "truncated": 12,
+     "extracted": 237
+    },
+    "combined": {
+     "correct": 204,
+     "truncated": 16,
+     "extracted": 332,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w28_fullgate_close115/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589493
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w29_z_total087",
+   "class": "KEEP_BETTER",
+   "why": "dev: обрывов 2 < 4; dev: FINAL 98 > 95; search: обрывов 8 < 14; search: FINAL 242 > 237; combined: обрывов 10 < 18; combined: FINAL 340 > 332",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w29_z_total087.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.00068759,
+    "max_abs_delta": 0.02539062
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 2,
+     "extracted": 98
+    },
+    "search": {
+     "n": 250,
+     "correct": 142,
+     "truncated": 8,
+     "extracted": 242
+    },
+    "combined": {
+     "correct": 203,
+     "truncated": 10,
+     "extracted": 340,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w29_z_total087/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589508
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w2_bold_damp",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/w2_bold_damp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 2,
+    "values_actually_changed": 2048,
+    "numel_touched": 2048,
+    "mean_abs_delta": 0.00621044,
+    "max_abs_delta": 0.02734375
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 57,
+     "truncated": 9,
+     "extracted": 88
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w2_bold_damp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588882
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w30_qknorm_sharp108",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 68 > 64; dev: обрывов 0 < 4; dev: FINAL 100 > 95; search: обрывов 9 < 14; combined: обрывов 9 < 18; combined: FINAL 337 > 332",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w30_qknorm_sharp108.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 12,
+    "touched_tensor_ops": 12,
+    "values_actually_changed": 3063,
+    "numel_touched": 3072,
+    "mean_abs_delta": 0.12045094,
+    "max_abs_delta": 0.2109375
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 68,
+     "truncated": 0,
+     "extracted": 100
+    },
+    "search": {
+     "n": 250,
+     "correct": 147,
+     "truncated": 9,
+     "extracted": 237
+    },
+    "combined": {
+     "correct": 215,
+     "truncated": 9,
+     "extracted": 337,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w30_qknorm_sharp108/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589523
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w31_z_dominant_restore106",
+   "class": "KEEP_BETTER",
+   "why": "search: обрывов 13 < 14; combined: обрывов 17 < 18",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w31_z_dominant_restore106.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 13,
+    "touched_tensor_ops": 3712,
+    "values_actually_changed": 3801088,
+    "numel_touched": 3801088,
+    "mean_abs_delta": 0.00064407,
+    "max_abs_delta": 0.02148438
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 59,
+     "truncated": 4,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 150,
+     "truncated": 13,
+     "extracted": 237
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 17,
+     "extracted": 331,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w31_z_dominant_restore106/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589674
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w32_qknorm104_on_w8",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 67 > 64",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w32_qknorm104_on_w8.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 12,
+    "touched_tensor_ops": 12,
+    "values_actually_changed": 3052,
+    "numel_touched": 3072,
+    "mean_abs_delta": 0.06027251,
+    "max_abs_delta": 0.1015625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 67,
+     "truncated": 4,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 146,
+     "truncated": 15,
+     "extracted": 234
+    },
+    "combined": {
+     "correct": 213,
+     "truncated": 19,
+     "extracted": 329,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w32_qknorm104_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589689
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w33_fullgate_open_closed_heads",
+   "class": "KEEP_UNKNOWN",
+   "why": "не сохранено/не подтверждено: verify OK",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w33_fullgate_open_closed_heads.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 6,
+    "touched_tensor_ops": 36864,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.00187183,
+    "max_abs_delta": 0.06054688
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 23,
+     "truncated": 27,
+     "extracted": 70
+    },
+    "search": {
+     "n": 250,
+     "correct": 53,
+     "truncated": 45,
+     "extracted": 195
+    },
+    "combined": {
+     "correct": 76,
+     "truncated": 72,
+     "extracted": 265,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w33_fullgate_open_closed_heads/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589704
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w34_restore_plus_qknorm104",
+   "class": "KEEP_UNKNOWN",
+   "why": "не сохранено/не подтверждено: verify OK",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w34_restore_plus_qknorm104.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 25,
+    "touched_tensor_ops": 3724,
+    "values_actually_changed": 3804140,
+    "numel_touched": 3804160,
+    "mean_abs_delta": 0.00069222,
+    "max_abs_delta": 0.1015625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 63,
+     "truncated": 5,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 147,
+     "truncated": 16,
+     "extracted": 233
+    },
+    "combined": {
+     "correct": 210,
+     "truncated": 21,
+     "extracted": 327,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w34_restore_plus_qknorm104/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589720
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w35_z_dominant_damp078",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 66 > 64",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w35_z_dominant_damp078.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 13,
+    "touched_tensor_ops": 3712,
+    "values_actually_changed": 3801088,
+    "numel_touched": 3801088,
+    "mean_abs_delta": 0.00236729,
+    "max_abs_delta": 0.078125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 66,
+     "truncated": 6,
+     "extracted": 93
+    },
+    "search": {
+     "n": 250,
+     "correct": 129,
+     "truncated": 21,
+     "extracted": 223
+    },
+    "combined": {
+     "correct": 195,
+     "truncated": 27,
+     "extracted": 316,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w35_z_dominant_damp078/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589809
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w36_z_late_extra094",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 66 > 64; dev: FINAL 96 > 95; search: верно 153 > 152; combined: верно 219 > 216",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w36_z_late_extra094.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 7,
+    "touched_tensor_ops": 7,
+    "values_actually_changed": 14680064,
+    "numel_touched": 14680064,
+    "mean_abs_delta": 0.00069512,
+    "max_abs_delta": 0.02148438
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 66,
+     "truncated": 4,
+     "extracted": 96
+    },
+    "search": {
+     "n": 250,
+     "correct": 153,
+     "truncated": 17,
+     "extracted": 233
+    },
+    "combined": {
+     "correct": 219,
+     "truncated": 21,
+     "extracted": 329,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w36_z_late_extra094/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589824
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w37_z_early_release1075",
+   "class": "KEEP_BETTER",
+   "why": "search: обрывов 12 < 14; search: FINAL 239 > 237; combined: FINAL 333 > 332",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w37_z_early_release1075.json",
+   "manifest": true,
+   "verify": false,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 11,
+    "touched_tensor_ops": 11,
+    "values_actually_changed": 23068672,
+    "numel_touched": 23068672,
+    "mean_abs_delta": 0.00085785,
+    "max_abs_delta": 0.03125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 6,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 151,
+     "truncated": 12,
+     "extracted": 239
+    },
+    "combined": {
+     "correct": 212,
+     "truncated": 18,
+     "extracted": 333,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w37_z_early_release1075/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589839
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w38_z_corner_early10008_late08742",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w38_z_corner_early10008_late08742.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.00079457,
+    "max_abs_delta": 0.03125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 8,
+     "extracted": 92
+    },
+    "search": {
+     "n": 250,
+     "correct": 152,
+     "truncated": 15,
+     "extracted": 235
+    },
+    "combined": {
+     "correct": 216,
+     "truncated": 23,
+     "extracted": 327,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w38_z_corner_early10008_late08742/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589916
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w39_z_late_release1075",
+   "class": "KEEP_BETTER",
+   "why": "dev: обрывов 3 < 4",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w39_z_late_release1075.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 7,
+    "touched_tensor_ops": 7,
+    "values_actually_changed": 14680064,
+    "numel_touched": 14680064,
+    "mean_abs_delta": 0.00087333,
+    "max_abs_delta": 0.02734375
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 63,
+     "truncated": 3,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 144,
+     "truncated": 15,
+     "extracted": 233
+    },
+    "combined": {
+     "correct": 207,
+     "truncated": 18,
+     "extracted": 328,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w39_z_late_release1075/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589931
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w3_final_amp_bold_damp",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/w3_final_amp_bold_damp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 4,
+    "values_actually_changed": 4096,
+    "numel_touched": 4096,
+    "mean_abs_delta": 0.00543943,
+    "max_abs_delta": 0.02734375
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 60,
+     "truncated": 7,
+     "extracted": 92
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w3_final_amp_bold_damp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588897
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w40_z_early_extra094",
+   "class": "KEEP_BETTER",
+   "why": "search: обрывов 10 < 14; search: FINAL 239 > 237; combined: обрывов 15 < 18; combined: FINAL 334 > 332",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w40_z_early_extra094.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 11,
+    "touched_tensor_ops": 11,
+    "values_actually_changed": 23068672,
+    "numel_touched": 23068672,
+    "mean_abs_delta": 0.0006828,
+    "max_abs_delta": 0.02539062
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 56,
+     "truncated": 5,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 143,
+     "truncated": 10,
+     "extracted": 239
+    },
+    "combined": {
+     "correct": 199,
+     "truncated": 15,
+     "extracted": 334,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w40_z_early_extra094/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589946
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w41_format_embed132",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w41_format_embed132.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_base.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 2,
+    "values_actually_changed": 2048,
+    "numel_touched": 2048,
+    "mean_abs_delta": 0.00186575,
+    "max_abs_delta": 0.00976562
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 5,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 150,
+     "truncated": 14,
+     "extracted": 234
+    },
+    "combined": {
+     "correct": 211,
+     "truncated": 19,
+     "extracted": 329,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w41_format_embed132/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590023
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w42_format_embed144",
+   "class": "KEEP_BETTER",
+   "why": "dev: обрывов 1 < 4; search: обрывов 9 < 14; combined: обрывов 10 < 18",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w42_format_embed144.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_base.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 2,
+    "values_actually_changed": 2048,
+    "numel_touched": 2048,
+    "mean_abs_delta": 0.00373565,
+    "max_abs_delta": 0.01953125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 1,
+     "extracted": 90
+    },
+    "search": {
+     "n": 250,
+     "correct": 141,
+     "truncated": 9,
+     "extracted": 220
+    },
+    "combined": {
+     "correct": 202,
+     "truncated": 10,
+     "extracted": 310,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w42_format_embed144/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590038
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w43_format_embed144_latedose",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "w36_z_late_extra094",
+   "recipe": "recipes/w43_format_embed144_latedose.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_base.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 2,
+    "values_actually_changed": 2048,
+    "numel_touched": 2048,
+    "mean_abs_delta": 0.00373565,
+    "max_abs_delta": 0.01953125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 4,
+     "extracted": 90
+    },
+    "search": {
+     "n": 250,
+     "correct": 142,
+     "truncated": 16,
+     "extracted": 215
+    },
+    "combined": {
+     "correct": 206,
+     "truncated": 20,
+     "extracted": 305,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w43_format_embed144_latedose/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590053
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w44_mlp_branch_late105",
+   "class": "KEEP_BETTER",
+   "why": "dev: FINAL 96 > 95; search: обрывов 11 < 14; search: FINAL 238 > 237; combined: обрывов 15 < 18; combined: FINAL 334 > 332",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w44_mlp_branch_late105.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_base.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 7,
+    "touched_tensor_ops": 7,
+    "values_actually_changed": 7168,
+    "numel_touched": 7168,
+    "mean_abs_delta": 0.01751309,
+    "max_abs_delta": 0.03125
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 63,
+     "truncated": 4,
+     "extracted": 96
+    },
+    "search": {
+     "n": 250,
+     "correct": 142,
+     "truncated": 11,
+     "extracted": 238
+    },
+    "combined": {
+     "correct": 205,
+     "truncated": 15,
+     "extracted": 334,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w44_mlp_branch_late105/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590068
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w45_z_headsel_flatten",
+   "class": "KEEP_BETTER",
+   "why": "dev: верно 66 > 64; dev: обрывов 3 < 4",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w45_z_headsel_flatten.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_base.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 36864,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.0003523,
+    "max_abs_delta": 0.02539062
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 66,
+     "truncated": 3,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 148,
+     "truncated": 19,
+     "extracted": 231
+    },
+    "combined": {
+     "correct": 214,
+     "truncated": 22,
+     "extracted": 326,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w45_z_headsel_flatten/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590183
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w46_z_headsel_sharpen",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w46_z_headsel_sharpen.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json",
+    "compare_search.json",
+    "compare_search_vs_base.json",
+    "compare_search_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 36864,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.0003486,
+    "max_abs_delta": 0.02148438
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 62,
+     "truncated": 8,
+     "extracted": 91
+    },
+    "search": {
+     "n": 250,
+     "correct": 151,
+     "truncated": 17,
+     "extracted": 229
+    },
+    "combined": {
+     "correct": 213,
+     "truncated": 25,
+     "extracted": 320,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w46_z_headsel_sharpen/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590198
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w47_conv_tap_recency",
+   "class": "KEEP_BETTER",
+   "why": "dev: обрывов 2 < 4; dev: FINAL 97 > 95",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w47_conv_tap_recency.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 366189,
+    "numel_touched": 442368,
+    "mean_abs_delta": 0.00117644,
+    "max_abs_delta": 0.0625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 56,
+     "truncated": 2,
+     "extracted": 97
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w47_conv_tap_recency/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590213
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w48_conv_tap_context",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "w8_z_gate_mild_format",
+   "recipe": "recipes/w48_conv_tap_context.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_dev_vs_base.json",
+    "compare_dev_vs_w8.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 369763,
+    "numel_touched": 442368,
+    "mean_abs_delta": 0.00132868,
+    "max_abs_delta": 0.0625
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 58,
+     "truncated": 5,
+     "extracted": 94
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w48_conv_tap_context/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31590228
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w4_branch_damp",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/w4_branch_damp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 24,
+    "touched_tensor_ops": 24,
+    "values_actually_changed": 50331648,
+    "numel_touched": 50331648,
+    "mean_abs_delta": 0.00089969,
+    "max_abs_delta": 0.03320312
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 55,
+     "truncated": 7,
+     "extracted": 88
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w4_branch_damp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588912
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w5_z_gate_damp",
+   "class": "KEEP_BETTER",
+   "why": "dev: FINAL 96 > 95",
+   "base": "orig",
+   "recipe": "recipes/w5_z_gate_damp.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 37748736,
+    "numel_touched": 37748736,
+    "mean_abs_delta": 0.00185037,
+    "max_abs_delta": 0.06835938
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 58,
+     "truncated": 4,
+     "extracted": 96
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w5_z_gate_damp/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588927
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w6_dt_bias_up",
+   "class": "KEEP_UNTESTED",
+   "why": "полный экран 350 не завершён",
+   "base": "orig",
+   "recipe": "recipes/w6_dt_bias_up.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json"
+   ],
+   "totals": {
+    "tensors_changed": 18,
+    "touched_tensor_ops": 18,
+    "values_actually_changed": 288,
+    "numel_touched": 288,
+    "mean_abs_delta": 1.98177338,
+    "max_abs_delta": 2.375
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 35,
+     "truncated": 17,
+     "extracted": 81
+    },
+    "combined": null
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w6_dt_bias_up/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31588942
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w7_format_boost_mild",
+   "class": "DROP_WEIGHTS",
+   "why": "строго не лучше w8 по всем метрикам экрана 350",
+   "base": "orig",
+   "recipe": "recipes/w7_format_boost_mild.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json"
+   ],
+   "totals": {
+    "tensors_changed": 1,
+    "touched_tensor_ops": 5,
+    "values_actually_changed": 5120,
+    "numel_touched": 5120,
+    "mean_abs_delta": 0.00310928,
+    "max_abs_delta": 0.01611328
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 58,
+     "truncated": 5,
+     "extracted": 91
+    },
+    "search": {
+     "n": 250,
+     "correct": 149,
+     "truncated": 16,
+     "extracted": 226
+    },
+    "combined": {
+     "correct": 207,
+     "truncated": 21,
+     "extracted": 317,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w7_format_boost_mild/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589143
+    }
+   ],
+   "weight_bytes": 1746942600
+  },
+  {
+   "variant": "w8_z_gate_mild_format",
+   "class": "KEEP_CKPT",
+   "why": "контрольная точка серии",
+   "base": "orig",
+   "recipe": "recipes/w8_z_gate_mild_format.json",
+   "manifest": true,
+   "verify": true,
+   "reports": [
+    "compare_dev.json",
+    "compare_search.json",
+    "compare_test.json"
+   ],
+   "totals": {
+    "tensors_changed": 19,
+    "touched_tensor_ops": 20,
+    "values_actually_changed": 37750784,
+    "numel_touched": 37750784,
+    "mean_abs_delta": 0.00086339,
+    "max_abs_delta": 0.03320312
+   },
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 4,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 152,
+     "truncated": 14,
+     "extracted": 237
+    },
+    "test": {
+     "n": 1319,
+     "correct": 724,
+     "truncated": 76,
+     "extracted": 1239
+    },
+    "combined": {
+     "correct": 216,
+     "truncated": 18,
+     "extracted": 332,
+     "n": 350
+    }
+   },
+   "weight_files": [
+    {
+     "path": "runs/variants/w8_z_gate_mild_format/model/model.safetensors-00001-of-00001.safetensors",
+     "size": 1746942600,
+     "links": 1,
+     "ino": 31589159
+    }
+   ],
+   "weight_bytes": 1746942600
+  }
+ ]
+}

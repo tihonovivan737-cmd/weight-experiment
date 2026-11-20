@@ -1,0 +1,24 @@
+Вариант: w31_z_dominant_restore106
+Модель: runs/variants/w31_z_dominant_restore106/model
+SHA256 весов: было 296b2cd888606d54… стало 9e78e4fbe14c13d4…
+Тензоров изменено: 13; значений изменено: 3,801,088 (затронуто 3,801,088)
+Среднее |Δ|: 0.00064407  Макс |Δ|: 0.02148438
+Манифест: runs/variants/w31_z_dominant_restore106/manifest.json
+Вариант: w32_qknorm104_on_w8
+Модель: runs/variants/w32_qknorm104_on_w8/model
+SHA256 весов: было 296b2cd888606d54… стало 4477a737172b40e6…
+Тензоров изменено: 12; значений изменено: 3,052 (затронуто 3,072)
+Среднее |Δ|: 0.06027251  Макс |Δ|: 0.1015625
+Манифест: runs/variants/w32_qknorm104_on_w8/manifest.json
+Вариант: w33_fullgate_open_closed_heads
+Модель: runs/variants/w33_fullgate_open_closed_heads/model
+SHA256 весов: было 296b2cd888606d54… стало b670e1c262841375…
+Тензоров изменено: 6; значений изменено: 37,748,736 (затронуто 37,748,736)
+Среднее |Δ|: 0.00187183  Макс |Δ|: 0.06054688
+Манифест: runs/variants/w33_fullgate_open_closed_heads/manifest.json
+Вариант: w34_restore_plus_qknorm104
+Модель: runs/variants/w34_restore_plus_qknorm104/model
+SHA256 весов: было 296b2cd888606d54… стало 08cdd6363945ce0b…
+Тензоров изменено: 25; значений изменено: 3,804,140 (затронуто 3,804,160)
+Среднее |Δ|: 0.00069222  Макс |Δ|: 0.1015625
+Манифест: runs/variants/w34_restore_plus_qknorm104/manifest.json

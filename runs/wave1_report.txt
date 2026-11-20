@@ -1,0 +1,365 @@
+Сравнение: baseline_smoke -> c0_control (общих задач: 24)
+  baseline_smoke         acc=13/24 (54.17%) извлечено=18 обрывов=3 токенов=429.2 сек/задача=5.82
+  c0_control             acc=13/24 (54.17%) извлечено=20 обрывов=2 токенов=426.5 сек/задача=5.96
+  Дельта: +0 задач (+0.00 п.п.)
+  Исправлено: 1  Сломано: 1  Верно в обоих: 12  Неверно в обоих: 10
+  Точный тест Макнемара: p = 1 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 14/24
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 7053: exp=35.0 pred=35.0 trunc=False err=None tok=375 | A magician has a top hat with 20 red marbles and a top hat with 30 blue marbles. If he tak
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 7351: exp=6.0 pred=6.0 trunc=False err=None tok=296 | Rita put a $120 elliptical machine on layaway at her local sports good store. After making
+
+Отчёт: runs/variants/c0_final_norm_gain/compare_smoke.json
+Сравнение: baseline -> v1_Alog_decay_half (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v1_Alog_decay_half     acc=54/100 (54.00%) извлечено=87 обрывов=7 токенов=375.1 сек/задача=4.98
+  Дельта: -5 задач (-5.00 п.п.)
+  Исправлено: 13  Сломано: 18  Верно в обоих: 41  Неверно в обоих: 28
+  Точный тест Макнемара: p = 0.4731 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 157: exp=10.0 pred=10.0 trunc=False err=None tok=459 | A young girl pours 23 blue beads and 16 yellow beads into a bowl. She divides the total in
+    idx 951: exp=54.0 pred=54.0 trunc=False err=None tok=270 | Michonne is inviting her friends to her birthday party. She invites 6 of her friends from 
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=168 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 2069: exp=62.0 pred=62.0 trunc=False err=None tok=227 | Page collects fancy shoes and has 80 pairs in her closet.  She decides to donate 30% of he
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=234 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=158 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 3482: exp=18.0 pred=18.0 trunc=False err=None tok=281 | Cersei bought 50 cotton candies. She gave her brother and sister 5 cotton candies each, th
+    idx 3939: exp=160.0 pred=160.0 trunc=False err=None tok=390 | If Patty's dress was $10 more than Ida's dress, and Ida's dress was $30 more than Jean's d
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=243 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=230 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5785: exp=11.0 pred=11.0 trunc=False err=None tok=315 | There are 35 books on the cart. There are five fiction books, 4 more non-fiction books tha
+    idx 6927: exp=32.0 pred=32.0 trunc=False err=None tok=355 | The Martin family goes to the mall to get ice cream.  A kiddie scoop is $3.  A regular sco
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 236: exp=825.0 pred=825.0 trunc=False err=None tok=309 | Jake has $5000. He spends $2800 on a new motorcycle, and then spends half of what's left o
+    idx 348: exp=60.0 pred=60.0 trunc=False err=None tok=383 | Brian can only hold his breath underwater for 10 seconds.  He wants to get better, so he s
+    idx 720: exp=64.0 pred=64.0 trunc=False err=None tok=616 | Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts s
+    idx 781: exp=705.0 pred=705.0 trunc=False err=None tok=270 | I went to the music shop and there were CDs of The Life Journey for $100, A Day a Life for
+    idx 1739: exp=25.0 pred=25.0 trunc=False err=None tok=442 | The class plans to take a field trip to the zoo. The cost to rent a school bus is $100. Th
+    idx 2177: exp=39.0 pred=39.0 trunc=False err=None tok=593 | Toby, the Alaskan Malamute, can pull a sled at a speed of 20 miles per hour if the sled is
+    idx 2436: exp=5.0 pred=5.0 trunc=False err=None tok=278 | A Printing shop needs to ship 5000 brochures to an advertising company. Each box can only 
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 3624: exp=18.0 pred=18.0 trunc=False err=None tok=342 | A truck driver’s heavy semi truck can go 3 miles per gallon of gas. The truck driver needs
+    idx 3766: exp=200.0 pred=200.0 trunc=False err=None tok=221 | Miss Darlington has a basket of 20 blueberries. She picked 9 more baskets with the same am
+    idx 4150: exp=84.0 pred=84.0 trunc=False err=None tok=332 | Mrs. Thomson received an incentive worth $240. She spent 1/3 of the money on food and 1/5 
+    idx 4573: exp=16.0 pred=16.0 trunc=False err=None tok=327 | The ratio of boys to girls in a classroom is 3:5. If there are 4 more girls than boys, how
+
+Отчёт: runs/variants/v1_Alog_decay_half/compare_dev.json
+Сравнение: baseline -> v2_Alog_decay_double (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v2_Alog_decay_double   acc=62/100 (62.00%) извлечено=92 обрывов=6 токенов=372.5 сек/задача=4.41
+  Дельта: +3 задач (+3.00 п.п.)
+  Исправлено: 13  Сломано: 10  Верно в обоих: 49  Неверно в обоих: 28
+  Точный тест Макнемара: p = 0.6776 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 1125: exp=254.0 pred=254.0 trunc=False err=None tok=620 | Sharon wants to get kitchen supplies. She admired Angela's kitchen supplies which consist 
+    idx 2069: exp=62.0 pred=62.0 trunc=False err=None tok=203 | Page collects fancy shoes and has 80 pairs in her closet.  She decides to donate 30% of he
+    idx 2328: exp=204.0 pred=204.0 trunc=False err=None tok=478 | I bought a pair of shoes for $51. The shoes were already marked 75% off. What is the origi
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=244 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=206 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=227 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=213 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5034: exp=5.0 pred=5.0 trunc=False err=None tok=238 | Jackie spends 8 hours working, 3 hours of exercise and spends 8 hours of sleep per day. Ho
+    idx 5785: exp=11.0 pred=11.0 trunc=False err=None tok=475 | There are 35 books on the cart. There are five fiction books, 4 more non-fiction books tha
+    idx 6097: exp=60.0 pred=60.0 trunc=False err=None tok=382 | John has 25 horses.  He feeds each horse twice a day and feeds them 20 pounds of food at e
+    idx 6927: exp=32.0 pred=32.0 trunc=False err=None tok=344 | The Martin family goes to the mall to get ice cream.  A kiddie scoop is $3.  A regular sco
+    idx 7254: exp=10.0 pred=10.0 trunc=False err=None tok=453 | In Henry's collection of music CDs, he has 3 more country CDs than rock CDs but twice as m
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 268: exp=12.0 pred=12.0 trunc=False err=None tok=259 | Trevor buys several bouquets of carnations. The first included 9 carnations; the second in
+    idx 2177: exp=39.0 pred=39.0 trunc=False err=None tok=593 | Toby, the Alaskan Malamute, can pull a sled at a speed of 20 miles per hour if the sled is
+    idx 3104: exp=30.0 pred=30.0 trunc=False err=None tok=239 | Mark wants to tip his server 20% on a $200 check. If his friend agrees to kick in $10, how
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 3766: exp=200.0 pred=200.0 trunc=False err=None tok=221 | Miss Darlington has a basket of 20 blueberries. She picked 9 more baskets with the same am
+    idx 3799: exp=8.0 pred=8.0 trunc=False err=None tok=466 | In four years, Suzy will be twice Mary's age then. If Suzy is 20 now, how old is Mary?
+    idx 4628: exp=270.0 pred=270.0 trunc=False err=None tok=449 | Greta received 10 more letters in the mail than her brother. Greta's mother received twice
+    idx 5088: exp=40.0 pred=40.0 trunc=False err=None tok=270 | Barbara went shopping in a supermarket. She bought 5 packs of tuna for $2 each and 4 bottl
+    idx 6163: exp=70.0 pred=70.0 trunc=False err=None tok=473 | The sum of the three angles of a triangle equals 250. The left angle is twice the right an
+    idx 7228: exp=300.0 pred=300.0 trunc=False err=None tok=703 | If Pete read twice as many books as Matt did last year, and this year he doubles that numb
+
+Отчёт: runs/variants/v2_Alog_decay_double/compare_dev.json
+Сравнение: baseline -> v3_dt_bias_shift_down (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v3_dt_bias_shift_down  acc=21/100 (21.00%) извлечено=55 обрывов=41 токенов=612.5 сек/задача=7.17
+  Дельта: -38 задач (-38.00 п.п.)
+  Исправлено: 5  Сломано: 43  Верно в обоих: 16  Неверно в обоих: 36
+  Точный тест Макнемара: p = 1.368e-08 (значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 157: exp=10.0 pred=10.0 trunc=False err=None tok=432 | A young girl pours 23 blue beads and 16 yellow beads into a bowl. She divides the total in
+    idx 1060: exp=36.0 pred=36.0 trunc=False err=None tok=272 | Barbie enjoys buying jewelry. One day, she bought 12 pairs of earrings, and gave half of t
+    idx 1480: exp=4.0 pred=4.0 trunc=False err=None tok=176 | Oli's banana split has 4 scoops of ice cream while Victoria has twice more scoops of ice c
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=240 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 5781: exp=78.0 pred=78.0 trunc=False err=None tok=636 | Candice buys all the bread she and her family needs for the week from a local bakery.  She
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 56: exp=45.0 pred=45.0 trunc=False err=None tok=409 | Leo's assignment was divided into three parts. He finished the first part of his assignmen
+    idx 236: exp=825.0 pred=825.0 trunc=False err=None tok=309 | Jake has $5000. He spends $2800 on a new motorcycle, and then spends half of what's left o
+    idx 348: exp=60.0 pred=60.0 trunc=False err=None tok=383 | Brian can only hold his breath underwater for 10 seconds.  He wants to get better, so he s
+    idx 354: exp=9.0 pred=9.0 trunc=False err=None tok=338 | Seth bought some boxes of oranges. He gave a box to his mother. He then gave away half of 
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 688: exp=45.0 pred=45.0 trunc=False err=None tok=267 | Trent caught 180 tadpoles then let 75% of them go. How many did he keep?
+    idx 720: exp=64.0 pred=64.0 trunc=False err=None tok=616 | Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts s
+    idx 781: exp=705.0 pred=705.0 trunc=False err=None tok=270 | I went to the music shop and there were CDs of The Life Journey for $100, A Day a Life for
+    idx 1070: exp=42.0 pred=42.0 trunc=False err=None tok=211 | Every morning, Jason eats an omelet made using three eggs.  How many eggs will Jason consu
+    idx 1185: exp=115.0 pred=115.0 trunc=False err=None tok=235 | To make 3 liters of ketchup Ashley needs 69 kg of tomatoes.  How many kilos of tomatoes do
+    idx 1275: exp=650.0 pred=650.0 trunc=False err=None tok=277 | Ginger is weaving mats out of colored straw. Each mat takes 20 red straws, 30 orange straw
+    idx 1693: exp=28.0 pred=28.0 trunc=False err=None tok=318 | Eden's mom is twice as old as Eden, who is twice as old as Devin. If Devin is 12 years old
+
+Отчёт: runs/variants/v3_dt_bias_shift_down/compare_dev.json
+Сравнение: baseline -> v4_beta_amplify (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v4_beta_amplify        acc=59/100 (59.00%) извлечено=92 обрывов=8 токенов=376.0 сек/задача=4.41
+  Дельта: +0 задач (+0.00 п.п.)
+  Исправлено: 14  Сломано: 14  Верно в обоих: 45  Неверно в обоих: 27
+  Точный тест Макнемара: p = 1 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 951: exp=54.0 pred=54.0 trunc=False err=None tok=297 | Michonne is inviting her friends to her birthday party. She invites 6 of her friends from 
+    idx 1075: exp=195.0 pred=195.0 trunc=False err=None tok=266 | Celina enjoys hiking in the mountains. Due to a lack of proper equipment, she decided to o
+    idx 1480: exp=4.0 pred=4.0 trunc=False err=None tok=215 | Oli's banana split has 4 scoops of ice cream while Victoria has twice more scoops of ice c
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=209 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 2069: exp=62.0 pred=62.0 trunc=False err=None tok=248 | Page collects fancy shoes and has 80 pairs in her closet.  She decides to donate 30% of he
+    idx 2328: exp=204.0 pred=204.0 trunc=False err=None tok=387 | I bought a pair of shoes for $51. The shoes were already marked 75% off. What is the origi
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=253 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=273 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 3482: exp=18.0 pred=18.0 trunc=False err=None tok=257 | Cersei bought 50 cotton candies. She gave her brother and sister 5 cotton candies each, th
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=200 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=231 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5785: exp=11.0 pred=11.0 trunc=False err=None tok=404 | There are 35 books on the cart. There are five fiction books, 4 more non-fiction books tha
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 348: exp=60.0 pred=60.0 trunc=False err=None tok=383 | Brian can only hold his breath underwater for 10 seconds.  He wants to get better, so he s
+    idx 354: exp=9.0 pred=9.0 trunc=False err=None tok=338 | Seth bought some boxes of oranges. He gave a box to his mother. He then gave away half of 
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 720: exp=64.0 pred=64.0 trunc=False err=None tok=616 | Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts s
+    idx 2177: exp=39.0 pred=39.0 trunc=False err=None tok=593 | Toby, the Alaskan Malamute, can pull a sled at a speed of 20 miles per hour if the sled is
+    idx 2841: exp=6.0 pred=6.0 trunc=False err=None tok=291 | Dolly wants to ride the Ferris wheel twice, the roller coaster three times, and the log ri
+    idx 3104: exp=30.0 pred=30.0 trunc=False err=None tok=239 | Mark wants to tip his server 20% on a $200 check. If his friend agrees to kick in $10, how
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 4150: exp=84.0 pred=84.0 trunc=False err=None tok=332 | Mrs. Thomson received an incentive worth $240. She spent 1/3 of the money on food and 1/5 
+    idx 4330: exp=72.0 pred=72.0 trunc=False err=None tok=318 | Simon has 20% more legos than Bruce, who has 20 more than Kent.  If Kent has 40 legos, how
+    idx 4398: exp=1316.0 pred=1316.0 trunc=False err=None tok=214 | An adult panda can eat 138 pounds of bamboo each day. A baby panda can eat 50 pounds of ba
+    idx 5088: exp=40.0 pred=40.0 trunc=False err=None tok=270 | Barbara went shopping in a supermarket. She bought 5 packs of tuna for $2 each and 4 bottl
+
+Отчёт: runs/variants/v4_beta_amplify/compare_dev.json
+Сравнение: baseline -> v5_beta_soften (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v5_beta_soften         acc=60/100 (60.00%) извлечено=91 обрывов=5 токенов=383.1 сек/задача=4.54
+  Дельта: +1 задач (+1.00 п.п.)
+  Исправлено: 12  Сломано: 11  Верно в обоих: 48  Неверно в обоих: 29
+  Точный тест Макнемара: p = 1 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 99/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 29: exp=1000.0 pred=1000.0 trunc=False err=None tok=565 | Mrs. Snyder used to spend 40% of her monthly income on rent and utilities. Her salary was 
+    idx 1480: exp=4.0 pred=4.0 trunc=False err=None tok=277 | Oli's banana split has 4 scoops of ice cream while Victoria has twice more scoops of ice c
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=183 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 2069: exp=62.0 pred=62.0 trunc=False err=None tok=254 | Page collects fancy shoes and has 80 pairs in her closet.  She decides to donate 30% of he
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=315 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=176 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=180 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=257 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 6097: exp=60.0 pred=60.0 trunc=False err=None tok=392 | John has 25 horses.  He feeds each horse twice a day and feeds them 20 pounds of food at e
+    idx 6295: exp=160.0 pred=160.0 trunc=False err=None tok=499 | Brady gets paid 70 cents for each recipe card he transcribes. He also gets a 10 dollar bon
+    idx 7254: exp=10.0 pred=10.0 trunc=False err=None tok=450 | In Henry's collection of music CDs, he has 3 more country CDs than rock CDs but twice as m
+    idx 7345: exp=24.0 pred=24.0 trunc=False err=None tok=224 | A cat spends its time hunting birds.  The cat catches 8 birds during the day and twice thi
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 354: exp=9.0 pred=9.0 trunc=False err=None tok=338 | Seth bought some boxes of oranges. He gave a box to his mother. He then gave away half of 
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 688: exp=45.0 pred=45.0 trunc=False err=None tok=267 | Trent caught 180 tadpoles then let 75% of them go. How many did he keep?
+    idx 1739: exp=25.0 pred=25.0 trunc=False err=None tok=442 | The class plans to take a field trip to the zoo. The cost to rent a school bus is $100. Th
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 3766: exp=200.0 pred=200.0 trunc=False err=None tok=221 | Miss Darlington has a basket of 20 blueberries. She picked 9 more baskets with the same am
+    idx 4060: exp=104.0 pred=104.0 trunc=False err=None tok=295 | There is a square playground that has a side length of 12 meters. There is a maintenance b
+    idx 4150: exp=84.0 pred=84.0 trunc=False err=None tok=332 | Mrs. Thomson received an incentive worth $240. She spent 1/3 of the money on food and 1/5 
+    idx 4449: exp=9.0 pred=9.0 trunc=False err=None tok=309 | Ahmed has 8 orange trees and four times as many apple trees in his orchard as Hassan. If H
+    idx 7228: exp=300.0 pred=300.0 trunc=False err=None tok=703 | If Pete read twice as many books as Matt did last year, and this year he doubles that numb
+    idx 7325: exp=295.0 pred=295.0 trunc=False err=None tok=575 | John is 15 cm taller than Lena and 6 cm shorter than Rebeca. If John has a height of 152 c
+
+Отчёт: runs/variants/v5_beta_soften/compare_dev.json
+Сравнение: baseline -> v6_attn_sharpen (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v6_attn_sharpen        acc=53/100 (53.00%) извлечено=93 обрывов=7 токенов=429.0 сек/задача=5.03
+  Дельта: -6 задач (-6.00 п.п.)
+  Исправлено: 12  Сломано: 18  Верно в обоих: 41  Неверно в обоих: 29
+  Точный тест Макнемара: p = 0.3616 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 1075: exp=195.0 pred=195.0 trunc=False err=None tok=374 | Celina enjoys hiking in the mountains. Due to a lack of proper equipment, she decided to o
+    idx 1125: exp=254.0 pred=254.0 trunc=False err=None tok=833 | Sharon wants to get kitchen supplies. She admired Angela's kitchen supplies which consist 
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=232 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=275 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=183 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=236 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=226 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5169: exp=3000.0 pred=3000.0 trunc=False err=None tok=382 | An amusement park sells tickets for $3. This week it welcomed 100 people per day but on Sa
+    idx 5785: exp=11.0 pred=11.0 trunc=False err=None tok=778 | There are 35 books on the cart. There are five fiction books, 4 more non-fiction books tha
+    idx 7254: exp=10.0 pred=10.0 trunc=False err=None tok=491 | In Henry's collection of music CDs, he has 3 more country CDs than rock CDs but twice as m
+    idx 7345: exp=24.0 pred=24.0 trunc=False err=None tok=214 | A cat spends its time hunting birds.  The cat catches 8 birds during the day and twice thi
+    idx 7353: exp=13.0 pred=13.0 trunc=False err=None tok=848 | Jay went to watch a singer in a one hour 20 minutes concert.  If there was a 10-minute int
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 56: exp=45.0 pred=45.0 trunc=False err=None tok=409 | Leo's assignment was divided into three parts. He finished the first part of his assignmen
+    idx 348: exp=60.0 pred=60.0 trunc=False err=None tok=383 | Brian can only hold his breath underwater for 10 seconds.  He wants to get better, so he s
+    idx 380: exp=14.0 pred=14.0 trunc=False err=None tok=242 | Patrick is half the age of his elder brother Robert. If Robert will turn 30 after 2 years,
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 720: exp=64.0 pred=64.0 trunc=False err=None tok=616 | Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts s
+    idx 1275: exp=650.0 pred=650.0 trunc=False err=None tok=277 | Ginger is weaving mats out of colored straw. Each mat takes 20 red straws, 30 orange straw
+    idx 1693: exp=28.0 pred=28.0 trunc=False err=None tok=318 | Eden's mom is twice as old as Eden, who is twice as old as Devin. If Devin is 12 years old
+    idx 2841: exp=6.0 pred=6.0 trunc=False err=None tok=291 | Dolly wants to ride the Ferris wheel twice, the roller coaster three times, and the log ri
+    idx 3624: exp=18.0 pred=18.0 trunc=False err=None tok=342 | A truck driver’s heavy semi truck can go 3 miles per gallon of gas. The truck driver needs
+    idx 4150: exp=84.0 pred=84.0 trunc=False err=None tok=332 | Mrs. Thomson received an incentive worth $240. She spent 1/3 of the money on food and 1/5 
+    idx 4449: exp=9.0 pred=9.0 trunc=False err=None tok=309 | Ahmed has 8 orange trees and four times as many apple trees in his orchard as Hassan. If H
+    idx 4628: exp=270.0 pred=270.0 trunc=False err=None tok=449 | Greta received 10 more letters in the mail than her brother. Greta's mother received twice
+
+Отчёт: runs/variants/v6_attn_sharpen/compare_dev.json
+Сравнение: baseline -> v7_attn_smooth (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v7_attn_smooth         acc=22/100 (22.00%) извлечено=53 обрывов=19 токенов=489.9 сек/задача=5.75
+  Дельта: -37 задач (-37.00 п.п.)
+  Исправлено: 2  Сломано: 39  Верно в обоих: 20  Неверно в обоих: 39
+  Точный тест Макнемара: p = 7.84e-10 (значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=271 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=332 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 56: exp=45.0 pred=45.0 trunc=False err=None tok=409 | Leo's assignment was divided into three parts. He finished the first part of his assignmen
+    idx 236: exp=825.0 pred=825.0 trunc=False err=None tok=309 | Jake has $5000. He spends $2800 on a new motorcycle, and then spends half of what's left o
+    idx 348: exp=60.0 pred=60.0 trunc=False err=None tok=383 | Brian can only hold his breath underwater for 10 seconds.  He wants to get better, so he s
+    idx 380: exp=14.0 pred=14.0 trunc=False err=None tok=242 | Patrick is half the age of his elder brother Robert. If Robert will turn 30 after 2 years,
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 720: exp=64.0 pred=64.0 trunc=False err=None tok=616 | Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts s
+    idx 781: exp=705.0 pred=705.0 trunc=False err=None tok=270 | I went to the music shop and there were CDs of The Life Journey for $100, A Day a Life for
+    idx 1070: exp=42.0 pred=42.0 trunc=False err=None tok=211 | Every morning, Jason eats an omelet made using three eggs.  How many eggs will Jason consu
+    idx 1693: exp=28.0 pred=28.0 trunc=False err=None tok=318 | Eden's mom is twice as old as Eden, who is twice as old as Devin. If Devin is 12 years old
+    idx 1739: exp=25.0 pred=25.0 trunc=False err=None tok=442 | The class plans to take a field trip to the zoo. The cost to rent a school bus is $100. Th
+    idx 2177: exp=39.0 pred=39.0 trunc=False err=None tok=593 | Toby, the Alaskan Malamute, can pull a sled at a speed of 20 miles per hour if the sled is
+    idx 2250: exp=8.0 pred=8.0 trunc=False err=None tok=328 | Thomas is making hummus. One of the ingredients in a hummus recipe is chickpeas. For one s
+
+Отчёт: runs/variants/v7_attn_smooth/compare_dev.json
+Сравнение: baseline -> v8_mlp_amp (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v8_mlp_amp             acc=59/100 (59.00%) извлечено=91 обрывов=5 токенов=354.1 сек/задача=4.24
+  Дельта: +0 задач (+0.00 п.п.)
+  Исправлено: 14  Сломано: 14  Верно в обоих: 45  Неверно в обоих: 27
+  Точный тест Макнемара: p = 1 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 759: exp=8798.0 pred=8798.0 trunc=False err=None tok=463 | Tom wants to make the world's largest dough ball.  He needs 500 pounds of flour and he can
+    idx 1060: exp=36.0 pred=36.0 trunc=False err=None tok=245 | Barbie enjoys buying jewelry. One day, she bought 12 pairs of earrings, and gave half of t
+    idx 1125: exp=254.0 pred=254.0 trunc=False err=None tok=429 | Sharon wants to get kitchen supplies. She admired Angela's kitchen supplies which consist 
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=170 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 2069: exp=62.0 pred=62.0 trunc=False err=None tok=224 | Page collects fancy shoes and has 80 pairs in her closet.  She decides to donate 30% of he
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=227 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=161 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 3482: exp=18.0 pred=18.0 trunc=False err=None tok=330 | Cersei bought 50 cotton candies. She gave her brother and sister 5 cotton candies each, th
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=219 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=196 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5034: exp=5.0 pred=5.0 trunc=False err=None tok=161 | Jackie spends 8 hours working, 3 hours of exercise and spends 8 hours of sleep per day. Ho
+    idx 5785: exp=11.0 pred=11.0 trunc=False err=None tok=372 | There are 35 books on the cart. There are five fiction books, 4 more non-fiction books tha
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 1739: exp=25.0 pred=25.0 trunc=False err=None tok=442 | The class plans to take a field trip to the zoo. The cost to rent a school bus is $100. Th
+    idx 2436: exp=5.0 pred=5.0 trunc=False err=None tok=278 | A Printing shop needs to ship 5000 brochures to an advertising company. Each box can only 
+    idx 2657: exp=16.0 pred=16.0 trunc=False err=None tok=190 | A box holds 2 dozen doughnuts. If the family ate 8 doughnuts, how many doughnuts are left?
+    idx 3104: exp=30.0 pred=30.0 trunc=False err=None tok=239 | Mark wants to tip his server 20% on a $200 check. If his friend agrees to kick in $10, how
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 3732: exp=27.0 pred=27.0 trunc=False err=None tok=270 | David finished his homework in 60 minutes. He spent 15 minutes on his math homework and 18
+    idx 4150: exp=84.0 pred=84.0 trunc=False err=None tok=332 | Mrs. Thomson received an incentive worth $240. She spent 1/3 of the money on food and 1/5 
+    idx 4843: exp=9.0 pred=9.0 trunc=False err=None tok=417 | Josh has soccer practice on Monday, Wednesday, and Friday from 3:00 p.m. to 5:00 p.m.  He 
+    idx 5088: exp=40.0 pred=40.0 trunc=False err=None tok=270 | Barbara went shopping in a supermarket. She bought 5 packs of tuna for $2 each and 4 bottl
+    idx 5859: exp=177.0 pred=177.0 trunc=False err=None tok=251 | Michelle loves sugar. She bought 14 chocolate bars, each of which had 10 grams of sugar. S
+    idx 6812: exp=8.0 pred=8.0 trunc=False err=None tok=248 | Alice made 52 friendship bracelets over spring break to sell at school.  It only cost her 
+
+Отчёт: runs/variants/v8_mlp_amp/compare_dev.json
+Сравнение: baseline -> v9_mlp_damp (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v9_mlp_damp            acc=62/100 (62.00%) извлечено=86 обрывов=7 токенов=410.9 сек/задача=5.07
+  Дельта: +3 задач (+3.00 п.п.)
+  Исправлено: 16  Сломано: 13  Верно в обоих: 46  Неверно в обоих: 25
+  Точный тест Макнемара: p = 0.7111 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 29: exp=1000.0 pred=1000.0 trunc=False err=None tok=632 | Mrs. Snyder used to spend 40% of her monthly income on rent and utilities. Her salary was 
+    idx 759: exp=8798.0 pred=8798.0 trunc=False err=None tok=486 | Tom wants to make the world's largest dough ball.  He needs 500 pounds of flour and he can
+    idx 951: exp=54.0 pred=54.0 trunc=False err=None tok=215 | Michonne is inviting her friends to her birthday party. She invites 6 of her friends from 
+    idx 1075: exp=195.0 pred=195.0 trunc=False err=None tok=345 | Celina enjoys hiking in the mountains. Due to a lack of proper equipment, she decided to o
+    idx 1125: exp=254.0 pred=254.0 trunc=False err=None tok=581 | Sharon wants to get kitchen supplies. She admired Angela's kitchen supplies which consist 
+    idx 1480: exp=4.0 pred=4.0 trunc=False err=None tok=268 | Oli's banana split has 4 scoops of ice cream while Victoria has twice more scoops of ice c
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=221 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 3321: exp=74.0 pred=74.0 trunc=False err=None tok=323 | John took a test with 80 questions.  For the first 40 questions, she got 90% right.  For t
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=350 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=237 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5781: exp=78.0 pred=78.0 trunc=False err=None tok=519 | Candice buys all the bread she and her family needs for the week from a local bakery.  She
+    idx 6097: exp=60.0 pred=60.0 trunc=False err=None tok=457 | John has 25 horses.  He feeds each horse twice a day and feeds them 20 pounds of food at e
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 380: exp=14.0 pred=14.0 trunc=False err=None tok=242 | Patrick is half the age of his elder brother Robert. If Robert will turn 30 after 2 years,
+    idx 720: exp=64.0 pred=64.0 trunc=False err=None tok=616 | Mr. Callen bought 10 paintings at $40 each and 8 wooden toys at $20 each from the crafts s
+    idx 2250: exp=8.0 pred=8.0 trunc=False err=None tok=328 | Thomas is making hummus. One of the ingredients in a hummus recipe is chickpeas. For one s
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 3766: exp=200.0 pred=200.0 trunc=False err=None tok=221 | Miss Darlington has a basket of 20 blueberries. She picked 9 more baskets with the same am
+    idx 3799: exp=8.0 pred=8.0 trunc=False err=None tok=466 | In four years, Suzy will be twice Mary's age then. If Suzy is 20 now, how old is Mary?
+    idx 4843: exp=9.0 pred=9.0 trunc=False err=None tok=417 | Josh has soccer practice on Monday, Wednesday, and Friday from 3:00 p.m. to 5:00 p.m.  He 
+    idx 5088: exp=40.0 pred=40.0 trunc=False err=None tok=270 | Barbara went shopping in a supermarket. She bought 5 packs of tuna for $2 each and 4 bottl
+    idx 5803: exp=1.0 pred=1.0 trunc=False err=None tok=194 | Daniel buys a magazine costing $0.85 and a pencil costing $0.50. He pays with a coupon tha
+    idx 6136: exp=12.0 pred=12.0 trunc=False err=None tok=218 | Candy baked four trays with 24 cookies in each tray. She then divided the cookies equally 
+    idx 6163: exp=70.0 pred=70.0 trunc=False err=None tok=473 | The sum of the three angles of a triangle equals 250. The left angle is twice the right an
+    idx 7228: exp=300.0 pred=300.0 trunc=False err=None tok=703 | If Pete read twice as many books as Matt did last year, and this year he doubles that numb
+
+Отчёт: runs/variants/v9_mlp_damp/compare_dev.json
+Сравнение: baseline -> v10_attn_branch_amp (общих задач: 100)
+  baseline               acc=59/100 (59.00%) извлечено=90 обрывов=7 токенов=386.7 сек/задача=4.62
+  v10_attn_branch_amp    acc=61/100 (61.00%) извлечено=92 обрывов=5 токенов=396.8 сек/задача=4.64
+  Дельта: +2 задач (+2.00 п.п.)
+  Исправлено: 14  Сломано: 12  Верно в обоих: 47  Неверно в обоих: 27
+  Точный тест Макнемара: p = 0.845 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 100/100
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 759: exp=8798.0 pred=8798.0 trunc=False err=None tok=477 | Tom wants to make the world's largest dough ball.  He needs 500 pounds of flour and he can
+    idx 1480: exp=4.0 pred=4.0 trunc=False err=None tok=260 | Oli's banana split has 4 scoops of ice cream while Victoria has twice more scoops of ice c
+    idx 1962: exp=80.0 pred=80.0 trunc=False err=None tok=221 | Philip is a painter. He makes 2 paintings per day. If he already has 20 paintings, how man
+    idx 2743: exp=3000.0 pred=3000.0 trunc=False err=None tok=323 | A store decides to shut down and sell all of its inventory.  They have 2000 different item
+    idx 3459: exp=27.0 pred=27.0 trunc=False err=None tok=210 | Kristine has 7 more CDs than Dawn. If Dawn has 10 CDs, how many CDs do they have together?
+    idx 3482: exp=18.0 pred=18.0 trunc=False err=None tok=352 | Cersei bought 50 cotton candies. She gave her brother and sister 5 cotton candies each, th
+    idx 4138: exp=60.0 pred=60.0 trunc=False err=None tok=307 | Agatha has some money to spend on a new bike. She spends $15 on the frame, and $25 on the 
+    idx 4531: exp=51.0 pred=51.0 trunc=False err=None tok=231 | In a newspaper, each one of 12 pages holds 2 photos and each of another 9 pages hold 3 pho
+    idx 5334: exp=12.0 pred=12.0 trunc=False err=None tok=396 | Judy uses 10 pencils during her 5 day school week. A 30 pack of pencils costs $4. How much
+    idx 5527: exp=6.0 pred=6.0 trunc=False err=None tok=814 | Walter fell from the eighth platform of some scaffolding and fell past David after falling
+    idx 6097: exp=60.0 pred=60.0 trunc=False err=None tok=461 | John has 25 horses.  He feeds each horse twice a day and feeds them 20 pounds of food at e
+    idx 6295: exp=160.0 pred=160.0 trunc=False err=None tok=363 | Brady gets paid 70 cents for each recipe card he transcribes. He also gets a 10 dollar bon
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 56: exp=45.0 pred=45.0 trunc=False err=None tok=409 | Leo's assignment was divided into three parts. He finished the first part of his assignmen
+    idx 348: exp=60.0 pred=60.0 trunc=False err=None tok=383 | Brian can only hold his breath underwater for 10 seconds.  He wants to get better, so he s
+    idx 380: exp=14.0 pred=14.0 trunc=False err=None tok=242 | Patrick is half the age of his elder brother Robert. If Robert will turn 30 after 2 years,
+    idx 640: exp=13.0 pred=13.0 trunc=False err=None tok=238 | Michelangelo has 28 ceilings to paint. This week, he paints 12 of them. Next week, he will
+    idx 2177: exp=39.0 pred=39.0 trunc=False err=None tok=593 | Toby, the Alaskan Malamute, can pull a sled at a speed of 20 miles per hour if the sled is
+    idx 3142: exp=4000.0 pred=4000.0 trunc=False err=None tok=363 | Three-quarters of the oil from a 4000-liter tank (that was initially full) was poured into
+    idx 3766: exp=200.0 pred=200.0 trunc=False err=None tok=221 | Miss Darlington has a basket of 20 blueberries. She picked 9 more baskets with the same am
+    idx 4828: exp=4.0 pred=4.0 trunc=False err=None tok=278 | John had $20. He spent 1/5 of his money on snacks and 3/4 of the remaining money on necess
+    idx 4843: exp=9.0 pred=9.0 trunc=False err=None tok=417 | Josh has soccer practice on Monday, Wednesday, and Friday from 3:00 p.m. to 5:00 p.m.  He 
+    idx 6136: exp=12.0 pred=12.0 trunc=False err=None tok=218 | Candy baked four trays with 24 cookies in each tray. She then divided the cookies equally 
+    idx 6163: exp=70.0 pred=70.0 trunc=False err=None tok=473 | The sum of the three angles of a triangle equals 250. The left angle is twice the right an
+    idx 7228: exp=300.0 pred=300.0 trunc=False err=None tok=703 | If Pete read twice as many books as Matt did last year, and this year he doubles that numb
+
+Отчёт: runs/variants/v10_attn_branch_amp/compare_dev.json

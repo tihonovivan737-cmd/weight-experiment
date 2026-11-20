@@ -1,0 +1,16 @@
+{
+ "results": "runs/variants/w25_z_headsel_damp088/dev/results.jsonl",
+ "label": "w25_z_headsel_damp088_dev",
+ "split": "train",
+ "n": 100,
+ "correct": 64,
+ "final_extracted": 94,
+ "no_final": 6,
+ "truncated": 5,
+ "gold_hidden_in_truncated_text": 2,
+ "wrong_with_final": 31,
+ "wrong_without_final": 6,
+ "near_miss_within_1pct": 1,
+ "mean_len_correct": 874.1,
+ "mean_len_wrong_with_final": 1086.5
+}

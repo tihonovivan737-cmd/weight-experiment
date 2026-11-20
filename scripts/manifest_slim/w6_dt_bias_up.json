@@ -1,0 +1,709 @@
+{
+ "name": "w6_dt_bias_up",
+ "hypothesis": "H1d (пара к v3). dt_bias += 2 (clip_max +6) — повышает базовую скорость затухания состояния Gated DeltaNet: промежуточные числа забываются быстрее. Направление противоположное v3; симметричная проверка нужна, чтобы не принять случайность за эффект.",
+ "expected_effect": "Более локальное внимание; проверка направления эффекта памяти.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/w6_dt_bias_up/model",
+ "new_safetensors_sha256": "46c2d476a4411736165919d99fe82bc5ce084d05b4bbe8193727fa3f69ad4556",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.linear_attn.dt_bias"
+   ],
+   "op": "add",
+   "value": 2.0,
+   "clip_max": 6.0
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.0.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    508680776,
+    508680808
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.90039062,
+   "max_abs_delta": 2.375,
+   "sha256_before": "058cec20af625f4e3971da95b131af08db8f9ab26b1301b90c6f6401c5243388",
+   "sha256_after": "9c817ca1c19660dba8ee9062752eb0f1c43c1a45ae45551a7614d26060fecc1e",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.1.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    551791208,
+    551791240
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.99786377,
+   "max_abs_delta": 2.0078125,
+   "sha256_before": "3c99bf6c106f2cc7afce28251be0c5f471f18a62686c9d5c80d04d98e8b3fb9a",
+   "sha256_after": "ffd57d1944502ae0e6295322900b9c94af4db1cda9efb9bd2eedb8bd343d7001",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.10.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    594901640,
+    594901672
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.0,
+   "max_abs_delta": 2.0,
+   "sha256_before": "1b3e8ff7bdbd185188bb28dc3190a5422501d012e51cafd5faf8d21f86512061",
+   "sha256_after": "44a413e7c2a11065abcd234e95bfd3ce2a6f79d4e3cf619cd3b60f2a5bf79d24",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.12.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    674717352,
+    674717384
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.0,
+   "max_abs_delta": 2.0,
+   "sha256_before": "5d8cef5bde9f46cdcce4e487c33fa2f2e8bbdac3bca5a166ee0fb54142ecda2d",
+   "sha256_after": "76454bcf0d3e8854044dc1477837605994cb5ac99e859a5264872b0710fabab8",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.13.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    717827784,
+    717827816
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.99972534,
+   "max_abs_delta": 2.00195312,
+   "sha256_before": "a0368cef2ab75a6fba5e6509e80abaaedf47bd83a201c3a586ef337a6246efa1",
+   "sha256_after": "7651d9753fe472e93ba2a80043485862cb381b88fbe338d1944c65fa77ca9f4c",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.14.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    760938216,
+    760938248
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.00048828,
+   "max_abs_delta": 2.00390625,
+   "sha256_before": "ec327be5bc6f761f09528dddc66a8aef6b0bfea753dbc31dc678866ee2d2a8e0",
+   "sha256_after": "5623b859d86600a3dd9afed7f2555ff810975cb82bab985a677e556077f9a300",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.16.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    840753928,
+    840753960
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.00167847,
+   "max_abs_delta": 2.0078125,
+   "sha256_before": "43150073a3011519850a65c6a3373ee89a0fb09a2c298a8e75b22c12bafdae13",
+   "sha256_after": "3654115c534ec45dfd9f9e5a854cf92872678dce0ce6e10eca40e06d8781e18c",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.17.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    883864360,
+    883864392
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.00030518,
+   "max_abs_delta": 2.0078125,
+   "sha256_before": "ab51aafbe0b1c8e8865d525e726ea43426b6d3e7d70314e2284f5884874be0de",
+   "sha256_after": "74f92593090a46460f258de8c67f1fcfbb839a3bf76c8d09e68f34d25623cc26",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.18.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    926974792,
+    926974824
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.94335938,
+   "max_abs_delta": 2.0078125,
+   "sha256_before": "d8dd2668405443e3502df2447713e66aa5dd25c52ff3c96d2e2c0cad8e30abb1",
+   "sha256_after": "cb99d113ce1831010902535c9f087c59418e8a00c7c6bb90ed411462978f7b7a",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.2.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1006790504,
+    1006790536
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.99859619,
+   "max_abs_delta": 2.0,
+   "sha256_before": "942709532514b148fa625457a4b23d6fb819b06c702494760f2891cc855d66c1",
+   "sha256_after": "6d6c617ed3cdca8fe2594a23de9114ba22edc1fbd2e1a823ed8929cc43343f8f",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.20.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1049900936,
+    1049900968
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.94958496,
+   "max_abs_delta": 2.0,
+   "sha256_before": "8f37a0989adf2651fdccc89820088050666b1e1c158a6d0d2f8fd9637a978ffb",
+   "sha256_after": "5c3e0eca13db7add4346776f3ef45ffd12758197328b72db0a0e7bc51d570e5d",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.21.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1093011368,
+    1093011400
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.92822266,
+   "max_abs_delta": 2.015625,
+   "sha256_before": "a4bddfddca7a084d36b3ac4e4e67e06513f42a21bb730fd2fde17ba08a8b6857",
+   "sha256_after": "c3a5c4f400292d9998ca18922f26b8a54c61a8ad96868c7eca00b140c81c9f8d",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.22.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1136121800,
+    1136121832
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.95251465,
+   "max_abs_delta": 2.0078125,
+   "sha256_before": "14b0292483dfb58158c5b80e9d71fc3c28a56805b8596faa87a8b548a31a7784",
+   "sha256_after": "f1dd3f7c3cee0deb371324d64724cc66479b71a211246155d732d5b3c4402787",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.4.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1252642792,
+    1252642824
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.99952698,
+   "max_abs_delta": 2.00268555,
+   "sha256_before": "503fc13e97f752879c8eea76750589cf0656a40b2b1a694642ba72ae3b64fccb",
+   "sha256_after": "b704e78c21d1f8e0088a3a5527a17cff8fede42658ece82420f1ac317fa4edda",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.5.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1295753224,
+    1295753256
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.00006104,
+   "max_abs_delta": 2.00390625,
+   "sha256_before": "ff26a071cce66e8930581452e2f5da545a3ef16ed6b149bf4a311723bd45e144",
+   "sha256_after": "dc3bf1df853d0cb79842166154d4f939d57bbeef74e61ddd749d35699e886657",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.6.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1338863656,
+    1338863688
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 1.99862671,
+   "max_abs_delta": 2.0,
+   "sha256_before": "fe00217c7f198519da4e14a7d5b28fd8d0379251cde0af802421300a92fe1c72",
+   "sha256_after": "6542fb041e6c183cbb24488c7a8af901d178f80b2963f35b828baa1431f7bdd0",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.8.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1418679368,
+    1418679400
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.00097656,
+   "max_abs_delta": 2.00585938,
+   "sha256_before": "ed18e7e867a650777b849b49ce397f92fae1af50003ebcbcd62da0e871ae10f7",
+   "sha256_after": "a28e04358ff86d5e51bf2b071cca9d8042f3433a157c338d64e17662bbd4c929",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "add",
+   "params": {
+    "op": "add",
+    "value": 2.0,
+    "clip_max": 6.0
+   },
+   "tensor": "model.language_model.layers.9.linear_attn.dt_bias",
+   "shape": [
+    16
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1461789800,
+    1461789832
+   ],
+   "numel": 16,
+   "values_actually_changed": 16,
+   "mean_abs_delta": 2.0,
+   "max_abs_delta": 2.0,
+   "sha256_before": "c8fc614002929ca47207f8d9a1c0d6df6161f4e7e46cba30dcb107f6d01492cf",
+   "sha256_after": "75bf9491c4c95c74444d67f0ad420a7c829bcea5afdd4e06791ff08f9b0282b3",
+   "note": ""
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 18,
+  "touched_tensor_ops": 18,
+  "values_actually_changed": 288,
+  "numel_touched": 288,
+  "mean_abs_delta": 1.98177338,
+  "max_abs_delta": 2.375
+ },
+ "inverse_ops": [
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.0.linear_attn.dt_bias",
+   "byte_offsets": [
+    508680776,
+    508680808
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.1.linear_attn.dt_bias",
+   "byte_offsets": [
+    551791208,
+    551791240
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.10.linear_attn.dt_bias",
+   "byte_offsets": [
+    594901640,
+    594901672
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.12.linear_attn.dt_bias",
+   "byte_offsets": [
+    674717352,
+    674717384
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.13.linear_attn.dt_bias",
+   "byte_offsets": [
+    717827784,
+    717827816
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.14.linear_attn.dt_bias",
+   "byte_offsets": [
+    760938216,
+    760938248
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.16.linear_attn.dt_bias",
+   "byte_offsets": [
+    840753928,
+    840753960
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.17.linear_attn.dt_bias",
+   "byte_offsets": [
+    883864360,
+    883864392
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.18.linear_attn.dt_bias",
+   "byte_offsets": [
+    926974792,
+    926974824
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.2.linear_attn.dt_bias",
+   "byte_offsets": [
+    1006790504,
+    1006790536
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.20.linear_attn.dt_bias",
+   "byte_offsets": [
+    1049900936,
+    1049900968
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.21.linear_attn.dt_bias",
+   "byte_offsets": [
+    1093011368,
+    1093011400
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.22.linear_attn.dt_bias",
+   "byte_offsets": [
+    1136121800,
+    1136121832
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.4.linear_attn.dt_bias",
+   "byte_offsets": [
+    1252642792,
+    1252642824
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.5.linear_attn.dt_bias",
+   "byte_offsets": [
+    1295753224,
+    1295753256
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.6.linear_attn.dt_bias",
+   "byte_offsets": [
+    1338863656,
+    1338863688
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.8.linear_attn.dt_bias",
+   "byte_offsets": [
+    1418679368,
+    1418679400
+   ],
+   "shape": [
+    16
+   ]
+  },
+  {
+   "op": "add",
+   "value": -2.0,
+   "tensor": "model.language_model.layers.9.linear_attn.dt_bias",
+   "byte_offsets": [
+    1461789800,
+    1461789832
+   ],
+   "shape": [
+    16
+   ]
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w6_dt_bias_up/manifest.json",
+  "размер_оригинала_байт": 24787,
+  "sha256_оригинала": "bad2cc5a7c9264d04a23c5b62a00f9756915cbf19f984e58dc2f77085ff81911",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 36",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

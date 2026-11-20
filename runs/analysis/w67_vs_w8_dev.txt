@@ -1,0 +1,42 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w67_inproj_a_amp110_on_w8/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w67_inproj_a_amp110_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 60,
+  "accuracy": 0.6,
+  "extracted": 96,
+  "truncated": 3,
+  "mean_out_tokens": 325.1,
+  "mean_seconds": 5.42
+ },
+ "delta_correct": -4,
+ "fixed": [
+  157,
+  1060
+ ],
+ "broken": [
+  1070,
+  3799,
+  4843,
+  5072,
+  6097,
+  7254
+ ],
+ "same_correct": 58,
+ "same_wrong": 34,
+ "answers_differ": 77,
+ "mcnemar_p": 0.2890625
+}

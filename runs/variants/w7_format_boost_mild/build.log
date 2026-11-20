@@ -1,0 +1,6 @@
+Вариант: w7_format_boost_mild
+Модель: runs/variants/w7_format_boost_mild/model
+SHA256 весов: было 04b1c301231dd422… стало bb04ec0ec6a1cc87…
+Тензоров изменено: 1; значений изменено: 5,120 (затронуто 5,120)
+Среднее |Δ|: 0.00310928  Макс |Δ|: 0.01611328
+Манифест: runs/variants/w7_format_boost_mild/manifest.json

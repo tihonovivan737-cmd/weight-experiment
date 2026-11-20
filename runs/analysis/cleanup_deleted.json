@@ -1,0 +1,719 @@
+{
+ "before_free_G": 84,
+ "after_free_G": 105,
+ "freed_G": 21,
+ "deleted": [
+  {
+   "variant": "c0_final_norm_gain",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/c0_final_norm_gain.json",
+   "manifest": "runs/variants/c0_final_norm_gain/manifest.json",
+   "verify": "runs/variants/c0_final_norm_gain/verify.json",
+   "reports": [
+    "runs/variants/c0_final_norm_gain/compare_dev.json",
+    "runs/variants/c0_final_norm_gain/compare_search.json",
+    "runs/variants/c0_final_norm_gain/compare_smoke.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 9,
+     "extracted": 89
+    },
+    "search": {
+     "n": 250,
+     "correct": 138,
+     "truncated": 15,
+     "extracted": 221
+    },
+    "combined": {
+     "correct": 199,
+     "truncated": 24,
+     "extracted": 310,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/c0_final_norm_gain/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "v2_Alog_decay_double",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/v2_Alog_decay_double.json",
+   "manifest": "runs/variants/v2_Alog_decay_double/manifest.json",
+   "verify": "runs/variants/v2_Alog_decay_double/verify.json",
+   "reports": [
+    "runs/variants/v2_Alog_decay_double/compare_dev.json",
+    "runs/variants/v2_Alog_decay_double/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 62,
+     "truncated": 6,
+     "extracted": 92
+    },
+    "search": {
+     "n": 250,
+     "correct": 132,
+     "truncated": 14,
+     "extracted": 225
+    },
+    "combined": {
+     "correct": 194,
+     "truncated": 20,
+     "extracted": 317,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/v2_Alog_decay_double/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "v9_mlp_damp",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/v9_mlp_damp.json",
+   "manifest": "runs/variants/v9_mlp_damp/manifest.json",
+   "verify": "runs/variants/v9_mlp_damp/verify.json",
+   "reports": [
+    "runs/variants/v9_mlp_damp/compare_dev.json",
+    "runs/variants/v9_mlp_damp/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 62,
+     "truncated": 7,
+     "extracted": 86
+    },
+    "search": {
+     "n": 250,
+     "correct": 122,
+     "truncated": 21,
+     "extracted": 210
+    },
+    "combined": {
+     "correct": 184,
+     "truncated": 28,
+     "extracted": 296,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/v9_mlp_damp/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w12_z_gate_strong",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w12_z_gate_strong.json",
+   "manifest": "runs/variants/w12_z_gate_strong/manifest.json",
+   "verify": "runs/variants/w12_z_gate_strong/verify.json",
+   "reports": [
+    "runs/variants/w12_z_gate_strong/compare_dev.json",
+    "runs/variants/w12_z_gate_strong/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 31,
+     "truncated": 18,
+     "extracted": 80
+    },
+    "search": {
+     "n": 250,
+     "correct": 72,
+     "truncated": 35,
+     "extracted": 210
+    },
+    "combined": {
+     "correct": 103,
+     "truncated": 53,
+     "extracted": 290,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w12_z_gate_strong/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w15_final_case_suppress",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w15_final_case_suppress.json",
+   "manifest": "runs/variants/w15_final_case_suppress/manifest.json",
+   "verify": "runs/variants/w15_final_case_suppress/verify.json",
+   "reports": [
+    "runs/variants/w15_final_case_suppress/compare_dev.json",
+    "runs/variants/w15_final_case_suppress/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 7,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 145,
+     "truncated": 19,
+     "extracted": 231
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 26,
+     "extracted": 325,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w15_final_case_suppress/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w16_final_rows12_only",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w16_final_rows12_only.json",
+   "manifest": "runs/variants/w16_final_rows12_only/manifest.json",
+   "verify": "runs/variants/w16_final_rows12_only/verify.json",
+   "reports": [
+    "runs/variants/w16_final_rows12_only/compare_dev.json",
+    "runs/variants/w16_final_rows12_only/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 7,
+     "extracted": 93
+    },
+    "search": {
+     "n": 250,
+     "correct": 145,
+     "truncated": 19,
+     "extracted": 231
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 26,
+     "extracted": 324,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w16_final_rows12_only/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w17_z93_only",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w17_z93_only.json",
+   "manifest": "runs/variants/w17_z93_only/manifest.json",
+   "verify": "runs/variants/w17_z93_only/verify.json",
+   "reports": [
+    "runs/variants/w17_z93_only/compare_dev.json",
+    "runs/variants/w17_z93_only/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 58,
+     "truncated": 5,
+     "extracted": 90
+    },
+    "search": {
+     "n": 250,
+     "correct": 151,
+     "truncated": 20,
+     "extracted": 228
+    },
+    "combined": {
+     "correct": 209,
+     "truncated": 25,
+     "extracted": 318,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w17_z93_only/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w1_final_token_amp",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w1_final_token_amp.json",
+   "manifest": "runs/variants/w1_final_token_amp/manifest.json",
+   "verify": "runs/variants/w1_final_token_amp/verify.json",
+   "reports": [
+    "runs/variants/w1_final_token_amp/compare_dev.json",
+    "runs/variants/w1_final_token_amp/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 6,
+     "extracted": 94
+    },
+    "search": {
+     "n": 250,
+     "correct": 150,
+     "truncated": 19,
+     "extracted": 230
+    },
+    "combined": {
+     "correct": 211,
+     "truncated": 25,
+     "extracted": 324,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w1_final_token_amp/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w38_z_corner_early10008_late08742",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w38_z_corner_early10008_late08742.json",
+   "manifest": "runs/variants/w38_z_corner_early10008_late08742/manifest.json",
+   "verify": "runs/variants/w38_z_corner_early10008_late08742/verify.json",
+   "reports": [
+    "runs/variants/w38_z_corner_early10008_late08742/compare_dev.json",
+    "runs/variants/w38_z_corner_early10008_late08742/compare_dev_vs_w8.json",
+    "runs/variants/w38_z_corner_early10008_late08742/compare_search.json",
+    "runs/variants/w38_z_corner_early10008_late08742/compare_search_vs_w8.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 8,
+     "extracted": 92
+    },
+    "search": {
+     "n": 250,
+     "correct": 152,
+     "truncated": 15,
+     "extracted": 235
+    },
+    "combined": {
+     "correct": 216,
+     "truncated": 23,
+     "extracted": 327,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w38_z_corner_early10008_late08742/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w41_format_embed132",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w41_format_embed132.json",
+   "manifest": "runs/variants/w41_format_embed132/manifest.json",
+   "verify": "runs/variants/w41_format_embed132/verify.json",
+   "reports": [
+    "runs/variants/w41_format_embed132/compare_dev.json",
+    "runs/variants/w41_format_embed132/compare_dev_vs_base.json",
+    "runs/variants/w41_format_embed132/compare_dev_vs_w8.json",
+    "runs/variants/w41_format_embed132/compare_search.json",
+    "runs/variants/w41_format_embed132/compare_search_vs_base.json",
+    "runs/variants/w41_format_embed132/compare_search_vs_w8.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 61,
+     "truncated": 5,
+     "extracted": 95
+    },
+    "search": {
+     "n": 250,
+     "correct": 150,
+     "truncated": 14,
+     "extracted": 234
+    },
+    "combined": {
+     "correct": 211,
+     "truncated": 19,
+     "extracted": 329,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w41_format_embed132/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w43_format_embed144_latedose",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w43_format_embed144_latedose.json",
+   "manifest": "runs/variants/w43_format_embed144_latedose/manifest.json",
+   "verify": "runs/variants/w43_format_embed144_latedose/verify.json",
+   "reports": [
+    "runs/variants/w43_format_embed144_latedose/compare_dev.json",
+    "runs/variants/w43_format_embed144_latedose/compare_dev_vs_base.json",
+    "runs/variants/w43_format_embed144_latedose/compare_dev_vs_w8.json",
+    "runs/variants/w43_format_embed144_latedose/compare_search.json",
+    "runs/variants/w43_format_embed144_latedose/compare_search_vs_base.json",
+    "runs/variants/w43_format_embed144_latedose/compare_search_vs_w8.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 64,
+     "truncated": 4,
+     "extracted": 90
+    },
+    "search": {
+     "n": 250,
+     "correct": 142,
+     "truncated": 16,
+     "extracted": 215
+    },
+    "combined": {
+     "correct": 206,
+     "truncated": 20,
+     "extracted": 305,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w43_format_embed144_latedose/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w46_z_headsel_sharpen",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w46_z_headsel_sharpen.json",
+   "manifest": "runs/variants/w46_z_headsel_sharpen/manifest.json",
+   "verify": "runs/variants/w46_z_headsel_sharpen/verify.json",
+   "reports": [
+    "runs/variants/w46_z_headsel_sharpen/compare_dev.json",
+    "runs/variants/w46_z_headsel_sharpen/compare_dev_vs_base.json",
+    "runs/variants/w46_z_headsel_sharpen/compare_dev_vs_w8.json",
+    "runs/variants/w46_z_headsel_sharpen/compare_search.json",
+    "runs/variants/w46_z_headsel_sharpen/compare_search_vs_base.json",
+    "runs/variants/w46_z_headsel_sharpen/compare_search_vs_w8.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 62,
+     "truncated": 8,
+     "extracted": 91
+    },
+    "search": {
+     "n": 250,
+     "correct": 151,
+     "truncated": 17,
+     "extracted": 229
+    },
+    "combined": {
+     "correct": 213,
+     "truncated": 25,
+     "extracted": 320,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w46_z_headsel_sharpen/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  },
+  {
+   "variant": "w7_format_boost_mild",
+   "checks": {
+    "каталог": true,
+    "манифест": true,
+    "рецепт": true,
+    "verify_OK": true,
+    "результаты_dev100": true,
+    "результаты_search250": true,
+    "сравнения": true,
+    "экран_350": true,
+    "не_лучше_w8": true,
+    "есть_файлы_весов": true,
+    "отдельные_файлы": true
+   },
+   "better_metrics": [],
+   "recipe": "recipes/w7_format_boost_mild.json",
+   "manifest": "runs/variants/w7_format_boost_mild/manifest.json",
+   "verify": "runs/variants/w7_format_boost_mild/verify.json",
+   "reports": [
+    "runs/variants/w7_format_boost_mild/compare_dev.json",
+    "runs/variants/w7_format_boost_mild/compare_search.json"
+   ],
+   "results": {
+    "dev": {
+     "n": 100,
+     "correct": 58,
+     "truncated": 5,
+     "extracted": 91
+    },
+    "search": {
+     "n": 250,
+     "correct": 149,
+     "truncated": 16,
+     "extracted": 226
+    },
+    "combined": {
+     "correct": 207,
+     "truncated": 21,
+     "extracted": 317,
+     "n": 350
+    }
+   },
+   "files": [
+    {
+     "path": "runs/variants/w7_format_boost_mild/model/model.safetensors-00001-of-00001.safetensors",
+     "bytes": 1746942600,
+     "links": 1
+    }
+   ],
+   "deleted_bytes": 1746942600
+  }
+ ],
+ "skipped": [],
+ "reference_w8": {
+  "dev": {
+   "n": 100,
+   "correct": 64,
+   "truncated": 4,
+   "extracted": 95
+  },
+  "search": {
+   "n": 250,
+   "correct": 152,
+   "truncated": 14,
+   "extracted": 237
+  },
+  "combined": {
+   "correct": 216,
+   "truncated": 18,
+   "extracted": 332,
+   "n": 350
+  }
+ }
+}

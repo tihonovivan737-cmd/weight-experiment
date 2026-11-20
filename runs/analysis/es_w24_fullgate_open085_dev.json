@@ -1,0 +1,16 @@
+{
+ "results": "runs/variants/w24_fullgate_open085/dev/results.jsonl",
+ "label": "w24_fullgate_open085_dev",
+ "split": "train",
+ "n": 100,
+ "correct": 65,
+ "final_extracted": 96,
+ "no_final": 4,
+ "truncated": 4,
+ "gold_hidden_in_truncated_text": 1,
+ "wrong_with_final": 31,
+ "wrong_without_final": 4,
+ "near_miss_within_1pct": 1,
+ "mean_len_correct": 871.0,
+ "mean_len_wrong_with_final": 1038.9
+}

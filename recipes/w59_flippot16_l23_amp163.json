@@ -1,0 +1,207 @@
+{
+ "name": "w59_flippot16_l23_amp163",
+ "hypothesis": "16 строк с наибольшим положительным flip_potential (П51.2 опровергнута: сумма положительных flip_potential по L23 равна 30.7016 при 1451 положительных строках, сумма по этим 16 строкам 19.9831). Доза 1.63 = 1 + 12.5/19.9831: ожидаемое изменение среднего запаса 0.63 x 19.9831 = 12.59 логита, то есть не меньше медианы маржи 12.5. Это единственное направленное усиление, которое может переписать ответ в пользу верного.",
+ "expected_effect": "Детерминированная правка 16 строк mlp.gate_proj слоя 23, lam = 1.63. Оценочные коридоры: формат 336-348, обрывы <= 14, математика 216-222, преждевременный FINAL <= 1. Решает dev (100 задач, не участвовал в отборе строк).",
+ "base_variant": "w8_z_gate_mild_format",
+ "op": "scale",
+ "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+ "rows": [
+  592,
+  380,
+  485,
+  410,
+  598,
+  2,
+  557,
+  564,
+  780,
+  1069,
+  40,
+  847,
+  262,
+  444,
+  745,
+  90
+ ],
+ "lam": 1.63,
+ "formula": "y_i = lam * x_i для строки i; в линейном режиме dmargin = (lam-1) * sum_flip(top16)",
+ "expected_diff_rows": 16,
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    592
+   ],
+   "note": "wave15 flip row 592 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    380
+   ],
+   "note": "wave15 flip row 380 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    485
+   ],
+   "note": "wave15 flip row 485 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    410
+   ],
+   "note": "wave15 flip row 410 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    598
+   ],
+   "note": "wave15 flip row 598 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    2
+   ],
+   "note": "wave15 flip row 2 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    557
+   ],
+   "note": "wave15 flip row 557 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    564
+   ],
+   "note": "wave15 flip row 564 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    780
+   ],
+   "note": "wave15 flip row 780 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    1069
+   ],
+   "note": "wave15 flip row 1069 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    40
+   ],
+   "note": "wave15 flip row 40 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    847
+   ],
+   "note": "wave15 flip row 847 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    262
+   ],
+   "note": "wave15 flip row 262 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    444
+   ],
+   "note": "wave15 flip row 444 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    745
+   ],
+   "note": "wave15 flip row 745 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    90
+   ],
+   "note": "wave15 flip row 90 lam 1.63"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+Вариант: w24_fullgate_open085
+Модель: runs/variants/w24_fullgate_open085/model
+SHA256 весов: было 296b2cd888606d54… стало 19731f1ce9faeb1a…
+Тензоров изменено: 6; значений изменено: 12,582,912 (затронуто 12,582,912)
+Среднее |Δ|: 0.00221419  Макс |Δ|: 0.06054688
+Манифест: runs/variants/w24_fullgate_open085/manifest.json
+build rc=0 w24_fullgate_open085
+Вариант: w25_z_headsel_damp088
+Модель: runs/variants/w25_z_headsel_damp088/model
+SHA256 весов: было 296b2cd888606d54… стало b4a63e568925bcf8…
+Тензоров изменено: 13; значений изменено: 3,801,088 (затронуто 3,801,088)
+Среднее |Δ|: 0.00129194  Макс |Δ|: 0.04296875
+Манифест: runs/variants/w25_z_headsel_damp088/manifest.json
+build rc=0 w25_z_headsel_damp088
+Вариант: w26_norm_amp093
+Модель: runs/variants/w26_norm_amp093/model
+SHA256 весов: было 04b1c301231dd422… стало f7c23bfb4cd36ac3…
+Тензоров изменено: 18; значений изменено: 2,304 (затронуто 2,304)
+Среднее |Δ|: 0.06589536  Макс |Δ|: 0.0836035
+Манифест: runs/variants/w26_norm_amp093/manifest.json
+build rc=0 w26_norm_amp093
+Вариант: w27_beta_sharpen_late130
+Модель: runs/variants/w27_beta_sharpen_late130/model
+SHA256 весов: было 296b2cd888606d54… стало 487cbe85243cf943…
+Тензоров изменено: 9; значений изменено: 147,456 (затронуто 147,456)
+Среднее |Δ|: 0.00376474  Макс |Δ|: 0.06054688
+Манифест: runs/variants/w27_beta_sharpen_late130/manifest.json
+build rc=0 w27_beta_sharpen_late130
+DONE

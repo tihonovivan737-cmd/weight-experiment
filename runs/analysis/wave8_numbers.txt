@@ -1,0 +1,31 @@
+=== w35_z_dominant_damp078 ===
+  search    верных 129/250  FINAL 223  обрывов 21  ток. 378.1 | vs orig: верн -14 p 0.13018 FINAL +3 обр +4 вер+FINAL 129 (без 0) | ref вер+FINAL 143 (без 0) | мат n196 118:129 Δмат -11 p 0.15241 | vs w8: верн -23 p 0.00379 FINAL -14 обр +7 вер+FINAL 129 (без 0) | ref вер+FINAL 152 (без 0) | мат n214 128:141 Δмат -13 p 0.07894
+  dev       верных 66/100  FINAL 93  обрывов 6  ток. 343.0 | vs orig: верн +7 p 0.22952 FINAL +3 обр -1 вер+FINAL 66 (без 0) | ref вер+FINAL 59 (без 0) | мат n86 62:58 Δмат +4 p 0.50344 | vs w8: верн +2 p 0.80362 FINAL -2 обр +2 вер+FINAL 66 (без 0) | ref вер+FINAL 64 (без 0) | мат n90 63:63 Δмат +0 p 1.00000
+  combined  верных 195/350  FINAL 316  обрывов 27  ток. 368.1 | vs orig: верн -7 p 0.54671 FINAL +6 обр +3 вер+FINAL 195 (без 0) | ref вер+FINAL 202 (без 0) | мат n282 180:187 Δмат -7 p 0.47037 | vs w8: верн -21 p 0.02030 FINAL -16 обр +9 вер+FINAL 195 (без 0) | ref вер+FINAL 216 (без 0) | мат n304 191:204 Δмат -13 p 0.11748
+  search vs orig: fixed 30 broken 44 fix_form 11 fix_math 19 brk_form 14 brk_math 30
+  search vs w8: fixed 18 broken 41 fix_form 1 fix_math 17 brk_form 11 brk_math 30
+  dev vs orig: fixed 16 broken 9 fix_form 4 fix_math 12 brk_form 1 brk_math 8
+  dev vs w8: fixed 9 broken 7 fix_form 3 fix_math 6 brk_form 1 brk_math 6
+  verdict: нет
+=== w36_z_late_extra094 ===
+  search    верных 153/250  FINAL 233  обрывов 17  ток. 361.1 | vs orig: верн +10 p 0.26044 FINAL +13 обр +0 вер+FINAL 153 (без 0) | ref вер+FINAL 143 (без 0) | мат n212 142:140 Δмат +2 p 0.88772 | vs w8: верн +1 p 1.00000 FINAL -4 обр +3 вер+FINAL 153 (без 0) | ref вер+FINAL 152 (без 0) | мат n227 151:150 Δмат +1 p 1.00000
+  dev       верных 66/100  FINAL 96  обрывов 4  ток. 330.5 | vs orig: верн +7 p 0.18925 FINAL +6 обр -3 вер+FINAL 66 (без 0) | ref вер+FINAL 59 (без 0) | мат n87 62:58 Δмат +4 p 0.45450 | vs w8: верн +2 p 0.77441 FINAL +1 обр +0 вер+FINAL 66 (без 0) | ref вер+FINAL 64 (без 0) | мат n91 63:62 Δмат +1 p 1.00000
+  combined  верных 219/350  FINAL 329  обрывов 21  ток. 352.3 | vs orig: верн +17 p 0.08205 FINAL +19 обр -3 вер+FINAL 219 (без 0) | ref вер+FINAL 202 (без 0) | мат n299 204:198 Δмат +6 p 0.53858 | vs w8: верн +3 p 0.77087 FINAL -3 обр +3 вер+FINAL 219 (без 0) | ref вер+FINAL 216 (без 0) | мат n318 214:212 Δмат +2 p 0.87141
+  search vs orig: fixed 37 broken 27 fix_form 11 fix_math 26 brk_form 3 brk_math 24
+  search vs w8: fixed 18 broken 17 fix_form 2 fix_math 16 brk_form 2 brk_math 15
+  dev vs orig: fixed 14 broken 7 fix_form 4 fix_math 10 brk_form 1 brk_math 6
+  dev vs w8: fixed 7 broken 5 fix_form 3 fix_math 4 brk_form 2 brk_math 3
+  verdict: нет
+=== w37_z_early_release1075 ===
+  search    верных 151/250  FINAL 239  обрывов 12  ток. 384.3 | vs orig: верн +8 p 0.30200 FINAL +19 обр -5 вер+FINAL 151 (без 0) | ref вер+FINAL 143 (без 0) | мат n215 138:141 Δмат -3 p 0.72010 | vs w8: верн -1 p 1.00000 FINAL +2 обр -2 вер+FINAL 151 (без 0) | ref вер+FINAL 152 (без 0) | мат n230 147:150 Δмат -3 p 0.77087
+  dev       верных 61/100  FINAL 94  обрывов 6  ток. 368.9 | vs orig: верн +2 p 0.82380 FINAL +4 обр -1 вер+FINAL 61 (без 0) | ref вер+FINAL 59 (без 0) | мат n87 58:58 Δмат +0 p 1.00000 | vs w8: верн -3 p 0.64761 FINAL -1 обр +2 вер+FINAL 61 (без 0) | ref вер+FINAL 64 (без 0) | мат n91 59:61 Δмат -2 p 0.79053
+  combined  верных 212/350  FINAL 333  обрывов 18  ток. 379.9 | vs orig: верн +10 p 0.26781 FINAL +23 обр -6 вер+FINAL 212 (без 0) | ref вер+FINAL 202 (без 0) | мат n302 196:199 Δмат -3 p 0.77087 | vs w8: верн -4 p 0.72395 FINAL +1 обр +0 вер+FINAL 212 (без 0) | ref вер+FINAL 216 (без 0) | мат n321 206:211 Δмат -5 p 0.60892
+  search vs orig: fixed 27 broken 19 fix_form 13 fix_math 14 brk_form 3 brk_math 16
+  search vs w8: fixed 26 broken 27 fix_form 4 fix_math 22 brk_form 3 brk_math 24
+  dev vs orig: fixed 11 broken 9 fix_form 3 fix_math 8 brk_form 1 brk_math 8
+  dev vs w8: fixed 8 broken 11 fix_form 2 fix_math 6 brk_form 3 brk_math 8
+  verdict: нет
+
+=== сводка гейта ===
+w8_z_gate_mild_format   # победителем остаётся контрольная точка: ни один вариант волны 6 не выполнил все четыре условия
+

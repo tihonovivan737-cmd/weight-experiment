@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w25_z_headsel_damp088/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w25_z_headsel_damp088",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 94,
+  "truncated": 5,
+  "mean_out_tokens": 348.6,
+  "mean_seconds": 4.84
+ },
+ "delta_correct": 5,
+ "fixed": [
+  29,
+  951,
+  2069,
+  3321,
+  3459,
+  4138,
+  4531,
+  5169,
+  5785,
+  6295,
+  6909,
+  6927,
+  7254,
+  7345
+ ],
+ "broken": [
+  640,
+  720,
+  781,
+  2177,
+  3104,
+  3142,
+  3766,
+  4150,
+  4728
+ ],
+ "same_correct": 50,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.4048728942871094
+}

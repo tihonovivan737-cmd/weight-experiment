@@ -1,0 +1,39 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 233/473 [00:00<00:00, 2319.65it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2561.52it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+w8   готово: задач 63, позиций 24524
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  50%|████▉     | 235/473 [00:00<00:00, 2311.01it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2590.24it/s]
+w41  готово: задач 63, позиций 24524
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  50%|████▉     | 236/473 [00:00<00:00, 2297.70it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2641.73it/s]
+w42  готово: задач 63, позиций 24524
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 222/473 [00:00<00:00, 2167.68it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2568.75it/s]
+w43  готово: задач 63, позиций 24524
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  49%|████▉     | 232/473 [00:00<00:00, 2231.79it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 2544.86it/s]
+w44  готово: задач 63, позиций 24524
+Проба логитов строки FINAL (прямой проход, без градиентов).
+Один и тот же текст (ответ w8) прогнан через каждое состояние; 63 задач search.
+logit FINAL — средний логит лучшей из строк 95429/64697; argmax — логит выбранного токена;
+margin = argmax − FINAL (большой запас = токен FINAL далеко от решения);
+преждевременный FINAL — позиции, где argmax был бы токеном FINAL, хотя в тексте его там нет.
+
+вариант  позиций  логит FINAL  логит argmax    margin логит этал. токена  argmax=FINAL  прежд. FINAL
+w8        24524        0.745        26.106    25.361             25.683            56             1
+w41       24524        0.817        26.116    25.299             25.697            71            15
+w42       24524        0.882        26.125    25.243             25.708           107            37
+w43       24524        1.067        26.175    25.108             25.758           114            36
+w44       24524        0.734        25.982    25.248             25.560            55             0
+
+Позиции, где эталонный текст действительно пишет FINAL:
+вариант  таких позиций  логит FINAL там   margin там
+w8                119           20.270        1.972
+w41               119           22.286        1.133
+w42               119           24.286        0.313
+w43               119           24.397        0.196
+w44               119           20.205        1.890
+
+Сдвиг против w8 (логит FINAL по всем позициям / по позициям записи FINAL / преждевременные FINAL):
+  w41    Δлогит FINAL   +0.071  Δлогит на позициях записи FINAL   +2.016  преждевременных FINAL   +14
+  w42    Δлогит FINAL   +0.136  Δлогит на позициях записи FINAL   +4.015  преждевременных FINAL   +36
+  w43    Δлогит FINAL   +0.321  Δлогит на позициях записи FINAL   +4.126  преждевременных FINAL   +35
+  w44    Δлогит FINAL   -0.011  Δлогит на позициях записи FINAL   -0.065  преждевременных FINAL    -1
+

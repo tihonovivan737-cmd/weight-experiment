@@ -1,0 +1,16 @@
+{
+ "results": "runs/variants/w28_fullgate_close115/search/results.jsonl",
+ "label": "w28_fullgate_close115_search",
+ "split": "train",
+ "n": 250,
+ "correct": 144,
+ "final_extracted": 237,
+ "no_final": 13,
+ "truncated": 12,
+ "gold_hidden_in_truncated_text": 7,
+ "wrong_with_final": 94,
+ "wrong_without_final": 13,
+ "near_miss_within_1pct": 5,
+ "mean_len_correct": 823.9,
+ "mean_len_wrong_with_final": 1030.6
+}

@@ -1,0 +1,45 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w15_final_case_suppress/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w15_final_case_suppress",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 94,
+  "truncated": 7,
+  "mean_out_tokens": 383.0,
+  "mean_seconds": 5.29
+ },
+ "delta_correct": 5,
+ "fixed": [
+  1962,
+  3321,
+  3459,
+  4531,
+  5785,
+  6097,
+  6909,
+  7345
+ ],
+ "broken": [
+  640,
+  3799,
+  6163
+ ],
+ "same_correct": 56,
+ "same_wrong": 33,
+ "answers_differ": 84,
+ "mcnemar_p": 0.2265625
+}

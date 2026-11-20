@@ -1,0 +1,15 @@
+{
+ "name": "v7_attn_smooth",
+ "hypothesis": "H3b (противоположное H3a). lam=0.75 -> логиты внимания слабее в ~0.56 раза: внимание более равномерное, больше похоже на усреднение контекста. Гипотеза: помогает, когда модель чрезмерно «цепляется» за одно число и игнорирует остальные условия.",
+ "expected_effect": "Более распределённое внимание.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.self_attn.q_norm.weight",
+    "model.language_model.layers.*.self_attn.k_norm.weight"
+   ],
+   "op": "scale_offset",
+   "lam": 0.75
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+Вариант: w8_z_gate_mild_format
+Модель: runs/variants/w8_z_gate_mild_format/model
+SHA256 весов: было 04b1c301231dd422… стало 296b2cd888606d54…
+Тензоров изменено: 19; значений изменено: 37,750,784 (затронуто 37,750,784)
+Среднее |Δ|: 0.00086339  Макс |Δ|: 0.03320312
+Манифест: runs/variants/w8_z_gate_mild_format/manifest.json

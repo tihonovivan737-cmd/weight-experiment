@@ -1,0 +1,20 @@
+Вариант: w16_final_rows12_only
+Модель: /home/mpiscil/weight-experiment/runs/variants/w16_final_rows12_only/model
+SHA256 весов: было 04b1c301231dd422… стало c38468e4727a004f…
+Тензоров изменено: 1; значений изменено: 2,048 (затронуто 2,048)
+Среднее |Δ|: 0.00311272  Макс |Δ|: 0.01611328
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w16_final_rows12_only/manifest.json
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,938,504
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w16_final_rows12_only/verify.json
+Вариант: w17_z93_only
+Модель: /home/mpiscil/weight-experiment/runs/variants/w17_z93_only/model
+SHA256 весов: было 04b1c301231dd422… стало 2f759f5c048dfd4c…
+Тензоров изменено: 18; значений изменено: 37,748,736 (затронуто 37,748,736)
+Среднее |Δ|: 0.00086327  Макс |Δ|: 0.03320312
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w17_z93_only/manifest.json
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,671,445,128
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w17_z93_only/verify.json

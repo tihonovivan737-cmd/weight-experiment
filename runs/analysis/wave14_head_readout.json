@@ -1,0 +1,160 @@
+{
+ "base": "/home/mpiscil/weight-experiment/runs/variants/w8_z_gate_mild_format/model",
+ "n_answer_tokens": 63,
+ "layers": [
+  3,
+  7,
+  11,
+  15,
+  19,
+  23
+ ],
+ "heads_per_layer": 2,
+ "rows_sorted_by_gain_answer": [
+  {
+   "layer": 19,
+   "head": 1,
+   "gain_answer": 0.8859,
+   "gain_final": 0.7154,
+   "ratio_final_over_answer": 0.8076,
+   "block_l2": 9.9916,
+   "block_rows": [
+    256,
+    511
+   ]
+  },
+  {
+   "layer": 11,
+   "head": 0,
+   "gain_answer": 0.7059,
+   "gain_final": 0.7244,
+   "ratio_final_over_answer": 1.0261,
+   "block_l2": 7.3693,
+   "block_rows": [
+    0,
+    255
+   ]
+  },
+  {
+   "layer": 23,
+   "head": 1,
+   "gain_answer": 0.6966,
+   "gain_final": 0.7549,
+   "ratio_final_over_answer": 1.0837,
+   "block_l2": 9.4459,
+   "block_rows": [
+    256,
+    511
+   ]
+  },
+  {
+   "layer": 11,
+   "head": 1,
+   "gain_answer": 0.6958,
+   "gain_final": 0.6258,
+   "ratio_final_over_answer": 0.8994,
+   "block_l2": 7.46,
+   "block_rows": [
+    256,
+    511
+   ]
+  },
+  {
+   "layer": 15,
+   "head": 0,
+   "gain_answer": 0.6865,
+   "gain_final": 0.7109,
+   "ratio_final_over_answer": 1.0356,
+   "block_l2": 9.0722,
+   "block_rows": [
+    0,
+    255
+   ]
+  },
+  {
+   "layer": 19,
+   "head": 0,
+   "gain_answer": 0.6631,
+   "gain_final": 0.9494,
+   "ratio_final_over_answer": 1.4316,
+   "block_l2": 10.3794,
+   "block_rows": [
+    0,
+    255
+   ]
+  },
+  {
+   "layer": 3,
+   "head": 1,
+   "gain_answer": 0.6616,
+   "gain_final": 0.6342,
+   "ratio_final_over_answer": 0.9586,
+   "block_l2": 6.0551,
+   "block_rows": [
+    256,
+    511
+   ]
+  },
+  {
+   "layer": 15,
+   "head": 1,
+   "gain_answer": 0.6384,
+   "gain_final": 0.6517,
+   "ratio_final_over_answer": 1.0209,
+   "block_l2": 7.8228,
+   "block_rows": [
+    256,
+    511
+   ]
+  },
+  {
+   "layer": 23,
+   "head": 0,
+   "gain_answer": 0.5865,
+   "gain_final": 0.8312,
+   "ratio_final_over_answer": 1.4171,
+   "block_l2": 9.5529,
+   "block_rows": [
+    0,
+    255
+   ]
+  },
+  {
+   "layer": 3,
+   "head": 0,
+   "gain_answer": 0.5665,
+   "gain_final": 0.54,
+   "ratio_final_over_answer": 0.9533,
+   "block_l2": 6.9759,
+   "block_rows": [
+    0,
+    255
+   ]
+  },
+  {
+   "layer": 7,
+   "head": 1,
+   "gain_answer": 0.5449,
+   "gain_final": 0.5784,
+   "ratio_final_over_answer": 1.0616,
+   "block_l2": 5.4706,
+   "block_rows": [
+    256,
+    511
+   ]
+  },
+  {
+   "layer": 7,
+   "head": 0,
+   "gain_answer": 0.5422,
+   "gain_final": 0.5959,
+   "ratio_final_over_answer": 1.0991,
+   "block_l2": 6.6096,
+   "block_rows": [
+    0,
+    255
+   ]
+  }
+ ],
+ "note": "ЗАМЕР. Кладка q/k/v в FULL-слоях однозначна: v_proj = 6 слоёв x 2 головы x 256 строк, столбцы o_proj для головы h = h*256..h*256+255. linear_attn.in_proj_qkv (6144 строк) здесь не трактуется, потому что порядок q/k/v внутри него не подтверждён."
+}

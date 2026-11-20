@@ -1,0 +1,41 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w73_z_loudheads_202122_on_w8/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w73_z_loudheads_202122_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 65,
+  "accuracy": 0.65,
+  "extracted": 94,
+  "truncated": 5,
+  "mean_out_tokens": 333.9,
+  "mean_seconds": 5.24
+ },
+ "delta_correct": 1,
+ "fixed": [
+  157,
+  1125,
+  5781,
+  6909
+ ],
+ "broken": [
+  354,
+  2328,
+  4728
+ ],
+ "same_correct": 61,
+ "same_wrong": 32,
+ "answers_differ": 66,
+ "mcnemar_p": 1.0
+}

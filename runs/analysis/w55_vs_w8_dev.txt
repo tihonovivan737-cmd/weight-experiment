@@ -1,0 +1,48 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w55_gold16_l23_amp130/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w55",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 58,
+  "accuracy": 0.58,
+  "extracted": 86,
+  "truncated": 12,
+  "mean_out_tokens": 316.2,
+  "mean_seconds": 3.97
+ },
+ "delta_correct": -6,
+ "fixed": [
+  2069,
+  2177,
+  6604,
+  6909
+ ],
+ "broken": [
+  29,
+  348,
+  2328,
+  4138,
+  4330,
+  4843,
+  6097,
+  6163,
+  6228,
+  7254
+ ],
+ "same_correct": 54,
+ "same_wrong": 32,
+ "answers_differ": 89,
+ "mcnemar_p": 0.1795654296875
+}

@@ -1,0 +1,44 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w1_final_token_amp/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w1_final_token_amp",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 94,
+  "truncated": 6,
+  "mean_out_tokens": 367.8,
+  "mean_seconds": 4.33
+ },
+ "delta_correct": 2,
+ "fixed": [
+  29,
+  1075,
+  3321,
+  4531,
+  6097,
+  7345
+ ],
+ "broken": [
+  640,
+  3142,
+  3766,
+  4449
+ ],
+ "same_correct": 55,
+ "same_wrong": 35,
+ "answers_differ": 95,
+ "mcnemar_p": 0.75390625
+}

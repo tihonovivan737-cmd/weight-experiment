@@ -1,0 +1,25 @@
+[2026-11-16 01:26:46] ресурсы: GPU 1 свободно 6943 MiB; диск 37G; RAM 12Gi
+[2026-11-16 01:26:47] SHA исходной модели подтверждён (04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696)
+[2026-11-16 01:26:47] SHA контрольной точки w8 подтверждён (296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55)
+[2026-11-16 01:26:47] BUILD w52_frozen10_dose003_negsign (основа: runs/variants/w8_z_gate_mild_format/model)
+[2026-11-16 01:26:53] собран w52_frozen10_dose003_negsign
+[2026-11-16 01:26:53] BUILD w53_frozen10_dose003_mirrorpos (основа: runs/variants/w8_z_gate_mild_format/model)
+[2026-11-16 01:27:06] собран w53_frozen10_dose003_mirrorpos
+[2026-11-16 01:27:06] BUILD w54_vhead_late19_head1_amp105 (основа: runs/variants/w8_z_gate_mild_format/model)
+[2026-11-16 01:27:17] собран w54_vhead_late19_head1_amp105
+[2026-11-16 01:27:27] VERIFY w52_frozen10_dose003_negsign: ИТОГ: OK
+[2026-11-16 01:27:34] VERIFY w53_frozen10_dose003_mirrorpos: ИТОГ: OK
+[2026-11-16 01:27:40] VERIFY w54_vhead_late19_head1_amp105: ИТОГ: OK
+[2026-11-16 01:27:40] EVAL dev w52_frozen10_dose003_negsign ; VRAM GPU 1: 6943 MiB ; диск 32G
+[2026-11-16 01:37:31] экран dev100 w52_frozen10_dose003_negsign: Δверных против w8 = -3
+[2026-11-16 01:37:31] EVAL search w52_frozen10_dose003_negsign ; VRAM GPU 1: 6943 MiB ; диск 32G
+[2026-11-16 02:01:55] вариант w52_frozen10_dose003_negsign оценён
+[2026-11-16 02:01:55] EVAL dev w53_frozen10_dose003_mirrorpos ; VRAM GPU 1: 6943 MiB ; диск 32G
+[2026-11-16 02:11:33] экран dev100 w53_frozen10_dose003_mirrorpos: Δверных против w8 = -3
+[2026-11-16 02:11:33] EVAL search w53_frozen10_dose003_mirrorpos ; VRAM GPU 1: 6943 MiB ; диск 32G
+[2026-11-16 02:37:10] вариант w53_frozen10_dose003_mirrorpos оценён
+[2026-11-16 02:37:10] EVAL dev w54_vhead_late19_head1_amp105 ; VRAM GPU 1: 6943 MiB ; диск 32G
+[2026-11-16 02:46:34] экран dev100 w54_vhead_late19_head1_amp105: Δверных против w8 = -2
+[2026-11-16 02:46:34] EVAL search w54_vhead_late19_head1_amp105 ; VRAM GPU 1: 6943 MiB ; диск 32G
+[2026-11-16 03:11:24] вариант w54_vhead_late19_head1_amp105 оценён
+[2026-11-16 03:11:24] ОШИБКА wave14_table.py — см. runs/wave14_table.stdout

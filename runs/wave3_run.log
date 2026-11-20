@@ -1,0 +1,155 @@
+=== 2026-11-10T23:25:58+07:00 волна 3, варианты: w12_z_gate_strong w8_z_gate_mild_format w11_final_token_amp_15 w7_format_boost_mild ===
+=== 2026-11-10T23:25:58+07:00 gate runs/GATE_WAVE3 создан ===
+=== 2026-11-10T23:25:58+07:00 EVAL search250 w12_z_gate_strong ; свободно VRAM: 0, 830 MiB 1, 6881 MiB  ===
+Сравнение: baseline -> w12_z_gate_strong (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  w12_z_gate_strong      acc=72/250 (28.80%) извлечено=210 обрывов=35 токенов=313.2 сек/задача=4.31
+  Дельта: -71 задач (-28.40 п.п.)
+  Исправлено: 14  Сломано: 85  Верно в обоих: 58  Неверно в обоих: 93
+  Точный тест Макнемара: p = 1.428e-13 (значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 250/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 536: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=348->222 | In the baking contest, three times as many people voted for the unicorn cake compared to t
+    idx 557: exp=42.0 pred_был=None pred_стал=42.0 trunc_стал=False err_стал=None tok=268->160 | Andy harvests all the tomatoes from 18 plants that have 7 tomatoes each. If he dries half 
+    idx 1929: exp=320.0 pred_был=None pred_стал=320.0 trunc_стал=False err_стал=None tok=312->136 | Lori owns 15 times as many beanie babies as Sydney. If Lori has 300 beanie babies, how man
+    idx 2480: exp=36.0 pred_был=60.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=186->154 | A school choir needs robes for each of its 30 singers. Currently, the school has only 12 r
+    idx 2878: exp=96.0 pred_был=48.0 pred_стал=96.0 trunc_стал=False err_стал=None tok=572->221 | Noah’s bedroom light uses 6 watts per hour. His office light is much brighter so he can se
+    idx 3281: exp=16.0 pred_был=1.0 pred_стал=16.0 trunc_стал=False err_стал=None tok=263->167 | Jaylen’s dog eats 1 cup of dog food in the morning and 1 cup of dog food in the evening.  
+    idx 3805: exp=1640.0 pred_был=20.0 pred_стал=1640.0 trunc_стал=False err_стал=None tok=447->187 | Janet works as an exterminator and she also sells molten metal casts of fire ant nests on 
+    idx 4270: exp=9500.0 pred_был=None pred_стал=9500.0 trunc_стал=False err_стал=None tok=372->187 | Barney the dinosaur weighs 1500 pounds more than five regular dinosaurs combined. If each 
+    idx 4519: exp=64.0 pred_был=19.0 pred_стал=64.0 trunc_стал=False err_стал=None tok=267->125 | Mari made 4 more than five times as many decorated buttons as Kendra. Sue made half as man
+    idx 4816: exp=5.0 pred_был=0.0 pred_стал=5.0 trunc_стал=False err_стал=None tok=316->152 | Mrs. Crocker made 11 pieces of fried chicken for Lyndee and her friends. If Lyndee only at
+    idx 4938: exp=160.0 pred_был=1360.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=338->204 | Kayden's business delivered an equal number of the 400 cartons of milk it had processed to
+    idx 5721: exp=7.0 pred_был=5.0 pred_стал=7.0 trunc_стал=False err_стал=None tok=230->108 | Chenny has 10 pieces of candies to be given out to her friends. She realized that she need
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 45: exp=99.0 pred_был=99.0 pred_стал=34.0 trunc_стал=False err_стал=None tok=454->161 | It's Ava's birthday party. Her parents bought a unicorn piñata for $13 and filled it with 
+    idx 108: exp=41.0 pred_был=41.0 pred_стал=33.5 trunc_стал=False err_стал=None tok=508->174 | Henry took 9 pills a day for 14 days. Of these 9 pills, 4 pills cost $1.50 each, and the o
+    idx 133: exp=9.0 pred_был=9.0 pred_стал=6.0 trunc_стал=False err_стал=None tok=274->224 | There are 40 students in a class. If 1/10 are absent, 3/4 of the students who are present 
+    idx 306: exp=64.0 pred_был=64.0 pred_стал=22.67 trunc_стал=False err_стал=None tok=318->325 | Parker is 4 inches shorter than Daisy. Daisy is 8 inches taller than Reese. If Reese is 60
+    idx 316: exp=253.0 pred_был=253.0 pred_стал=254.0 trunc_стал=False err_стал=None tok=233->179 | The selling price of a bicycle that had sold for $220 last year was increased by 15%. What
+    idx 724: exp=21.0 pred_был=21.0 pred_стал=24.0 trunc_стал=False err_стал=None tok=292->217 | Jenny had $24 left after spending 3/7 of her money. How much is half of her original amoun
+    idx 806: exp=165.0 pred_был=165.0 pred_стал=150.0 trunc_стал=False err_стал=None tok=252->460 | A porcelain vase was originally priced at $200 but went on sale for 25% off. If Donna boug
+    idx 824: exp=400.0 pred_был=400.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=371->213 | A school has 15 classrooms. One-third of these classrooms have 30 desks in each classroom 
+    idx 893: exp=325.0 pred_был=325.0 pred_стал=245.0 trunc_стал=False err_стал=None tok=437->253 | Kylie makes 10 beaded necklaces on Monday and 2 beaded necklaces on Tuesday. Then Kylie ma
+    idx 905: exp=480.0 pred_был=480.0 pred_стал=14400.0 trunc_стал=False err_стал=None tok=305->212 | Sue works in a factory and every 30 minutes, a machine she oversees produces 30 cans of so
+    idx 908: exp=144000.0 pred_был=144000.0 pred_стал=10000.0 trunc_стал=False err_стал=None tok=458->185 | John runs a telethon to raise money.  For the first 12 hours, he generates $5000 per hour.
+    idx 945: exp=120.0 pred_был=120.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=222->1024 | Jon buys 2 coffees a day from his favorite coffee shop.  They cost $2 each.  How much does
+
+Отчёт: runs/variants/w12_z_gate_strong/compare_search.json
+=== 2026-11-10T23:44:13+07:00 EVAL search250 w8_z_gate_mild_format ; свободно VRAM: 0, 841 MiB 1, 6881 MiB  ===
+Сравнение: baseline -> w8_z_gate_mild_format (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  w8_z_gate_mild_format  acc=152/250 (60.80%) извлечено=237 обрывов=14 токенов=352.5 сек/задача=4.88
+  Дельта: +9 задач (+3.60 п.п.)
+  Исправлено: 33  Сломано: 24  Верно в обоих: 119  Неверно в обоих: 74
+  Точный тест Макнемара: p = 0.2892 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 249/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 161: exp=4.0 pred_был=8.0 pred_стал=4.0 trunc_стал=False err_стал=None tok=198->246 | The town’s annual budget totals $32 million. If half of the budget goes towards policing a
+    idx 193: exp=160.0 pred_был=16.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=418->320 | Melody planted sunflowers from two different seed packets. She found that the sunflowers f
+    idx 536: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=348->421 | In the baking contest, three times as many people voted for the unicorn cake compared to t
+    idx 619: exp=210.0 pred_был=175.0 pred_стал=210.0 trunc_стал=False err_стал=None tok=333->344 | Harry is a professional dog-walker.  He is paid to go on long walks with dogs while their 
+    idx 1569: exp=10.0 pred_был=1.875 pred_стал=10.0 trunc_стал=False err_стал=None tok=523->379 | John decided to start rowing around a square lake.  Each side of the lake is 15 miles.  Ja
+    idx 1835: exp=40.0 pred_был=4000.0 pred_стал=40.0 trunc_стал=False err_стал=None tok=352->324 | Teagan saved 200 pennies in her piggy bank.  Rex has a mason jar filled with 100 nickels. 
+    idx 1929: exp=320.0 pred_был=None pred_стал=320.0 trunc_стал=False err_стал=None tok=312->243 | Lori owns 15 times as many beanie babies as Sydney. If Lori has 300 beanie babies, how man
+    idx 2237: exp=60.0 pred_был=45.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=218->227 | On Mary's birthday, her brother surprised her with $100. She spent a quarter of it on a ne
+    idx 2480: exp=36.0 pred_был=60.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=186->157 | A school choir needs robes for each of its 30 singers. Currently, the school has only 12 r
+    idx 2723: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->358 | The length of the straight part of a river is three times shorter than the crooked part. I
+    idx 2878: exp=96.0 pred_был=48.0 pred_стал=96.0 trunc_стал=False err_стал=None tok=572->465 | Noah’s bedroom light uses 6 watts per hour. His office light is much brighter so he can se
+    idx 2879: exp=3.0 pred_был=1.0 pred_стал=3.0 trunc_стал=False err_стал=None tok=285->183 | Malcolm brushes his teeth for 2 minutes after breakfast, lunch and dinner.  After 30 days,
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 893: exp=325.0 pred_был=325.0 pred_стал=275.0 trunc_стал=False err_стал=None tok=437->331 | Kylie makes 10 beaded necklaces on Monday and 2 beaded necklaces on Tuesday. Then Kylie ma
+    idx 908: exp=144000.0 pred_был=144000.0 pred_стал=1068000.0 trunc_стал=False err_стал=None tok=458->407 | John runs a telethon to raise money.  For the first 12 hours, he generates $5000 per hour.
+    idx 947: exp=80.0 pred_был=80.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=972->1024 | Johnny has been playing guitar for a while now.  He practices the same amount each day. As
+    idx 1179: exp=24.0 pred_был=24.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=344->1024 | Rob has some baseball cards, and a few are doubles. One third of Rob's cards are doubles, 
+    idx 1245: exp=54.0 pred_был=54.0 pred_стал=102.0 trunc_стал=False err_стал=None tok=338->298 | Alice had 10 dozens of watermelons. She sold 40% of it yesterday and 1/4 of the remaining 
+    idx 1594: exp=30.0 pred_был=30.0 pred_стал=0.0 trunc_стал=False err_стал=None tok=258->231 | To eat to when she gets full, Michaela needs 20 oranges. Cassandra needs twice as many ora
+    idx 1907: exp=12.0 pred_был=12.0 pred_стал=120.0 trunc_стал=False err_стал=None tok=250->339 | Ryan builds model mustang cars.  A full size mustang is 240 inches long.  The mid-size mod
+    idx 2619: exp=11.0 pred_был=11.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=233->234 | 10 people attended class on Monday, 15 on Tuesday, and 10 on each day from Wednesday throu
+    idx 2926: exp=120.0 pred_был=120.0 pred_стал=1440.0 trunc_стал=False err_стал=None tok=481->315 | Apple can run at a rate of 3 miles per hour. Mac can run at a rate of 4 miles per hour. In
+    idx 3086: exp=28000.0 pred_был=28000.0 pred_стал=560.0 trunc_стал=False err_стал=None tok=423->265 | A retail store wants to hire 50 new phone reps to assist with the increased call volume th
+    idx 3245: exp=12690.0 pred_был=12690.0 pred_стал=423.0 trunc_стал=False err_стал=None tok=433->372 | James has a small tree outside his window with 30 branches with 90 twigs per branch. 30% o
+    idx 3359: exp=2.0 pred_был=2.0 pred_стал=0.0 trunc_стал=False err_стал=None tok=437->318 | Ben has two brothers. They can each eat 12 slices of pizza. They are ordering pizza for th
+
+Отчёт: runs/variants/w8_z_gate_mild_format/compare_search.json
+=== 2026-11-11T00:04:46+07:00 EVAL search250 w11_final_token_amp_15 ; свободно VRAM: 0, 862 MiB 1, 6881 MiB  ===
+Сравнение: baseline -> w11_final_token_amp_15 (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  w11_final_token_amp_15 acc=63/250 (25.20%) извлечено=118 обрывов=9 токенов=334.3 сек/задача=4.63
+  Дельта: -80 задач (-32.00 п.п.)
+  Исправлено: 13  Сломано: 93  Верно в обоих: 50  Неверно в обоих: 94
+  Точный тест Макнемара: p = 4.543e-16 (значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 248/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 193: exp=160.0 pred_был=16.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=418->277 | Melody planted sunflowers from two different seed packets. She found that the sunflowers f
+    idx 848: exp=24.0 pred_был=120.0 pred_стал=24.0 trunc_стал=False err_стал=None tok=434->506 | On a farm, on average every 6 cows produce 108 liters of milk per week. In five weeks the 
+    idx 1324: exp=120.0 pred_был=None pred_стал=120.0 trunc_стал=False err_стал=None tok=1024->460 | After working out for 3 hours, three friends go out for lunch. Adam spends two-thirds as m
+    idx 2237: exp=60.0 pred_был=45.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=218->216 | On Mary's birthday, her brother surprised her with $100. She spent a quarter of it on a ne
+    idx 2480: exp=36.0 pred_был=60.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=186->231 | A school choir needs robes for each of its 30 singers. Currently, the school has only 12 r
+    idx 2878: exp=96.0 pred_был=48.0 pred_стал=96.0 trunc_стал=False err_стал=None tok=572->487 | Noah’s bedroom light uses 6 watts per hour. His office light is much brighter so he can se
+    idx 3065: exp=352.0 pred_был=176.0 pred_стал=352.0 trunc_стал=False err_стал=None tok=339->335 | Tom originally was only able to lift 80  kg farmer handles per hand.  After some training,
+    idx 3837: exp=12.0 pred_был=None pred_стал=12.0 trunc_стал=False err_стал=None tok=1024->674 | A pack of dogs found a pile of bones in the dumpster behind the butcher shop.  One by one,
+    idx 4270: exp=9500.0 pred_был=None pred_стал=9500.0 trunc_стал=False err_стал=None tok=372->350 | Barney the dinosaur weighs 1500 pounds more than five regular dinosaurs combined. If each 
+    idx 4521: exp=250.0 pred_был=500.0 pred_стал=250.0 trunc_стал=False err_стал=None tok=363->254 | John gets a new EpiPen every 6 months.  They cost $500 and insurance covers 75%.  How much
+    idx 4817: exp=315.0 pred_был=None pred_стал=315.0 trunc_стал=False err_стал=None tok=354->299 | Jeff orders a Halloween costume.  He has to put in a 10% deposit and then pay the rest whe
+    idx 6955: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=1024->754 | Carlo has a music recital next week. He practiced twice as long on Monday as on Tuesday. O
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 1: exp=10.0 pred_был=10.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=248->307 | Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting.
+    idx 108: exp=41.0 pred_был=41.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=508->296 | Henry took 9 pills a day for 14 days. Of these 9 pills, 4 pills cost $1.50 each, and the o
+    idx 133: exp=9.0 pred_был=9.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=274->260 | There are 40 students in a class. If 1/10 are absent, 3/4 of the students who are present 
+    idx 306: exp=64.0 pred_был=64.0 pred_стал=44.0 trunc_стал=False err_стал=None tok=318->283 | Parker is 4 inches shorter than Daisy. Daisy is 8 inches taller than Reese. If Reese is 60
+    idx 438: exp=12.0 pred_был=12.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=235->224 | While Greg was camping with his family for a week, it rained for 3 days. When he looked at
+    idx 467: exp=6.0 pred_был=6.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=249->226 | Hadley wore his cowboy boots everywhere.  He walked 2 miles to the grocery store in his bo
+    idx 540: exp=46.0 pred_был=46.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=278->272 | Emery looks through the drawer where her mom keeps the cookie cutters. There are 6 cookie 
+    idx 654: exp=96.0 pred_был=96.0 pred_стал=360.0 trunc_стал=False err_стал=None tok=416->382 | If there are two pennies in each of the twelve compartments of Roshesmina's piggy bank and
+    idx 724: exp=21.0 pred_был=21.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=292->276 | Jenny had $24 left after spending 3/7 of her money. How much is half of her original amoun
+    idx 791: exp=9.0 pred_был=9.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=264->245 | Of the 90 people on William's bus, 3/5 were Dutch. Of the 1/2 of the Dutch who were also A
+    idx 824: exp=400.0 pred_был=400.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=371->358 | A school has 15 classrooms. One-third of these classrooms have 30 desks in each classroom 
+    idx 829: exp=8.0 pred_был=8.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=206->200 | Jeanne wants to ride the Ferris wheel, the roller coaster, and the bumper cars. The Ferris
+
+Отчёт: runs/variants/w11_final_token_amp_15/compare_search.json
+=== 2026-11-11T00:24:17+07:00 EVAL search250 w7_format_boost_mild ; свободно VRAM: 0, 852 MiB 1, 6881 MiB  ===
+Сравнение: baseline -> w7_format_boost_mild (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  w7_format_boost_mild   acc=149/250 (59.60%) извлечено=226 обрывов=16 токенов=376.0 сек/задача=5.14
+  Дельта: +6 задач (+2.40 п.п.)
+  Исправлено: 28  Сломано: 22  Верно в обоих: 121  Неверно в обоих: 79
+  Точный тест Макнемара: p = 0.4799 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 244/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 193: exp=160.0 pred_был=16.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=418->568 | Melody planted sunflowers from two different seed packets. She found that the sunflowers f
+    idx 239: exp=3.0 pred_был=0.19 pred_стал=3.0 trunc_стал=False err_стал=None tok=570->619 | Frank has 7 one-dollar bills, 4 five-dollar bills, 2 ten-dollar bills, and 1 twenty-dollar
+    idx 290: exp=10.0 pred_был=None pred_стал=10.0 trunc_стал=False err_стал=None tok=1024->700 | A family has three adults and children, both girls and boys. They went out for a family tr
+    idx 536: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=348->367 | In the baking contest, three times as many people voted for the unicorn cake compared to t
+    idx 619: exp=210.0 pred_был=175.0 pred_стал=210.0 trunc_стал=False err_стал=None tok=333->205 | Harry is a professional dog-walker.  He is paid to go on long walks with dogs while their 
+    idx 1569: exp=10.0 pred_был=1.875 pred_стал=10.0 trunc_стал=False err_стал=None tok=523->477 | John decided to start rowing around a square lake.  Each side of the lake is 15 miles.  Ja
+    idx 1835: exp=40.0 pred_был=4000.0 pred_стал=40.0 trunc_стал=False err_стал=None tok=352->295 | Teagan saved 200 pennies in her piggy bank.  Rex has a mason jar filled with 100 nickels. 
+    idx 1929: exp=320.0 pred_был=None pred_стал=320.0 trunc_стал=False err_стал=None tok=312->318 | Lori owns 15 times as many beanie babies as Sydney. If Lori has 300 beanie babies, how man
+    idx 2237: exp=60.0 pred_был=45.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=218->193 | On Mary's birthday, her brother surprised her with $100. She spent a quarter of it on a ne
+    idx 2480: exp=36.0 pred_был=60.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=186->193 | A school choir needs robes for each of its 30 singers. Currently, the school has only 12 r
+    idx 2647: exp=40.0 pred_был=None pred_стал=40.0 trunc_стал=False err_стал=None tok=1024->828 | There are 200 snakes in a park. There are three times as many pythons as boa constrictors.
+    idx 2723: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->222 | The length of the straight part of a river is three times shorter than the crooked part. I
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 108: exp=41.0 pred_был=41.0 pred_стал=17.5 trunc_стал=False err_стал=None tok=508->351 | Henry took 9 pills a day for 14 days. Of these 9 pills, 4 pills cost $1.50 each, and the o
+    idx 791: exp=9.0 pred_был=9.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=264->1024 | Of the 90 people on William's bus, 3/5 were Dutch. Of the 1/2 of the Dutch who were also A
+    idx 947: exp=80.0 pred_был=80.0 pred_стал=40.0 trunc_стал=False err_стал=None tok=972->399 | Johnny has been playing guitar for a while now.  He practices the same amount each day. As
+    idx 1004: exp=1260.0 pred_был=1260.0 pred_стал=630.0 trunc_стал=False err_стал=None tok=300->216 | Kamil wants to renovate his kitchen at home. For this purpose, he hired two professionals 
+    idx 1255: exp=56.0 pred_был=56.0 pred_стал=18.0 trunc_стал=False err_стал=None tok=287->385 | The middle school sold 6 more than two times the number of fair tickets as it did tickets 
+    idx 2154: exp=300.0 pred_был=300.0 pred_стал=100.0 trunc_стал=False err_стал=None tok=412->406 | The spacecraft Gibraltar is a mountain-sized intergalactic vehicle for transporting equipm
+    idx 3021: exp=2.0 pred_был=2.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=231->218 | Jessica wrote a long letter to her aunt and needed to put stamps on it to mail it. She use
+    idx 3086: exp=28000.0 pred_был=28000.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=423->352 | A retail store wants to hire 50 new phone reps to assist with the increased call volume th
+    idx 3196: exp=30.0 pred_был=30.0 pred_стал=None trunc_стал=False err_стал=final_line_not_number tok=224->157 | Mark has 30 candies, Peter has 25 candies, and John has 35 candies. They decided to combin
+    idx 3323: exp=2.0 pred_был=2.0 pred_стал=1.67 trunc_стал=False err_стал=None tok=374->569 | Brad's car broke down on an isolated road.  At the time, Brad was traveling with Jim and M
+    idx 3359: exp=2.0 pred_был=2.0 pred_стал=1.0 trunc_стал=False err_стал=None tok=437->333 | Ben has two brothers. They can each eat 12 slices of pizza. They are ordering pizza for th
+    idx 3378: exp=12.0 pred_был=12.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=391->1024 | Krista started raising chickens. She has 10 hens who lay eggs. She sells the eggs for $3 a
+
+Отчёт: runs/variants/w7_format_boost_mild/compare_search.json
+=== 2026-11-11T00:45:56+07:00 ВОЛНА 3 ЗАВЕРШЕНА ===

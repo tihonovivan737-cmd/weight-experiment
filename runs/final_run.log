@@ -1,0 +1,88 @@
+=== 2026-11-11T04:23:47+07:00 финальный вариант: w8_z_gate_mild_format ===
+=== 2026-11-11T04:23:51+07:00 SHA256 весов варианта: 296b2cd888606d54… ===
+=== 2026-11-11T04:23:51+07:00 gate runs/GATE_FINAL создан ===
+=== 2026-11-11T04:23:51+07:00 другой GPU-прогон работает — ждём 60 с ===
+=== 2026-11-11T04:24:51+07:00 EVAL test1319 w8_z_gate_mild_format ; свободно VRAM на GPU 1: 6881 MiB ===
+=== 2026-11-11T06:13:37+07:00 строк результата: 1319 (ожидалось 1319) ===
+Сравнение: baseline -> w8_z_gate_mild_format (общих задач: 1319)
+  baseline               acc=680/1319 (51.55%) извлечено=1141 обрывов=115 токенов=415.1 сек/задача=4.99
+  w8_z_gate_mild_format  acc=724/1319 (54.89%) извлечено=1239 обрывов=76 токенов=364.6 сек/задача=4.93
+  Дельта: +44 задач (+3.34 п.п.)
+  Исправлено: 180  Сломано: 136  Верно в обоих: 544  Неверно в обоих: 459
+  Точный тест Макнемара: p = 0.01543 (значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 1318/1319
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 6: exp=260.0 pred_был=None pred_стал=260.0 trunc_стал=False err_стал=None tok=264->245 | Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Se
+    idx 31: exp=80.0 pred_был=-37.0 pred_стал=80.0 trunc_стал=False err_стал=None tok=380->300 | Gunter is trying to count the jelly beans in a jar. He asks his friends how many they thin
+    idx 35: exp=9.0 pred_был=None pred_стал=9.0 trunc_стал=False err_стал=None tok=272->248 | Mike plays ping pong for 40 minutes.  In the first 20 minutes, he scores 4 points.  In the
+    idx 36: exp=75.0 pred_был=150.0 pred_стал=75.0 trunc_стал=False err_стал=None tok=255->238 | Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much 
+    idx 44: exp=20.0 pred_был=-160.0 pred_стал=20.0 trunc_стал=False err_стал=None tok=272->357 | Charlie wants to sell beeswax candles.  For every pound of beeswax, he can make 10 tapered
+    idx 52: exp=15.0 pred_был=45.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=589->349 | Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His c
+    idx 57: exp=83.0 pred_был=333.0 pred_стал=83.0 trunc_стал=False err_стал=None tok=561->543 | A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical
+    idx 66: exp=48.0 pred_был=None pred_стал=48.0 trunc_стал=False err_стал=None tok=1024->324 | There are four schools competing at a basketball tournament. Each school has sent a girls’
+    idx 73: exp=255.0 pred_был=None pred_стал=255.0 trunc_стал=False err_стал=None tok=369->305 | Shiela bought five cell phones for $150 each for a 3-month installment. A 2% interest will
+    idx 84: exp=15.0 pred_был=None pred_стал=15.0 trunc_стал=False err_стал=None tok=379->275 | A football team played 22 games. They won 8 more than they lost. How many did they win?
+    idx 85: exp=44.0 pred_был=None pred_стал=44.0 trunc_стал=False err_стал=None tok=1024->220 | Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation h
+    idx 90: exp=225.0 pred_был=202.5 pred_стал=225.0 trunc_стал=False err_стал=None tok=407->313 | Ted the T-Rex was planning to bring potato salad to the dinosaur picnic.  He knows that an
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 3: exp=540.0 pred_был=540.0 pred_стал=180.0 trunc_стал=False err_стал=None tok=269->184 | James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many t
+    idx 17: exp=57500.0 pred_был=57500.0 pred_стал=59800.0 trunc_стал=False err_стал=None tok=285->260 | Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 w
+    idx 24: exp=26.0 pred_был=26.0 pred_стал=78.0 trunc_стал=False err_стал=None tok=291->286 | Kyle bought last year's best-selling book for $19.50. This is with a 25% discount from the
+    idx 28: exp=25.0 pred_был=25.0 pred_стал=20.0 trunc_стал=False err_стал=None tok=608->252 | Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His se
+    idx 53: exp=40.0 pred_был=40.0 pred_стал=440.0 trunc_стал=False err_стал=None tok=291->331 | A mechanic charges different rates to repair the tires of trucks and cars.  For each truck
+    idx 65: exp=36.0 pred_был=36.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=282->251 | Jim spends 2 hours watching TV and then decides to go to bed and reads for half as long.  
+    idx 68: exp=36.0 pred_был=36.0 pred_стал=24.0 trunc_стал=False err_стал=None tok=391->211 | There are twice as many boys as girls at Dr. Wertz's school. If there are 60 girls and 5 s
+    idx 95: exp=40.0 pred_был=40.0 pred_стал=53.0 trunc_стал=False err_стал=None tok=447->712 | Out of the 200 Grade 5 students, 2/5 are boys and 2/3 of the girls are in the girl scout. 
+    idx 112: exp=24.0 pred_был=24.0 pred_стал=12.0 trunc_стал=False err_стал=None tok=269->240 | A classroom has a whiteboard which is shared between the 4 teachers who take turns using t
+    idx 117: exp=360.0 pred_был=360.0 pred_стал=120.0 trunc_стал=False err_стал=None tok=264->158 | John buys 2 pairs of shoes for each of his 3 children.  They cost $60 each.  How much did 
+    idx 127: exp=120.0 pred_был=120.0 pred_стал=80.0 trunc_стал=False err_стал=None tok=263->281 | After transferring to a new school, Amy made 20 more friends than Lily. If Lily made 50 fr
+    idx 130: exp=30.0 pred_был=30.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=255->233 | Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A t
+
+Отчёт: runs/variants/w8_z_gate_mild_format/compare_test.json
+variant                 split   готово     acc    база    Δ   +   -        p обрыв  извл    ток   значений         sha256_16
+----------------------------------------------------------------------------------------------------------------------------
+w14_z93_final13         dev        100    0.66    0.59    7  16   9    0.230     5    95  334.7   37750784  06456c2f94e2b11f
+w15_final_case_suppress dev        100    0.64    0.59    5   8   3    0.227     7    94  383.0       3072  16b93507902eef6d
+w16_final_rows12_only   dev        100    0.64    0.59    5   8   3    0.227     7    93  382.9       2048  c38468e4727a004f
+w8_z_gate_mild_format   dev        100    0.64    0.59    5  12   7    0.359     4    95  321.6   37750784  296b2cd888606d54
+v2_Alog_decay_double    dev        100    0.62    0.59    3  13  10    0.678     6    92  372.5        288  20cbc5a5d1bbb3fc
+v9_mlp_damp             dev        100    0.62    0.59    3  16  13    0.711     7    86  410.9   88080384  fe9974253cafccd8
+c0_final_norm_gain      dev        100    0.61    0.59    2   6   4    0.754     9    89  400.4       1024  9675c6b74285b140
+v10_attn_branch_amp     dev        100    0.61    0.59    2  14  12    0.845     5    92  396.8   50331648  7ba69304d70e41df
+w1_final_token_amp      dev        100    0.61    0.59    2   6   4    0.754     6    94  367.8       2048  a7d5f647658be1b8
+v5_beta_soften          dev        100     0.6    0.59    1  12  11    1.000     5    91  383.1     294912  578ad7f3134460ce
+w3_final_amp_bold_damp  dev        100     0.6    0.59    1  12  11    1.000     7    92  380.8       4096  07b53e759efb349d
+w17_z93_only            dev        100    0.58    0.59   -1  11  12    1.000     5    90  340.7   37748736  2f759f5c048dfd4c
+w5_z_gate_damp          dev        100    0.58    0.59   -1  13  14    1.000     4    96  297.5   37748736  bb38034a47bee19b
+w7_format_boost_mild    dev        100    0.58    0.59   -1   8   9    1.000     5    91  366.3       5120  bb04ec0ec6a1cc87
+w2_bold_damp            dev        100    0.57    0.59   -2   8  10    0.815     9    88  399.6       2048  3c807ec8c24e8c60
+w4_branch_damp          dev        100    0.55    0.59   -4   9  13    0.523     7    88  373.7   50331648  901913daabc1db2e
+v1_Alog_decay_half      dev        100    0.54    0.59   -5  13  18    0.473     7    87  375.1        288  e7969087aa50139f
+v6_attn_sharpen         dev        100    0.53    0.59   -6  12  18    0.362     7    93  429.0       3068  d4eb115985fb756e
+w6_dt_bias_up           dev        100    0.35    0.59  -24   6  30    0.000    17    81  426.1        288  46c2d476a4411736
+w12_z_gate_strong       dev        100    0.31    0.59  -28  10  38    0.000    18    80  347.5   37748736  486902198597bbed
+v7_attn_smooth          dev        100    0.22    0.59  -37   2  39    0.000    19    53  489.9       3066  2c62c5fbaf64f08b
+v3_dt_bias_shift_down   dev        100    0.21    0.59  -38   5  43    0.000    41    55  612.5        286  58a4d3b302dee424
+w11_final_token_amp_15  dev        100     0.2    0.59  -39   5  44    0.000     3    41  325.9       3072  6ef7c615ce8a9f91
+v4_beta_amplify         dev        100    0.59    0.59    0  14  14    1.000     8    92  376.0     294912  338bb3d507cd092c
+v8_mlp_amp              dev        100    0.59    0.59    0  14  14    1.000     5    91  354.1   88080384  f8403d3bbe160141
+w8_z_gate_mild_format   search     250   0.608   0.572    9  33  24    0.289    14   237  352.5   37750784  296b2cd888606d54
+w17_z93_only            search     250   0.604   0.572    8  34  26    0.366    20   228  376.2   37748736  2f759f5c048dfd4c
+w1_final_token_amp      search     250     0.6   0.572    7  21  14    0.311    19   230  384.6       2048  a7d5f647658be1b8
+w7_format_boost_mild    search     250   0.596   0.572    6  28  22    0.480    16   226  376.0       5120  bb04ec0ec6a1cc87
+w14_z93_final13         search     250    0.58   0.572    2  33  31    0.901    13   234  347.6   37750784  06456c2f94e2b11f
+w15_final_case_suppress search     250    0.58   0.572    2  18  16    0.864    19   231  395.1       3072  16b93507902eef6d
+w16_final_rows12_only   search     250    0.58   0.572    2  18  16    0.864    19   231  393.4       2048  c38468e4727a004f
+c0_final_norm_gain      search     250   0.552   0.572   -5   9  14    0.405    15   221  387.8       1024  9675c6b74285b140
+v2_Alog_decay_double    search     250   0.528   0.572  -11  30  41    0.235    14   225  389.6        288  20cbc5a5d1bbb3fc
+v9_mlp_damp             search     250   0.488   0.572  -21  25  46    0.017    21   210  436.1   88080384  fe9974253cafccd8
+w12_z_gate_strong       search     250   0.288   0.572  -71  14  85    0.000    35   210  313.2   37748736  486902198597bbed
+w11_final_token_amp_15  search     250   0.252   0.572  -80  13  93    0.000     9   118  334.3       3072  6ef7c615ce8a9f91
+c0_final_norm_gain      smoke       24  0.5417  0.5417    0   1   1    1.000     2    20  426.5       1024  9675c6b74285b140
+c1_visual_noop          smoke       24  0.5417  0.5417    0   0   0    1.000     3    18  429.2    1769472  87468a61477bcf1f
+w8_z_gate_mild_format   test      1319  0.5489  0.5155   44 180 136    0.015    76  1239  364.6   37750784  296b2cd888606d54
+
+Сохранено: /home/mpiscil/weight-experiment/runs/analysis/screening_table.json
+=== 2026-11-11T06:13:38+07:00 ФИНАЛЬНЫЙ ПРОГОН ЗАВЕРШЁН (w8_z_gate_mild_format) ===

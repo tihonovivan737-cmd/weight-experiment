@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w3_final_amp_bold_damp/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w3_final_amp_bold_damp",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 60,
+  "accuracy": 0.6,
+  "extracted": 92,
+  "truncated": 7,
+  "mean_out_tokens": 380.8,
+  "mean_seconds": 4.51
+ },
+ "delta_correct": 1,
+ "fixed": [
+  29,
+  1075,
+  1962,
+  2743,
+  3321,
+  3459,
+  3939,
+  4138,
+  4531,
+  5785,
+  6295,
+  7345
+ ],
+ "broken": [
+  348,
+  640,
+  720,
+  1070,
+  1185,
+  2177,
+  3142,
+  4150,
+  4330,
+  6163,
+  7228
+ ],
+ "same_correct": 48,
+ "same_wrong": 29,
+ "answers_differ": 100,
+ "mcnemar_p": 1.0
+}

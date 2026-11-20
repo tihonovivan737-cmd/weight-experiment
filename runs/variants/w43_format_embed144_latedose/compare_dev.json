@@ -1,0 +1,59 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w43_format_embed144_latedose/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w43_format_embed144_latedose",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 90,
+  "truncated": 4,
+  "mean_out_tokens": 323.2,
+  "mean_seconds": 4.0
+ },
+ "delta_correct": 5,
+ "fixed": [
+  951,
+  1075,
+  1125,
+  1480,
+  2069,
+  3321,
+  3459,
+  4138,
+  4531,
+  5169,
+  5785,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  348,
+  688,
+  720,
+  1185,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4449
+ ],
+ "same_correct": 49,
+ "same_wrong": 26,
+ "answers_differ": 100,
+ "mcnemar_p": 0.42435622215270996
+}

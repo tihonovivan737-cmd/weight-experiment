@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "completed": 24,
+    "total": 24,
+    "correct": 13,
+    "accuracy": 0.5417,
+    "answer_extracted": 18,
+    "extraction_rate": 0.75,
+    "truncated": 3,
+    "total_seconds": 124.0,
+    "mean_seconds": 5.17,
+    "mean_output_tokens": 429.2,
+    "tokens_per_second": 83.09,
+    "extraction_errors": {
+      "no_final_line": 6
+    }
+  },
+  "config": {
+    "model_dir": "runs/variants/c1_visual_noop/model",
+    "model_info": {
+      "model_dir": "runs/variants/c1_visual_noop/model",
+      "config_sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+      "weights": {
+        "model.safetensors-00001-of-00001.safetensors": {
+          "sha256": "87468a61477bcf1f074e6acc15f9c443bb0f30df37b8e405ac23a4071d64e219",
+          "bytes": 1746942600
+        }
+      }
+    },
+    "dataset_dir": "/home/mpiscil/weight-experiment/datasets/gsm8k/main",
+    "split": "smoke",
+    "n_indices": 24,
+    "indices_sha256": "6bb65fb9f78bc8650eea9a1b83de5b80c976869ff23f926f6d06803c88597b19",
+    "device": "cuda:0",
+    "dtype": "bfloat16",
+    "batch_size": 1,
+    "max_new_tokens": 1024,
+    "do_sample": false,
+    "num_threads": 24,
+    "prompt_suffix": "\n\nSolve the problem step by step. Finish with a final line exactly in this format: FINAL: <number>",
+    "note": "no-op control: масштабирование неиспользуемых визуальных весов",
+    "env": {
+      "python": "3.13.9",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+      "torch": "2.15.0+cu132",
+      "torch_cuda_build": "13.2",
+      "transformers": "5.22.2",
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "tokenizers": "0.23.3",
+      "safetensors": "0.8.0",
+      "omp_num_threads": 24,
+      "cpu_count": 32,
+      "torch_cuda_available": true,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 3090"
+      ]
+    }
+  }
+}

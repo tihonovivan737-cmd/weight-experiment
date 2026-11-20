@@ -1,0 +1,9 @@
+=== 2026-11-11T21:30:05+07:00 PROBE w31_z_dominant_restore106 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w31_z_dominant_restore106 -> runs/analysis/probe6_w31_z_dominant_restore106.json
+=== 2026-11-11T21:38:58+07:00 PROBE w32_qknorm104_on_w8 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w32_qknorm104_on_w8 -> runs/analysis/probe6_w32_qknorm104_on_w8.json
+=== 2026-11-11T21:47:38+07:00 PROBE w33_fullgate_open_closed_heads (свободно VRAM: 6881 MiB) ===
+probe rc=0 w33_fullgate_open_closed_heads -> runs/analysis/probe6_w33_fullgate_open_closed_heads.json
+=== 2026-11-11T21:55:52+07:00 PROBE w34_restore_plus_qknorm104 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w34_restore_plus_qknorm104 -> runs/analysis/probe6_w34_restore_plus_qknorm104.json
+DONE 2026-11-11T22:04:35+07:00

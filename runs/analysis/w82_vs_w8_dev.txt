@@ -1,0 +1,43 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w82_wave11_head_lever_on_w8/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w82_wave11_head_lever_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 63,
+  "accuracy": 0.63,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 329.8,
+  "mean_seconds": 4.07
+ },
+ "delta_correct": -1,
+ "fixed": [
+  157,
+  5781,
+  6909,
+  6927
+ ],
+ "broken": [
+  640,
+  781,
+  4728,
+  5072,
+  6097
+ ],
+ "same_correct": 59,
+ "same_wrong": 32,
+ "answers_differ": 65,
+ "mcnemar_p": 1.0
+}

@@ -1,0 +1,7 @@
+=== 2026-11-12T13:10:11+07:00 PROBE w38_z_corner_early10008_late08742 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w38_z_corner_early10008_late08742 -> runs/analysis/probe6_w38_z_corner_early10008_late08742.json
+=== 2026-11-12T13:18:56+07:00 PROBE w39_z_late_release1075 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w39_z_late_release1075 -> runs/analysis/probe6_w39_z_late_release1075.json
+=== 2026-11-12T13:27:34+07:00 PROBE w40_z_early_extra094 (свободно VRAM: 6881 MiB) ===
+probe rc=0 w40_z_early_extra094 -> runs/analysis/probe6_w40_z_early_extra094.json
+DONE 2026-11-12T13:36:05+07:00

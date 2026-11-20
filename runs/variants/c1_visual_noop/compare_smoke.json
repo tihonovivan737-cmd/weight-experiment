@@ -1,0 +1,32 @@
+{
+ "base": "runs/env_probe/smoke1024/results.jsonl",
+ "variant": "runs/variants/c1_visual_noop/smoke/results.jsonl",
+ "base_name": "baseline_smoke",
+ "variant_name": "c1_visual_noop",
+ "n_common": 24,
+ "base_stats": {
+  "n": 24,
+  "correct": 13,
+  "accuracy": 0.5417,
+  "extracted": 18,
+  "truncated": 3,
+  "mean_out_tokens": 429.2,
+  "mean_seconds": 5.82
+ },
+ "variant_stats": {
+  "n": 24,
+  "correct": 13,
+  "accuracy": 0.5417,
+  "extracted": 18,
+  "truncated": 3,
+  "mean_out_tokens": 429.2,
+  "mean_seconds": 5.17
+ },
+ "delta_correct": 0,
+ "fixed": [],
+ "broken": [],
+ "same_correct": 13,
+ "same_wrong": 11,
+ "answers_differ": 0,
+ "mcnemar_p": 1.0
+}

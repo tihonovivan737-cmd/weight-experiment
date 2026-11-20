@@ -1,0 +1,16 @@
+{
+ "results": "runs/baseline_dev/results.jsonl",
+ "label": "baseline",
+ "split": "train",
+ "n": 100,
+ "correct": 59,
+ "final_extracted": 90,
+ "no_final": 10,
+ "truncated": 7,
+ "gold_hidden_in_truncated_text": 5,
+ "wrong_with_final": 31,
+ "wrong_without_final": 10,
+ "near_miss_within_1pct": 0,
+ "mean_len_correct": 989.4,
+ "mean_len_wrong_with_final": 1132.9
+}

@@ -1,0 +1,60 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/v10_attn_branch_amp/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "v10_attn_branch_amp",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 92,
+  "truncated": 5,
+  "mean_out_tokens": 396.8,
+  "mean_seconds": 4.64
+ },
+ "delta_correct": 2,
+ "fixed": [
+  759,
+  1480,
+  1962,
+  2743,
+  3459,
+  3482,
+  4138,
+  4531,
+  5334,
+  5527,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  56,
+  348,
+  380,
+  640,
+  2177,
+  3142,
+  3766,
+  4828,
+  4843,
+  6136,
+  6163,
+  7228
+ ],
+ "same_correct": 47,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.8450189828872681
+}

@@ -1,0 +1,30 @@
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  61%|██████    | 289/473 [00:00<00:00, 2881.98it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 3786.07it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+Замер строк logit-весов против FINAL на позициях фактической записи FINAL (w8).
+Задач: 63, позиций записи FINAL: 119, порог запаса: 1.0.
+Строк словаря с запасом < порога: среднее 248318.81, доля 100.10 % (оценка §41.7 была 6.2 %), мин 248315, макс 248320, уникальных строк-конкурентов: 14.
+
+    row токен             позиций  сред. запас
+    198 Ċ                      63        2.651
+ 248046 <|im_end|>             63        3.526
+   2972 Ġ**                    60        0.644
+  64697 ĠFINAL                 56        0.000
+  95429 FINAL                  56        0.000
+    271 ĊĊ                     53        0.416
+   1088 Ġ\                     40        0.458
+  12650 ĠFinal                 37        0.209
+    328 Ġ"                     30        0.254
+    498 Ġ[                     30        0.296
+   1510 Ġ`                     28        0.342
+    361 Ġ<                      5        0.163
+    695 ĠĊ                      2        0.062
+    332 **                      1        0.000
+
+Распределение числа строк с запасом < порога по позициям (первые 12):
+  248315 строк —    2 позиций
+  248316 строк —    3 позиций
+  248317 строк —    4 позиций
+  248318 строк —   54 позиций
+  248320 строк —   56 позиций
+

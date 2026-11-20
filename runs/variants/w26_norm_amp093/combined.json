@@ -1,0 +1,352 @@
+{
+ "variant": "w26_norm_amp093",
+ "splits": "dev,search",
+ "per_split": {
+  "dev": {
+   "n_common": 100,
+   "missing": {
+    "only_base": [],
+    "only_variant": []
+   },
+   "base_stats": {
+    "n": 100,
+    "correct": 59,
+    "accuracy": 0.59,
+    "extracted": 90,
+    "truncated": 7,
+    "mean_out_tokens": 386.7,
+    "mean_seconds": 4.62
+   },
+   "variant_stats": {
+    "n": 100,
+    "correct": 60,
+    "accuracy": 0.6,
+    "extracted": 90,
+    "truncated": 8,
+    "mean_out_tokens": 375.1,
+    "mean_seconds": 5.13
+   },
+   "delta_correct": 1,
+   "fixed": [
+    1075,
+    3321,
+    3459,
+    4531,
+    5785,
+    6097,
+    6295,
+    7345
+   ],
+   "broken": [
+    236,
+    720,
+    2177,
+    3104,
+    3766,
+    4150,
+    7228
+   ],
+   "mcnemar_p": 1.0,
+   "answers_differ": 100
+  },
+  "search": {
+   "n_common": 250,
+   "missing": {
+    "only_base": [],
+    "only_variant": []
+   },
+   "base_stats": {
+    "n": 250,
+    "correct": 143,
+    "accuracy": 0.572,
+    "extracted": 220,
+    "truncated": 17,
+    "mean_out_tokens": 398.0,
+    "mean_seconds": 4.8
+   },
+   "variant_stats": {
+    "n": 250,
+    "correct": 140,
+    "accuracy": 0.56,
+    "extracted": 224,
+    "truncated": 20,
+    "mean_out_tokens": 389.6,
+    "mean_seconds": 5.42
+   },
+   "delta_correct": -3,
+   "fixed": [
+    536,
+    557,
+    1929,
+    3572,
+    3728,
+    3805,
+    4209,
+    4519,
+    4816,
+    4817,
+    4945,
+    5062,
+    5512,
+    5801,
+    6528,
+    7057
+   ],
+   "broken": [
+    306,
+    834,
+    893,
+    945,
+    947,
+    1255,
+    1592,
+    2619,
+    3378,
+    3707,
+    3733,
+    4824,
+    4902,
+    5663,
+    5816,
+    6223,
+    6308,
+    6417,
+    6622
+   ],
+   "mcnemar_p": 0.7358788008568808,
+   "answers_differ": 248
+  }
+ },
+ "combined": {
+  "n_common": 350,
+  "missing": {
+   "only_base": [],
+   "only_variant": []
+  },
+  "base_stats": {
+   "n": 350,
+   "correct": 202,
+   "accuracy": 0.5771,
+   "extracted": 310,
+   "truncated": 24,
+   "mean_out_tokens": 394.8,
+   "mean_seconds": 4.75
+  },
+  "variant_stats": {
+   "n": 350,
+   "correct": 200,
+   "accuracy": 0.5714,
+   "extracted": 314,
+   "truncated": 28,
+   "mean_out_tokens": 385.4,
+   "mean_seconds": 5.34
+  },
+  "delta_correct": -2,
+  "fixed": [
+   [
+    "dev",
+    1075
+   ],
+   [
+    "dev",
+    3321
+   ],
+   [
+    "dev",
+    3459
+   ],
+   [
+    "dev",
+    4531
+   ],
+   [
+    "dev",
+    5785
+   ],
+   [
+    "dev",
+    6097
+   ],
+   [
+    "dev",
+    6295
+   ],
+   [
+    "dev",
+    7345
+   ],
+   [
+    "search",
+    536
+   ],
+   [
+    "search",
+    557
+   ],
+   [
+    "search",
+    1929
+   ],
+   [
+    "search",
+    3572
+   ],
+   [
+    "search",
+    3728
+   ],
+   [
+    "search",
+    3805
+   ],
+   [
+    "search",
+    4209
+   ],
+   [
+    "search",
+    4519
+   ],
+   [
+    "search",
+    4816
+   ],
+   [
+    "search",
+    4817
+   ],
+   [
+    "search",
+    4945
+   ],
+   [
+    "search",
+    5062
+   ],
+   [
+    "search",
+    5512
+   ],
+   [
+    "search",
+    5801
+   ],
+   [
+    "search",
+    6528
+   ],
+   [
+    "search",
+    7057
+   ]
+  ],
+  "broken": [
+   [
+    "dev",
+    236
+   ],
+   [
+    "dev",
+    720
+   ],
+   [
+    "dev",
+    2177
+   ],
+   [
+    "dev",
+    3104
+   ],
+   [
+    "dev",
+    3766
+   ],
+   [
+    "dev",
+    4150
+   ],
+   [
+    "dev",
+    7228
+   ],
+   [
+    "search",
+    306
+   ],
+   [
+    "search",
+    834
+   ],
+   [
+    "search",
+    893
+   ],
+   [
+    "search",
+    945
+   ],
+   [
+    "search",
+    947
+   ],
+   [
+    "search",
+    1255
+   ],
+   [
+    "search",
+    1592
+   ],
+   [
+    "search",
+    2619
+   ],
+   [
+    "search",
+    3378
+   ],
+   [
+    "search",
+    3707
+   ],
+   [
+    "search",
+    3733
+   ],
+   [
+    "search",
+    4824
+   ],
+   [
+    "search",
+    4902
+   ],
+   [
+    "search",
+    5663
+   ],
+   [
+    "search",
+    5816
+   ],
+   [
+    "search",
+    6223
+   ],
+   [
+    "search",
+    6308
+   ],
+   [
+    "search",
+    6417
+   ],
+   [
+    "search",
+    6622
+   ]
+  ],
+  "mcnemar_p": 0.887724827340783,
+  "answers_differ": 348
+ }
+}

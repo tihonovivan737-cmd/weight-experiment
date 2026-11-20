@@ -1,0 +1,25 @@
+Проверено записей: 1319
+  correct                        680  (51.6%)
+  extracted_wrong                461  (35.0%)
+  no_final_line                  178  (13.5%)
+    (из них truncated)           115  (8.7%)
+Признаки:
+  different_digit_length               218
+  truncated                            115
+  pred_is_intermediate_in_reference     83
+  pred=expected+num_from_question       32
+  pred=expected*2                       16
+  pred=expected*4                       13
+  pred=expected*3                       12
+  pred=expected*0.5                     10
+  pred=expected*6                        6
+  pred=expected*0.25                     5
+  pred=expected*10                       3
+  pred=expected*5                        3
+  repetition_loop                        1
+  pred=expected*100                      1
+  pred=expected*0.1                      1
+
+Примеры extracted_wrong:
+
+output_tokens: mean=415.1 max=1024 на_limit=115

@@ -1,0 +1,6 @@
+Вариант: w11_final_token_amp_15
+Модель: runs/variants/w11_final_token_amp_15/model
+SHA256 весов: было 04b1c301231dd422… стало 6ef7c615ce8a9f91…
+Тензоров изменено: 1; значений изменено: 3,072 (затронуто 3,072)
+Среднее |Δ|: 0.00777902  Макс |Δ|: 0.04052734
+Манифест: runs/variants/w11_final_token_amp_15/manifest.json

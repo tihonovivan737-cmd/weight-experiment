@@ -1,0 +1,9 @@
+# контроль c0 — оценка шума хаотической расходимости (на нём видно, что полуневые правки меняют ответы)
+c0_final_norm_gain
+# новые варианты (гипотезы формата вывода и длины генерации)
+w1_final_token_amp
+w2_bold_damp
+w3_final_amp_bold_damp
+w4_branch_damp
+w5_z_gate_damp
+w6_dt_bias_up

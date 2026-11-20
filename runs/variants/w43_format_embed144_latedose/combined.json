@@ -1,0 +1,542 @@
+{
+ "variant": "w43_format_embed144_latedose",
+ "splits": "dev,search",
+ "per_split": {
+  "dev": {
+   "n_common": 100,
+   "missing": {
+    "only_base": [],
+    "only_variant": []
+   },
+   "base_stats": {
+    "n": 100,
+    "correct": 59,
+    "accuracy": 0.59,
+    "extracted": 90,
+    "truncated": 7,
+    "mean_out_tokens": 386.7,
+    "mean_seconds": 4.62
+   },
+   "variant_stats": {
+    "n": 100,
+    "correct": 64,
+    "accuracy": 0.64,
+    "extracted": 90,
+    "truncated": 4,
+    "mean_out_tokens": 323.2,
+    "mean_seconds": 4.0
+   },
+   "delta_correct": 5,
+   "fixed": [
+    951,
+    1075,
+    1125,
+    1480,
+    2069,
+    3321,
+    3459,
+    4138,
+    4531,
+    5169,
+    5785,
+    6097,
+    6295,
+    7254,
+    7345
+   ],
+   "broken": [
+    348,
+    688,
+    720,
+    1185,
+    2177,
+    3104,
+    3142,
+    3766,
+    3799,
+    4449
+   ],
+   "mcnemar_p": 0.42435622215270996,
+   "answers_differ": 100
+  },
+  "search": {
+   "n_common": 250,
+   "missing": {
+    "only_base": [],
+    "only_variant": []
+   },
+   "base_stats": {
+    "n": 250,
+    "correct": 143,
+    "accuracy": 0.572,
+    "extracted": 220,
+    "truncated": 17,
+    "mean_out_tokens": 398.0,
+    "mean_seconds": 4.8
+   },
+   "variant_stats": {
+    "n": 250,
+    "correct": 142,
+    "accuracy": 0.568,
+    "extracted": 215,
+    "truncated": 16,
+    "mean_out_tokens": 336.9,
+    "mean_seconds": 4.7
+   },
+   "delta_correct": -1,
+   "fixed": [
+    161,
+    193,
+    536,
+    1835,
+    1929,
+    2237,
+    2480,
+    2674,
+    2723,
+    2878,
+    3065,
+    3284,
+    3408,
+    3572,
+    3594,
+    3728,
+    3837,
+    4237,
+    4519,
+    4816,
+    4817,
+    5721,
+    5801,
+    6017,
+    6528,
+    7057,
+    7198,
+    7320,
+    7329,
+    7360,
+    7444
+   ],
+   "broken": [
+    108,
+    540,
+    791,
+    824,
+    829,
+    834,
+    893,
+    908,
+    945,
+    947,
+    983,
+    1020,
+    1179,
+    1197,
+    1255,
+    1678,
+    1806,
+    1907,
+    2154,
+    2203,
+    2926,
+    3051,
+    3086,
+    3245,
+    3378,
+    3499,
+    3889,
+    3950,
+    4520,
+    4781,
+    6079,
+    7134
+   ],
+   "mcnemar_p": 1.0,
+   "answers_differ": 250
+  }
+ },
+ "combined": {
+  "n_common": 350,
+  "missing": {
+   "only_base": [],
+   "only_variant": []
+  },
+  "base_stats": {
+   "n": 350,
+   "correct": 202,
+   "accuracy": 0.5771,
+   "extracted": 310,
+   "truncated": 24,
+   "mean_out_tokens": 394.8,
+   "mean_seconds": 4.75
+  },
+  "variant_stats": {
+   "n": 350,
+   "correct": 206,
+   "accuracy": 0.5886,
+   "extracted": 305,
+   "truncated": 20,
+   "mean_out_tokens": 333.0,
+   "mean_seconds": 4.5
+  },
+  "delta_correct": 4,
+  "fixed": [
+   [
+    "dev",
+    951
+   ],
+   [
+    "dev",
+    1075
+   ],
+   [
+    "dev",
+    1125
+   ],
+   [
+    "dev",
+    1480
+   ],
+   [
+    "dev",
+    2069
+   ],
+   [
+    "dev",
+    3321
+   ],
+   [
+    "dev",
+    3459
+   ],
+   [
+    "dev",
+    4138
+   ],
+   [
+    "dev",
+    4531
+   ],
+   [
+    "dev",
+    5169
+   ],
+   [
+    "dev",
+    5785
+   ],
+   [
+    "dev",
+    6097
+   ],
+   [
+    "dev",
+    6295
+   ],
+   [
+    "dev",
+    7254
+   ],
+   [
+    "dev",
+    7345
+   ],
+   [
+    "search",
+    161
+   ],
+   [
+    "search",
+    193
+   ],
+   [
+    "search",
+    536
+   ],
+   [
+    "search",
+    1835
+   ],
+   [
+    "search",
+    1929
+   ],
+   [
+    "search",
+    2237
+   ],
+   [
+    "search",
+    2480
+   ],
+   [
+    "search",
+    2674
+   ],
+   [
+    "search",
+    2723
+   ],
+   [
+    "search",
+    2878
+   ],
+   [
+    "search",
+    3065
+   ],
+   [
+    "search",
+    3284
+   ],
+   [
+    "search",
+    3408
+   ],
+   [
+    "search",
+    3572
+   ],
+   [
+    "search",
+    3594
+   ],
+   [
+    "search",
+    3728
+   ],
+   [
+    "search",
+    3837
+   ],
+   [
+    "search",
+    4237
+   ],
+   [
+    "search",
+    4519
+   ],
+   [
+    "search",
+    4816
+   ],
+   [
+    "search",
+    4817
+   ],
+   [
+    "search",
+    5721
+   ],
+   [
+    "search",
+    5801
+   ],
+   [
+    "search",
+    6017
+   ],
+   [
+    "search",
+    6528
+   ],
+   [
+    "search",
+    7057
+   ],
+   [
+    "search",
+    7198
+   ],
+   [
+    "search",
+    7320
+   ],
+   [
+    "search",
+    7329
+   ],
+   [
+    "search",
+    7360
+   ],
+   [
+    "search",
+    7444
+   ]
+  ],
+  "broken": [
+   [
+    "dev",
+    348
+   ],
+   [
+    "dev",
+    688
+   ],
+   [
+    "dev",
+    720
+   ],
+   [
+    "dev",
+    1185
+   ],
+   [
+    "dev",
+    2177
+   ],
+   [
+    "dev",
+    3104
+   ],
+   [
+    "dev",
+    3142
+   ],
+   [
+    "dev",
+    3766
+   ],
+   [
+    "dev",
+    3799
+   ],
+   [
+    "dev",
+    4449
+   ],
+   [
+    "search",
+    108
+   ],
+   [
+    "search",
+    540
+   ],
+   [
+    "search",
+    791
+   ],
+   [
+    "search",
+    824
+   ],
+   [
+    "search",
+    829
+   ],
+   [
+    "search",
+    834
+   ],
+   [
+    "search",
+    893
+   ],
+   [
+    "search",
+    908
+   ],
+   [
+    "search",
+    945
+   ],
+   [
+    "search",
+    947
+   ],
+   [
+    "search",
+    983
+   ],
+   [
+    "search",
+    1020
+   ],
+   [
+    "search",
+    1179
+   ],
+   [
+    "search",
+    1197
+   ],
+   [
+    "search",
+    1255
+   ],
+   [
+    "search",
+    1678
+   ],
+   [
+    "search",
+    1806
+   ],
+   [
+    "search",
+    1907
+   ],
+   [
+    "search",
+    2154
+   ],
+   [
+    "search",
+    2203
+   ],
+   [
+    "search",
+    2926
+   ],
+   [
+    "search",
+    3051
+   ],
+   [
+    "search",
+    3086
+   ],
+   [
+    "search",
+    3245
+   ],
+   [
+    "search",
+    3378
+   ],
+   [
+    "search",
+    3499
+   ],
+   [
+    "search",
+    3889
+   ],
+   [
+    "search",
+    3950
+   ],
+   [
+    "search",
+    4520
+   ],
+   [
+    "search",
+    4781
+   ],
+   [
+    "search",
+    6079
+   ],
+   [
+    "search",
+    7134
+   ]
+  ],
+  "mcnemar_p": 0.7493290032022806,
+  "answers_differ": 350
+ }
+}

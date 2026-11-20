@@ -1,0 +1,6 @@
+search250  w8_z_gate_mild_format    исправлено   n= 33  арифметика:25, формат:8
+search250  w8_z_gate_mild_format    сломано      n= 24  арифметика:21, обрыв:3
+dev100     w8_z_gate_mild_format    исправлено   n= 12  арифметика:8, формат:4
+dev100     w8_z_gate_mild_format    сломано      n=  7  арифметика:5, формат:1, обрыв:1
+test1319   w8_z_gate_mild_format    исправлено   n=180  арифметика:104, формат:76
+test1319   w8_z_gate_mild_format    сломано      n=136  арифметика:118, обрыв:15, формат:3

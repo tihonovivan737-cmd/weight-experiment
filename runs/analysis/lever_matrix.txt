@@ -1,0 +1,79 @@
+вариантов с манифестом: 47  (база: orig = исходная модель, w8 = контрольная точка, иначе имя варианта)
+
+### linear_attn.A_log
+    v1_Alog_decay_half                   база=orig                       logscale     lam=0.5
+    v2_Alog_decay_double                 база=orig                       logscale     lam=2.0
+### linear_attn.dt_bias
+    v3_dt_bias_shift_down                база=orig                       add          lam=-2.0
+    w6_dt_bias_up                        база=orig                       add          lam=2.0
+### linear_attn.in_proj_b.weight
+    v4_beta_amplify                      база=orig                       scale        lam=1.5
+    v5_beta_soften                       база=orig                       scale        lam=0.6
+    w27_beta_sharpen_late130             база=w8                         scale        lam=1.3
+### linear_attn.in_proj_z.weight
+    w12_z_gate_strong                    база=orig                       scale        lam=0.75
+    w14_z93_final13                      база=orig                       scale        lam=0.93
+    w17_z93_only                         база=orig                       scale        lam=0.93
+    w25_z_headsel_damp088                база=w8                         scale        lam=0.88
+    w29_z_total087                       база=w8                         scale        lam=0.94
+    w31_z_dominant_restore106            база=w8                         scale        lam=1.06
+    w34_restore_plus_qknorm104           база=w8                         scale        lam=1.06
+    w35_z_dominant_damp078               база=w8                         scale        lam=0.78
+    w36_z_late_extra094                  база=w8                         scale        lam=0.94
+    w37_z_early_release1075              база=w8                         scale        lam=1.0753
+    w38_z_corner_early10008_late08742    база=w8                         scale        lam=0.94/1.0753
+    w39_z_late_release1075               база=w8                         scale        lam=1.0753
+    w40_z_early_extra094                 база=w8                         scale        lam=0.94
+    w5_z_gate_damp                       база=orig                       scale        lam=0.85
+    w8_z_gate_mild_format                база=orig                       scale        lam=0.93
+### linear_attn.norm.weight
+    w26_norm_amp093                      база=orig                       scale        lam=0.93
+### linear_attn.out_proj.weight
+    v10_attn_branch_amp                  база=orig                       scale        lam=1.15
+    w4_branch_damp                       база=orig                       scale        lam=0.9
+### mlp.down_proj.weight
+    v8_mlp_amp                           база=orig                       scale        lam=1.15
+    v9_mlp_damp                          база=orig                       scale        lam=0.87
+### model.language_model.embed_tokens.weight
+    w11_final_token_amp_15               база=orig                       scale        lam=1.5
+    w14_z93_final13                      база=orig                       scale        lam=1.3
+    w15_final_case_suppress              база=orig                       scale        lam=0.7/1.2
+    w16_final_rows12_only                база=orig                       scale        lam=1.2
+    w1_final_token_amp                   база=orig                       scale        lam=1.3
+    w2_bold_damp                         база=orig                       scale        lam=0.7
+    w3_final_amp_bold_damp               база=orig                       scale        lam=0.7/1.3
+    w41_format_embed132                  база=w8                         scale        lam=1.1
+    w42_format_embed144                  база=w8                         scale        lam=1.2
+    w43_format_embed144_latedose         база=w36_z_late_extra094        scale        lam=1.2
+    w7_format_boost_mild                 база=orig                       scale        lam=0.85/1.2
+    w8_z_gate_mild_format                база=orig                       scale        lam=1.2
+### model.language_model.norm.weight
+    c0_final_norm_gain                   база=orig                       scale_offset lam=1.2
+### model.visual.pos_embed.weight
+    c1_visual_noop                       база=orig                       scale        lam=1.5
+### post_attention_layernorm.weight
+    w44_mlp_branch_late105               база=w8                         scale        lam=1.05
+### self_attn.k_norm.weight
+    v6_attn_sharpen                      база=orig                       scale_offset lam=1.3
+    v7_attn_smooth                       база=orig                       scale_offset lam=0.75
+    w30_qknorm_sharp108                  база=w8                         scale_offset lam=1.08
+    w32_qknorm104_on_w8                  база=w8                         scale_offset lam=1.04
+    w34_restore_plus_qknorm104           база=w8                         scale_offset lam=1.04
+### self_attn.o_proj.weight
+    v10_attn_branch_amp                  база=orig                       scale        lam=1.15
+    w4_branch_damp                       база=orig                       scale        lam=0.9
+### self_attn.q_norm.weight
+    v6_attn_sharpen                      база=orig                       scale_offset lam=1.3
+    v7_attn_smooth                       база=orig                       scale_offset lam=0.75
+    w30_qknorm_sharp108                  база=w8                         scale_offset lam=1.08
+    w32_qknorm104_on_w8                  база=w8                         scale_offset lam=1.04
+    w34_restore_plus_qknorm104           база=w8                         scale_offset lam=1.04
+### self_attn.q_proj.weight
+    w24_fullgate_open085                 база=w8                         scale        lam=0.85
+    w28_fullgate_close115                база=w8                         scale        lam=1.15
+    w33_fullgate_open_closed_heads       база=w8                         scale        lam=0.85
+
+базы-не-orig/не-w8:
+    w43_format_embed144_latedose         <- w36_z_late_extra094
+
+рецептов: 49, собрано вариантов: 47, рецептов без сборки: w10_dt_bias_up_mild, w9_mlp_damp_gentle

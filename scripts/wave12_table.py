@@ -1,0 +1,112 @@
+#!/usr/bin/env python
+"""Сводная таблица волны 12: 250 search + 100 dev.
+
+Вариант один — w49_z_late094_qknorm108 (журнал §40). Методика и пороги совпадают с
+scripts/wave6_table.py (раздел 24 журнала); здесь отличаются список вариантов, выходные
+имена и дополнительные референсы.
+
+Референсы для правила выбора (scripts/pick_final2.py): исходная модель (orig) и
+контрольная точка w8_z_gate_mild_format. Дополнительно те же 350 строк сравниваются с
+компонентами w30_qknorm_sharp108 и w36_z_late_extra094 — это проверка аддитивности
+(§40.4): фактический w49 против суммы эффектов компонент. pick_final2 использует только
+ключи orig и w8, дополнительные keys в "vs" ему не мешают.
+
+Только чтение results.jsonl; генерации не запускаются.
+"""
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+import wave6_table as W  # noqa: E402
+
+VARIANTS = ["w49_z_late094_qknorm108"]
+
+REFS = dict(W.REFS)
+REFS.update({
+    "w30": W.V / "w30_qknorm_sharp108" / "{split}/results.jsonl",
+    "w36": W.V / "w36_z_late_extra094" / "{split}/results.jsonl",
+})
+
+
+def main():
+    out = {}
+    for split in ("search", "dev"):
+        bases = {k: W.load(str(p).format(split=split)) for k, p in REFS.items()}
+        for v in VARIANTS:
+            path = W.V / v / split / "results.jsonl"
+            if not path.exists():
+                continue
+            rows = W.load(path)
+            if len(rows) != W.EXPECT[split]:
+                continue  # прогон ещё не завершён
+            out.setdefault(v, {})[split] = {"stats": W.stats(rows),
+                                            "vs": {k: W.cmp(rows, bases[k], k) for k in bases}}
+    refs_all = {}
+    for k, p in REFS.items():
+        merged = W.load(str(p).format(split="search"))
+        merged.update(W.load(str(p).format(split="dev")))
+        refs_all[k] = merged
+    for v in VARIANTS:
+        got = out.get(v, {})
+        if "search" in got and "dev" in got:
+            rows = W.load(W.V / v / "search" / "results.jsonl")
+            rows.update(W.load(W.V / v / "dev" / "results.jsonl"))
+            if len(rows) == 350:
+                got["combined"] = {"stats": W.stats(rows),
+                                   "vs": {k: W.cmp(rows, refs_all[k], k) for k in refs_all}}
+    (ROOT / "runs/analysis/wave12_table.json").write_text(
+        json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    lines = ["референсы на 350 задачах отбора: исходная 202 верно / FINAL 310 / обрывов 24; "
+             "w8_z_gate_mild_format 216 верно / FINAL 332 / обрывов 18; "
+             "компоненты: w30 215/337/9, w36 219/329/21 (те же 350 строк)"]
+    keys = list(REFS.keys())
+    for split in ("dev", "search", "combined"):
+        lines.append(f"\n=== {split} ===")
+        head = f"{'вариант':<28}{'верно':>6}{'FINAL':>6}{'обр':>5}{'верно+FINAL':>12}{'сред. длина':>12}"
+        for k in keys:
+            head += f" {k + ' Δверн':>10} {'p':>7} {'Δмат':>6}"
+        lines.append(head)
+        for v in VARIANTS:
+            d = out.get(v, {}).get(split)
+            if not d:
+                lines.append(f"{v:<28}нет завершённого прогона ({split})")
+                continue
+            s = d["stats"]
+            row = (f"{v:<28}{s['correct']:>6}{s['extracted']:>6}{s['truncated']:>5}"
+                   f"{s['correct_with_final']:>12}{s['mean_out_tokens']:>12.1f}")
+            for k in keys:
+                c = d["vs"][k]
+                row += f" {c['delta_correct']:>10} {c['mcnemar_p']:>7} {c['delta_math']:>6}"
+            lines.append(row)
+        for v in VARIANTS:
+            d = out.get(v, {}).get(split)
+            if not d:
+                continue
+            for k in keys:
+                c = d["vs"][k]
+                lines.append(f"    {v:<28} vs {k:<5} только-математика "
+                             f"(FINAL есть в обоих, n={c['math_subset_n']}): "
+                             f"{c['math_subset_variant']} vs {c['math_subset_base']} "
+                             f"Δ{c['delta_math']:+d} (починил {c['math_fixed']}, "
+                             f"сломал {c['math_broken']}, p={c['mcnemar_p_math']})")
+        lines.append("перевороты (формат/математика):")
+        for v in VARIANTS:
+            d = out.get(v, {}).get(split)
+            if not d:
+                continue
+            for k in keys:
+                c = d["vs"][k]
+                lines.append(f"  {v:<28} vs {k:<5} фикс {c['fixed']:>3}"
+                             f" (форм {c['fixed_format']:>3} / мат {c['fixed_math']:>3})"
+                             f"  слом {c['broken']:>3}"
+                             f" (форм {c['broken_format']:>3} / мат {c['broken_math']:>3})")
+    txt = "\n".join(lines) + "\n"
+    (ROOT / "runs/wave12_table.txt").write_text(txt, encoding="utf-8")
+    print(txt)
+
+
+if __name__ == "__main__":
+    main()

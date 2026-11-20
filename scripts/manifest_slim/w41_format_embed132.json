@@ -1,0 +1,139 @@
+{
+ "name": "w41_format_embed132",
+ "hypothesis": "Форматная ветка, волна 10, точка 1. Накопленная доза строк 95429 ('FINAL') и 64697 (' FINAL') в контрольной точке w8 равна 1,2002 (измерено по нормам строк в файлах). Дополнительный scale 1.10 даёт 1,3202: при tie_word_embeddings строка меняет и входной эмбеддинг токена, и его выходной логит, поэтому greedy-выбор смещается к верхнеформе 'FINAL', которую требует промпт. Ожидание (H33a): верных >= 218, обрывов <= 17, FINAL >= 332. Риск: преждевременный FINAL до вычислений.",
+ "expected_effect": "рост FINAL и сокращение обрывов относительно w8 (216/332/18); прирост верных +2..+6 (шумовой порог 5..7).",
+ "base_model_dir": "runs/variants/w8_z_gate_mild_format/model",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55",
+ "new_model_dir": "runs/variants/w41_format_embed132/model",
+ "new_safetensors_sha256": "f7074c2ff806bbaaf05236452962a6ec64b2d18b541ccd66fc0bf7f64846acec",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.1,
+   "rows": [
+    95429,
+    64697
+   ],
+   "row_tokens": {
+    "95429": "FINAL",
+    "64697": " FINAL"
+   },
+   "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.10 = 1.3202"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.1,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.10 = 1.3202"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00190076,
+   "max_abs_delta": 0.00976562,
+   "sha256_before": "5eb93e2d6e884f97b6a9f32c2dd1dbf9134d0fde6646bc4bec620f70f38bd861",
+   "sha256_after": "9599f2b5dcec7b19a2d02ec38b4d9088c0ff728eae544d3ad178215b91263b7a",
+   "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.10 = 1.3202",
+   "row": 95429,
+   "row_token": "FINAL"
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.1,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.10 = 1.3202"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00183075,
+   "max_abs_delta": 0.00830078,
+   "sha256_before": "bb8ce18211bde19dead92e36d7f334802c0f05a57619e769ebe8916527c906cb",
+   "sha256_after": "6da44d70916e0f2949975a64c653bcfc8216e14ec6836262babf1512ac680880",
+   "note": "накопленная доза относительно ИСХОДНОЙ модели: 1.2 * 1.10 = 1.3202",
+   "row": 64697,
+   "row_token": " FINAL"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 2,
+  "values_actually_changed": 2048,
+  "numel_touched": 2048,
+  "mean_abs_delta": 0.00186575,
+  "max_abs_delta": 0.00976562
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.9090909090909091,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 95429
+  },
+  {
+   "op": "scale",
+   "lam": 0.9090909090909091,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64697
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w41_format_embed132/manifest.json",
+  "размер_оригинала_байт": 71876,
+  "sha256_оригинала": "a683dbdd8da4567ae79f5e437889595ceb8ec05dc005a05148b171931d949b90",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 4",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

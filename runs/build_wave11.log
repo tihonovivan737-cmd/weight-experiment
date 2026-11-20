@@ -1,0 +1,24 @@
+Вариант: w45_z_headsel_flatten
+Модель: runs/variants/w45_z_headsel_flatten/model
+SHA256 весов: было 296b2cd888606d54… стало 9549bcb6cea4a6e0…
+Тензоров изменено: 18; значений изменено: 37,748,736 (затронуто 37,748,736)
+Среднее |Δ|: 0.0003523  Макс |Δ|: 0.02539062
+Манифест: runs/variants/w45_z_headsel_flatten/manifest.json
+Вариант: w46_z_headsel_sharpen
+Модель: runs/variants/w46_z_headsel_sharpen/model
+SHA256 весов: было 296b2cd888606d54… стало 3584296bbd8e5e7d…
+Тензоров изменено: 18; значений изменено: 37,748,736 (затронуто 37,748,736)
+Среднее |Δ|: 0.0003486  Макс |Δ|: 0.02148438
+Манифест: runs/variants/w46_z_headsel_sharpen/manifest.json
+Вариант: w47_conv_tap_recency
+Модель: runs/variants/w47_conv_tap_recency/model
+SHA256 весов: было 296b2cd888606d54… стало 6612fa43715f4ec7…
+Тензоров изменено: 18; значений изменено: 366,189 (затронуто 442,368)
+Среднее |Δ|: 0.00117644  Макс |Δ|: 0.0625
+Манифест: runs/variants/w47_conv_tap_recency/manifest.json
+Вариант: w48_conv_tap_context
+Модель: runs/variants/w48_conv_tap_context/model
+SHA256 весов: было 296b2cd888606d54… стало 9e3d1e7a1ea11b26…
+Тензоров изменено: 18; значений изменено: 369,763 (затронуто 442,368)
+Среднее |Δ|: 0.00132868  Макс |Δ|: 0.0625
+Манифест: runs/variants/w48_conv_tap_context/manifest.json

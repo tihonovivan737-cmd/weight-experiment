@@ -1,0 +1,39 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/model/../dev/results.jsonl",
+ "variant": "runs/variants/w41_format_embed132/dev/results.jsonl",
+ "base_name": "variants",
+ "variant_name": "w41_format_embed132",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 95,
+  "truncated": 5,
+  "mean_out_tokens": 327.5,
+  "mean_seconds": 4.52
+ },
+ "delta_correct": -3,
+ "fixed": [
+  7325
+ ],
+ "broken": [
+  1739,
+  2328,
+  3799,
+  6097
+ ],
+ "same_correct": 60,
+ "same_wrong": 35,
+ "answers_differ": 66,
+ "mcnemar_p": 0.375
+}

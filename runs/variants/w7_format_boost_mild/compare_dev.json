@@ -1,0 +1,51 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w7_format_boost_mild/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w7_format_boost_mild",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 58,
+  "accuracy": 0.58,
+  "extracted": 91,
+  "truncated": 5,
+  "mean_out_tokens": 366.3,
+  "mean_seconds": 5.09
+ },
+ "delta_correct": -1,
+ "fixed": [
+  1075,
+  1962,
+  3321,
+  3459,
+  3939,
+  4138,
+  4531,
+  7345
+ ],
+ "broken": [
+  348,
+  640,
+  720,
+  2177,
+  4150,
+  6228,
+  6812,
+  7228,
+  7325
+ ],
+ "same_correct": 50,
+ "same_wrong": 33,
+ "answers_differ": 98,
+ "mcnemar_p": 1.0
+}

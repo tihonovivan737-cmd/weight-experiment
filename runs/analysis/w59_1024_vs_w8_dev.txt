@@ -1,0 +1,46 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w59_flippot16_l23_amp163/dev/results.jsonl",
+ "base_name": "w8 при 1024",
+ "variant_name": "w59 при 1024",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 60,
+  "accuracy": 0.6,
+  "extracted": 93,
+  "truncated": 6,
+  "mean_out_tokens": 359.1,
+  "mean_seconds": 5.85
+ },
+ "delta_correct": -4,
+ "fixed": [
+  2069,
+  6927,
+  7228,
+  7325
+ ],
+ "broken": [
+  29,
+  2328,
+  4138,
+  4843,
+  5785,
+  6097,
+  7254,
+  7432
+ ],
+ "same_correct": 56,
+ "same_wrong": 32,
+ "answers_differ": 95,
+ "mcnemar_p": 0.3876953125
+}

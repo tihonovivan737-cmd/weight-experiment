@@ -1,0 +1,139 @@
+{
+ "name": "w1_final_token_amp",
+ "hypothesis": "H6a. Модель в 63 задачах из 1319 пишет корректное число, но в markdown-форме ('**Final: 260**', '**Final Answer:**'), которая фиксированным правилом извлечения не считается. Успешные ответы начинаются с plain 'FINAL:' (920) или 'Final:' (143). Усиление строк эмбеддинга токенов 'FINAL' (95429) и ' FINAL' (64697) в 1,3 раза повышает их логит (lm_head привязан к эмбеддингам) и смещает greedy-выбор в пользу верхнеформы 'FINAL', которую требует промпт.",
+ "expected_effect": "Меньше отказов извлечения без обрыва генерации; риск — преждевременный FINAL до вычислений.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/w1_final_token_amp/model",
+ "new_safetensors_sha256": "a7d5f647658be1b81ff06e2f56589bbc51d7dc771fb3fb9393550c96871fee5c",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    95429,
+    64697
+   ],
+   "row_tokens": {
+    "95429": "FINAL",
+    "64697": " FINAL"
+   },
+   "note": "row-limited scale: затронуты только 2 строки эмбеддинга"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "row-limited scale: затронуты только 2 строки эмбеддинга"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.0047569,
+   "max_abs_delta": 0.02441406,
+   "sha256_before": "0cc43b44b54acb1223f7ec44309750790f479b0f40261ca11195c3054de5dd79",
+   "sha256_after": "1c5400b0876ad7a306ecdc4d6c10d463c76da3b082f6a5b28856818d6a328dcb",
+   "note": "row-limited scale: затронуты только 2 строки эмбеддинга",
+   "row": 95429,
+   "row_token": "FINAL"
+  },
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "row_tokens": {
+     "95429": "FINAL",
+     "64697": " FINAL"
+    },
+    "note": "row-limited scale: затронуты только 2 строки эмбеддинга"
+   },
+   "tensor": "model.language_model.embed_tokens.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00457992,
+   "max_abs_delta": 0.02001953,
+   "sha256_before": "2b719664a8339a16b5926779a0001d418a292fe6f221b621b149dd0b1790463d",
+   "sha256_after": "6da0717c6dd040d497aef9b8fc7027136e1c14203bc8b65899de91fd12e4c804",
+   "note": "row-limited scale: затронуты только 2 строки эмбеддинга",
+   "row": 64697,
+   "row_token": " FINAL"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 2,
+  "values_actually_changed": 2048,
+  "numel_touched": 2048,
+  "mean_abs_delta": 0.00466841,
+  "max_abs_delta": 0.02441406
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    195508808,
+    195510856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 95429
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.embed_tokens.weight",
+   "byte_offsets": [
+    132569672,
+    132571720
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64697
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w1_final_token_amp/manifest.json",
+  "размер_оригинала_байт": 71771,
+  "sha256_оригинала": "9b5e7800f16ebb6f12122805a833562f554356b1f2da2bf8a03cf27e325b9ea8",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 4",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

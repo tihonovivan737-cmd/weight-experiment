@@ -1,0 +1,64 @@
+референс w8: dev верно/обрыв/FINAL = 64/4/95  search верно/обрыв/FINAL = 152/14/237  combined верно/обрыв/FINAL = 216/18/332  test верно/обрыв/FINAL = 724/76/1239
+
+вариантов в runs/variants: 51, весов: 89.09 GB
+
+### KEEP_CKPT: 1 вариантов, весов 1.75 GB
+  w8_z_gate_mild_format               1.75 GB  база orig                     dev 64/4/95      search 152/14/237     350 216/18/332     | контрольная точка серии
+
+### KEEP_BETTER: 18 вариантов, весов 31.44 GB
+  w11_final_token_amp_15              1.75 GB  база orig                     dev 20/3/41      search 63/9/118       350 83/12/159      | dev: обрывов 3 < 4; search: обрывов 9 < 14; combined: обрывов 12 < 18
+  w14_z93_final13                     1.75 GB  база orig                     dev 66/5/95      search 145/13/234     350 211/18/329     | dev: верно 66 > 64; search: обрывов 13 < 14
+  w24_fullgate_open085                1.75 GB  база w8_z_gate_mild_format    dev 65/4/96      search 145/14/236     350 210/18/332     | dev: верно 65 > 64; dev: FINAL 96 > 95
+  w28_fullgate_close115               1.75 GB  база w8_z_gate_mild_format    dev 60/4/95      search 144/12/237     350 204/16/332     | search: обрывов 12 < 14; combined: обрывов 16 < 18
+  w29_z_total087                      1.75 GB  база w8_z_gate_mild_format    dev 61/2/98      search 142/8/242      350 203/10/340     | dev: обрывов 2 < 4; dev: FINAL 98 > 95; search: обрывов 8 < 14; search: FINAL 24
+  w30_qknorm_sharp108                 1.75 GB  база w8_z_gate_mild_format    dev 68/0/100     search 147/9/237      350 215/9/337      | dev: верно 68 > 64; dev: обрывов 0 < 4; dev: FINAL 100 > 95; search: обрывов 9 <
+  w31_z_dominant_restore106           1.75 GB  база w8_z_gate_mild_format    dev 59/4/94      search 150/13/237     350 209/17/331     | search: обрывов 13 < 14; combined: обрывов 17 < 18
+  w32_qknorm104_on_w8                 1.75 GB  база w8_z_gate_mild_format    dev 67/4/95      search 146/15/234     350 213/19/329     | dev: верно 67 > 64
+  w35_z_dominant_damp078              1.75 GB  база w8_z_gate_mild_format    dev 66/6/93      search 129/21/223     350 195/27/316     | dev: верно 66 > 64
+  w36_z_late_extra094                 1.75 GB  база w8_z_gate_mild_format    dev 66/4/96      search 153/17/233     350 219/21/329     | dev: верно 66 > 64; dev: FINAL 96 > 95; search: верно 153 > 152; combined: верно
+  w37_z_early_release1075             1.75 GB  база w8_z_gate_mild_format    dev 61/6/94      search 151/12/239     350 212/18/333     | search: обрывов 12 < 14; search: FINAL 239 > 237; combined: FINAL 333 > 332
+  w39_z_late_release1075              1.75 GB  база w8_z_gate_mild_format    dev 63/3/95      search 144/15/233     350 207/18/328     | dev: обрывов 3 < 4
+  w40_z_early_extra094                1.75 GB  база w8_z_gate_mild_format    dev 56/5/95      search 143/10/239     350 199/15/334     | search: обрывов 10 < 14; search: FINAL 239 > 237; combined: обрывов 15 < 18; com
+  w42_format_embed144                 1.75 GB  база w8_z_gate_mild_format    dev 61/1/90      search 141/9/220      350 202/10/310     | dev: обрывов 1 < 4; search: обрывов 9 < 14; combined: обрывов 10 < 18
+  w44_mlp_branch_late105              1.75 GB  база w8_z_gate_mild_format    dev 63/4/96      search 142/11/238     350 205/15/334     | dev: FINAL 96 > 95; search: обрывов 11 < 14; search: FINAL 238 > 237; combined: 
+  w45_z_headsel_flatten               1.75 GB  база w8_z_gate_mild_format    dev 66/3/95      search 148/19/231     350 214/22/326     | dev: верно 66 > 64; dev: обрывов 3 < 4
+  w47_conv_tap_recency                1.75 GB  база w8_z_gate_mild_format    dev 56/2/97      search нет            350 нет            | dev: обрывов 2 < 4; dev: FINAL 97 > 95
+  w5_z_gate_damp                      1.75 GB  база orig                     dev 58/4/96      search нет            350 нет            | dev: FINAL 96 > 95
+
+### KEEP_UNTESTED: 14 вариантов, весов 24.46 GB
+  c1_visual_noop                      1.75 GB  база orig                     dev нет          search нет            350 нет            | полный экран 350 не завершён
+  v10_attn_branch_amp                 1.75 GB  база orig                     dev 61/5/92      search нет            350 нет            | полный экран 350 не завершён
+  v1_Alog_decay_half                  1.75 GB  база orig                     dev 54/7/87      search нет            350 нет            | полный экран 350 не завершён
+  v3_dt_bias_shift_down               1.75 GB  база orig                     dev 21/41/55     search нет            350 нет            | полный экран 350 не завершён
+  v4_beta_amplify                     1.75 GB  база orig                     dev 59/8/92      search нет            350 нет            | полный экран 350 не завершён
+  v5_beta_soften                      1.75 GB  база orig                     dev 60/5/91      search нет            350 нет            | полный экран 350 не завершён
+  v6_attn_sharpen                     1.75 GB  база orig                     dev 53/7/93      search нет            350 нет            | полный экран 350 не завершён
+  v7_attn_smooth                      1.75 GB  база orig                     dev 22/19/53     search нет            350 нет            | полный экран 350 не завершён
+  v8_mlp_amp                          1.75 GB  база orig                     dev 59/5/91      search нет            350 нет            | полный экран 350 не завершён
+  w2_bold_damp                        1.75 GB  база orig                     dev 57/9/88      search нет            350 нет            | полный экран 350 не завершён
+  w3_final_amp_bold_damp              1.75 GB  база orig                     dev 60/7/92      search нет            350 нет            | полный экран 350 не завершён
+  w48_conv_tap_context                1.75 GB  база w8_z_gate_mild_format    dev 58/5/94      search нет            350 нет            | полный экран 350 не завершён
+  w4_branch_damp                      1.75 GB  база orig                     dev 55/7/88      search нет            350 нет            | полный экран 350 не завершён
+  w6_dt_bias_up                       1.75 GB  база orig                     dev 35/17/81     search нет            350 нет            | полный экран 350 не завершён
+
+### KEEP_UNKNOWN: 5 вариантов, весов 8.73 GB
+  w25_z_headsel_damp088               1.75 GB  база w8_z_gate_mild_format    dev 64/5/94      search 149/22/226     350 213/27/320     | не сохранено/не подтверждено: verify OK
+  w26_norm_amp093                     1.75 GB  база orig                     dev 60/8/90      search 140/20/224     350 200/28/314     | не сохранено/не подтверждено: verify OK
+  w27_beta_sharpen_late130            1.75 GB  база w8_z_gate_mild_format    dev 61/6/93      search 148/17/233     350 209/23/326     | не сохранено/не подтверждено: verify OK
+  w33_fullgate_open_closed_heads      1.75 GB  база w8_z_gate_mild_format    dev 23/27/70     search 53/45/195      350 76/72/265      | не сохранено/не подтверждено: verify OK
+  w34_restore_plus_qknorm104          1.75 GB  база w8_z_gate_mild_format    dev 63/5/94      search 147/16/233     350 210/21/327     | не сохранено/не подтверждено: verify OK
+
+### DROP_WEIGHTS: 13 вариантов, весов 22.71 GB
+  c0_final_norm_gain                  1.75 GB  база orig                     dev 61/9/89      search 138/15/221     350 199/24/310     | строго не лучше w8 по всем метрикам экрана 350
+  v2_Alog_decay_double                1.75 GB  база orig                     dev 62/6/92      search 132/14/225     350 194/20/317     | строго не лучше w8 по всем метрикам экрана 350
+  v9_mlp_damp                         1.75 GB  база orig                     dev 62/7/86      search 122/21/210     350 184/28/296     | строго не лучше w8 по всем метрикам экрана 350
+  w12_z_gate_strong                   1.75 GB  база orig                     dev 31/18/80     search 72/35/210      350 103/53/290     | строго не лучше w8 по всем метрикам экрана 350
+  w15_final_case_suppress             1.75 GB  база orig                     dev 64/7/94      search 145/19/231     350 209/26/325     | строго не лучше w8 по всем метрикам экрана 350
+  w16_final_rows12_only               1.75 GB  база orig                     dev 64/7/93      search 145/19/231     350 209/26/324     | строго не лучше w8 по всем метрикам экрана 350
+  w17_z93_only                        1.75 GB  база orig                     dev 58/5/90      search 151/20/228     350 209/25/318     | строго не лучше w8 по всем метрикам экрана 350
+  w1_final_token_amp                  1.75 GB  база orig                     dev 61/6/94      search 150/19/230     350 211/25/324     | строго не лучше w8 по всем метрикам экрана 350
+  w38_z_corner_early10008_late08742   1.75 GB  база w8_z_gate_mild_format    dev 64/8/92      search 152/15/235     350 216/23/327     | строго не лучше w8 по всем метрикам экрана 350
+  w41_format_embed132                 1.75 GB  база w8_z_gate_mild_format    dev 61/5/95      search 150/14/234     350 211/19/329     | строго не лучше w8 по всем метрикам экрана 350
+  w43_format_embed144_latedose        1.75 GB  база w36_z_late_extra094      dev 64/4/90      search 142/16/215     350 206/20/305     | строго не лучше w8 по всем метрикам экрана 350
+  w46_z_headsel_sharpen               1.75 GB  база w8_z_gate_mild_format    dev 62/8/91      search 151/17/229     350 213/25/320     | строго не лучше w8 по всем метрикам экрана 350
+  w7_format_boost_mild                1.75 GB  база orig                     dev 58/5/91      search 149/16/226     350 207/21/317     | строго не лучше w8 по всем метрикам экрана 350

@@ -1,0 +1,63 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/v9_mlp_damp/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "v9_mlp_damp",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 62,
+  "accuracy": 0.62,
+  "extracted": 86,
+  "truncated": 7,
+  "mean_out_tokens": 410.9,
+  "mean_seconds": 5.07
+ },
+ "delta_correct": 3,
+ "fixed": [
+  29,
+  759,
+  951,
+  1075,
+  1125,
+  1480,
+  1962,
+  3321,
+  4138,
+  4531,
+  5781,
+  6097,
+  6295,
+  6927,
+  7254,
+  7345
+ ],
+ "broken": [
+  380,
+  720,
+  2250,
+  3142,
+  3766,
+  3799,
+  4843,
+  5088,
+  5803,
+  6136,
+  6163,
+  7228,
+  7325
+ ],
+ "same_correct": 46,
+ "same_wrong": 25,
+ "answers_differ": 100,
+ "mcnemar_p": 0.711071103811264
+}

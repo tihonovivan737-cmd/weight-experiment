@@ -1,0 +1,81 @@
+{
+ "name": "c0_final_norm_gain",
+ "hypothesis": "КОНТРОЛЬ. model.language_model.norm.weight — множитель (1+w) последнего RMSNorm перед привязанным lm_head. Если умножить его на lam, все логиты умножаются на lam, аргмакс не меняется -> greedy-генерация обязана остаться идентичной. Проверяет конвейер (патчинг весов, детерминизм, отсутствие утечек).",
+ "expected_effect": "Никакого изменения ответов. Если ответы изменились — конвейер сломан.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/c0_final_norm_gain/model",
+ "new_safetensors_sha256": "9675c6b74285b14064d66eca05cdd4381a9399978af9981435b87d3c88aa5ea6",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.norm.weight"
+   ],
+   "op": "scale_offset",
+   "lam": 1.2,
+   "note": "логиты *1.2; аргмакс не меняется"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 1.2,
+    "note": "логиты *1.2; аргмакс не меняется"
+   },
+   "tensor": "model.language_model.norm.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1504849032,
+    1504851080
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.86165905,
+   "max_abs_delta": 1.25,
+   "sha256_before": "30832e6642a9c1555485d5c9553a35e539278c33ce3b7a9665e06cd2c5598381",
+   "sha256_after": "2377be0756ee3faf85dfd8222d5436a0b071607db186c2c2619dbc4eda04e82c",
+   "tensor_sha256_full_after": "2377be0756ee3faf85dfd8222d5436a0b071607db186c2c2619dbc4eda04e82c",
+   "note": "логиты *1.2; аргмакс не меняется"
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 1,
+  "values_actually_changed": 1024,
+  "numel_touched": 1024,
+  "mean_abs_delta": 0.86165905,
+  "max_abs_delta": 1.25
+ },
+ "inverse_ops": [
+  {
+   "op": "scale_offset",
+   "lam": 0.8333333333333334,
+   "tensor": "model.language_model.norm.weight",
+   "byte_offsets": [
+    1504849032,
+    1504851080
+   ],
+   "shape": [
+    1024
+   ]
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/c0_final_norm_gain/manifest.json",
+  "размер_оригинала_байт": 28923,
+  "sha256_оригинала": "69168c8e80a9aecd69a56e249cb91482d004bc996af30391adeb2f4994a4808c",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 2",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

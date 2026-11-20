@@ -1,0 +1,37 @@
+{
+ "name": "w3_final_amp_bold_damp",
+ "hypothesis": "H6c. Комбинация H6a+H6b: 'FINAL'/' FINAL' ×1.3 и '**'/' **' ×0.7. Если обе причины одного и того же сбоя формата, комбинация должна дать больше, чем по отдельности.",
+ "expected_effect": "Максимум по классу «ответ верен, формат не тот».",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    95429,
+    64697
+   ],
+   "row_tokens": {
+    "95429": "FINAL",
+    "64697": " FINAL"
+   }
+  },
+  {
+   "tensors": [
+    "model.language_model.embed_tokens.weight"
+   ],
+   "op": "scale",
+   "lam": 0.7,
+   "rows": [
+    332,
+    2972
+   ],
+   "row_tokens": {
+    "332": "**",
+    "2972": " **"
+   }
+  }
+ ]
+}

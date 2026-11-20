@@ -1,0 +1,37 @@
+Сравнение: baseline -> v2_Alog_decay_double (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  v2_Alog_decay_double   acc=132/250 (52.80%) извлечено=225 обрывов=14 токенов=389.6 сек/задача=5.33
+  Дельта: -11 задач (-4.40 п.п.)
+  Исправлено: 30  Сломано: 41  Верно в обоих: 102  Неверно в обоих: 77
+  Точный тест Макнемара: p = 0.2351 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 250/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 161: exp=4.0 pred_был=8.0 pred_стал=4.0 trunc_стал=False err_стал=None tok=198->332 | The town’s annual budget totals $32 million. If half of the budget goes towards policing a
+    idx 536: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=348->385 | In the baking contest, three times as many people voted for the unicorn cake compared to t
+    idx 557: exp=42.0 pred_был=None pred_стал=42.0 trunc_стал=False err_стал=None tok=268->342 | Andy harvests all the tomatoes from 18 plants that have 7 tomatoes each. If he dries half 
+    idx 619: exp=210.0 pred_был=175.0 pred_стал=210.0 trunc_стал=False err_стал=None tok=333->291 | Harry is a professional dog-walker.  He is paid to go on long walks with dogs while their 
+    idx 1324: exp=120.0 pred_был=None pred_стал=120.0 trunc_стал=False err_стал=None tok=1024->454 | After working out for 3 hours, three friends go out for lunch. Adam spends two-thirds as m
+    idx 1569: exp=10.0 pred_был=1.875 pred_стал=10.0 trunc_стал=False err_стал=None tok=523->476 | John decided to start rowing around a square lake.  Each side of the lake is 15 miles.  Ja
+    idx 1580: exp=42.0 pred_был=60.0 pred_стал=42.0 trunc_стал=False err_стал=None tok=393->342 | Wilma has a garden with 3 types of flowers. The garden has 6 rows, with 13 flowers in each
+    idx 1929: exp=320.0 pred_был=None pred_стал=320.0 trunc_стал=False err_стал=None tok=312->293 | Lori owns 15 times as many beanie babies as Sydney. If Lori has 300 beanie babies, how man
+    idx 2237: exp=60.0 pred_был=45.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=218->231 | On Mary's birthday, her brother surprised her with $100. She spent a quarter of it on a ne
+    idx 2480: exp=36.0 pred_был=60.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=186->266 | A school choir needs robes for each of its 30 singers. Currently, the school has only 12 r
+    idx 2674: exp=13.0 pred_был=12.0 pred_стал=13.0 trunc_стал=False err_стал=None tok=257->383 | Daisy is a poodle puppy who loves to play with her dog toys. She often loses them in vario
+    idx 2723: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->389 | The length of the straight part of a river is three times shorter than the crooked part. I
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 108: exp=41.0 pred_был=41.0 pred_стал=33.5 trunc_стал=False err_стал=None tok=508->232 | Henry took 9 pills a day for 14 days. Of these 9 pills, 4 pills cost $1.50 each, and the o
+    idx 133: exp=9.0 pred_был=9.0 pred_стал=13.0 trunc_стал=False err_стал=None tok=274->345 | There are 40 students in a class. If 1/10 are absent, 3/4 of the students who are present 
+    idx 306: exp=64.0 pred_был=64.0 pred_стал=65.33 trunc_стал=False err_стал=None tok=318->330 | Parker is 4 inches shorter than Daisy. Daisy is 8 inches taller than Reese. If Reese is 60
+    idx 654: exp=96.0 pred_был=96.0 pred_стал=120.0 trunc_стал=False err_стал=None tok=416->332 | If there are two pennies in each of the twelve compartments of Roshesmina's piggy bank and
+    idx 791: exp=9.0 pred_был=9.0 pred_стал=15.0 trunc_стал=False err_стал=None tok=264->295 | Of the 90 people on William's bus, 3/5 were Dutch. Of the 1/2 of the Dutch who were also A
+    idx 893: exp=325.0 pred_был=325.0 pred_стал=195.0 trunc_стал=False err_стал=None tok=437->365 | Kylie makes 10 beaded necklaces on Monday and 2 beaded necklaces on Tuesday. Then Kylie ma
+    idx 945: exp=120.0 pred_был=120.0 pred_стал=4.0 trunc_стал=False err_стал=None tok=222->144 | Jon buys 2 coffees a day from his favorite coffee shop.  They cost $2 each.  How much does
+    idx 947: exp=80.0 pred_был=80.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=972->1024 | Johnny has been playing guitar for a while now.  He practices the same amount each day. As
+    idx 983: exp=3.0 pred_был=3.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=237->231 | Carter is twice as tall as his 24” tall dog.  Betty is 12” shorter than Carter.  How tall 
+    idx 1155: exp=8.0 pred_был=8.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=210->219 | Greta, George and Gloria entered their turtles in the Key West Turtle Race.  Greta’s turtl
+    idx 1592: exp=45.0 pred_был=45.0 pred_стал=25.0 trunc_стал=False err_стал=None tok=247->432 | Betty has 20 books, and her sister has 1/4 times more books than Betty. What's the total n
+    idx 1791: exp=10.0 pred_был=10.0 pred_стал=0.0 trunc_стал=False err_стал=None tok=493->380 | At a convention, 16 of 36 delegates arrived with pre-printed name badges. Half of the rema
+
+Отчёт: runs/variants/v2_Alog_decay_double/compare_search.json

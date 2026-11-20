@@ -1,0 +1,37 @@
+Сравнение: baseline -> w1_final_token_amp (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  w1_final_token_amp     acc=150/250 (60.00%) извлечено=230 обрывов=19 токенов=384.6 сек/задача=5.27
+  Дельта: +7 задач (+2.80 п.п.)
+  Исправлено: 21  Сломано: 14  Верно в обоих: 129  Неверно в обоих: 86
+  Точный тест Макнемара: p = 0.3105 (не значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 206/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 193: exp=160.0 pred_был=16.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=418->359 | Melody planted sunflowers from two different seed packets. She found that the sunflowers f
+    idx 536: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=348->353 | In the baking contest, three times as many people voted for the unicorn cake compared to t
+    idx 557: exp=42.0 pred_был=None pred_стал=42.0 trunc_стал=False err_стал=None tok=268->396 | Andy harvests all the tomatoes from 18 plants that have 7 tomatoes each. If he dries half 
+    idx 619: exp=210.0 pred_был=175.0 pred_стал=210.0 trunc_стал=False err_стал=None tok=333->321 | Harry is a professional dog-walker.  He is paid to go on long walks with dogs while their 
+    idx 1929: exp=320.0 pred_был=None pred_стал=320.0 trunc_стал=False err_стал=None tok=312->319 | Lori owns 15 times as many beanie babies as Sydney. If Lori has 300 beanie babies, how man
+    idx 2480: exp=36.0 pred_был=60.0 pred_стал=36.0 trunc_стал=False err_стал=None tok=186->182 | A school choir needs robes for each of its 30 singers. Currently, the school has only 12 r
+    idx 2647: exp=40.0 pred_был=None pred_стал=40.0 trunc_стал=False err_стал=None tok=1024->426 | There are 200 snakes in a park. There are three times as many pythons as boa constrictors.
+    idx 2723: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->813 | The length of the straight part of a river is three times shorter than the crooked part. I
+    idx 2878: exp=96.0 pred_был=48.0 pred_стал=96.0 trunc_стал=False err_стал=None tok=572->491 | Noah’s bedroom light uses 6 watts per hour. His office light is much brighter so he can se
+    idx 3281: exp=16.0 pred_был=1.0 pred_стал=16.0 trunc_стал=False err_стал=None tok=263->261 | Jaylen’s dog eats 1 cup of dog food in the morning and 1 cup of dog food in the evening.  
+    idx 3572: exp=17.0 pred_был=5.0 pred_стал=17.0 trunc_стал=False err_стал=None tok=270->406 | Eliza can iron a blouse in 15 minutes and a dress in 20 minutes.  If she spends 2 hours ir
+    idx 3805: exp=1640.0 pred_был=20.0 pred_стал=1640.0 trunc_стал=False err_стал=None tok=447->351 | Janet works as an exterminator and she also sells molten metal casts of fire ant nests on 
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 108: exp=41.0 pred_был=41.0 pred_стал=13.5 trunc_стал=False err_стал=None tok=508->268 | Henry took 9 pills a day for 14 days. Of these 9 pills, 4 pills cost $1.50 each, and the o
+    idx 947: exp=80.0 pred_был=80.0 pred_стал=13.33 trunc_стал=False err_стал=None tok=972->717 | Johnny has been playing guitar for a while now.  He practices the same amount each day. As
+    idx 983: exp=3.0 pred_был=3.0 pred_стал=1.0 trunc_стал=False err_стал=None tok=237->204 | Carter is twice as tall as his 24” tall dog.  Betty is 12” shorter than Carter.  How tall 
+    idx 1318: exp=192.0 pred_был=192.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=463->1024 | If Ruby is 2 centimeters shorter than Pablo.  Pablo is 70 centimeters taller than Charlene
+    idx 1791: exp=10.0 pred_был=10.0 pred_стал=26.0 trunc_стал=False err_стал=None tok=493->453 | At a convention, 16 of 36 delegates arrived with pre-printed name badges. Half of the rema
+    idx 1845: exp=25.0 pred_был=25.0 pred_стал=17.0 trunc_стал=False err_стал=None tok=322->309 | There are many CDs in the store. The rock and roll CDs are $5 each, the pop CDs are $10 ea
+    idx 2926: exp=120.0 pred_был=120.0 pred_стал=1440.0 trunc_стал=False err_стал=None tok=481->662 | Apple can run at a rate of 3 miles per hour. Mac can run at a rate of 4 miles per hour. In
+    idx 3256: exp=2.0 pred_был=2.0 pred_стал=8.0 trunc_стал=False err_стал=None tok=248->244 | Bert made 12 sandwiches for his trip. On the first day, he ate half of the sandwiches he m
+    idx 3378: exp=12.0 pred_был=12.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=391->1024 | Krista started raising chickens. She has 10 hens who lay eggs. She sells the eggs for $3 a
+    idx 3415: exp=588.0 pred_был=588.0 pred_стал=378.0 trunc_стал=False err_стал=None tok=317->317 | Jose owns a swimming pool. He charges $3 for kids and twice that amount for adults. If 8 k
+    idx 3950: exp=17.0 pred_был=17.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=483->1024 | A rival football team has won twice as many matches as the home team they will be playing 
+    idx 4071: exp=120.0 pred_был=120.0 pred_стал=150.0 trunc_стал=False err_стал=None tok=175->201 | Mr Cruz went to his doctor to seek advice on the best way to gain weight. His doctor told 
+
+Отчёт: runs/variants/w1_final_token_amp/compare_search.json

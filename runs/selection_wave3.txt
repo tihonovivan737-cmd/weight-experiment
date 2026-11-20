@@ -1,0 +1,4 @@
+w12_z_gate_strong            # in_proj_z x0.75: самая сильная доза левера с измеренным эффектом на формат
+w8_z_gate_mild_format        # in_proj_z x0.93 + строки FINAL x1.2
+w11_final_token_amp_15       # строки FINAL x1.5: доза-ответ по измеренному +7
+w7_format_boost_mild         # строки FINAL x1.2 + markdown-bold x0.85

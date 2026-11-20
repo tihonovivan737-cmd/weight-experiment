@@ -1,0 +1,52 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w2_bold_damp/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w2_bold_damp",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 57,
+  "accuracy": 0.57,
+  "extracted": 88,
+  "truncated": 9,
+  "mean_out_tokens": 399.6,
+  "mean_seconds": 4.81
+ },
+ "delta_correct": -2,
+ "fixed": [
+  29,
+  1075,
+  2743,
+  3321,
+  4138,
+  4531,
+  6295,
+  7345
+ ],
+ "broken": [
+  348,
+  720,
+  1070,
+  3104,
+  3142,
+  4150,
+  4828,
+  6163,
+  6228,
+  7228
+ ],
+ "same_correct": 49,
+ "same_wrong": 33,
+ "answers_differ": 99,
+ "mcnemar_p": 0.8145294189453125
+}

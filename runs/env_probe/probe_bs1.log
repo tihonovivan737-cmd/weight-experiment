@@ -1,0 +1,8 @@
+Задач в срезе: 4; уже сделано: 0; осталось: 4
+Загружаю модель (bfloat16) на cpu ...
+Loading weights:   0%|          | 0/473 [00:00<?, ?it/s]Loading weights:  30%|███       | 144/473 [00:00<00:00, 1439.17it/s]Loading weights:  61%|██████    | 288/473 [00:00<00:00, 1298.74it/s]Loading weights:  93%|█████████▎| 442/473 [00:00<00:00, 1402.59it/s]Loading weights: 100%|██████████| 473/473 [00:00<00:00, 1414.14it/s]
+Модель загружена за 1.1 с
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `fused_recurrent_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.

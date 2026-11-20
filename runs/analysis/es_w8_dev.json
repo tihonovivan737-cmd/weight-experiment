@@ -1,0 +1,16 @@
+{
+ "results": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "label": "w8",
+ "split": "train",
+ "n": 100,
+ "correct": 64,
+ "final_extracted": 95,
+ "no_final": 5,
+ "truncated": 4,
+ "gold_hidden_in_truncated_text": 2,
+ "wrong_with_final": 32,
+ "wrong_without_final": 5,
+ "near_miss_within_1pct": 1,
+ "mean_len_correct": 848.0,
+ "mean_len_wrong_with_final": 985.2
+}

@@ -1,0 +1,59 @@
+{
+ "base": "runs/variants/w83_mlp_layer_lever_on_w8/model/../search/results.jsonl",
+ "variant": "runs/variants/w87_stack_finalrow_on_w83/search/results.jsonl",
+ "base_name": "w83",
+ "variant_name": "w87_stack_finalrow_on_w83",
+ "n_common": 250,
+ "base_stats": {
+  "n": 250,
+  "correct": 147,
+  "accuracy": 0.588,
+  "extracted": 235,
+  "truncated": 15,
+  "mean_out_tokens": 354.1,
+  "mean_seconds": 4.24
+ },
+ "variant_stats": {
+  "n": 250,
+  "correct": 144,
+  "accuracy": 0.576,
+  "extracted": 237,
+  "truncated": 12,
+  "mean_out_tokens": 350.3,
+  "mean_seconds": 4.25
+ },
+ "delta_correct": -3,
+ "fixed": [
+  1245,
+  2647,
+  3359,
+  3950,
+  4209,
+  4785,
+  5062,
+  6081,
+  6274,
+  6308,
+  6528
+ ],
+ "broken": [
+  133,
+  290,
+  791,
+  1255,
+  1791,
+  1835,
+  3051,
+  3165,
+  3728,
+  3782,
+  4669,
+  5769,
+  7339,
+  7444
+ ],
+ "same_correct": 133,
+ "same_wrong": 92,
+ "answers_differ": 171,
+ "mcnemar_p": 0.6900379657745361
+}

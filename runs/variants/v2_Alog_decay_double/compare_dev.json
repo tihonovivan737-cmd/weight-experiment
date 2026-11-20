@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/v2_Alog_decay_double/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "v2_Alog_decay_double",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 62,
+  "accuracy": 0.62,
+  "extracted": 92,
+  "truncated": 6,
+  "mean_out_tokens": 372.5,
+  "mean_seconds": 4.41
+ },
+ "delta_correct": 3,
+ "fixed": [
+  1125,
+  2069,
+  2328,
+  3321,
+  3459,
+  4138,
+  4531,
+  5034,
+  5785,
+  6097,
+  6927,
+  7254,
+  7345
+ ],
+ "broken": [
+  268,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4628,
+  5088,
+  6163,
+  7228
+ ],
+ "same_correct": 49,
+ "same_wrong": 28,
+ "answers_differ": 100,
+ "mcnemar_p": 0.6776394844055176
+}

@@ -1,0 +1,14 @@
+Референсы (350 отборочных задач):
+  orig   верно 202/350  FINAL 310  обрывов 24
+  w8     верно 216/350  FINAL 332  обрывов 18
+
+Условия: Mo >= +2, Mw8 >= +2, C >= 218, T <= 18, alpha = 0.05
+
+variant                     C/350  FINAL  обр Δмат orig  Δмат w8 min p мат    знач. ухудш. измен. значений  вердикт
+w43_format_embed144_latedose    206    305   20        13        8   0.21011               —            2048  нет: 2_total_not_below_w8,3_truncation
+w42_format_embed144           202    310   10         7        1   0.58105               —            2048  нет: 1_math_both_refs,2_total_not_below_w8
+w41_format_embed132           211    329   19         6       -1   0.51138               —            2048  нет: 1_math_both_refs,2_total_not_below_w8,3_truncation
+w44_mlp_branch_late105        205    334   15        -6       -8   0.26493               —            7168  нет: 1_math_both_refs,2_total_not_below_w8
+
+Ни один вариант не прошёл правило — победителем остаётся контрольная точка.
+Список: runs/selection_wave10.txt

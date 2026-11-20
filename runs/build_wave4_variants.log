@@ -1,0 +1,20 @@
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w14_z93_final13  ===
+Вариант: w14_z93_final13
+Модель: /home/mpiscil/weight-experiment/runs/variants/w14_z93_final13/model
+SHA256 весов: было 04b1c301231dd422… стало 06456c2f94e2b11f…
+Тензоров изменено: 19; значений изменено: 37,750,784 (затронуто 37,750,784)
+Среднее |Δ|: 0.00086348  Макс |Δ|: 0.03320312
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w14_z93_final13/manifest.json
+свободно RAM: 6,6Gi
+date: invalid option -- 'T'
+Try 'date --help' for more information.
+=== build w15_final_case_suppress  ===
+Вариант: w15_final_case_suppress
+Модель: /home/mpiscil/weight-experiment/runs/variants/w15_final_case_suppress/model
+SHA256 весов: было 04b1c301231dd422… стало 16b93507902eef6d…
+Тензоров изменено: 1; значений изменено: 3,072 (затронуто 3,072)
+Среднее |Δ|: 0.00363047  Макс |Δ|: 0.01782227
+Манифест: /home/mpiscil/weight-experiment/runs/variants/w15_final_case_suppress/manifest.json
+свободно RAM: 6,6Gi

@@ -1,0 +1,60 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w29_z_total087/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w29_z_total087",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 98,
+  "truncated": 2,
+  "mean_out_tokens": 296.9,
+  "mean_seconds": 4.14
+ },
+ "delta_correct": 2,
+ "fixed": [
+  29,
+  1075,
+  1480,
+  1962,
+  2328,
+  3321,
+  3459,
+  3482,
+  4531,
+  5785,
+  6295,
+  6927,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  2436,
+  3104,
+  3142,
+  3624,
+  3766,
+  3799,
+  4843,
+  5180,
+  6228,
+  6812,
+  7228
+ ],
+ "same_correct": 47,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.8450189828872681
+}

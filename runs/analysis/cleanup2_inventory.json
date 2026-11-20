@@ -1,0 +1,471 @@
+{
+ "when": "2026-11-18 21:03 Asia/Krasnoyarsk",
+ "candidates": [
+  {
+   "variant": "v10_attn_branch_amp",
+   "path": "runs/variants/v10_attn_branch_amp/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588694,
+   "sha": "7ba69304d70e41dfeb3c2e1ecccabd0c6d1a33d10371899c8dfb15a9164fb756",
+   "note": "нет"
+  },
+  {
+   "variant": "v1_Alog_decay_half",
+   "path": "runs/variants/v1_Alog_decay_half/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588708,
+   "sha": "e7969087aa50139f738411119e0bc750dc1d4a865ba741457ee96aac57bb3ef0",
+   "note": "нет"
+  },
+  {
+   "variant": "v3_dt_bias_shift_down",
+   "path": "runs/variants/v3_dt_bias_shift_down/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588739,
+   "sha": "58a4d3b302dee4243213b8ffd07de2045ac97ddf87e2e0e181f812112cdff91a",
+   "note": "нет"
+  },
+  {
+   "variant": "v4_beta_amplify",
+   "path": "runs/variants/v4_beta_amplify/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588754,
+   "sha": "338bb3d507cd092c8ff83ed825d5866c7682b7c8b049968b2f8806daf78e0dec",
+   "note": "нет"
+  },
+  {
+   "variant": "v5_beta_soften",
+   "path": "runs/variants/v5_beta_soften/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588769,
+   "sha": "578ad7f3134460ce239e4c3d765784f268bd75a1f92ec35a0804dc92f712dda0",
+   "note": "нет"
+  },
+  {
+   "variant": "v6_attn_sharpen",
+   "path": "runs/variants/v6_attn_sharpen/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588784,
+   "sha": "d4eb115985fb756ee9b7dc85b1470e69fee9fd9c882c0368bbcd42e24da6cca4",
+   "note": "нет"
+  },
+  {
+   "variant": "v7_attn_smooth",
+   "path": "runs/variants/v7_attn_smooth/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588799,
+   "sha": "2c62c5fbaf64f08b5afdb8963db13b934407959a6625181e9a2eb70c5bb800cb",
+   "note": "нет"
+  },
+  {
+   "variant": "v8_mlp_amp",
+   "path": "runs/variants/v8_mlp_amp/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588814,
+   "sha": "f8403d3bbe16014139b8c0e6753064805176a42a2f1917f1236ca90a7e904b33",
+   "note": "нет"
+  },
+  {
+   "variant": "w11_final_token_amp_15",
+   "path": "runs/variants/w11_final_token_amp_15/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589177,
+   "sha": "6ef7c615ce8a9f91f7fb1897cc81cf548c3080d55b63e29f87f6cc7d8cf1bb9c",
+   "note": "нет"
+  },
+  {
+   "variant": "w14_z93_final13",
+   "path": "runs/variants/w14_z93_final13/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589284,
+   "sha": "06456c2f94e2b11fc90ecd1d4d1c2e1bff1a91c7d1d41eeb3e2b7940beae4ecb",
+   "note": "нет"
+  },
+  {
+   "variant": "w24_fullgate_open085",
+   "path": "runs/variants/w24_fullgate_open085/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589433,
+   "sha": "19731f1ce9faeb1aaeddfa559dd0335a415d7d9085d4647e968232e8b15c6db3",
+   "note": "нет"
+  },
+  {
+   "variant": "w25_z_headsel_damp088",
+   "path": "runs/variants/w25_z_headsel_damp088/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589448,
+   "sha": "b4a63e568925bcf8b32369118aea8ea71eab986f2120d6033154742eea7c256f",
+   "note": "нет"
+  },
+  {
+   "variant": "w26_norm_amp093",
+   "path": "runs/variants/w26_norm_amp093/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589463,
+   "sha": "f7c23bfb4cd36ac3973efecc34e5415e9051b737b968df1a5a20b72216851d7f",
+   "note": "нет"
+  },
+  {
+   "variant": "w27_beta_sharpen_late130",
+   "path": "runs/variants/w27_beta_sharpen_late130/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589478,
+   "sha": "487cbe85243cf94369a00fade06acf77b20c4b521e838a72e8030d29cbecc06c",
+   "note": "нет"
+  },
+  {
+   "variant": "w28_fullgate_close115",
+   "path": "runs/variants/w28_fullgate_close115/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589493,
+   "sha": "0b8fc054c12891ad1bc672af632116cfe1374c4f5f3814b5ff81d790b9c18993",
+   "note": "нет"
+  },
+  {
+   "variant": "w29_z_total087",
+   "path": "runs/variants/w29_z_total087/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589508,
+   "sha": "fca6dcc2ce6949096ac4583d24c590d6da3ef584cb5afbd934e30ba6efe3b1c2",
+   "note": "нет"
+  },
+  {
+   "variant": "w2_bold_damp",
+   "path": "runs/variants/w2_bold_damp/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588882,
+   "sha": "3c807ec8c24e8c60b539e5e796ec8de2b9fc83fa4cd8ec8670468a520952c8e9",
+   "note": "нет"
+  },
+  {
+   "variant": "w30_qknorm_sharp108",
+   "path": "runs/variants/w30_qknorm_sharp108/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589523,
+   "sha": "8ff9d188751e77068f476558d84667dfcd0793ca953df8128f1160d34716ee10",
+   "note": "нет"
+  },
+  {
+   "variant": "w31_z_dominant_restore106",
+   "path": "runs/variants/w31_z_dominant_restore106/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589674,
+   "sha": "9e78e4fbe14c13d42e98201133567f96f0cec4a7671f886d5318b43c1894f78c",
+   "note": "нет"
+  },
+  {
+   "variant": "w32_qknorm104_on_w8",
+   "path": "runs/variants/w32_qknorm104_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589689,
+   "sha": "4477a737172b40e615e89ebdb55f3744d589c073083e1d38feaf2775bd964cf2",
+   "note": "нет"
+  },
+  {
+   "variant": "w33_fullgate_open_closed_heads",
+   "path": "runs/variants/w33_fullgate_open_closed_heads/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589704,
+   "sha": "b670e1c2628413750886bc979a0129f7af459fd49a8bb02e5a99791f6ebc69e0",
+   "note": "нет"
+  },
+  {
+   "variant": "w34_restore_plus_qknorm104",
+   "path": "runs/variants/w34_restore_plus_qknorm104/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589720,
+   "sha": "08cdd6363945ce0bb5657b7b9899e10700d0fb41632d9e948d5161d8cb089963",
+   "note": "нет"
+  },
+  {
+   "variant": "w35_z_dominant_damp078",
+   "path": "runs/variants/w35_z_dominant_damp078/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589809,
+   "sha": "ee5e437710dd686c4c036427778d21dc74f72f43fe12a552b658933c00f7e2a3",
+   "note": "нет"
+  },
+  {
+   "variant": "w36_z_late_extra094",
+   "path": "runs/variants/w36_z_late_extra094/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589824,
+   "sha": "943a08f0e95cb019e361ef805461faaf15f5321f4d7d94fff676d69b99650335",
+   "note": "нет"
+  },
+  {
+   "variant": "w37_z_early_release1075",
+   "path": "runs/variants/w37_z_early_release1075/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589839,
+   "sha": "b03c59058f86e81bc753ce910642648623aba7be50bdc33c46d4346bed3f28ef",
+   "note": "нет"
+  },
+  {
+   "variant": "w39_z_late_release1075",
+   "path": "runs/variants/w39_z_late_release1075/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589931,
+   "sha": "301be15c4ac866b52760676d71a08eb5a3d944c76bee66ba8619f6fa12f15739",
+   "note": "нет"
+  },
+  {
+   "variant": "w3_final_amp_bold_damp",
+   "path": "runs/variants/w3_final_amp_bold_damp/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588897,
+   "sha": "07b53e759efb349d223b13db562e330827a940370e2d899ba0b53871d3f3416c",
+   "note": "нет"
+  },
+  {
+   "variant": "w40_z_early_extra094",
+   "path": "runs/variants/w40_z_early_extra094/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31589946,
+   "sha": "8246b92a2b35150a45b854b501886a7ef2827a73cd9d18490b2822059b40992c",
+   "note": "нет"
+  },
+  {
+   "variant": "w42_format_embed144",
+   "path": "runs/variants/w42_format_embed144/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590038,
+   "sha": "19861caa02f41e5a09c00ad197b95c3d39916b8d91b9b7a1ba25e3b8adb766d5",
+   "note": "нет"
+  },
+  {
+   "variant": "w44_mlp_branch_late105",
+   "path": "runs/variants/w44_mlp_branch_late105/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590068,
+   "sha": "d42d70ed5bdc36b18e0af32b49c0715a420afb9633c14caf4bfcc34a065d5302",
+   "note": "нет"
+  },
+  {
+   "variant": "w45_z_headsel_flatten",
+   "path": "runs/variants/w45_z_headsel_flatten/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590183,
+   "sha": "9549bcb6cea4a6e03d02393b3ac5a95b02c39d7cf228a7998dc74a4a4fa4545f",
+   "note": "нет"
+  },
+  {
+   "variant": "w47_conv_tap_recency",
+   "path": "runs/variants/w47_conv_tap_recency/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590213,
+   "sha": "6612fa43715f4ec76c9cd681f5f3bef117457b08c57d9efda1398f82aa173aef",
+   "note": "нет"
+  },
+  {
+   "variant": "w48_conv_tap_context",
+   "path": "runs/variants/w48_conv_tap_context/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590228,
+   "sha": "9e3d1e7a1ea11b26300c3e55fbb87abf21fe5081c8e0de6b3cfa30bcf28d9b5e",
+   "note": "нет"
+  },
+  {
+   "variant": "w49_z_late094_qknorm108",
+   "path": "runs/variants/w49_z_late094_qknorm108/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590300,
+   "sha": "da35c6a822782a8b0e40a87aafa8fdb6b1c021dedf5012de3bb84042518b4fca",
+   "note": "нет"
+  },
+  {
+   "variant": "w4_branch_damp",
+   "path": "runs/variants/w4_branch_damp/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588912,
+   "sha": "901913daabc1db2ec0d889489da949d132176b500b30deb78f675d291778eb95",
+   "note": "нет"
+  },
+  {
+   "variant": "w51_finalrow_rotation15_smallmargin_negsign",
+   "path": "runs/variants/w51_finalrow_rotation15_smallmargin_negsign/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590355,
+   "sha": "c929643f89e0bbb3c999e9adcc83bf4ff47cb908d463d5887f8855d972709a0c",
+   "note": "нет"
+  },
+  {
+   "variant": "w52_frozen10_dose003_negsign",
+   "path": "runs/variants/w52_frozen10_dose003_negsign/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590422,
+   "sha": "49030e323abef19943984d744c4078e09cefe69cfba85eba791da05c2582b26e",
+   "note": "нет"
+  },
+  {
+   "variant": "w53_frozen10_dose003_mirrorpos",
+   "path": "runs/variants/w53_frozen10_dose003_mirrorpos/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590437,
+   "sha": "cdca20526bea592a69b180785436df739d090e2402c15ff9e2b4ad1cebe31607",
+   "note": "копия весов w79_finalrow_ten_rows_double_step_on_w8 (тот же sha)"
+  },
+  {
+   "variant": "w54_vhead_late19_head1_amp105",
+   "path": "runs/variants/w54_vhead_late19_head1_amp105/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590452,
+   "sha": "c6b68be7c27b2c557b58d8152d76e31ec14e2070efdf5ada67083202dea58ad1",
+   "note": "нет"
+  },
+  {
+   "variant": "w55_gold16_l23_amp130",
+   "path": "runs/variants/w55_gold16_l23_amp130/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590524,
+   "sha": "34019a403f9321008fa67524f1ddd8dc076dbc203f67a11dd0e6b44f718d775b",
+   "note": "нет"
+  },
+  {
+   "variant": "w56_gold16_l23_amp070",
+   "path": "runs/variants/w56_gold16_l23_amp070/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590553,
+   "sha": "54bba8b88d980ca12f0130dd81fbfe6c28d7ceeabeaa624f8cedf0198b462c28",
+   "note": "нет"
+  },
+  {
+   "variant": "w59_flippot16_l23_amp163",
+   "path": "runs/variants/w59_flippot16_l23_amp163/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590631,
+   "sha": "3b5b5009896be5110f619c2aa1292213c72597d7da94d191bcbd2b281865b480",
+   "note": "нет"
+  },
+  {
+   "variant": "w5_z_gate_damp",
+   "path": "runs/variants/w5_z_gate_damp/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588927,
+   "sha": "bb38034a47bee19b8777ae02a0d32ccf12c71b28af62b3944e710039d40d2468",
+   "note": "нет"
+  },
+  {
+   "variant": "w60_format16_l23_amp130",
+   "path": "runs/variants/w60_format16_l23_amp130/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590606,
+   "sha": "6af3da85cc3a79859635434bbba4bade417edd93f9f2bbe86e0d3ab03dc4cb3a",
+   "note": "нет"
+  },
+  {
+   "variant": "w64_qknorm108_on_original",
+   "path": "runs/variants/w64_qknorm108_on_original/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590668,
+   "sha": "e642f6293197467db3b908e4eeb34fa96d2d68ee20080c98adf3ea69fc49007c",
+   "note": "нет"
+  },
+  {
+   "variant": "w65_qknorm108_late2_on_w8",
+   "path": "runs/variants/w65_qknorm108_late2_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590698,
+   "sha": "8a26633a48d0a4b4a37f29b49c888e6ebcbdbb7ce369aae2d5a99f2d149362d3",
+   "note": "нет"
+  },
+  {
+   "variant": "w66_qknorm112_on_w8",
+   "path": "runs/variants/w66_qknorm112_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590727,
+   "sha": "7ba47deb438005b8974679eb682a79b3da6e1e234c48f87faa8549e35134af90",
+   "note": "нет"
+  },
+  {
+   "variant": "w67_inproj_a_amp110_on_w8",
+   "path": "runs/variants/w67_inproj_a_amp110_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590758,
+   "sha": "1c02a4f6079c0eebdd031e7e6f833962137b860c38f58b445c1a9cc83cbf6e43",
+   "note": "нет"
+  },
+  {
+   "variant": "w68_inproj_a_damp090_on_w8",
+   "path": "runs/variants/w68_inproj_a_damp090_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590791,
+   "sha": "232efb24ca9ed633e2f449b162f61c71bdcf5821dc4366e8ad80b35154f63609",
+   "note": "нет"
+  },
+  {
+   "variant": "w6_dt_bias_up",
+   "path": "runs/variants/w6_dt_bias_up/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31588942,
+   "sha": "46c2d476a4411736165919d99fe82bc5ce084d05b4bbe8193727fa3f69ad4556",
+   "note": "нет"
+  },
+  {
+   "variant": "w70_qknorm110_on_w8",
+   "path": "runs/variants/w70_qknorm110_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590825,
+   "sha": "b0d867a7375afbd7d38c5e8898bfe6a3735c1a54606999d0765702393c636e07",
+   "note": "нет"
+  },
+  {
+   "variant": "w71_finalrow_plus_qknorm108_on_w8",
+   "path": "runs/variants/w71_finalrow_plus_qknorm108_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590862,
+   "sha": "b4fcd76810d24a776f76b584f74e6048081ce0123b5cbe483119ad70406e57ed",
+   "note": "нет"
+  },
+  {
+   "variant": "w72_finalrow_plus_zlate_on_w8",
+   "path": "runs/variants/w72_finalrow_plus_zlate_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590895,
+   "sha": "67f853b5a9a0d42e72230090025f6079fcfe50a2879a84b86250ef71af401a0a",
+   "note": "нет"
+  },
+  {
+   "variant": "w73_z_loudheads_202122_on_w8",
+   "path": "runs/variants/w73_z_loudheads_202122_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590943,
+   "sha": "fca8464679e0469565a3fda3722b7ab2acbd3c1cdf6bc68b6250247df18f66f8",
+   "note": "нет"
+  },
+  {
+   "variant": "w74_finalrow_plus_two_rows198_248046_on_w8",
+   "path": "runs/variants/w74_finalrow_plus_two_rows198_248046_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31590996,
+   "sha": "8c2b5a57c7acb7947737eb12b839137723a7739973bc3766433cdef53d6d6e36",
+   "note": "нет"
+  },
+  {
+   "variant": "w75_z_flatten_l202122_on_w8",
+   "path": "runs/variants/w75_z_flatten_l202122_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31591029,
+   "sha": "f1492c14d7bfcfa3e9a2a9a25c7075df1a216128c2ac061bb9396d02868579ca",
+   "note": "нет"
+  },
+  {
+   "variant": "w76_z_flatten_top5_on_w8",
+   "path": "runs/variants/w76_z_flatten_top5_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31591062,
+   "sha": "bc38c35cafd7974d75bf62152115325dc47b1b43ace2a23a5aad6f06a8f1d0f3",
+   "note": "нет"
+  },
+  {
+   "variant": "w77_finalrow_plus_8rows_on_w8",
+   "path": "runs/variants/w77_finalrow_plus_8rows_on_w8/model/model.safetensors-00001-of-00001.safetensors",
+   "bytes": 1746942600,
+   "inode": 31591095,
+   "sha": "ddd10be1f17002fdcc69bea523c6f8b6480043c0158a08de3b8d5c9a0e6064dc",
+   "note": "нет"
+  }
+ ],
+ "count": 58,
+ "total_bytes": 101322670800
+}

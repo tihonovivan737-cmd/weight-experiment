@@ -1,0 +1,37 @@
+Сравнение: baseline -> v9_mlp_damp (общих задач: 250)
+  baseline               acc=143/250 (57.20%) извлечено=220 обрывов=17 токенов=398.0 сек/задача=4.8
+  v9_mlp_damp            acc=122/250 (48.80%) извлечено=210 обрывов=21 токенов=436.1 сек/задача=6.0
+  Дельта: -21 задач (-8.40 п.п.)
+  Исправлено: 25  Сломано: 46  Верно в обоих: 97  Неверно в обоих: 82
+  Точный тест Макнемара: p = 0.01699 (значимо на уровне 0.05)
+  Ответы модели различаются хотя бы в одном токене: 250/250
+
+  --- Исправлено (было неверно -> стало верно) ---
+    idx 161: exp=4.0 pred_был=8.0 pred_стал=4.0 trunc_стал=False err_стал=None tok=198->290 | The town’s annual budget totals $32 million. If half of the budget goes towards policing a
+    idx 193: exp=160.0 pred_был=16.0 pred_стал=160.0 trunc_стал=False err_стал=None tok=418->395 | Melody planted sunflowers from two different seed packets. She found that the sunflowers f
+    idx 536: exp=60.0 pred_был=None pred_стал=60.0 trunc_стал=False err_стал=None tok=348->385 | In the baking contest, three times as many people voted for the unicorn cake compared to t
+    idx 557: exp=42.0 pred_был=None pred_стал=42.0 trunc_стал=False err_стал=None tok=268->321 | Andy harvests all the tomatoes from 18 plants that have 7 tomatoes each. If he dries half 
+    idx 1123: exp=7.0 pred_был=19.0 pred_стал=7.0 trunc_стал=False err_стал=None tok=179->220 | David found $12 on the street. He then gave it to his friend Evan who has $1 and needed to
+    idx 1580: exp=42.0 pred_был=60.0 pred_стал=42.0 trunc_стал=False err_стал=None tok=393->382 | Wilma has a garden with 3 types of flowers. The garden has 6 rows, with 13 flowers in each
+    idx 2237: exp=60.0 pred_был=45.0 pred_стал=60.0 trunc_стал=False err_стал=None tok=218->249 | On Mary's birthday, her brother surprised her with $100. She spent a quarter of it on a ne
+    idx 2364: exp=27.0 pred_был=1.0 pred_стал=27.0 trunc_стал=False err_стал=None tok=622->575 | Ms. Mitsuko told the class that if the average score on their quiz is higher than 75% then
+    idx 2647: exp=40.0 pred_был=None pred_стал=40.0 trunc_стал=False err_стал=None tok=1024->410 | There are 200 snakes in a park. There are three times as many pythons as boa constrictors.
+    idx 2723: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->520 | The length of the straight part of a river is three times shorter than the crooked part. I
+    idx 3125: exp=20.0 pred_был=None pred_стал=20.0 trunc_стал=False err_стал=None tok=1024->742 | Van Helsing gets paid by the town to remove all the vampires and werewolves. He gets $5 pe
+    idx 3281: exp=16.0 pred_был=1.0 pred_стал=16.0 trunc_стал=False err_стал=None tok=263->266 | Jaylen’s dog eats 1 cup of dog food in the morning and 1 cup of dog food in the evening.  
+
+  --- Сломано (было верно -> стало неверно) ---
+    idx 45: exp=99.0 pred_был=99.0 pred_стал=119.0 trunc_стал=False err_стал=None tok=454->378 | It's Ava's birthday party. Her parents bought a unicorn piñata for $13 and filled it with 
+    idx 108: exp=41.0 pred_был=41.0 pred_стал=33.5 trunc_стал=False err_стал=None tok=508->288 | Henry took 9 pills a day for 14 days. Of these 9 pills, 4 pills cost $1.50 each, and the o
+    idx 133: exp=9.0 pred_был=9.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=274->1024 | There are 40 students in a class. If 1/10 are absent, 3/4 of the students who are present 
+    idx 306: exp=64.0 pred_был=64.0 pred_стал=44.0 trunc_стал=False err_стал=None tok=318->308 | Parker is 4 inches shorter than Daisy. Daisy is 8 inches taller than Reese. If Reese is 60
+    idx 438: exp=12.0 pred_был=12.0 pred_стал=11.0 trunc_стал=False err_стал=None tok=235->232 | While Greg was camping with his family for a week, it rained for 3 days. When he looked at
+    idx 791: exp=9.0 pred_был=9.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=264->376 | Of the 90 people on William's bus, 3/5 were Dutch. Of the 1/2 of the Dutch who were also A
+    idx 806: exp=165.0 pred_был=165.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=252->229 | A porcelain vase was originally priced at $200 but went on sale for 25% off. If Donna boug
+    idx 945: exp=120.0 pred_был=120.0 pred_стал=16.0 trunc_стал=False err_стал=None tok=222->227 | Jon buys 2 coffees a day from his favorite coffee shop.  They cost $2 each.  How much does
+    idx 947: exp=80.0 pred_был=80.0 pred_стал=None trunc_стал=True err_стал=no_final_line tok=972->1024 | Johnny has been playing guitar for a while now.  He practices the same amount each day. As
+    idx 1004: exp=1260.0 pred_был=1260.0 pred_стал=630.0 trunc_стал=False err_стал=None tok=300->258 | Kamil wants to renovate his kitchen at home. For this purpose, he hired two professionals 
+    idx 1067: exp=100.0 pred_был=100.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=354->300 | There were 180 apples in each crate. 12 such crates of apples were delivered to a factory.
+    idx 1155: exp=8.0 pred_был=8.0 pred_стал=None trunc_стал=False err_стал=no_final_line tok=210->392 | Greta, George and Gloria entered their turtles in the Key West Turtle Race.  Greta’s turtl
+
+Отчёт: runs/variants/v9_mlp_damp/compare_search.json

@@ -1,0 +1,59 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w72_finalrow_plus_zlate_on_w8/dev/results.jsonl",
+ "base_name": "orig",
+ "variant_name": "w72_finalrow_plus_zlate_on_w8",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 66,
+  "accuracy": 0.66,
+  "extracted": 98,
+  "truncated": 2,
+  "mean_out_tokens": 312.7,
+  "mean_seconds": 4.91
+ },
+ "delta_correct": 7,
+ "fixed": [
+  157,
+  951,
+  1075,
+  1125,
+  1480,
+  2069,
+  2328,
+  3321,
+  3459,
+  4138,
+  4531,
+  5785,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  781,
+  1739,
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150
+ ],
+ "same_correct": 50,
+ "same_wrong": 25,
+ "answers_differ": 100,
+ "mcnemar_p": 0.2295229434967041
+}

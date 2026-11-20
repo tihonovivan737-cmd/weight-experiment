@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w56_gold16_l23_amp070/dev_1024/results.jsonl",
+ "base_name": "оригинал при 1024",
+ "variant_name": "w56_gold16_l23_amp070 при 1024",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 96,
+  "truncated": 4,
+  "mean_out_tokens": 336.8,
+  "mean_seconds": 4.28
+ },
+ "delta_correct": 5,
+ "fixed": [
+  29,
+  157,
+  951,
+  2328,
+  3321,
+  3459,
+  3482,
+  4531,
+  5334,
+  5785,
+  6097,
+  6295,
+  6927,
+  7345
+ ],
+ "broken": [
+  640,
+  720,
+  1739,
+  3104,
+  3142,
+  3624,
+  3766,
+  4150,
+  7228
+ ],
+ "same_correct": 50,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.4048728942871094
+}

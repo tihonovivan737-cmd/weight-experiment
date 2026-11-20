@@ -1,0 +1,56 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w66_qknorm112_on_w8/dev/results.jsonl",
+ "base_name": "orig",
+ "variant_name": "w66",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 65,
+  "accuracy": 0.65,
+  "extracted": 98,
+  "truncated": 2,
+  "mean_out_tokens": 331.3,
+  "mean_seconds": 4.51
+ },
+ "delta_correct": 6,
+ "fixed": [
+  951,
+  1075,
+  1480,
+  2069,
+  2328,
+  3321,
+  3459,
+  3482,
+  4531,
+  5169,
+  5785,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  640,
+  720,
+  2177,
+  3142,
+  3766,
+  3799,
+  4150,
+  7228
+ ],
+ "same_correct": 51,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.28627872467041016
+}

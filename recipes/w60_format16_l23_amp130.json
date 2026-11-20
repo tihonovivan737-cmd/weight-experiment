@@ -1,0 +1,183 @@
+{
+ "name": "w60_format16_l23_amp130",
+ "hypothesis": "Строки L23 с наибольшим положительным вкладом в токен FINAL в позициях записи FINAL (top_by_final) двигают формат: усиление должно уменьшить долю ответов без FINAL строки (18 из 350). Математика эти строки почти не трогает, потому что c_gold_mean у них близок к нулю.",
+ "expected_effect": "Формат combined 333-340, math combined 212-218, обрывы combined 14-20. Засчитывается только формат >= 336 при math >= 216 и обрывах <= 14.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    44
+   ],
+   "note": "wave15 format row 44 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    41
+   ],
+   "note": "wave15 format row 41 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    51
+   ],
+   "note": "wave15 format row 51 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    48
+   ],
+   "note": "wave15 format row 48 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    93
+   ],
+   "note": "wave15 format row 93 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    439
+   ],
+   "note": "wave15 format row 439 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    67
+   ],
+   "note": "wave15 format row 67 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    66
+   ],
+   "note": "wave15 format row 66 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    562
+   ],
+   "note": "wave15 format row 562 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    57
+   ],
+   "note": "wave15 format row 57 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    70
+   ],
+   "note": "wave15 format row 70 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    16
+   ],
+   "note": "wave15 format row 16 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    2
+   ],
+   "note": "wave15 format row 2 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    298
+   ],
+   "note": "wave15 format row 298 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    262
+   ],
+   "note": "wave15 format row 262 lam 1.30"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    30
+   ],
+   "note": "wave15 format row 30 lam 1.30"
+  }
+ ]
+}

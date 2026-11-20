@@ -1,0 +1,53 @@
+{
+ "base": "runs/variants/w55_gold16_l23_amp130/dev_1024/results.jsonl",
+ "variant": "runs/variants/w56_gold16_l23_amp070/dev_1024/results.jsonl",
+ "base_name": "w55 при 1024",
+ "variant_name": "w56 при 1024",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 8,
+  "mean_out_tokens": 361.4,
+  "mean_seconds": 4.46
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 96,
+  "truncated": 4,
+  "mean_out_tokens": 336.8,
+  "mean_seconds": 4.28
+ },
+ "delta_correct": 5,
+ "fixed": [
+  29,
+  348,
+  2328,
+  3482,
+  4330,
+  4843,
+  5334,
+  6097,
+  6163,
+  6228,
+  6927,
+  7325
+ ],
+ "broken": [
+  640,
+  720,
+  1739,
+  2069,
+  3624,
+  6604,
+  6909
+ ],
+ "same_correct": 52,
+ "same_wrong": 29,
+ "answers_differ": 97,
+ "mcnemar_p": 0.359283447265625
+}

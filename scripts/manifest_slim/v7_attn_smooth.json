@@ -1,0 +1,487 @@
+{
+ "name": "v7_attn_smooth",
+ "hypothesis": "H3b (противоположное H3a). lam=0.75 -> логиты внимания слабее в ~0.56 раза: внимание более равномерное, больше похоже на усреднение контекста. Гипотеза: помогает, когда модель чрезмерно «цепляется» за одно число и игнорирует остальные условия.",
+ "expected_effect": "Более распределённое внимание.",
+ "base_model_dir": "/home/mpiscil/weight-experiment/models/qwen3.5-0.8b",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/v7_attn_smooth/model",
+ "new_safetensors_sha256": "2c62c5fbaf64f08b5afdb8963db13b934407959a6625181e9a2eb70c5bb800cb",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.self_attn.q_norm.weight",
+    "model.language_model.layers.*.self_attn.k_norm.weight"
+   ],
+   "op": "scale_offset",
+   "lam": 0.75
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.11.self_attn.k_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    659985064,
+    659985576
+   ],
+   "numel": 256,
+   "values_actually_changed": 255,
+   "mean_abs_delta": 0.40750313,
+   "max_abs_delta": 0.578125,
+   "sha256_before": "2627cede9dca510f81c95437b72ef6e2ec35d8465b9b82873c0c9c9b5d864f1f",
+   "sha256_after": "2781ed45384750b07eb8afda075b07b0a474fe93d1929a0e3c32e9d1ff57b194",
+   "tensor_sha256_full_after": "2781ed45384750b07eb8afda075b07b0a474fe93d1929a0e3c32e9d1ff57b194",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.11.self_attn.q_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    665228456,
+    665228968
+   ],
+   "numel": 256,
+   "values_actually_changed": 255,
+   "mean_abs_delta": 0.40737915,
+   "max_abs_delta": 0.53125,
+   "sha256_before": "362e6efab6f00a8442201b26236004741dd5afca4b028f8216f131872d88d362",
+   "sha256_after": "a0471b44f3ae66b29af9f7118674840c22c22f2dfc50a2b3c9b2dfedce65b34c",
+   "tensor_sha256_full_after": "a0471b44f3ae66b29af9f7118674840c22c22f2dfc50a2b3c9b2dfedce65b34c",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.15.self_attn.k_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    826021640,
+    826022152
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.40746498,
+   "max_abs_delta": 0.609375,
+   "sha256_before": "bf86eafa90845f6148eef808451d12b1c4eec07a4e01c8cd5fd4e2133f6422f3",
+   "sha256_after": "d39229cbfd6a1e71482ce8c6e7c05907e25bb7259acea9de39d6f816f184a57b",
+   "tensor_sha256_full_after": "d39229cbfd6a1e71482ce8c6e7c05907e25bb7259acea9de39d6f816f184a57b",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.15.self_attn.q_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    831265032,
+    831265544
+   ],
+   "numel": 256,
+   "values_actually_changed": 255,
+   "mean_abs_delta": 0.40522766,
+   "max_abs_delta": 0.57421875,
+   "sha256_before": "ca19b737f9e79a36443c2ad5221c82097d63e07a3fdf9726eefb2f549733af69",
+   "sha256_after": "0adde47473d85fe07dd74005ba980beca42736ecee4467c5649209e6b658dad1",
+   "tensor_sha256_full_after": "0adde47473d85fe07dd74005ba980beca42736ecee4467c5649209e6b658dad1",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.19.self_attn.k_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    992058216,
+    992058728
+   ],
+   "numel": 256,
+   "values_actually_changed": 255,
+   "mean_abs_delta": 0.36559677,
+   "max_abs_delta": 0.609375,
+   "sha256_before": "e6138da9894accb673810dafa8bf73aab6d136c47eeb897097ec81f47ffe5480",
+   "sha256_after": "522cab86416f6711716b6ebda645eb1daf1afa1911046cf09014b694c9677829",
+   "tensor_sha256_full_after": "522cab86416f6711716b6ebda645eb1daf1afa1911046cf09014b694c9677829",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.19.self_attn.q_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    997301608,
+    997302120
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.36700249,
+   "max_abs_delta": 0.50390625,
+   "sha256_before": "a00cbb7839761c57bad599bd0643e1359d8bb25b11eda0219c19c577f66b6db2",
+   "sha256_after": "2f16b7c2aff6f730265566d68f767cc3f51026d1da093ad1b5e94056256a2d5d",
+   "tensor_sha256_full_after": "2f16b7c2aff6f730265566d68f767cc3f51026d1da093ad1b5e94056256a2d5d",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.23.self_attn.k_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1201205224,
+    1201205736
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.34882116,
+   "max_abs_delta": 0.58203125,
+   "sha256_before": "b65b55332e92830ff1be15463ae734aeace9c6b145e171e1fbcf3618d4f07e1f",
+   "sha256_after": "9d4336b1aa6fdd2baf232cfa6237ae93b69be60278b96962810c0a205daa1c54",
+   "tensor_sha256_full_after": "9d4336b1aa6fdd2baf232cfa6237ae93b69be60278b96962810c0a205daa1c54",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.23.self_attn.q_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1206448616,
+    1206449128
+   ],
+   "numel": 256,
+   "values_actually_changed": 254,
+   "mean_abs_delta": 0.34707451,
+   "max_abs_delta": 0.5390625,
+   "sha256_before": "71bc9c83aa8271131910e8bf00a21bc8f7a98630fbe99125d3cf4a0f2596b911",
+   "sha256_after": "306d05f5d3bc699bfdcd3bef3988365bfe6195cbe08efb0fcae36dd5671e21b4",
+   "tensor_sha256_full_after": "306d05f5d3bc699bfdcd3bef3988365bfe6195cbe08efb0fcae36dd5671e21b4",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.3.self_attn.k_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1237910504,
+    1237911016
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.35415697,
+   "max_abs_delta": 0.65625,
+   "sha256_before": "424ead8a89f71d4e83858da7f28335665c4d61a8797b121cfaa26a56d1f5ea6a",
+   "sha256_after": "f8b54607e471f4d2b76461c31653f5519d131596a04f294b5bdc5f85b52b1b50",
+   "tensor_sha256_full_after": "f8b54607e471f4d2b76461c31653f5519d131596a04f294b5bdc5f85b52b1b50",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.3.self_attn.q_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1243153896,
+    1243154408
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.35669816,
+   "max_abs_delta": 0.5546875,
+   "sha256_before": "6fbc460e96b527aa6b54ab345195d141716dd4e34094baec92c65344f8bac298",
+   "sha256_after": "257f437109772e3b35c6eed16ab8fdc632bec5a0d57754f199ae80c0bc4b8bf5",
+   "tensor_sha256_full_after": "257f437109772e3b35c6eed16ab8fdc632bec5a0d57754f199ae80c0bc4b8bf5",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.7.self_attn.k_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1403947080,
+    1403947592
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.37408614,
+   "max_abs_delta": 0.515625,
+   "sha256_before": "a5b8b543ca3a084105ff3495ed2c36a2f7e99557479bbc3ba45e05541f6806d7",
+   "sha256_after": "1904ddf46714d1208a9064a68eff09a8e5a8e9f99217b2cf64a77d4c86d18f9f",
+   "tensor_sha256_full_after": "1904ddf46714d1208a9064a68eff09a8e5a8e9f99217b2cf64a77d4c86d18f9f",
+   "note": ""
+  },
+  {
+   "op_index": 0,
+   "op": "scale_offset",
+   "params": {
+    "op": "scale_offset",
+    "lam": 0.75
+   },
+   "tensor": "model.language_model.layers.7.self_attn.q_norm.weight",
+   "shape": [
+    256
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1409190472,
+    1409190984
+   ],
+   "numel": 256,
+   "values_actually_changed": 256,
+   "mean_abs_delta": 0.37561607,
+   "max_abs_delta": 0.5078125,
+   "sha256_before": "d9e8640352b19cdad1fa8e4788622cf8a0b977979a878729b2f7e71ed21f8f2d",
+   "sha256_after": "774bf2e8b6c6776c658ef1833f60e0c9a940910e5511f5288b0904b10796c067",
+   "tensor_sha256_full_after": "774bf2e8b6c6776c658ef1833f60e0c9a940910e5511f5288b0904b10796c067",
+   "note": ""
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 12,
+  "touched_tensor_ops": 12,
+  "values_actually_changed": 3066,
+  "numel_touched": 3072,
+  "mean_abs_delta": 0.3763856,
+  "max_abs_delta": 0.65625
+ },
+ "inverse_ops": [
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.11.self_attn.k_norm.weight",
+   "byte_offsets": [
+    659985064,
+    659985576
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.11.self_attn.q_norm.weight",
+   "byte_offsets": [
+    665228456,
+    665228968
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.15.self_attn.k_norm.weight",
+   "byte_offsets": [
+    826021640,
+    826022152
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.15.self_attn.q_norm.weight",
+   "byte_offsets": [
+    831265032,
+    831265544
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.19.self_attn.k_norm.weight",
+   "byte_offsets": [
+    992058216,
+    992058728
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.19.self_attn.q_norm.weight",
+   "byte_offsets": [
+    997301608,
+    997302120
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.23.self_attn.k_norm.weight",
+   "byte_offsets": [
+    1201205224,
+    1201205736
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.23.self_attn.q_norm.weight",
+   "byte_offsets": [
+    1206448616,
+    1206449128
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.3.self_attn.k_norm.weight",
+   "byte_offsets": [
+    1237910504,
+    1237911016
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.3.self_attn.q_norm.weight",
+   "byte_offsets": [
+    1243153896,
+    1243154408
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.7.self_attn.k_norm.weight",
+   "byte_offsets": [
+    1403947080,
+    1403947592
+   ],
+   "shape": [
+    256
+   ]
+  },
+  {
+   "op": "scale_offset",
+   "lam": 1.3333333333333333,
+   "tensor": "model.language_model.layers.7.self_attn.q_norm.weight",
+   "byte_offsets": [
+    1409190472,
+    1409190984
+   ],
+   "shape": [
+    256
+   ]
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/v7_attn_smooth/manifest.json",
+  "размер_оригинала_байт": 108707,
+  "sha256_оригинала": "7bab6327d5e6e5df5a67ecd3dcdefcbe2885b8de7803d07cb5931722629ee830",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 24",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

@@ -1,0 +1,288 @@
+=== c1_visual_noop ===
+=== c1_visual_noop ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 87468a61477bcf1f
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 1 диапазонов, 3,538,944 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,743,403,656
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/c1_visual_noop/verify.json
+=== v1_Alog_decay_half ===
+=== v1_Alog_decay_half ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: e7969087aa50139f
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 1,152 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,941,448
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v1_Alog_decay_half/verify.json
+=== v2_Alog_decay_double ===
+=== v2_Alog_decay_double ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 20cbc5a5d1bbb3fc
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 1,152 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,941,448
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v2_Alog_decay_double/verify.json
+=== v3_dt_bias_shift_down ===
+=== v3_dt_bias_shift_down ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 58a4d3b302dee424
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 576 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,942,024
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v3_dt_bias_shift_down/verify.json
+=== v4_beta_amplify ===
+=== v4_beta_amplify ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 338bb3d507cd092c
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 589,824 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,352,776
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v4_beta_amplify/verify.json
+=== v5_beta_soften ===
+=== v5_beta_soften ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 578ad7f3134460ce
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 589,824 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,352,776
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v5_beta_soften/verify.json
+=== v6_attn_sharpen ===
+=== v6_attn_sharpen ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: d4eb115985fb756e
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 12 диапазонов, 6,144 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,936,456
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v6_attn_sharpen/verify.json
+=== v7_attn_smooth ===
+=== v7_attn_smooth ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 2c62c5fbaf64f08b
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 12 диапазонов, 6,144 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,936,456
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v7_attn_smooth/verify.json
+=== v8_mlp_amp ===
+=== v8_mlp_amp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: f8403d3bbe160141
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 24 диапазонов, 176,160,768 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,570,781,832
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v8_mlp_amp/verify.json
+=== v9_mlp_damp ===
+=== v9_mlp_damp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: fe9974253cafccd8
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 24 диапазонов, 176,160,768 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,570,781,832
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v9_mlp_damp/verify.json
+=== v10_attn_branch_amp ===
+=== v10_attn_branch_amp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 7ba69304d70e41df
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 24 диапазонов, 100,663,296 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,646,279,304
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/v10_attn_branch_amp/verify.json
+=== c0_final_norm_gain ===
+=== c0_final_norm_gain ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 9675c6b74285b140
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 1 диапазонов, 2,048 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,940,552
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/c0_final_norm_gain/verify.json
+=== w1_final_token_amp ===
+=== w1_final_token_amp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: a7d5f647658be1b8
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 2 диапазонов, 4,096 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,938,504
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w1_final_token_amp/verify.json
+=== w2_bold_damp ===
+=== w2_bold_damp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 3c807ec8c24e8c60
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 2 диапазонов, 4,096 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,938,504
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w2_bold_damp/verify.json
+=== w3_final_amp_bold_damp ===
+=== w3_final_amp_bold_damp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 07b53e759efb349d
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 4 диапазонов, 8,192 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,934,408
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w3_final_amp_bold_damp/verify.json
+=== w4_branch_damp ===
+=== w4_branch_damp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 901913daabc1db2e
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 24 диапазонов, 100,663,296 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,646,279,304
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w4_branch_damp/verify.json
+=== w5_z_gate_damp ===
+=== w5_z_gate_damp ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: bb38034a47bee19b
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 75,497,472 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,671,445,128
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w5_z_gate_damp/verify.json
+=== w6_dt_bias_up ===
+=== w6_dt_bias_up ===
+  базовый_файл_по_хешу: OK
+  базовый_файл_по_хешу_detail: 04b1c301231dd422
+  файл_варианта_по_хешу: OK
+  файл_варианта_по_хешу_detail: 46c2d476a4411736
+  размер_файла: OK
+  размер_файла_detail: 1746942600
+  заголовок_safetensors: OK
+  заголовок_safetensors_detail: 59840 байт
+  диапазоны_манифеста: OK
+  диапазоны_манифеста_detail: 18 диапазонов, 576 байт
+  вне_диапазонов_идентично: OK
+  вне_диапазонов_идентично_detail: различающихся байт: 0 из 1,746,942,024
+ИТОГ: OK
+Отчёт: /home/mpiscil/weight-experiment/runs/variants/w6_dt_bias_up/verify.json

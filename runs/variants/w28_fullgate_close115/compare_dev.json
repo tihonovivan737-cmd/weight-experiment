@@ -1,0 +1,61 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w28_fullgate_close115/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w28_fullgate_close115",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 60,
+  "accuracy": 0.6,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 320.5,
+  "mean_seconds": 4.45
+ },
+ "delta_correct": 1,
+ "fixed": [
+  29,
+  1060,
+  1125,
+  1480,
+  2069,
+  2328,
+  3321,
+  4531,
+  5169,
+  5785,
+  6295,
+  6927,
+  7254,
+  7345
+ ],
+ "broken": [
+  354,
+  720,
+  1185,
+  1739,
+  2177,
+  2250,
+  3104,
+  3624,
+  4150,
+  4843,
+  5180,
+  6228,
+  7432
+ ],
+ "same_correct": 46,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 1.0
+}

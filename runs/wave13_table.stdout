@@ -1,0 +1,44 @@
+референсы на 350 задачах отбора: исходная 202 верно / FINAL 310 / обрывов 24; w8_z_gate_mild_format 216 верно / FINAL 332 / обрывов 18 (та же выборка)
+
+=== dev ===
+вариант                                      верно FINAL  обр верно+FINAL сред. длина orig Δверн       p   Δмат   w8 Δверн       p   Δмат
+w50_finalrow_rotation15_smallmargin             62    98    1          62       317.4          3 0.64761      0         -2  0.6875     -3
+w51_finalrow_rotation15_smallmargin_negsign     61    94    5          61       337.8          2 0.81453     -1         -3 0.45312     -3
+    w50_finalrow_rotation15_smallmargin          vs orig  только-математика (FINAL есть в обоих, n=88): 57 vs 57 Δ+0 (починил 6, сломал 6, p=1.0)
+    w50_finalrow_rotation15_smallmargin          vs w8    только-математика (FINAL есть в обоих, n=95): 61 vs 64 Δ-3 (починил 1, сломал 4, p=0.375)
+    w51_finalrow_rotation15_smallmargin_negsign  vs orig  только-математика (FINAL есть в обоих, n=84): 56 vs 57 Δ-1 (починил 5, сломал 6, p=1.0)
+    w51_finalrow_rotation15_smallmargin_negsign  vs w8    только-математика (FINAL есть в обоих, n=93): 60 vs 63 Δ-3 (починил 1, сломал 4, p=0.375)
+перевороты (формат/математика):
+  w50_finalrow_rotation15_smallmargin          vs orig  фикс  11 (форм   5 / мат   6)  слом   8 (форм   2 / мат   6)
+  w50_finalrow_rotation15_smallmargin          vs w8    фикс   2 (форм   1 / мат   1)  слом   4 (форм   0 / мат   4)
+  w51_finalrow_rotation15_smallmargin_negsign  vs orig  фикс  10 (форм   5 / мат   5)  слом   8 (форм   2 / мат   6)
+  w51_finalrow_rotation15_smallmargin_negsign  vs w8    фикс   2 (форм   1 / мат   1)  слом   5 (форм   1 / мат   4)
+
+=== search ===
+вариант                                      верно FINAL  обр верно+FINAL сред. длина orig Δверн       p   Δмат   w8 Δверн       p   Δмат
+w50_finalrow_rotation15_smallmargin            155   242    9         155       352.5         12 0.12635      4          3 0.64761      2
+w51_finalrow_rotation15_smallmargin_negsign    146   236   14         146       355.4          3 0.78385     -1         -6 0.26318     -4
+    w50_finalrow_rotation15_smallmargin          vs orig  только-математика (FINAL есть в обоих, n=214): 146 vs 142 Δ+4 (починил 23, сломал 19, p=0.64397)
+    w50_finalrow_rotation15_smallmargin          vs w8    только-математика (FINAL есть в обоих, n=232): 153 vs 151 Δ+2 (починил 9, сломал 7, p=0.80362)
+    w51_finalrow_rotation15_smallmargin_negsign  vs orig  только-математика (FINAL есть в обоих, n=211): 139 vs 140 Δ-1 (починил 21, сломал 22, p=1.0)
+    w51_finalrow_rotation15_smallmargin_negsign  vs w8    только-математика (FINAL есть в обоих, n=230): 145 vs 149 Δ-4 (починил 6, сломал 10, p=0.4545)
+перевороты (формат/математика):
+  w50_finalrow_rotation15_smallmargin          vs orig  фикс  32 (форм   9 / мат  23)  слом  20 (форм   1 / мат  19)
+  w50_finalrow_rotation15_smallmargin          vs w8    фикс  11 (форм   2 / мат   9)  слом   8 (форм   1 / мат   7)
+  w51_finalrow_rotation15_smallmargin_negsign  vs orig  фикс  28 (форм   7 / мат  21)  слом  25 (форм   3 / мат  22)
+  w51_finalrow_rotation15_smallmargin_negsign  vs w8    фикс   7 (форм   1 / мат   6)  слом  13 (форм   3 / мат  10)
+
+=== combined ===
+вариант                                      верно FINAL  обр верно+FINAL сред. длина orig Δверн       p   Δмат   w8 Δверн       p   Δмат
+w50_finalrow_rotation15_smallmargin            217   340   10         217       342.5         15 0.09592      4          1     1.0     -1
+w51_finalrow_rotation15_smallmargin_negsign    207   330   19         207       350.4          5 0.63531     -2         -9 0.12208     -7
+    w50_finalrow_rotation15_smallmargin          vs orig  только-математика (FINAL есть в обоих, n=302): 203 vs 199 Δ+4 (починил 29, сломал 25, p=0.68349)
+    w50_finalrow_rotation15_smallmargin          vs w8    только-математика (FINAL есть в обоих, n=327): 214 vs 215 Δ-1 (починил 10, сломал 11, p=1.0)
+    w51_finalrow_rotation15_smallmargin_negsign  vs orig  только-математика (FINAL есть в обоих, n=295): 195 vs 197 Δ-2 (починил 26, сломал 28, p=0.89192)
+    w51_finalrow_rotation15_smallmargin_negsign  vs w8    только-математика (FINAL есть в обоих, n=323): 205 vs 212 Δ-7 (починил 7, сломал 14, p=0.18925)
+перевороты (формат/математика):
+  w50_finalrow_rotation15_smallmargin          vs orig  фикс  43 (форм  14 / мат  29)  слом  28 (форм   3 / мат  25)
+  w50_finalrow_rotation15_smallmargin          vs w8    фикс  13 (форм   3 / мат  10)  слом  12 (форм   1 / мат  11)
+  w51_finalrow_rotation15_smallmargin_negsign  vs orig  фикс  38 (форм  12 / мат  26)  слом  33 (форм   5 / мат  28)
+  w51_finalrow_rotation15_smallmargin_negsign  vs w8    фикс   9 (форм   2 / мат   7)  слом  18 (форм   4 / мат  14)
+

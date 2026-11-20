@@ -1,0 +1,851 @@
+{
+ "name": "w59_flippot16_l23_amp163",
+ "hypothesis": "16 строк с наибольшим положительным flip_potential (П51.2 опровергнута: сумма положительных flip_potential по L23 равна 30.7016 при 1451 положительных строках, сумма по этим 16 строкам 19.9831). Доза 1.63 = 1 + 12.5/19.9831: ожидаемое изменение среднего запаса 0.63 x 19.9831 = 12.59 логита, то есть не меньше медианы маржи 12.5. Это единственное направленное усиление, которое может переписать ответ в пользу верного.",
+ "expected_effect": "Детерминированная правка 16 строк mlp.gate_proj слоя 23, lam = 1.63. Оценочные коридоры: формат 336-348, обрывы <= 14, математика 216-222, преждевременный FINAL <= 1. Решает dev (100 задач, не участвовал в отборе строк).",
+ "base_model_dir": "runs/variants/w8_z_gate_mild_format/model",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/w59_flippot16_l23_amp163/model",
+ "new_safetensors_sha256": "3b5b5009896be5110f619c2aa1292213c72597d7da94d191bcbd2b281865b480",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    592
+   ],
+   "note": "wave15 flip row 592 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    380
+   ],
+   "note": "wave15 flip row 380 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    485
+   ],
+   "note": "wave15 flip row 485 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    410
+   ],
+   "note": "wave15 flip row 410 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    598
+   ],
+   "note": "wave15 flip row 598 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    2
+   ],
+   "note": "wave15 flip row 2 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    557
+   ],
+   "note": "wave15 flip row 557 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    564
+   ],
+   "note": "wave15 flip row 564 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    780
+   ],
+   "note": "wave15 flip row 780 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    1069
+   ],
+   "note": "wave15 flip row 1069 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    40
+   ],
+   "note": "wave15 flip row 40 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    847
+   ],
+   "note": "wave15 flip row 847 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    262
+   ],
+   "note": "wave15 flip row 262 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    444
+   ],
+   "note": "wave15 flip row 444 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    745
+   ],
+   "note": "wave15 flip row 745 lam 1.63"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.63,
+   "rows": [
+    90
+   ],
+   "note": "wave15 flip row 90 lam 1.63"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 592 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187735528,
+    1187737576
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00557961,
+   "max_abs_delta": 0.02856445,
+   "sha256_before": "16aff75eefa37e7040b365b59b87d3d3b83aa6152097960a4c445146560a992a",
+   "sha256_after": "d558a257657d907d00f734cd01d20d5df204ae5883841b2b1901f33c93977fc0",
+   "note": "wave15 flip row 592 lam 1.63",
+   "row": 592,
+   "row_token": ""
+  },
+  {
+   "op_index": 1,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 380 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187301352,
+    1187303400
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00630753,
+   "max_abs_delta": 0.0246582,
+   "sha256_before": "3e04b6152f60f95c35c43bcea34b5e11a8262cf5c31e6490af9a7426766ea9db",
+   "sha256_after": "b6dc5e4b07d5129b1f92cffa31631f55c25d35de7f66c19df6eef4dd57bf8fed",
+   "note": "wave15 flip row 380 lam 1.63",
+   "row": 380,
+   "row_token": ""
+  },
+  {
+   "op_index": 2,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 485 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187516392,
+    1187518440
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.0072321,
+   "max_abs_delta": 0.03662109,
+   "sha256_before": "c10f7754b9301f1ac429736cd1fabaef6827c93193588d326d4b40f73335ed80",
+   "sha256_after": "29e3d1079758d1739bb9eefdaffb86ef71ecb4015fe0412fe46b6c1a957c6f43",
+   "note": "wave15 flip row 485 lam 1.63",
+   "row": 485,
+   "row_token": ""
+  },
+  {
+   "op_index": 3,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 410 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187362792,
+    1187364840
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.01131681,
+   "max_abs_delta": 0.0703125,
+   "sha256_before": "1579cec8ad81b8a69d7e8624da7668d5bea94aa91fc1355386f45a3faabd71a8",
+   "sha256_after": "70098c69ea4f9a789d86bc665b1c4ac23d15e0926add6dd0b52ec4c430da252b",
+   "note": "wave15 flip row 410 lam 1.63",
+   "row": 410,
+   "row_token": ""
+  },
+  {
+   "op_index": 4,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 598 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187747816,
+    1187749864
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00896498,
+   "max_abs_delta": 0.04296875,
+   "sha256_before": "b51e49dfdfaec9eed584336c7b3f6e63b11cb10319da824a705a69b92bf8e01e",
+   "sha256_after": "5caf37003cf2f378c2cf8f7c90dbc5d7b3028878075f148f53f79fd53f8b9d63",
+   "note": "wave15 flip row 598 lam 1.63",
+   "row": 598,
+   "row_token": ""
+  },
+  {
+   "op_index": 5,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 2 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186527208,
+    1186529256
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.01761877,
+   "max_abs_delta": 0.05566406,
+   "sha256_before": "f88d6e52e6906d501082c5f603e857c086a942438eaa14aebdca2a65c4498c44",
+   "sha256_after": "82f9210a69079dcd4c2cc66aa25b8d2d04a14f7fe8ed16333790d53de4d9fe3f",
+   "note": "wave15 flip row 2 lam 1.63",
+   "row": 2,
+   "row_token": ""
+  },
+  {
+   "op_index": 6,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 557 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187663848,
+    1187665896
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00641643,
+   "max_abs_delta": 0.03125,
+   "sha256_before": "fba58d3e089deb42b38f1faab4ba6e4e61ef67fb26e30f67a60488504def987e",
+   "sha256_after": "2c245785e251aef2965d26da88f300be44f2034d5b0693f810e3b0f06ebef216",
+   "note": "wave15 flip row 557 lam 1.63",
+   "row": 557,
+   "row_token": ""
+  },
+  {
+   "op_index": 7,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 564 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187678184,
+    1187680232
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00901621,
+   "max_abs_delta": 0.04345703,
+   "sha256_before": "be573111c1bc51a7409bfaee4c5e395384fea75df06df2aaa3a2347576314a30",
+   "sha256_after": "f79d43178f088bc99c3b4410d794ec63741bb4caf593c38770575ffbd600b78d",
+   "note": "wave15 flip row 564 lam 1.63",
+   "row": 564,
+   "row_token": ""
+  },
+  {
+   "op_index": 8,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 780 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1188120552,
+    1188122600
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00756346,
+   "max_abs_delta": 0.02880859,
+   "sha256_before": "59bd885a8df964e0194a4eef2a2576930e24c3272517907ee66ac19bf7385e6b",
+   "sha256_after": "a1836efeae1d612908ee4ca0e6f6396174e8e64b21c6e7e4c8bb284f2428a6bf",
+   "note": "wave15 flip row 780 lam 1.63",
+   "row": 780,
+   "row_token": ""
+  },
+  {
+   "op_index": 9,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 1069 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1188712424,
+    1188714472
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00992197,
+   "max_abs_delta": 0.05175781,
+   "sha256_before": "68da06925b67cd23670a409d1a9058e4424ddf3d23c284bf72337da5b24c6980",
+   "sha256_after": "7dba76a14b0c3e09c2a0dbd71dbc9e5c98d396035928989d554c9c1353247fe4",
+   "note": "wave15 flip row 1069 lam 1.63",
+   "row": 1069,
+   "row_token": ""
+  },
+  {
+   "op_index": 10,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 40 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186605032,
+    1186607080
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.01531765,
+   "max_abs_delta": 0.05126953,
+   "sha256_before": "d8a88dc0472b987c9a5d7d06bc6a35347965cdb86dabe7e093a9b5eb58c96059",
+   "sha256_after": "d5796414a3dc736e305ae5488bb8189bdb417bcf5e53d8294cfc910889925d37",
+   "note": "wave15 flip row 40 lam 1.63",
+   "row": 40,
+   "row_token": ""
+  },
+  {
+   "op_index": 11,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 847 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1188257768,
+    1188259816
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00652108,
+   "max_abs_delta": 0.02978516,
+   "sha256_before": "5c075d76362c1be2aa0aedec5e06554b329e97f9e4c8da63687d830187267230",
+   "sha256_after": "6c04dc7f3450bf0f3bd1eebb618a5e6c3da96e0a401f7b9d60f6693fbc1a9e1d",
+   "note": "wave15 flip row 847 lam 1.63",
+   "row": 847,
+   "row_token": ""
+  },
+  {
+   "op_index": 12,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 262 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187059688,
+    1187061736
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00915138,
+   "max_abs_delta": 0.03735352,
+   "sha256_before": "d23a0686c25e40554d52ae9deb6801bb1d3e23b94057084bcd3abe4af10621ca",
+   "sha256_after": "bb19528013f8f8a9e717e954699db05f0ee7e862503cce475f9bba6c2400e6d0",
+   "note": "wave15 flip row 262 lam 1.63",
+   "row": 262,
+   "row_token": ""
+  },
+  {
+   "op_index": 13,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 444 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187432424,
+    1187434472
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00771881,
+   "max_abs_delta": 0.03198242,
+   "sha256_before": "ff15a2ab832ac517cf90801b1dd6efd6e11f681b7e17b714bae44fe810bf6b69",
+   "sha256_after": "d889b53937281d090d4140ccf6b44e6ff238cb79cdefc4792499a9eb1a27f7de",
+   "note": "wave15 flip row 444 lam 1.63",
+   "row": 444,
+   "row_token": ""
+  },
+  {
+   "op_index": 14,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 745 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1188048872,
+    1188050920
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00810476,
+   "max_abs_delta": 0.02807617,
+   "sha256_before": "5e4b42e0d7e0a6099602e5e6b5bccd73513a58d246c90b3e4c849721f916838e",
+   "sha256_after": "875018db47d114fd40d2e5f36cb1fd882ca1f5dfca27663245e46ff03792c582",
+   "note": "wave15 flip row 745 lam 1.63",
+   "row": 745,
+   "row_token": ""
+  },
+  {
+   "op_index": 15,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.63,
+    "note": "wave15 flip row 90 lam 1.63"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186707432,
+    1186709480
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.01321069,
+   "max_abs_delta": 0.04345703,
+   "sha256_before": "2ea5c529cc73ca7428e6456d56a1095c71d580f60d1d5075e521ccd8f08e15be",
+   "sha256_after": "b06a604e911d46b58f9bb56bd8b3e1e6f4b5d03e44012ed99d697a7fc3fe0d4d",
+   "note": "wave15 flip row 90 lam 1.63",
+   "row": 90,
+   "row_token": ""
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 16,
+  "values_actually_changed": 16384,
+  "numel_touched": 16384,
+  "mean_abs_delta": 0.00937264,
+  "max_abs_delta": 0.0703125
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187735528,
+    1187737576
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 592
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187301352,
+    1187303400
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 380
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187516392,
+    1187518440
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 485
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187362792,
+    1187364840
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 410
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187747816,
+    1187749864
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 598
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186527208,
+    1186529256
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 2
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187663848,
+    1187665896
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 557
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187678184,
+    1187680232
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 564
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1188120552,
+    1188122600
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 780
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1188712424,
+    1188714472
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 1069
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186605032,
+    1186607080
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 40
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1188257768,
+    1188259816
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 847
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187059688,
+    1187061736
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 262
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187432424,
+    1187434472
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 444
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1188048872,
+    1188050920
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 745
+  },
+  {
+   "op": "scale",
+   "lam": 0.6134969325153374,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186707432,
+    1186709480
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 90
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w59_flippot16_l23_amp163/manifest.json",
+  "размер_оригинала_байт": 557724,
+  "sha256_оригинала": "24d8e96b9cc22f4e7738777dbb915062f97d485af5726e4562e8238561ee6b27",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 32",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

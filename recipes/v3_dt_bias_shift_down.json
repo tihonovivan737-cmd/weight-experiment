@@ -1,0 +1,16 @@
+{
+ "name": "v3_dt_bias_shift_down",
+ "hypothesis": "H1c. dt_bias имеет большие значения (absmax до 13). softplus(a+dt_bias) задаёт базовую силу затухания. Сдвиг dt_bias на -2 уменьшает softplus для heads с большим dt_bias, т.е. удлинняет память тех heads, которые сейчас забывают почти мгновенно, почти не затрагивая heads с сильным затуханием? (наоборот: затрагивает сильнее те, у кого a+dt_bias мало). Направление проверяется экспериментально.",
+ "expected_effect": "Более равномерная память по head'ам.",
+ "ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.*.linear_attn.dt_bias"
+   ],
+   "op": "add",
+   "value": -2.0,
+   "clip_min": -6.0,
+   "note": "мягкое смещение базового затухания"
+  }
+ ]
+}

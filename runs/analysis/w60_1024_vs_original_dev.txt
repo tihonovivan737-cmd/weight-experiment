@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w60_format16_l23_amp130/dev/results.jsonl",
+ "base_name": "оригинал при 1024",
+ "variant_name": "w60 при 1024",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 62,
+  "accuracy": 0.62,
+  "extracted": 96,
+  "truncated": 3,
+  "mean_out_tokens": 314.4,
+  "mean_seconds": 3.95
+ },
+ "delta_correct": 3,
+ "fixed": [
+  1060,
+  1075,
+  2328,
+  3321,
+  3459,
+  4138,
+  4531,
+  5361,
+  5785,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  1185,
+  1739,
+  2177,
+  3104,
+  3142,
+  3732,
+  3766,
+  4150,
+  4843
+ ],
+ "same_correct": 49,
+ "same_wrong": 28,
+ "answers_differ": 100,
+ "mcnemar_p": 0.6776394844055176
+}

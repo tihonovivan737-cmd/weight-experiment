@@ -1,0 +1,10 @@
+=== 2026-11-12T18:42:13+07:00 PROBE w41_format_embed132 ; свободно VRAM на GPU 1: 8903 MiB ===
+=== 2026-11-12T18:50:29+07:00 PROBE w41_format_embed132 код 0 -> runs/analysis/probe6_w41_format_embed132.json ===
+=== 2026-11-12T18:50:29+07:00 PROBE w42_format_embed144 ; свободно VRAM на GPU 1: 8903 MiB ===
+=== 2026-11-12T18:58:32+07:00 PROBE w42_format_embed144 код 0 -> runs/analysis/probe6_w42_format_embed144.json ===
+=== 2026-11-12T18:58:32+07:00 PROBE w43_format_embed144_latedose ; свободно VRAM на GPU 1: 8903 MiB ===
+=== 2026-11-12T19:06:37+07:00 PROBE w43_format_embed144_latedose код 0 -> runs/analysis/probe6_w43_format_embed144_latedose.json ===
+=== 2026-11-12T19:06:37+07:00 PROBE w44_mlp_branch_late105: уже есть runs/analysis/probe6_w44_mlp_branch_late105.json — пропускаю ===
+=== 2026-11-12T19:06:37+07:00 проба логитов уже есть: runs/analysis/final_logit_probe.txt ===
+=== 2026-11-12T19:06:37+07:00 PROBE REPORT код 0 -> runs/analysis/wave10_probe_report.txt ===
+=== 2026-11-12T19:06:37+07:00 ПРОБЫ ВОЛНЫ 10 ЗАВЕРШЕНЫ ===

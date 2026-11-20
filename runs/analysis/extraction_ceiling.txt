@@ -1,0 +1,14 @@
+Хвост = последние 400 символов. Склады: dev 100 + search 250 = 350 задач.
+
+модель                                        верно    с FINAL, нужное в хвосте     без FINAL, нужное в хвосте   потолок   прирост
+исходная модель                                 202                          21                             18       241        39   из 350
+w8_z_gate_mild_format                           216                          16                              5       237        21   из 350
+w50_finalrow_rotation15_smallmargin             217                          17                              1       235        18   из 350
+w79_finalrow_ten_rows_double_step_on_w8         214                          19                              3       236        22   из 350
+w81_finalrow_four_small_rows_step15_on_w8       212                          15                              5       232        20   из 350
+w82_wave11_head_lever_on_w8                     214                          18                              4       236        22   из 350
+w83_mlp_layer_lever_on_w8                       215                          17                              1       233        18   из 350
+w84_mlp_layer_lever5_on_w8                      205                          21                              6       232        27   из 350
+w85_mlp_layer_leversign_on_w8                   203                          22                              7       232        29   из 350
+w86_attnshare_lever_on_w8                       204                          19                              4       227        23   из 350
+w87_stack_finalrow_on_w83                       207                          18                              3       228        21   из 350

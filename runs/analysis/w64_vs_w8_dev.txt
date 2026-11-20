@@ -1,0 +1,55 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w64_qknorm108_on_original/dev/results.jsonl",
+ "base_name": "w8 при 1024",
+ "variant_name": "w64 при 1024",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 57,
+  "accuracy": 0.57,
+  "extracted": 90,
+  "truncated": 6,
+  "mean_out_tokens": 382.9,
+  "mean_seconds": 5.12
+ },
+ "delta_correct": -7,
+ "fixed": [
+  1060,
+  1125,
+  1480,
+  1962,
+  2177,
+  3104,
+  3939
+ ],
+ "broken": [
+  640,
+  951,
+  1739,
+  2328,
+  4330,
+  4531,
+  4573,
+  5072,
+  5180,
+  5859,
+  6097,
+  6163,
+  6295,
+  6812
+ ],
+ "same_correct": 50,
+ "same_wrong": 29,
+ "answers_differ": 100,
+ "mcnemar_p": 0.18924713134765625
+}

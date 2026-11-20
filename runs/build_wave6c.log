@@ -1,0 +1,22 @@
+Вариант: w28_fullgate_close115
+Модель: runs/variants/w28_fullgate_close115/model
+SHA256 весов: было 296b2cd888606d54… стало 0b8fc054c12891ad…
+Тензоров изменено: 6; значений изменено: 12,582,912 (затронуто 12,582,912)
+Среднее |Δ|: 0.00221393  Макс |Δ|: 0.06054688
+Манифест: runs/variants/w28_fullgate_close115/manifest.json
+build rc=0 w28_fullgate_close115
+Вариант: w29_z_total087
+Модель: runs/variants/w29_z_total087/model
+SHA256 весов: было 296b2cd888606d54… стало fca6dcc2ce694909…
+Тензоров изменено: 18; значений изменено: 37,748,736 (затронуто 37,748,736)
+Среднее |Δ|: 0.00068759  Макс |Δ|: 0.02539062
+Манифест: runs/variants/w29_z_total087/manifest.json
+build rc=0 w29_z_total087
+Вариант: w30_qknorm_sharp108
+Модель: runs/variants/w30_qknorm_sharp108/model
+SHA256 весов: было 296b2cd888606d54… стало 8ff9d188751e7706…
+Тензоров изменено: 12; значений изменено: 3,063 (затронуто 3,072)
+Среднее |Δ|: 0.12045094  Макс |Δ|: 0.2109375
+Манифест: runs/variants/w30_qknorm_sharp108/manifest.json
+build rc=0 w30_qknorm_sharp108
+DONE

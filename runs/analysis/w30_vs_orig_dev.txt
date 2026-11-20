@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w30_qknorm_sharp108/dev/results.jsonl",
+ "base_name": "orig",
+ "variant_name": "w30",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 68,
+  "accuracy": 0.68,
+  "extracted": 100,
+  "truncated": 0,
+  "mean_out_tokens": 307.2,
+  "mean_seconds": 4.19
+ },
+ "delta_correct": 9,
+ "fixed": [
+  29,
+  951,
+  1060,
+  1125,
+  1480,
+  2328,
+  3321,
+  3459,
+  3482,
+  4138,
+  4531,
+  5169,
+  5785,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  2177,
+  3142,
+  3766,
+  4150,
+  7228,
+  7325
+ ],
+ "same_correct": 52,
+ "same_wrong": 25,
+ "answers_differ": 100,
+ "mcnemar_p": 0.0931396484375
+}

@@ -1,0 +1,851 @@
+{
+ "name": "w55_gold16_l23_amp130",
+ "hypothesis": "Усиление 16 строк с наибольшим средним вкладом в золотой ответ (П50.2 опровергнута: flip_potential этих строк отрицателен, сумма -26.7132, то есть на неверных задачах они голосуют за написанное число сильнее, чем за золотое). Arm остаётся как пререгистрированный контроль: ожидаемое направление знака — ухудшение.",
+ "expected_effect": "Детерминированная правка 16 строк mlp.gate_proj слоя 23, lam = 1.3. Оценочные коридоры: формат 336-348, обрывы <= 14, математика 216-222, преждевременный FINAL <= 1. Решает dev (100 задач, не участвовал в отборе строк).",
+ "base_model_dir": "runs/variants/w8_z_gate_mild_format/model",
+ "base_safetensors": "model.safetensors-00001-of-00001.safetensors",
+ "base_safetensors_sha256": "296b2cd888606d549446f93341eda44a88e438a72ddb59f990dc782289ba6c55",
+ "new_model_dir": "/home/mpiscil/weight-experiment/runs/variants/w55_gold16_l23_amp130/model",
+ "new_safetensors_sha256": "34019a403f9321008fa67524f1ddd8dc076dbc203f67a11dd0e6b44f718d775b",
+ "header_length_bytes": 59848,
+ "computation": "тензоры читались как bf16, операции выполнялись в float32, записаны обратно как bf16",
+ "recipe_ops": [
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    214
+   ],
+   "note": "wave15 gold row 214 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    285
+   ],
+   "note": "wave15 gold row 285 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    9
+   ],
+   "note": "wave15 gold row 9 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    43
+   ],
+   "note": "wave15 gold row 43 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    12
+   ],
+   "note": "wave15 gold row 12 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    16
+   ],
+   "note": "wave15 gold row 16 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    350
+   ],
+   "note": "wave15 gold row 350 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    77
+   ],
+   "note": "wave15 gold row 77 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    64
+   ],
+   "note": "wave15 gold row 64 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    8
+   ],
+   "note": "wave15 gold row 8 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    225
+   ],
+   "note": "wave15 gold row 225 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    316
+   ],
+   "note": "wave15 gold row 316 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    104
+   ],
+   "note": "wave15 gold row 104 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    256
+   ],
+   "note": "wave15 gold row 256 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    1385
+   ],
+   "note": "wave15 gold row 1385 lam 1.3"
+  },
+  {
+   "tensors": [
+    "model.language_model.layers.23.mlp.gate_proj.weight"
+   ],
+   "op": "scale",
+   "lam": 1.3,
+   "rows": [
+    13
+   ],
+   "note": "wave15 gold row 13 lam 1.3"
+  }
+ ],
+ "changes": [
+  {
+   "op_index": 0,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 214 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186961384,
+    1186963432
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00411737,
+   "max_abs_delta": 0.0168457,
+   "sha256_before": "58cbb12634006d46ebe1214b29144a7fdca4e9fe708ab462308c0384df915450",
+   "sha256_after": "832a73d8014b1d269f70d75c9d4b256480445b51fbe995c2486a828bc9e00f33",
+   "note": "wave15 gold row 214 lam 1.3",
+   "row": 214,
+   "row_token": ""
+  },
+  {
+   "op_index": 1,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 285 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187106792,
+    1187108840
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00276766,
+   "max_abs_delta": 0.01464844,
+   "sha256_before": "571a09234a4144051a6d1ffd65afe142b5c2c6f3596d63bb87a27895f26b7782",
+   "sha256_after": "f43dd7ece1cfc84f48af7833ee9eb710aaffccfabb58dec2ffa328acd61be9d5",
+   "note": "wave15 gold row 285 lam 1.3",
+   "row": 285,
+   "row_token": ""
+  },
+  {
+   "op_index": 2,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 9 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186541544,
+    1186543592
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00536664,
+   "max_abs_delta": 0.01806641,
+   "sha256_before": "0429141ea2053f95561836b4650090cbae166ea255725230574233ba6a981ea8",
+   "sha256_after": "6c1d8b8bb0e456eea0b0d3a9653b19aeb474d64730234f8b7234e54b86e447ff",
+   "note": "wave15 gold row 9 lam 1.3",
+   "row": 9,
+   "row_token": ""
+  },
+  {
+   "op_index": 3,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 43 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186611176,
+    1186613224
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00507534,
+   "max_abs_delta": 0.01757812,
+   "sha256_before": "0f61c973984c51ddbd39546ce4637f162d0f61335244df2a4288e8528c8822d5",
+   "sha256_after": "4d10f4d1fb0b5f5157be89aff01a34ec8f0642e69edddee6a25fe478e61991bd",
+   "note": "wave15 gold row 43 lam 1.3",
+   "row": 43,
+   "row_token": ""
+  },
+  {
+   "op_index": 4,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 12 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186547688,
+    1186549736
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00722553,
+   "max_abs_delta": 0.02294922,
+   "sha256_before": "9da4bf89914c137f112f83d6d28868665aa91f4e07dee22d8787b5397d2d0df2",
+   "sha256_after": "166bdd8d70b52831303d89f4adbf96a58078ea914fc2b7ef197412d28478e3db",
+   "note": "wave15 gold row 12 lam 1.3",
+   "row": 12,
+   "row_token": ""
+  },
+  {
+   "op_index": 5,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 16 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186555880,
+    1186557928
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00539858,
+   "max_abs_delta": 0.02783203,
+   "sha256_before": "eb0c9083a42a9784577502f5369dfc6143ac038f13f06f54d485afbd00a74e18",
+   "sha256_after": "9936b9053c27e7acd87a18d499f4ab3e0565f1485ba44ddd25698eeb7bb01943",
+   "note": "wave15 gold row 16 lam 1.3",
+   "row": 16,
+   "row_token": ""
+  },
+  {
+   "op_index": 6,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 350 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187239912,
+    1187241960
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00267255,
+   "max_abs_delta": 0.01782227,
+   "sha256_before": "64aaf6802eb1e680770be641da4c4f11cb2f6bdee949fb207c2eea66622ede11",
+   "sha256_after": "a4225dce1209041d3caf22d428bfe389ae5bee45f6c8aed47f1fa0aefef1b17c",
+   "note": "wave15 gold row 350 lam 1.3",
+   "row": 350,
+   "row_token": ""
+  },
+  {
+   "op_index": 7,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 77 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186680808,
+    1186682856
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00386863,
+   "max_abs_delta": 0.02392578,
+   "sha256_before": "2c7a6dba977b81dbb9ba75d10b2ac7213c703869471c50a8185a080a5c3082f0",
+   "sha256_after": "ade4d5c41a04c85c792a342672b7d1c85d6b7154cd3778539e620154e5c8a6a2",
+   "note": "wave15 gold row 77 lam 1.3",
+   "row": 77,
+   "row_token": ""
+  },
+  {
+   "op_index": 8,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 64 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186654184,
+    1186656232
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.0058634,
+   "max_abs_delta": 0.01953125,
+   "sha256_before": "acd9721b657c6d45bc35af1df7f35dbb4fa51be046ca7a4d5a447aa962f9df91",
+   "sha256_after": "c7bdef1b71e0895129b943271e84beac60b37dd9206ea4c1df11c57ee1456e80",
+   "note": "wave15 gold row 64 lam 1.3",
+   "row": 64,
+   "row_token": ""
+  },
+  {
+   "op_index": 9,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 8 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186539496,
+    1186541544
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00619174,
+   "max_abs_delta": 0.02197266,
+   "sha256_before": "457a4f6b614af59b3e0847cfcdda49e83388558d712115027a4fe978f4e14c18",
+   "sha256_after": "2247bd55acb5a82d6d83952c09bf3f3ac2bf91bbd78fb39c5635962a83eb8eb7",
+   "note": "wave15 gold row 8 lam 1.3",
+   "row": 8,
+   "row_token": ""
+  },
+  {
+   "op_index": 10,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 225 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186983912,
+    1186985960
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00386505,
+   "max_abs_delta": 0.01782227,
+   "sha256_before": "a0be9e3e310c321df4a7a47e3707b02c4bd3a33e0c093d8b5c74abfa112ea233",
+   "sha256_after": "51cab56c7324b9c7938a945aea851466daea993aba348508b3e684f780b4f122",
+   "note": "wave15 gold row 225 lam 1.3",
+   "row": 225,
+   "row_token": ""
+  },
+  {
+   "op_index": 11,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 316 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187170280,
+    1187172328
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00352825,
+   "max_abs_delta": 0.01953125,
+   "sha256_before": "ef5f1f689b57c8b1e06ab047168576e2c44ec48ac14fd3b0c1bfc3eb367713b4",
+   "sha256_after": "aa4d5099c03e0e84334c646c86d888152c99bc482b93dd5fd380909b016f271c",
+   "note": "wave15 gold row 316 lam 1.3",
+   "row": 316,
+   "row_token": ""
+  },
+  {
+   "op_index": 12,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 104 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186736104,
+    1186738152
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.0039243,
+   "max_abs_delta": 0.02685547,
+   "sha256_before": "0ea08524f254cf17ff8c029709bb2142c17a15cd0a680fb64457d4ebf97b3186",
+   "sha256_after": "62f2db6bc01caf7a4ff866a45db63c02927ecf513e1aba331579dfabf5b48eab",
+   "note": "wave15 gold row 104 lam 1.3",
+   "row": 104,
+   "row_token": ""
+  },
+  {
+   "op_index": 13,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 256 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1187047400,
+    1187049448
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00284002,
+   "max_abs_delta": 0.02636719,
+   "sha256_before": "aef14ad7007ca7d970cfc6618c84bc5da774b10ac76ada0d0ece4718ab302f53",
+   "sha256_after": "07c4fa618286b55c427f7febab1ac5297d659323da5072d37003969604aaaf51",
+   "note": "wave15 gold row 256 lam 1.3",
+   "row": 256,
+   "row_token": ""
+  },
+  {
+   "op_index": 14,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 1385 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1189359592,
+    1189361640
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.00375515,
+   "max_abs_delta": 0.02001953,
+   "sha256_before": "50fa6e8c3e0e2a79e8de87ff1e21834b1817663e04ce08c8dc54373709fb6c54",
+   "sha256_after": "020686252a1c220ffc33f090c9236f20ef07e71eb36f4922eba8bd346842adb5",
+   "note": "wave15 gold row 1385 lam 1.3",
+   "row": 1385,
+   "row_token": ""
+  },
+  {
+   "op_index": 15,
+   "op": "scale",
+   "params": {
+    "op": "scale",
+    "lam": 1.3,
+    "note": "wave15 gold row 13 lam 1.3"
+   },
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "shape": [
+    1024
+   ],
+   "dtype": "BF16",
+   "byte_offsets": [
+    1186549736,
+    1186551784
+   ],
+   "numel": 1024,
+   "values_actually_changed": 1024,
+   "mean_abs_delta": 0.006685,
+   "max_abs_delta": 0.02246094,
+   "sha256_before": "e2693488df230516cb5f2ef8493e8ffdac4ed94fc8cb0dd2475262ad838471b9",
+   "sha256_after": "c07aceff87fa252c9a3e662cfdc2843d0c250a968832ff917d29f51d98a95ca5",
+   "note": "wave15 gold row 13 lam 1.3",
+   "row": 13,
+   "row_token": ""
+  }
+ ],
+ "skipped": [],
+ "totals": {
+  "tensors_changed": 1,
+  "touched_tensor_ops": 16,
+  "values_actually_changed": 16384,
+  "numel_touched": 16384,
+  "mean_abs_delta": 0.00457158,
+  "max_abs_delta": 0.02783203
+ },
+ "inverse_ops": [
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186961384,
+    1186963432
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 214
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187106792,
+    1187108840
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 285
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186541544,
+    1186543592
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 9
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186611176,
+    1186613224
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 43
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186547688,
+    1186549736
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 12
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186555880,
+    1186557928
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 16
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187239912,
+    1187241960
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 350
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186680808,
+    1186682856
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 77
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186654184,
+    1186656232
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 64
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186539496,
+    1186541544
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 8
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186983912,
+    1186985960
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 225
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187170280,
+    1187172328
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 316
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186736104,
+    1186738152
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 104
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1187047400,
+    1187049448
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 256
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1189359592,
+    1189361640
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 1385
+  },
+  {
+   "op": "scale",
+   "lam": 0.7692307692307692,
+   "tensor": "model.language_model.layers.23.mlp.gate_proj.weight",
+   "byte_offsets": [
+    1186549736,
+    1186551784
+   ],
+   "shape": [
+    1024
+   ],
+   "row": 13
+  }
+ ],
+ "restore_note": "Откат = пересоздать копию базовой модели (её sha256 зафиксирован) или применить inverse_ops к байтовым диапазонам; для небольших тензоров сохранены values_before.",
+ "_upakovka": {
+  "файл_оригинала": "runs/variants/w55_gold16_l23_amp130/manifest.json",
+  "размер_оригинала_байт": 557361,
+  "sha256_оригинала": "eee5a665fa1c10ad58796ad53b2653ad049ccfad9ece2c3351ec7cb87792c542",
+  "что_вырезано": "массивы values_before/values_after, полей удалено: 32",
+  "почему": "пофайловые списки значений до 1,2 ГиБ; для проверки сохранены смещения, форма, dtype, параметры операций и хеши диапазонов"
+ }
+}

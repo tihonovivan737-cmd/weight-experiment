@@ -1,0 +1,25 @@
+Проверено записей: 161
+  correct                         80  (49.7%)
+  extracted_wrong                 59  (36.6%)
+  no_final_line                   22  (13.7%)
+    (из них truncated)            14  (8.7%)
+Признаки:
+  different_digit_length                29
+  truncated                             14
+  pred_is_intermediate_in_reference      9
+  pred=expected+num_from_question        5
+  pred=expected*4                        3
+  pred=expected*6                        2
+  pred=expected*3                        2
+  pred=expected*2                        1
+  pred=expected*0.5                      1
+
+Примеры extracted_wrong:
+  idx 2: expected=70000.0 pred=40000.0 trunc=False pred_in_ref=False | Josh decides to try flipping a house.  He buys a house for $80,000 and then puts
+  idx 4: expected=20.0 pred=120.0 trunc=False pred_in_ref=False | Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, co
+  idx 7: expected=160.0 pred=3.0 trunc=False pred_in_ref=False | Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 4
+  idx 8: expected=45.0 pred=135.0 trunc=False pred_in_ref=True | John drives for 3 hours at a speed of 60 mph and then turns around because he re
+  idx 9: expected=460.0 pred=11.55 trunc=False pred_in_ref=False | Eliza's rate per hour for the first 40 hours she works each week is $10. She als
+  idx 14: expected=60.0 pred=165.0 trunc=False pred_in_ref=False | In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the 
+
+output_tokens: mean=419.6 max=1024 на_limit=14

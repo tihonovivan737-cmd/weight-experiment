@@ -1,0 +1,447 @@
+{
+ "variant": "w31_z_dominant_restore106",
+ "splits": "dev,search",
+ "per_split": {
+  "dev": {
+   "n_common": 100,
+   "missing": {
+    "only_base": [],
+    "only_variant": []
+   },
+   "base_stats": {
+    "n": 100,
+    "correct": 59,
+    "accuracy": 0.59,
+    "extracted": 90,
+    "truncated": 7,
+    "mean_out_tokens": 386.7,
+    "mean_seconds": 4.62
+   },
+   "variant_stats": {
+    "n": 100,
+    "correct": 59,
+    "accuracy": 0.59,
+    "extracted": 94,
+    "truncated": 4,
+    "mean_out_tokens": 324.1,
+    "mean_seconds": 3.69
+   },
+   "delta_correct": 0,
+   "fixed": [
+    29,
+    157,
+    3321,
+    3459,
+    4531,
+    5785,
+    6295,
+    6604,
+    7345
+   ],
+   "broken": [
+    1739,
+    3104,
+    3142,
+    3766,
+    3799,
+    4150,
+    5072,
+    6228,
+    7325
+   ],
+   "mcnemar_p": 1.0,
+   "answers_differ": 100
+  },
+  "search": {
+   "n_common": 250,
+   "missing": {
+    "only_base": [],
+    "only_variant": []
+   },
+   "base_stats": {
+    "n": 250,
+    "correct": 143,
+    "accuracy": 0.572,
+    "extracted": 220,
+    "truncated": 17,
+    "mean_out_tokens": 398.0,
+    "mean_seconds": 4.8
+   },
+   "variant_stats": {
+    "n": 250,
+    "correct": 150,
+    "accuracy": 0.6,
+    "extracted": 237,
+    "truncated": 13,
+    "mean_out_tokens": 360.8,
+    "mean_seconds": 4.25
+   },
+   "delta_correct": 7,
+   "fixed": [
+    161,
+    536,
+    619,
+    848,
+    1324,
+    1569,
+    1580,
+    1835,
+    1929,
+    2237,
+    2480,
+    2647,
+    2723,
+    2878,
+    3281,
+    3572,
+    3594,
+    3837,
+    4209,
+    4519,
+    4521,
+    4817,
+    5062,
+    5512,
+    5801,
+    6528,
+    7329,
+    7360,
+    7467
+   ],
+   "broken": [
+    791,
+    806,
+    893,
+    908,
+    947,
+    1179,
+    1907,
+    2619,
+    3051,
+    3086,
+    3245,
+    3256,
+    3378,
+    3499,
+    3733,
+    3889,
+    4665,
+    4824,
+    5816,
+    6308,
+    6622,
+    6757
+   ],
+   "mcnemar_p": 0.4010619910279374,
+   "answers_differ": 248
+  }
+ },
+ "combined": {
+  "n_common": 350,
+  "missing": {
+   "only_base": [],
+   "only_variant": []
+  },
+  "base_stats": {
+   "n": 350,
+   "correct": 202,
+   "accuracy": 0.5771,
+   "extracted": 310,
+   "truncated": 24,
+   "mean_out_tokens": 394.8,
+   "mean_seconds": 4.75
+  },
+  "variant_stats": {
+   "n": 350,
+   "correct": 209,
+   "accuracy": 0.5971,
+   "extracted": 331,
+   "truncated": 17,
+   "mean_out_tokens": 350.3,
+   "mean_seconds": 4.09
+  },
+  "delta_correct": 7,
+  "fixed": [
+   [
+    "dev",
+    29
+   ],
+   [
+    "dev",
+    157
+   ],
+   [
+    "dev",
+    3321
+   ],
+   [
+    "dev",
+    3459
+   ],
+   [
+    "dev",
+    4531
+   ],
+   [
+    "dev",
+    5785
+   ],
+   [
+    "dev",
+    6295
+   ],
+   [
+    "dev",
+    6604
+   ],
+   [
+    "dev",
+    7345
+   ],
+   [
+    "search",
+    161
+   ],
+   [
+    "search",
+    536
+   ],
+   [
+    "search",
+    619
+   ],
+   [
+    "search",
+    848
+   ],
+   [
+    "search",
+    1324
+   ],
+   [
+    "search",
+    1569
+   ],
+   [
+    "search",
+    1580
+   ],
+   [
+    "search",
+    1835
+   ],
+   [
+    "search",
+    1929
+   ],
+   [
+    "search",
+    2237
+   ],
+   [
+    "search",
+    2480
+   ],
+   [
+    "search",
+    2647
+   ],
+   [
+    "search",
+    2723
+   ],
+   [
+    "search",
+    2878
+   ],
+   [
+    "search",
+    3281
+   ],
+   [
+    "search",
+    3572
+   ],
+   [
+    "search",
+    3594
+   ],
+   [
+    "search",
+    3837
+   ],
+   [
+    "search",
+    4209
+   ],
+   [
+    "search",
+    4519
+   ],
+   [
+    "search",
+    4521
+   ],
+   [
+    "search",
+    4817
+   ],
+   [
+    "search",
+    5062
+   ],
+   [
+    "search",
+    5512
+   ],
+   [
+    "search",
+    5801
+   ],
+   [
+    "search",
+    6528
+   ],
+   [
+    "search",
+    7329
+   ],
+   [
+    "search",
+    7360
+   ],
+   [
+    "search",
+    7467
+   ]
+  ],
+  "broken": [
+   [
+    "dev",
+    1739
+   ],
+   [
+    "dev",
+    3104
+   ],
+   [
+    "dev",
+    3142
+   ],
+   [
+    "dev",
+    3766
+   ],
+   [
+    "dev",
+    3799
+   ],
+   [
+    "dev",
+    4150
+   ],
+   [
+    "dev",
+    5072
+   ],
+   [
+    "dev",
+    6228
+   ],
+   [
+    "dev",
+    7325
+   ],
+   [
+    "search",
+    791
+   ],
+   [
+    "search",
+    806
+   ],
+   [
+    "search",
+    893
+   ],
+   [
+    "search",
+    908
+   ],
+   [
+    "search",
+    947
+   ],
+   [
+    "search",
+    1179
+   ],
+   [
+    "search",
+    1907
+   ],
+   [
+    "search",
+    2619
+   ],
+   [
+    "search",
+    3051
+   ],
+   [
+    "search",
+    3086
+   ],
+   [
+    "search",
+    3245
+   ],
+   [
+    "search",
+    3256
+   ],
+   [
+    "search",
+    3378
+   ],
+   [
+    "search",
+    3499
+   ],
+   [
+    "search",
+    3733
+   ],
+   [
+    "search",
+    3889
+   ],
+   [
+    "search",
+    4665
+   ],
+   [
+    "search",
+    4824
+   ],
+   [
+    "search",
+    5816
+   ],
+   [
+    "search",
+    6308
+   ],
+   [
+    "search",
+    6622
+   ],
+   [
+    "search",
+    6757
+   ]
+  ],
+  "mcnemar_p": 0.4703685318581444,
+  "answers_differ": 348
+ }
+}

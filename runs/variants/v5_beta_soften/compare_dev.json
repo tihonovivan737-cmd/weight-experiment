@@ -1,0 +1,57 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/v5_beta_soften/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "v5_beta_soften",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 60,
+  "accuracy": 0.6,
+  "extracted": 91,
+  "truncated": 5,
+  "mean_out_tokens": 383.1,
+  "mean_seconds": 4.54
+ },
+ "delta_correct": 1,
+ "fixed": [
+  29,
+  1480,
+  1962,
+  2069,
+  3321,
+  3459,
+  4138,
+  4531,
+  6097,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  354,
+  640,
+  688,
+  1739,
+  3142,
+  3766,
+  4060,
+  4150,
+  4449,
+  7228,
+  7325
+ ],
+ "same_correct": 48,
+ "same_wrong": 29,
+ "answers_differ": 99,
+ "mcnemar_p": 1.0
+}

@@ -1,0 +1,50 @@
+{
+ "base": "runs/variants/w8_z_gate_mild_format/dev/results.jsonl",
+ "variant": "runs/variants/w35_z_dominant_damp078/dev/results.jsonl",
+ "base_name": "w8",
+ "variant_name": "w35_z_dominant_damp078",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 64,
+  "accuracy": 0.64,
+  "extracted": 95,
+  "truncated": 4,
+  "mean_out_tokens": 321.6,
+  "mean_seconds": 4.4
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 66,
+  "accuracy": 0.66,
+  "extracted": 93,
+  "truncated": 6,
+  "mean_out_tokens": 343.0,
+  "mean_seconds": 4.72
+ },
+ "delta_correct": 2,
+ "fixed": [
+  1125,
+  1480,
+  1962,
+  2069,
+  4150,
+  5169,
+  6909,
+  6927,
+  7228
+ ],
+ "broken": [
+  354,
+  640,
+  720,
+  4138,
+  4843,
+  5785,
+  6097
+ ],
+ "same_correct": 57,
+ "same_wrong": 27,
+ "answers_differ": 100,
+ "mcnemar_p": 0.803619384765625
+}

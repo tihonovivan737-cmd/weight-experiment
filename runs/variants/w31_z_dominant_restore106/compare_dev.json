@@ -1,0 +1,52 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w31_z_dominant_restore106/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w31_z_dominant_restore106",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 94,
+  "truncated": 4,
+  "mean_out_tokens": 324.1,
+  "mean_seconds": 3.69
+ },
+ "delta_correct": 0,
+ "fixed": [
+  29,
+  157,
+  3321,
+  3459,
+  4531,
+  5785,
+  6295,
+  6604,
+  7345
+ ],
+ "broken": [
+  1739,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150,
+  5072,
+  6228,
+  7325
+ ],
+ "same_correct": 50,
+ "same_wrong": 32,
+ "answers_differ": 100,
+ "mcnemar_p": 1.0
+}

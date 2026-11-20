@@ -1,0 +1,52 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w51_finalrow_rotation15_smallmargin_negsign/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w51_finalrow_rotation15_smallmargin_negsign",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 61,
+  "accuracy": 0.61,
+  "extracted": 94,
+  "truncated": 5,
+  "mean_out_tokens": 337.8,
+  "mean_seconds": 5.69
+ },
+ "delta_correct": 2,
+ "fixed": [
+  29,
+  157,
+  951,
+  3321,
+  3459,
+  4531,
+  5785,
+  6295,
+  7254,
+  7345
+ ],
+ "broken": [
+  2177,
+  3104,
+  3142,
+  3766,
+  3799,
+  4150,
+  5072,
+  7228
+ ],
+ "same_correct": 51,
+ "same_wrong": 31,
+ "answers_differ": 100,
+ "mcnemar_p": 0.8145294189453125
+}

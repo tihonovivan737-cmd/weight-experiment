@@ -1,0 +1,56 @@
+{
+ "base": "runs/baseline_dev/results.jsonl",
+ "variant": "runs/variants/w34_restore_plus_qknorm104/dev/results.jsonl",
+ "base_name": "baseline",
+ "variant_name": "w34_restore_plus_qknorm104",
+ "n_common": 100,
+ "base_stats": {
+  "n": 100,
+  "correct": 59,
+  "accuracy": 0.59,
+  "extracted": 90,
+  "truncated": 7,
+  "mean_out_tokens": 386.7,
+  "mean_seconds": 4.62
+ },
+ "variant_stats": {
+  "n": 100,
+  "correct": 63,
+  "accuracy": 0.63,
+  "extracted": 94,
+  "truncated": 5,
+  "mean_out_tokens": 334.1,
+  "mean_seconds": 4.49
+ },
+ "delta_correct": 4,
+ "fixed": [
+  29,
+  157,
+  1480,
+  2328,
+  3321,
+  3459,
+  4138,
+  4531,
+  5785,
+  6295,
+  6909,
+  7254,
+  7345
+ ],
+ "broken": [
+  720,
+  3142,
+  3766,
+  3799,
+  4150,
+  6228,
+  7228,
+  7325,
+  7432
+ ],
+ "same_correct": 50,
+ "same_wrong": 28,
+ "answers_differ": 100,
+ "mcnemar_p": 0.5234670639038086
+}
